@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ref-data>
+	<!-- Syntax keyValue="DataRef+groupCode+code" -->
+	<Item groupCode="CA-STATUS" code="A" keyValue="DataRef.CA-STATUS.A"/>
+</ref-data>

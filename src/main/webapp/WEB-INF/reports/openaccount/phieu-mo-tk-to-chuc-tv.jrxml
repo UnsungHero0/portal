@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="phieu-mo-tk-to-chuc-tv" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<import value="java.util.*"/>
+	<field name="corpName" class="java.lang.String"/>
+	<field name="transName" class="java.lang.String"/>
+	<field name="businessLine" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="organization1" class="java.lang.String"/>
+	<field name="organization2" class="java.lang.String"/>
+	<field name="fullName" class="java.lang.String"/>
+	<field name="jobPosition" class="java.lang.String"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="idNumber" class="java.lang.String"/>
+	<field name="receiveDate" class="java.lang.String"/>
+	<field name="expiredDate" class="java.lang.String"/>
+	<field name="accountPhone" class="java.lang.String"/>
+	<field name="businessType1" class="java.lang.String"/>
+	<field name="businessType2" class="java.lang.String"/>
+	<field name="businessType3" class="java.lang.String"/>
+	<field name="businessType4" class="java.lang.String"/>
+	<field name="businessType5" class="java.lang.String"/>
+	<field name="businessType6" class="java.lang.String"/>
+	<field name="businessType7" class="java.lang.String"/>
+	<field name="businessType8" class="java.lang.String"/>
+	<field name="document1" class="java.lang.String"/>
+	<field name="document2" class="java.lang.String"/>
+	<field name="document3" class="java.lang.String"/>
+	<field name="document4" class="java.lang.String"/>
+	<field name="document5" class="java.lang.String"/>
+	<field name="document6" class="java.lang.String"/>
+	<field name="document7" class="java.lang.String"/>
+	<field name="accOTC" class="java.lang.String"/>
+	<field name="accListedStock" class="java.lang.String"/>
+	<field name="statementMonthly" class="java.lang.String"/>
+	<field name="statementQuarterly" class="java.lang.String"/>
+	<field name="statementDirectly" class="java.lang.String"/>
+	<field name="statementByEmail" class="java.lang.String"/>
+	<field name="onlineTrading_YES" class="java.lang.String"/>
+	<field name="onlineTrading_NO" class="java.lang.String"/>
+	<field name="authorizedStaffID" class="java.lang.String"/>
+	<field name="authorizedStaffPosition" class="java.lang.String"/>
+	<field name="teleTrading_YES" class="java.lang.String"/>
+	<field name="teleTrading_NO" class="java.lang.String"/>
+	<field name="authorizedStaffIDTele" class="java.lang.String"/>
+	<field name="authorizedStaffPositionTele" class="java.lang.String"/>
+	<field name="fieldEmpty" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-5" x="0" y="30" width="239" height="46"/>
+				<textElement>
+					<font fontName="Arial" size="9" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[CÔNG TY CỔ PHẦN CHỨNG KHOÁN VNDIRECT
+Số 1 Nguyễn Thượng Hiền – Hai Bà Trưng – HN 	
+ĐT 1-900-545409. Fax 04-39410500		
+www.vndirect.com.vn
+]]></text>
+			</staticText>
+			<image>
+				<reportElement key="image-1" x="0" y="0" width="168" height="26"/>
+				<imageExpression class="java.lang.String"><![CDATA["header.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement key="rectangle-1" x="253" y="12" width="282" height="57"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-6" x="260" y="25" width="70" height="15"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Số Hợp đồng:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-2" x="337" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-3" x="357" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-4" x="377" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-5" x="397" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-6" x="417" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-7" x="437" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-8" x="457" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-9" x="477" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-10" x="497" y="25" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-11" x="517" y="25" width="15" height="15"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-7" x="260" y="44" width="70" height="15"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Số Lưu ký:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-12" x="337" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-13" x="357" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-14" x="377" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-15" x="397" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-16" x="417" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-17" x="437" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-18" x="457" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-19" x="477" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-20" x="497" y="45" width="15" height="15"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-21" x="517" y="45" width="15" height="15"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-8" x="0" y="73" width="535" height="30"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="11" isBold="true" pdfFontName="timesbd.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[PHIẾU YÊU CẦU MỞ TÀI KHOẢN GIAO DỊCH CHỨNG KHOÁN 
+(Dành cho tổ chức)
+]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-1" x="0" y="100" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-9" x="5" y="106" width="528" height="20"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[A.THÔNG TIN TỔ CHỨC]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-2" x="0" y="231" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-10" x="5" y="233" width="528" height="20"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[B.THÔNG TIN CHỦ TÀI KHOẢN]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-3" x="0" y="492" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-11" x="5" y="494" width="529" height="20"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[C.THÔNG TIN TÀI KHOẢN ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="5" y="708" width="528" height="20"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[D.ĐĂNG KÝ PHƯƠNG THỨC GIAO DỊCH TỪ XA]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-4" x="0" y="706" width="535" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-5" x="535" y="100" width="1" height="701"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="0" y="100" width="1" height="701"/>
+			</line>
+			<rectangle>
+				<reportElement key="rectangle-42" x="241" y="720" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-46" x="388" y="720" width="8" height="8"/>
+			</rectangle>
+			<line>
+				<reportElement key="line-7" x="0" y="801" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-13" x="5" y="119" width="525" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[1. Tên tổ chưc(đầy đủ):……………………………………………..……………………………….…….…….…….…….……..………………………………..]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-16" x="5" y="135" width="526" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[2. Tên giao dịch……………………………………..………………………………………..……………………………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-19" x="5" y="151" width="527" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[3. Ngành nghề kinh doanh:……………………………………………………..………………………………..………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-20" x="5" y="167" width="527" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[4. Địa chỉ:………………………………………………………………………………………………………………….............]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-21" x="5" y="183" width="527" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[5. Điện thoại………………………….Fax:………………..…………….Email:……………………………………................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-28" x="5" y="199" width="527" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[6.Tên công ty đại chúng mà tổ chức có đại diện nắm chức danh quản lý …………………………………………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-29" x="5" y="215" width="527" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[7.Tên công ty đại chúng mà tổ chức sở hữu từ 05% vốn điều lệ trở lên…………………………………………...]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-42" x="5" y="534" width="526" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Tên và số điện thoại của người ủy thác (nếu có):............................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-44" x="5" y="552" width="153" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Chu kỳ nhận sao kê:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-45" x="5" y="568" width="152" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Phương thức nhận sao kê :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-46" x="5" y="584" width="183" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Phương thức nhận kết quả khớp lệnh:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-47" x="5" y="600" width="153" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Phương thức nhận thông báo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="5" y="718" width="197" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[I. Giao dịch trực tuyến qua VNDirect Online: 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-49" x="10" y="730" width="519" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[1. Nhân viên được ủy quyền đăng ký và thực hiện giao dịch:.....................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-52" x="253" y="717" width="55" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Có]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-53" x="400" y="717" width="55" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Không]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-69" x="211" y="555" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-70" x="211" y="570" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-71" x="211" y="586" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-72" x="211" y="602" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-73" x="377" y="555" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-74" x="377" y="569" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-75" x="377" y="586" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-76" x="377" y="603" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-60" x="223" y="552" width="55" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Tháng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-61" x="389" y="551" width="55" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Quý]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-62" x="223" y="583" width="148" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nhắn tin đến số……………........]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-63" x="389" y="584" width="128" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[KH gọi điện đến VNDirect]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-64" x="223" y="567" width="87" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Tại VNDirect]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-65" x="389" y="567" width="112" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-66" x="223" y="599" width="148" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nhắn tin đến số…………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-67" x="389" y="600" width="128" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Email...............................]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-77" x="21" y="508" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-79" x="210" y="508" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-68" x="33" y="505" width="149" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[TK Giao dịch Niêm yết và OTC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-69" x="222" y="505" width="136" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[TK Giao dịch OTC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-72" x="5" y="244" width="525" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[8. Họ và tên:…………………………………………..Chức vụ:………………..........….Quốc tịch.....................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-73" x="5" y="262" width="527" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[9. Số CMND/ hộ chiếu:…………………............ Ngày cấp:                             Ngày hết hạn:                             ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-74" x="5" y="280" width="524" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[10. Số điện thoại liên lạc………………………….…………………….…………………….…………………….…………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-75" x="5" y="298" width="129" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[11. Loại hình tổ chức]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-81" x="22" y="314" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-82" x="22" y="331" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-83" x="22" y="350" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-84" x="188" y="315" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-85" x="188" y="332" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-86" x="188" y="350" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-76" x="34" y="312" width="147" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Doanh nghiệp nhà nước]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-77" x="200" y="312" width="127" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Công ty liên doanh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-78" x="34" y="348" width="148" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Công ty trách nhiệm hữu hạn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-79" x="200" y="348" width="128" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Doanh nghiệp tư nhân]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-80" x="34" y="330" width="87" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Công ty cổ phần]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-81" x="200" y="330" width="139" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Công ty 100% vốn nhà nước]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-87" x="371" y="315" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-88" x="371" y="332" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-82" x="383" y="311" width="127" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Hợp tác xa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-83" x="383" y="329" width="139" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Loại hình khác]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-84" x="5" y="366" width="346" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[12. Các bản sao giấy tờ có công chứng hoặc xác nhận sao y bản chính:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-89" x="22" y="383" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-90" x="22" y="398" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-91" x="22" y="415" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-85" x="34" y="380" width="147" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Quyết định thành lập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-86" x="34" y="412" width="255" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Quyết định bổ nhiệm chức vụ của chủ tài khoản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-87" x="34" y="396" width="225" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giấy đăng kí kinh doanh(có công chứng)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-92" x="22" y="431" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-93" x="22" y="447" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-94" x="22" y="463" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-88" x="34" y="428" width="147" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giấy chứng nhận đăng ký thuế]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-89" x="34" y="460" width="323" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giấy tờ chứng minh chủ tài khoản là người đại diện trước pháp luật]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-90" x="34" y="444" width="264" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giấy chứng nhận đăng ký mẫu dấu(có công chứng)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-95" x="22" y="478" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-91" x="34" y="476" width="323" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Chứng minh thư/hộ chiếu của những người đăng ký chữ ký]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-96" x="21" y="523" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-97" x="210" y="523" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-92" x="33" y="520" width="149" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[TK không được ủy thác]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-93" x="222" y="520" width="136" height="18"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[TK được ủy thác]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-94" x="4" y="615" width="346" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Thẩm quyền ký giao dịch rút/chuyển tiền:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-98" x="21" y="632" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-99" x="21" y="647" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-95" x="33" y="629" width="423" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[01 Chữ ký thuộc nhóm chủ tài khoản + 01 chữ ký thuộc nhóm kế toán trưởng và dấu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-96" x="33" y="645" width="225" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[01 Chữ ký thuộc nhóm chủ tài khoản và dấu]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-100" x="289" y="647" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-97" x="301" y="645" width="225" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khác...................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-98" x="5" y="661" width="346" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Thẩm quyền ký giao dịch chứng khoán:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-101" x="22" y="678" width="8" height="8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement key="rectangle-102" x="22" y="693" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-99" x="34" y="675" width="423" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[01 Chữ ký thuộc nhóm chủ tài khoản + 01 chữ ký thuộc nhóm kế toán trưởng và dấu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-100" x="34" y="691" width="225" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[01 Chữ ký thuộc nhóm chủ tài khoản và dấu]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-103" x="290" y="693" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-101" x="302" y="691" width="225" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khác...................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-102" x="10" y="742" width="177" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[2. CMND...........................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-103" x="190" y="742" width="338" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[3. Chức vụ...................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-104" x="190" y="785" width="338" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[3. Chức vụ..................................................................................................]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-104" x="388" y="763" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-105" x="10" y="785" width="177" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[2. CMND...........................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-106" x="400" y="760" width="55" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Không]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="rectangle-105" x="241" y="763" width="8" height="8"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-107" x="253" y="760" width="55" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Có]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-108" x="5" y="761" width="197" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[II.Giao dịch qua điện thoại]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-109" x="10" y="773" width="519" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[1. Nhân viên được ủy quyền đăng ký và thực hiện giao dịch:........................................................................................]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="115" y="116" width="415" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{corpName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="99" y="133" width="422" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{transName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="127" y="149" width="402" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessLine}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="64" y="166" width="458" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="66" y="181" width="66" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="196" y="181" width="87" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="332" y="180" width="182" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="361" y="197" width="170" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{organization1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="334" y="213" width="195" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{organization2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="65" y="242" width="153" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fullName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="266" y="242" width="97" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{jobPosition}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="412" y="241" width="94" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nationality}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="108" y="260" width="93" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{idNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="253" y="262" width="83" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{receiveDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="392" y="261" width="139" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{expiredDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="126" y="277" width="346" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{accountPhone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-1" x="22" y="312" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-2" x="188" y="312" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-3" x="371" y="312" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-4" x="23" y="328" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-5" x="189" y="330" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-6" x="370" y="330" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-7" x="22" y="348" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-8" x="188" y="348" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{businessType6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-9" x="22" y="381" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-10" x="23" y="396" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-11" x="23" y="412" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-12" x="23" y="428" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-13" x="23" y="445" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-14" x="23" y="461" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-15" x="23" y="476" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{document7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-16" x="21" y="506" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{accListedStock}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-17" x="21" y="521" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-18" x="210" y="506" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{accOTC}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-19" x="210" y="521" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-20" x="211" y="552" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{statementMonthly}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-21" x="377" y="553" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{statementQuarterly}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-22" x="377" y="566" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{statementByEmail}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-23" x="377" y="584" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-24" x="377" y="600" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-25" x="211" y="568" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{statementDirectly}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-26" x="211" y="584" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-27" x="211" y="600" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-28" x="21" y="630" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-29" x="21" y="645" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-30" x="289" y="644" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-31" x="21" y="676" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-32" x="22" y="691" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-33" x="241" y="718" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{onlineTrading_YES}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-34" x="388" y="718" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{onlineTrading_NO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-35" x="388" y="761" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{teleTrading_NO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-36" x="241" y="760" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{teleTrading_YES}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-37" x="290" y="691" width="16" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fieldEmpty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="56" y="741" width="126" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{authorizedStaffID}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="253" y="740" width="258" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{authorizedStaffPosition}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="56" y="783" width="126" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{authorizedStaffIDTele}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="249" y="782" width="282" height="16"/>
+				<textElement>
+					<font pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{authorizedStaffPositionTele}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

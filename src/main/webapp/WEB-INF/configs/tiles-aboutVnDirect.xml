@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="about.vision" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/about/Vision.jsp" />
+	</definition>
+	<definition name="about.history" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/about/History.jsp" />
+		<put-list-attribute name="js">
+		    <add-attribute value="/js/web/thongTinVnDirect/jcarousellite_min.js" />
+			<add-attribute value="/js/web/thongTinVnDirect/vndirect.history.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="about.history1"
+		template="/WEB-INF/jsps/about/snippet/history/History_1.jsp">
+	</definition>
+	<definition name="about.board" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/about/BoardOfDirectors.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/boardOfDirectors.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Info.NewsOfVndirect" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/newsinfo/NewsOfVNDIRECT.jsp" />
+			<put-list-attribute name="js">
+            <add-attribute value="/js/web/thongTinVnDirect/vndirect.tinVndirect.js" />
+        </put-list-attribute>
+	</definition>
+
+	<definition name="Info.NewsDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/newsinfo/NewsDetail.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>

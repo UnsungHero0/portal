@@ -1,0 +1,5240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Messages>
+	<Footer>
+		<Copyright>
+			<![CDATA[<strong>Copyright &copy; VNDirect Securities Corporation. </strong> &nbsp;&nbsp;&nbsp;&nbsp;<font color="#08327A" style="font-weight:bold; font-size:11px; text-align:right;">Hotline: 1900-5454-09</font> <br/> Head Quarter: 01 Nguyen Thuong Hien – HaNoi - VN. Tel 844-39410622. Fax 844-39724600]]>
+		</Copyright>
+		<Copyright_Disclamer><![CDATA[<strong><a class="news" href="../../../online/brokerage/pages/ViewPage.do?uriParam=/home/Disclamer.html">Disclamer using website</a><strong>]]></Copyright_Disclamer>
+		<PowerBy>
+			<![CDATA[Power by:]]>
+		</PowerBy>
+		<Notice><![CDATA[
+			<p class="n-note"><img src="../../../portal/images/icons/flag_warn.gif" width="30" height="28" />
+			<b><u>ご注意.</u></b>
+			VNダイレクト証券が提供するウエブサイト上での情報はあくまでも参考情報です。いかなる目的、いかなる投資決定に際しても、根拠となるものではありません。VNダイレクト証券、そのパートナー、及びVNダイレクト証券のサービス提供者は、直接間接を問わず、ウエブから提供された情報が引き起こす、いかなる処分・いかなる損失に対しても、責任は負いません。
+			</p>
+		]]></Notice>
+	</Footer>
+	<SystemError>
+		<Lable>
+			<![CDATA[通知]]>
+		</Lable>
+		<Message>
+			<![CDATA[お客様はこの機能をご利用になることができません。再度この通知が出た場合には、VNダイレクト証券-電話番号84-4-9724688までお問い合わせください。]]>
+		</Message>
+	</SystemError>
+	<URL>
+		<AcrobatUrl>
+			<![CDATA[https://www.adobe.com/downloads/]]>
+		</AcrobatUrl>
+	</URL>
+	<InternalServerErr>
+		<![CDATA[The System is busy. Please contact with administrator <a href="mailto:support@ipa.com.vn">support@ipa.com.vn</a>]]>
+	</InternalServerErr>
+	<Paging>
+		<Lable><![CDATA[<font style="font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333333;">[{0}-{1}]</font> ]]></Lable>
+		<Next><![CDATA[&nbsp;&nbsp;<a href="javascript:void(0)"><img src="../../../portal/images/buttons/next_japan.gif" align="absmiddle" width="82" height="19" border="0" /></a>]]></Next>
+		<NextLink><![CDATA[&nbsp;&nbsp;<a href="javascript:goTo({0})"><img src="../../../portal/images/buttons/next_japan.gif" align="absmiddle" width="82" height="19" border="0" /></a>]]></NextLink>
+		<Previous><![CDATA[<a href="javascript:void(0)"><img src="../../../portal/images/buttons/pre_japan.gif" width="90" height="19" border="0" align="absmiddle" /></a>]]></Previous>
+		<PreviousLink><![CDATA[<a href="javascript:goTo({0})"><img src="../../../portal/images/buttons/pre_japan.gif" width="90" height="19" border="0" align="absmiddle" /></a> ]]></PreviousLink>
+		<VNDSNewsNext><![CDATA[<img src="../../../portal/images/buttons/next_japan.gif" align="absmiddle" width="82" height="19" border="0" />]]></VNDSNewsNext>
+		<VNDSNewsBack><![CDATA[<img src="../../../portal/images/buttons/pre_japan.gif" width="90" height="19" border="0" align="absmiddle" />]]></VNDSNewsBack>
+	</Paging>
+	<PagingForTrading>
+		<Lable>
+			<![CDATA[Showing {0} - {1} of {2} | ]]>
+		</Lable>
+		<FirstPrevious>
+			<![CDATA[<span style="color: gray;">First | Previous | </span>]]>
+		</FirstPrevious>
+		<FirstPreviousLink>
+			<![CDATA[<a href="javascript:goTo({0});">First</a> | <a href="javascript:goTo({1});">Previous</a> | ]]>
+		</FirstPreviousLink>
+		<NextLast>
+			<![CDATA[<span style="color: gray;">Next | Last</span>]]>
+		</NextLast>
+		<NextLastLink>
+			<![CDATA[<a href="javascript:goTo({0});">Next</a> | <a href="javascript:goTo({1});">Last</a>]]>
+		</NextLastLink>
+		<!-- In case not exist total page <<Next>>  -->
+		<NotExistTotalPage>
+			<NextLast><![CDATA[<span style="color: gray;">Next]]></NextLast>
+			<NextLastLink><![CDATA[<a href="javascript:goTo({0});">Next</a>]]></NextLastLink>
+		</NotExistTotalPage>
+	</PagingForTrading>
+	<PagingForPortlet>
+		<FirstPrevious><![CDATA[<td style="border:0px" align="left"><span style="color: gray; font-size: 120%;">&lt;&lt;&lt;</span></td>]]></FirstPrevious>
+		<FirstPreviousLink><![CDATA[<td style="border:0px" align="left"><a href="javascript:goTo({0});" style="color:blue; font-size: 120%;">&lt;&lt;&lt;</a></td>]]></FirstPreviousLink>
+		<NextLast><![CDATA[<td style="border:0px" align="right"><span style="color: gray; font-size: 120%;">&gt;&gt;&gt;</span></td>]]></NextLast>
+		<NextLastLink><![CDATA[<td style="border:0px" align="right"><a href="javascript:goTo({0});" style="color:blue; font-size: 120%;">&gt;&gt;&gt;</a></td>]]></NextLastLink>
+		<SccFirstPreviousLink><![CDATA[<td style="border:0px" align="left"><a href="javascript:goToScc({0});" style="color:blue; font-size: 120%;">&lt;&lt;&lt;</a></td>]]></SccFirstPreviousLink>
+		<SccNextLastLink><![CDATA[<td style="border:0px" align="right"><a href="javascript:goToScc({0});" style="color:blue; font-size: 120%;">&gt;&gt;&gt;</a></td>]]></SccNextLastLink>
+		
+	</PagingForPortlet>
+	<PagingForSearchNews>
+		<Lable><![CDATA[<font style="font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333333;">[{0}-{1}]</font> ]]></Lable>
+
+		<Link><![CDATA[<a href ='javascript:goTo({0})'><font style="font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333333;">{0}</font></a>&nbsp ]]></Link>
+		<Link_Selected><![CDATA[<a href ='javascript:goTo({0})'><font style="font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color: #333333;"><b>[{0}]</b></font></a>&nbsp; ]]></Link_Selected>
+
+		<Next><![CDATA[&nbsp;|<a href="javascript:void(0)"><img src="../../../portal/images/buttons/btn_last2.gif" align="absmiddle"  border="0" />&nbsp;</a>]]></Next>
+		<NextLink><![CDATA[&nbsp;|<a href="javascript:goTo({0})"><img src="../../../portal/images/buttons/btn_last2.gif" align="absmiddle"  border="0" /></a>]]></NextLink>
+
+		<Previous><![CDATA[<a href="javascript:void(0)"><img src="../../../portal/images/buttons/btn_first2.gif"  border="0" align="absmiddle" /></a>|]]></Previous>
+		<PreviousLink><![CDATA[<a href="javascript:goTo({0})"><img src="../../../portal/images/buttons/btn_first2.gif"  border="0" align="absmiddle" /></a>| ]]></PreviousLink>
+	</PagingForSearchNews>
+
+
+	<NewsDate>
+		<Sun>
+			<![CDATA[日曜日]]>
+		</Sun>
+		<Mon>
+			<![CDATA[月曜日]]>
+		</Mon>
+		<Tue>
+			<![CDATA[火曜日]]>
+		</Tue>
+		<Wed>
+			<![CDATA[水曜日]]>
+		</Wed>
+		<Thu>
+			<![CDATA[木曜日]]>
+		</Thu>
+		<Fri>
+			<![CDATA[金曜日]]>
+		</Fri>
+		<Sat>
+			<![CDATA[土曜日]]>
+		</Sat>
+	</NewsDate>
+	<Commons>
+		<Lables>
+		 <SupportOnline><![CDATA[Support Online]]></SupportOnline>
+			<Help>
+				<![CDATA[ヘルプ]]>
+			</Help>
+			<AboutUs>
+				<![CDATA[会社概要]]>
+			</AboutUs>
+			<ContactUs>
+				<![CDATA[お問い合わせ]]>
+			</ContactUs>
+			<Home>
+				<![CDATA[ホーム]]>
+			</Home>
+			<OpenAccount>
+				<![CDATA[口座開設]]>
+			</OpenAccount>
+			<Menu-Level1>
+				<Home>
+					<![CDATA[ホーム]]>
+				</Home>
+				<Account>
+					<![CDATA[口座]]>
+				</Account>
+				<Trading>
+					<![CDATA[オンライン取引]]>
+				</Trading>
+				<Quotes>
+					<![CDATA[証券情報]]>
+				</Quotes>
+				<Agent><![CDATA[Agent]]></Agent>
+			</Menu-Level1>
+			<Menu-Level3>
+				<EnterSymbol>
+					<![CDATA[銘柄コード入力]]>
+				</EnterSymbol>
+			</Menu-Level3>
+			<LoadingData><![CDATA[&nbsp;Loading Data....&nbsp;]]></LoadingData>
+		</Lables>
+		<Buttons>
+			<GO>
+				<![CDATA[&nbsp; GO &nbsp;]]>
+			</GO>
+			<SymbolLookup>
+				<![CDATA[銘柄コード検索]]>
+			</SymbolLookup>
+			<ApplyOnline>
+				<![CDATA[Apply Online Now]]>
+			</ApplyOnline>
+			<DrawChart>
+				<![CDATA[チャート作成]]>
+			</DrawChart>
+			<RemoveDrawChart>
+				<![CDATA[チャート削除]]>
+			</RemoveDrawChart>
+			<AddDrawChart>
+				<![CDATA[チャート追加＆作成]]>
+			</AddDrawChart>
+			<OK>
+				<![CDATA[]]>
+			</OK>
+			<Clear>
+				<![CDATA[削除]]>
+			</Clear>
+			<Reset>
+				<![CDATA[再作成]]>
+			</Reset>
+			<Cancel>
+				<![CDATA[キャンセル]]>
+			</Cancel>
+			<Back>
+				<![CDATA[前]]>
+			</Back>
+			<Save>
+				<![CDATA[保存]]>
+			</Save>
+			<Search>
+				<![CDATA[検索]]>
+			</Search>
+			<Edit>
+				<![CDATA[修正]]>
+			</Edit>
+			<Delete>
+				<![CDATA[削除]]>
+			</Delete>
+			<Remove>
+				<![CDATA[削除]]>
+			</Remove>
+			<Add-Symbol>
+				<![CDATA[銘柄コード追加]]>
+			</Add-Symbol>
+			<Headline>
+				<![CDATA[注目情報]]>
+			</Headline>
+			<CompanyEvent>
+				<![CDATA[企業ニュース]]>
+			</CompanyEvent>
+			<MessageBoard>
+				<![CDATA[掲示板]]>
+			</MessageBoard>
+			<PreviewMsg>
+				<![CDATA[投稿する前に記事を読む]]>
+			</PreviewMsg>
+			<PostMsg>
+				<![CDATA[投稿する]]>
+			</PostMsg>
+			<EditMsg>
+				<![CDATA[記事修正]]>
+			</EditMsg>
+			<MaijorHolder>
+				<![CDATA[主な株主]]>
+			</MaijorHolder>
+			<Profile>
+				<![CDATA[企業情報]]>
+			</Profile>
+			<InsiderTrans>
+				<![CDATA[インサイダー取引]]>
+			</InsiderTrans>
+			<KeyStatistic>
+				<![CDATA[ファンダメンタルズ統計]]>
+			</KeyStatistic>
+			<Snapshot>
+				<![CDATA[総括]]>
+			</Snapshot>
+			<SSCFilling>
+				<![CDATA[目論見書と財務諸表]]>
+			</SSCFilling>
+			<IncomeStatementForecast><![CDATA[&nbsp; Income Statement Forecast &nbsp;]]></IncomeStatementForecast>
+			<Competitor>
+				<![CDATA[競合他社]]>
+			</Competitor>
+			<Industry>
+				<![CDATA[業界情報]]>
+			</Industry>
+			<TechnicalIndicators>
+				<![CDATA[_Technical Indicators]]>
+			</TechnicalIndicators>
+			<Draw>
+				<![CDATA[チャート作成]]>
+			</Draw>
+			<Change-Password>
+				<![CDATA[パスワード変更]]>
+			</Change-Password>
+			<Logon>
+				<![CDATA[ログイン]]>
+			</Logon>
+			<Confirm>
+				<![CDATA[確認]]>
+			</Confirm>
+			<Continues>
+				<![CDATA[継続]]>
+			</Continues>
+			<Back1>
+				<![CDATA[戻る]]>
+			</Back1>
+			<Finish>
+				<![CDATA[完了]]>
+			</Finish>
+			<Download>
+				<![CDATA[ダウンロード]]>
+			</Download>
+			<Yes>
+				<![CDATA[はい]]>
+			</Yes>
+			<No>
+				<![CDATA[いいえ]]>
+			</No>
+			<View><![CDATA[ View ]]></View>
+		</Buttons>
+		<No-Record>
+			<![CDATA[No record found!]]>
+		</No-Record>
+		<No-Item-Selected>
+			<![CDATA[Please select at least one item to process!]]>
+		</No-Item-Selected>
+		<confirm_deletion>
+			<![CDATA[Do you really want to delete?]]>
+		</confirm_deletion>
+		<ForumStatus-Warn>
+			<![CDATA[This forum has not been published, please contact with administrator!]]>
+		</ForumStatus-Warn>
+		<WelcomeMsg>
+			<![CDATA[Welcome:]]>
+		</WelcomeMsg>
+		<ActionSuccess>
+			<![CDATA[Your account has been activated. You can now log on.]]>
+		</ActionSuccess>
+		<ChangePassSuccess><![CDATA[Your password has been changed successfully.]]></ChangePassSuccess>
+		<SaveSuccess><![CDATA[Save successful.]]></SaveSuccess>
+		<PrintThisPage><![CDATA[Print this page.]]></PrintThisPage>
+		<New><![CDATA[New!]]></New>
+		<Online><![CDATA[Online server center]]></Online>
+		<Logout><![CDATA[Logout]]></Logout>
+		<MyAccount><![CDATA[My Account]]></MyAccount>
+		<Hotline><![CDATA[Hotline 1900-5454-09]]></Hotline>
+	</Commons>
+	<Helps>
+		<KLLTGuideline>
+			<![CDATA[連続取引に関するご案内]]>
+		</KLLTGuideline>
+		<PlaceOrderGuideline>
+			<![CDATA[注文に関するご案内]]>
+		</PlaceOrderGuideline>
+	</Helps>
+	<Quotes>
+		<Infos>
+			<ListTopics>
+				<Forum_is_not_public>
+					<![CDATA[Forum of this company is not public!]]>
+				</Forum_is_not_public>
+			</ListTopics>
+		</Infos>
+		<Common>
+			<TradingTime>
+				<Market>
+					<![CDATA[市場]]>
+				</Market>
+				<Is_Close>
+					<![CDATA[取引終了]]>
+				</Is_Close>
+				<Open_In>
+					<![CDATA[取引開始まで]]>
+				</Open_In>
+				<Close_In>
+					<![CDATA[取引終了まで]]>
+				</Close_In>
+				<Hour_And>
+					<![CDATA[時と]]>
+				</Hour_And>
+				<Minutes>
+					<![CDATA[分]]>
+				</Minutes>
+			</TradingTime>
+		</Common>
+		<Lables>
+			<Menu-Level2>
+				<VNMarkets>
+					<![CDATA[証券市場]]>
+				</VNMarkets>
+				<Quotes>
+					<![CDATA[証券]]>
+				</Quotes>
+				<IPOCenter>
+					<![CDATA[証券情報]]>
+				</IPOCenter>
+				<Charts>
+					<![CDATA[テクニカルチャート]]>
+				</Charts>
+				<HistoricalPrice>
+					<![CDATA[株価検索]]>
+				</HistoricalPrice>
+				<MarketStatistic>
+					<![CDATA[市場統計]]>
+				</MarketStatistic>
+				<AnalystResearch>
+					<![CDATA[分析リポート]]>
+				</AnalystResearch>
+				<TradingIdeas>
+					<![CDATA[&nbsp; Trading Ideas &nbsp;]]>
+				</TradingIdeas>
+				<ResearchCenter><![CDATA[&nbsp; Research Center &nbsp;]]></ResearchCenter>
+				<VistaDirect><![CDATA[&nbsp; Vista Direct &nbsp;]]></VistaDirect>
+			</Menu-Level2>
+			<Menu-Level3>
+				<NewsInfo>
+					<Company>
+						<![CDATA[会社]]>
+					</Company>
+					<Ownership>
+						<![CDATA[所有権]]>
+					</Ownership>
+					<NewsInfo>
+						<![CDATA[情報公開]]>
+					</NewsInfo>
+					<Charts>
+						<![CDATA[テクニカルチャート]]>
+					</Charts>
+					<Financial>
+						<![CDATA[財務諸表]]>
+					</Financial>
+					<AnalystResearch>
+						<![CDATA[分析リポート]]>
+					</AnalystResearch>
+				</NewsInfo>
+			</Menu-Level3>
+			<ListTopic>
+				<Title>
+					<![CDATA[List in Topics]]>
+				</Title>
+				<List_in_Topics>
+					<![CDATA[List in Topics]]>
+				</List_in_Topics>
+				<List_As_Individual_Messages>
+					<![CDATA[List as Individual Messages]]>
+				</List_As_Individual_Messages>
+				<Start_New_Topic>
+					<![CDATA[Start New Topic]]>
+				</Start_New_Topic>
+				<Hearder1>
+					<![CDATA[Topics]]>
+				</Hearder1>
+				<Hearder2>
+					<![CDATA[Replies]]>
+				</Hearder2>
+				<Hearder3>
+					<![CDATA[Latest Post]]>
+				</Hearder3>
+			</ListTopic>
+			<ListAsInvidualMsg>
+				<Title>
+					<![CDATA[List As Invidual Message]]>
+				</Title>
+				<Hearder1>
+					<![CDATA[Subject]]>
+				</Hearder1>
+				<Hearder2>
+					<![CDATA[Author]]>
+				</Hearder2>
+				<Hearder3>
+					<![CDATA[Time Posted]]>
+				</Hearder3>
+			</ListAsInvidualMsg>
+			<NewTopic>
+				<Title>
+					<![CDATA[Create a new topic]]>
+				</Title>
+				<NewMsg>
+					<![CDATA[&nbsp;New Message  &nbsp;]]>
+				</NewMsg>
+				<User>
+					<![CDATA[User:]]>
+				</User>
+				<Subject>
+					<![CDATA[Subject:]]>
+				</Subject>
+				<TypeMessage>
+					<![CDATA[Type Message:]]>
+				</TypeMessage>
+				<BWarnMessage>
+					<![CDATA[Long-Term Sentiment Disclousure]]>
+				</BWarnMessage>
+				<NWarnMessage>
+					<![CDATA[sentiment will be displayed along with your message.]]>
+				</NWarnMessage>
+				<SBSentiment>
+					<![CDATA[Strong Buy]]>
+				</SBSentiment>
+				<BSentiment>
+					<![CDATA[Buy]]>
+				</BSentiment>
+				<HSentiment>
+					<![CDATA[Hold]]>
+				</HSentiment>
+				<SSentiment>
+					<![CDATA[Sell]]>
+				</SSentiment>
+				<SSSentiment>
+					<![CDATA[Strong Sell]]>
+				</SSSentiment>
+				<DSentiment>
+					<![CDATA[Do Not Disclose]]>
+				</DSentiment>
+			</NewTopic>
+			<ViewDetailMsg>
+				<Title>
+					<![CDATA[View Detail Message]]>
+				</Title>
+				<PreTopic>
+					<![CDATA[&lt; Previous Topic]]>
+				</PreTopic>
+				<NextTopic>
+					<![CDATA[Next Topic &gt;]]>
+				</NextTopic>
+				<MsgDetail>
+					<![CDATA[&nbsp; Message Detail &nbsp;]]>
+				</MsgDetail>
+				<PreMsg>
+					<![CDATA[&lt;&lt; Previous Message]]>
+				</PreMsg>
+				<NextMsg>
+					<![CDATA[Next Message &gt;&gt;]]>
+				</NextMsg>
+				<MsgInTopic>
+					<![CDATA[&nbsp; Message In Topic &nbsp;]]>
+				</MsgInTopic>
+				<Reply>
+					<![CDATA[Reply]]>
+				</Reply>
+				<Header1>
+					<![CDATA[Subject]]>
+				</Header1>
+				<Header2>
+					<![CDATA[Author]]>
+				</Header2>
+				<Header3>
+					<![CDATA[Time Posted]]>
+				</Header3>
+			</ViewDetailMsg>
+			<ReplyMsg>
+				<Title>
+					<![CDATA[Reply Message]]>
+				</Title>
+				<ReplyMsg>
+					<![CDATA[&nbsp;Reply Message  &nbsp;]]>
+				</ReplyMsg>
+				<OrgMsg>
+					<![CDATA[&nbsp; Original Message &nbsp;]]>
+				</OrgMsg>
+			</ReplyMsg>
+			<PreviewMsg>
+				<Title>
+					<![CDATA[Preview Message]]>
+				</Title>
+				<PreviewNewTopic>
+					<![CDATA[&nbsp; Preview: Start New Topic &nbsp;]]>
+				</PreviewNewTopic>
+				<WarnMsg>
+					<![CDATA[This is how your entry will appear after it's posted.]]>
+				</WarnMsg>
+			</PreviewMsg>
+			<PreviewReplyMsg>
+				<Title>
+					<![CDATA[Preview Reply Message]]>
+				</Title>
+				<PreviewReplyMsg>
+					<![CDATA[&nbsp; Preview: Reply Message &nbsp;]]>
+				</PreviewReplyMsg>
+			</PreviewReplyMsg>
+			<KeyStatistic>
+				<Title>
+					<![CDATA[ファンダメンタルズ統計]]>
+				</Title>
+				<ValidationMeasure>
+					<![CDATA[財務指数]]>
+				</ValidationMeasure>
+				<KeyRatio>
+					<![CDATA[基本指数]]>
+				</KeyRatio>
+				<FinancialHighlights>
+					<![CDATA[財務諸表(要約)]]>
+				</FinancialHighlights>
+				<TradingInfo>
+					<![CDATA[株主に関する情報]]>
+				</TradingInfo>
+				<StockPriceHistory>
+					<![CDATA[株価推移]]>
+				</StockPriceHistory>
+			</KeyStatistic>
+			<Profile>
+				<IndexMembership>
+					<![CDATA[：証券取引所のメンバー]]>
+				</IndexMembership>
+				<CompanyOverview>
+					<![CDATA[会社概要]]>
+				</CompanyOverview>
+				<CompanyOfficers>
+					<![CDATA[執行役員会]]>
+				</CompanyOfficers>
+				<Details>
+					<![CDATA[詳細]]>
+				</Details>
+				<NameAddress>
+					<![CDATA[社名と住所]]>
+				</NameAddress>
+				<Profile>
+					<![CDATA[企業プロファイル]]>
+				</Profile>
+			</Profile>
+			<MaijorHolders>
+				<Title>
+					<![CDATA[主な株主]]>
+				</Title>
+				<Breakdown>
+					<![CDATA[株主構成]]>
+				</Breakdown>
+				<MaijorHolders>
+					<![CDATA[大口株主]]>
+				</MaijorHolders>
+			</MaijorHolders>
+			<InsiderTransactions>
+				<Title>
+					<![CDATA[インサイダー取引]]>
+				</Title>
+				<InsiderTrans>
+					<![CDATA[インサイダー取引]]>
+				</InsiderTrans>
+			</InsiderTransactions>
+			<Snapshot>
+				<Title>
+					<![CDATA[Snapshot]]>
+				</Title>
+				<ExtendedHours>
+					<![CDATA[取引終了：終値]]>
+				</ExtendedHours>
+				<Change>
+					<![CDATA[変更]]>
+				</Change>
+				<MarketsNews>
+					<![CDATA[証券情報]]>
+				</MarketsNews>
+				<AnalystResearch>
+					<![CDATA[分析リポート]]>
+				</AnalystResearch>
+				<Reatimes><![CDATA[Get Free Reatimes Quotes]]></Reatimes>
+				<HtmlVersion><![CDATA[DirectBoard Version]]></HtmlVersion>		
+				<JavaVersion><![CDATA[Java Version]]></JavaVersion>
+				<AdvanceChart><![CDATA[Advanced Chart]]></AdvanceChart>
+				<ToMyPorfolios><![CDATA[Add to My Porfolios]]></ToMyPorfolios>
+				<QuickLinks><![CDATA[QUICK LINKS]]></QuickLinks>
+				<HistoricalQuote><![CDATA[Historical Quote]]></HistoricalQuote>
+				<IndustryPeers><![CDATA[View Industry Peers]]></IndustryPeers>
+				<MyPortfolios><![CDATA[View My Portfolios]]></MyPortfolios>
+				<MyBalances><![CDATA[View My Balances]]></MyBalances>
+				<MyOrders><![CDATA[View My Orders]]></MyOrders>
+				<RelatedCompany><![CDATA[RELATED COMPANY]]></RelatedCompany>
+				<Last><![CDATA[Last]]></Last>
+				<Company><![CDATA[Company]]></Company>
+				<Today><![CDATA[Today's]]></Today>
+				<Chg><![CDATA[Chg]]></Chg>
+				<MoreCompany><![CDATA[More Company >>>]]></MoreCompany>
+				<Sectors>
+					<![CDATA[分野：]]>
+				</Sectors>
+				<Industry>
+					<![CDATA[産業：]]>
+				</Industry>
+				<MarketCap><![CDATA[Market Cap]]></MarketCap>
+				<Notice><![CDATA[* EPS & P/E: Trailing EPS and Trailling P/E]]></Notice>
+			</Snapshot>
+			<VNMarket>
+				<OverView>
+					<![CDATA[各市場]]>
+				</OverView>
+				<HistoricalPrice>
+					<![CDATA[株価検索]]>
+				</HistoricalPrice>
+				<Fromdate>
+					<![CDATA[日付から]]>
+				</Fromdate>
+				<todate>
+					<![CDATA[日付まで]]>
+				</todate>
+				<Date>
+					<![CDATA[Date]]>
+				</Date>
+				<Market>
+					<![CDATA[Market]]>
+				</Market>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<Open>
+					<![CDATA[始値]]>
+				</Open>
+				<High>
+					<![CDATA[ストップ高]]>
+				</High>
+				<Low>
+					<![CDATA[ストップ安]]>
+				</Low>
+				<Close>
+					<![CDATA[終値]]>
+				</Close>
+				<Volume>
+					<![CDATA[売買高]]>
+				</Volume>
+				<MarketsSummary>
+					<![CDATA[市況]]>
+				</MarketsSummary>
+				<HASTCActives>
+					<![CDATA[HNX Actives]]>
+				</HASTCActives>
+				<HOSTCActives>
+					<![CDATA[HOSE Actives]]>
+				</HOSTCActives>
+				<OTCActives>
+					<![CDATA[OTC Actives]]>
+				</OTCActives>
+				<OTC>
+					<![CDATA[OTC]]>
+				</OTC>
+				<TodayChange>
+					<![CDATA[Today's Change]]>
+				</TodayChange>
+				<Highest><![CDATA[Highest]]></Highest>
+				<Lowest><![CDATA[Lowest]]></Lowest>
+				<AveragePrice><![CDATA[Avg Price]]></AveragePrice>
+				<OTCMarketInDay><![CDATA[Daily OTC News]]></OTCMarketInDay>
+				<PriceChange>
+					<![CDATA[Price Change]]>
+				</PriceChange>
+				<Price>
+					<![CDATA[Price]]>
+				</Price>
+				<HOSTC>
+					<![CDATA[ホーチミン証券取引所]]>
+				</HOSTC>
+				<IPOCenterNews>
+					<![CDATA[株式会社化及び上場企業の情報]]>
+				</IPOCenterNews>
+				<MarketNews>
+					<![CDATA[証券情報]]>
+				</MarketNews>
+				<MarketUpdate>
+					<![CDATA[市場情報更新(アップデート)]]>
+				</MarketUpdate>
+				<BasicPrice>
+					<![CDATA[Basic Price]]>
+				</BasicPrice>
+				<OTCPrice>
+					<![CDATA[Best Bid]]>
+				</OTCPrice>
+				<OTCChange>
+					<![CDATA[Best Ask]]>
+				</OTCChange>
+				<TransDate>
+					<![CDATA[取引日]]>
+				</TransDate>
+				<Change>
+					<![CDATA[変更]]>
+				</Change>
+				<NoticeMsg>
+					<![CDATA[注意：上記の株価情報は1万株未満の株式数に適用され、市場の変動に合わせていつでも更新される可能性があります。取引を行う場合は、電話番号84-4-9724568まで、お問い合わせください。]]>
+				</NoticeMsg>
+				<DownloadMarketNews><![CDATA[VNDirect's Analyses]]></DownloadMarketNews>
+				<Date><![CDATA[ Date ]]></Date>
+				<MarketUpdate><![CDATA[ Market update ]]></MarketUpdate>
+				<FileFormat><![CDATA[ Format file .pdf ]]></FileFormat>
+				<VNDirectNews><![CDATA[ VNDirect news ]]></VNDirectNews>
+				<OTC-Commitment><![CDATA[<font color="red"> *OTC市場の銘柄のお取引をご希望のお客様はこちらまでご連絡ください(<font color="red">043.9410622・内線5508 & 5506) </font>]]></OTC-Commitment>
+				<Chart-Description><![CDATA[<span style="color: red;">*VNダイレクト証券のテクニカルチャートでは、調整後の株価を使用しています。</span>]]></Chart-Description>
+				<Latest-News><![CDATA[LATEST HEADERLINES]]></Latest-News>
+				<More-Latest-Headerlines><![CDATA[More Latest Headerlines &raquo;]]></More-Latest-Headerlines>
+				<Market-News><![CDATA[Market News]]></Market-News>
+				<PublicNews><![CDATA[Public News]]></PublicNews>
+				<IPO-News><![CDATA[IPO News]]></IPO-News>
+				<Public-Info><![CDATA[Public Info]]></Public-Info>
+				<Company-Events><![CDATA[Company Events]]></Company-Events>
+				<Published-Document><![CDATA[Published Document]]></Published-Document>
+				<Comentary><![CDATA[Comentary]]></Comentary>
+				<Last><![CDATA[Last]]></Last>
+				<Company><![CDATA[Company]]></Company>
+				<VNDirectStreamingQuotes><![CDATA[VNDirect Streaming Quotes]]></VNDirectStreamingQuotes>
+				<Search-title><![CDATA[SEARCH NEWS IN VNDIRECT]]></Search-title>
+				<Search-label><![CDATA[Enter Keyword to search in VNDirect.com.vn]]></Search-label>
+				<TradingIdeas><![CDATA[VISTA DIRECT]]></TradingIdeas>
+				<LearnMore><![CDATA[LEARN MORE]]></LearnMore>
+				<Desc-Stock-Screen><![CDATA[Vista Direct - Công cụ đắc lực của Nhà Đầu tư năng động]]></Desc-Stock-Screen>
+				<Description-Stock-Screen><![CDATA[<b>Vista Direct</b> là phần mềm tích hợp được các dữ liệu cập nhật nhất, đầy đủ nhất, nhanh nhất giúp các nhà đầu tư quan sát và phân tích thị trường Chứng khoán theo thời gian thực]]></Description-Stock-Screen>
+				<Recent-Quotes><![CDATA[RECENT QUOTES]]></Recent-Quotes>
+				<Most-Popular><![CDATA[VNDirect's Most Popular ]]></Most-Popular>
+				<Today><![CDATA[Today's]]></Today>
+				<Chg><![CDATA[Chg]]></Chg>
+				<More><![CDATA[More »]]></More>
+				<Stock-Research-Wizard><![CDATA[STOCK RESEARCH WIZARD]]></Stock-Research-Wizard>
+				<Description-Stock-Research><![CDATA[<strong>Using guided Approach, VNDirect's stock research wizard make it easy to research stock.</strong><p/>Enter the symbol and click GO <p/>]]></Description-Stock-Research>
+				<Recent-Quote-Tooltip><![CDATA[VNDirect most popular tracks the most frequently requested symbols by VNDirect users each day ]]></Recent-Quote-Tooltip>
+				<Recent-Search-Tooltip><![CDATA[VNDirect most popular tracks the most frequently requested symbols by VNDirect users each day ]]></Recent-Search-Tooltip>
+				<MostRecent-Search><![CDATA[Recent Search]]></MostRecent-Search>
+				<KLGD><![CDATA[KLGD]]></KLGD>
+				<GTGD><![CDATA[GTGD:]]></GTGD>
+				<Title><![CDATA[Title]]></Title>
+				<Download><![CDATA[Download]]></Download>
+                <OtherNewsHeader> <![CDATA[VNDirect's Occasional Reports]]></OtherNewsHeader>  
+                <DailyNewsHeader> <![CDATA[VNDirect's Daily Report]]></DailyNewsHeader> 
+
+				<FutureStock><![CDATA[Giao dịch UPCOMdirect]]></FutureStock>
+				<OTCTrading><![CDATA[Đặt lệnh mua bán cổ phiếu OTC]]></OTCTrading>
+				<OTCPriceBoard><![CDATA[Bảng giá UPCOMdirect Board]]></OTCPriceBoard>
+				<WaringMsg4NotLogin><![CDATA[Vui lòng đăng nhập vào tài khoản của bạn để xem được nội dung chi tiết]]></WaringMsg4NotLogin>
+				<VNDSNoticeMsg><![CDATA[Xem video nóng Bình luận & nhận định thị trường hàng ngày sau phiên giao dịch.<br>Đọc vài tải các báo cáo phân tích mới nhất của các công ty do các chuyên gia VNDirect thực hiện.<br>Đăng nhập vào tài khoản khách hàng để xem các bài bình luận mới nhất]]></VNDSNoticeMsg>
+				<ViewMarketVideo><![CDATA[(đăng nhập để <a href="http://www.vndirect.com.vn/forward.do?fw=/online/brokerage/research/MarketNews.do" style="color:blue; text-decoration:underline;">xem video</a> mới nhất)]]></ViewMarketVideo>
+			</VNMarket>
+			<Alert>
+			  <Customize_Alert><![CDATA[Customize your alert and delivery options ]]></Customize_Alert>
+			  <Alert_Message><![CDATA[ Get notified when a stock rises or falls according to criteria you specify.
+										Enter up to 20 symbols to the right, along with your desired triggers for each symbol.
+										 HOSE and HNX markets are supported. Be sure to click Save Settings when you're done. ]]>
+								</Alert_Message>
+			  <Check_All><![CDATA[ Check All ]]></Check_All>
+			  <High_Target><![CDATA[ High Target ]]></High_Target>
+			  <Low_Target><![CDATA[ Low Target ]]></Low_Target>
+			  <Daily_up><![CDATA[ Daily % up ]]></Daily_up>
+			  <Daily_Down><![CDATA[ Daily % Down ]]></Daily_Down>
+			  <PE_High_Target><![CDATA[ PE High Target ]]></PE_High_Target>
+			  <PE_Low_Target><![CDATA[ PE Low Target ]]></PE_Low_Target>
+			  <Volume><![CDATA[ Volume ]]></Volume>
+			  <Symbol><![CDATA[ Symbol ]]></Symbol>
+			  <Delete><![CDATA[ Delete ]]></Delete>
+			  <Add_more_symbols><![CDATA[ Add more symbols ]]></Add_more_symbols>
+			  <Deliver_to><![CDATA[ Deliver to: ]]></Deliver_to>
+			  <Email><![CDATA[ Email ]]></Email>
+			  <Mobile><![CDATA[ Mobile ]]></Mobile>
+			  <Add_an_Email_address><![CDATA[ Add an Email address ]]></Add_an_Email_address>
+			  <Add_More_Mobile_phone><![CDATA[ Add More Mobile phone ]]></Add_More_Mobile_phone>
+			  <Deliver_via><![CDATA[ Deliver via ]]></Deliver_via>
+			  <Create_Alert><![CDATA[ Create Alert ]]></Create_Alert>
+			  <Symbol_lookup><![CDATA[ Symbol lookup ]]></Symbol_lookup>
+			  <View_Portfolios><![CDATA[ View Portfolios ]]></View_Portfolios>
+			  <Save_Settings><![CDATA[ Save Settings ]]></Save_Settings>
+			  <Edit><![CDATA[ Edit ]]></Edit>
+			  <Add><![CDATA[ Add ]]></Add>
+			  <step_one><![CDATA[ Step 1: Choose an Alert ]]></step_one>
+			  <step_two><![CDATA[ Step 2: Select Options ]]></step_two>
+			  <Stock_Alerts><![CDATA[ Stock Alerts ]]></Stock_Alerts>
+			  <SaveSuccess><![CDATA[ Save successful. ]]></SaveSuccess>
+			  <Add><![CDATA[ Add ]]></Add>
+			  <Edit><![CDATA[ Edit ]]></Edit>
+			  <Stock_watch><![CDATA[ Stock watch ]]></Stock_watch>
+			  <Alert_Show><![CDATA[ Alert ]]></Alert_Show>
+			</Alert>
+			
+			<MarketStatistic>
+				<TradingStatistics>
+					<![CDATA[取引結果]]>
+				</TradingStatistics>
+				<ForeignTrading>
+					<![CDATA[海外投資家の取引]]>
+				</ForeignTrading>
+				<HistoricalPrice>
+					<![CDATA[最高値]]>
+				</HistoricalPrice>
+				<Market>
+					<![CDATA[市場を選択する]]>
+				</Market>
+				<Date>
+					<![CDATA[日]]>
+				</Date>
+				<DownloadToSpreadsheet>
+					<![CDATA[Download To Spreadsheet]]>
+				</DownloadToSpreadsheet>
+			</MarketStatistic>
+			<TradingStatistics>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<Open>
+					<![CDATA[始値]]>
+				</Open>
+				<High>
+					<![CDATA[最高値]]>
+				</High>
+				<Low>
+					<![CDATA[最安値]]>
+				</Low>
+				<Average>
+					<![CDATA[平均値]]>
+				</Average>
+				<Close>
+					<![CDATA[終値]]>
+				</Close>
+				<Net>
+					<![CDATA[前日比]]>
+				</Net>
+				<BidOrder>
+					<![CDATA[買い注文]]>
+				</BidOrder>
+				<BidVolume>
+					<![CDATA[買い数量]]>
+				</BidVolume>
+				<OfferOrder>
+					<![CDATA[売り注文]]>
+				</OfferOrder>
+				<OfferVolume>
+					<![CDATA[売り数量]]>
+				</OfferVolume>
+				<Change>
+					<![CDATA[売買注文数の差]]>
+				</Change>
+				<TotalVolume>
+					<![CDATA[売買高]]>
+				</TotalVolume>
+				<TotalValue>
+					<![CDATA[売買代金]]>
+				</TotalValue>
+				<TransDate><![CDATA[Trans Date]]></TransDate>
+			</TradingStatistics>
+			<ForeignTrading>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<TotalRoom>
+					<![CDATA[外国人保有枠]]>
+				</TotalRoom>
+				<CurrentRoom>
+					<![CDATA[外国人購入可能株式数]]>
+				</CurrentRoom>
+				<BuyingVolume>
+					<![CDATA[外国人買成立]]>
+				</BuyingVolume>
+				<SellingVolume>
+					<![CDATA[外国人売成立]]>
+				</SellingVolume>
+				<Bids>
+					<![CDATA[外国人買注文]]>
+				</Bids>
+				<Value>
+					<![CDATA[売買代金]]>
+				</Value>
+				<Offers>
+					<![CDATA[外国人売注文]]>
+				</Offers>
+				<Trading>
+					<![CDATA[% Trading]]>
+				</Trading>
+				<TradingDate><![CDATA[Trading Date]]></TradingDate>
+			</ForeignTrading>
+			<HistoricalPrice>
+				<Open>
+					<![CDATA[始値]]>
+				</Open>
+				<High>
+					<![CDATA[高値]]>
+				</High>
+				<Low>
+					<![CDATA[安値]]>
+				</Low>
+				<Close>
+					<![CDATA[終値]]>
+				</Close>
+				<Volume>
+					<![CDATA[売買高]]>
+				</Volume>
+				<AdjustPrice>
+					<![CDATA[調整終値]]>
+				</AdjustPrice>
+				<AveragePrice>
+					<![CDATA[平均株価]]>
+				</AveragePrice>
+				<TransDate>
+					<![CDATA[日付]]>
+				</TransDate>
+				<Change>
+					<![CDATA[騰落(+/-％))]]>
+				</Change>
+				<Description><![CDATA[<span style="color: red;">ご注意ください：調整された終値とは、株式分割等の権利落ち日を迎え、株価調整済みの株価を指します。VNダイレクト証券のテクニカルチャートでは、調整後の株価を使用しています。</span>]]></Description>
+			</HistoricalPrice>
+			<NewsForSymbol>
+				<MarketsNews>
+					<![CDATA[  企業情報  ]]>
+				</MarketsNews>
+				<VNDS-news><![CDATA[VNDirect News]]></VNDS-news>
+				<Event><![CDATA[Company News]]></Event>
+				<News><![CDATA[Public Info]]></News>
+				<IPO-NEWS><![CDATA[IPO Center]]></IPO-NEWS>
+				<MARKET-NEWS><![CDATA[VNDirect's Daily Report]]></MARKET-NEWS>
+				<OTC-NEWS><![CDATA[OTC News]]></OTC-NEWS>
+				<VNDS-RESEARCH-NEWS><![CDATA[VNDirect's Occasional Report]]></VNDS-RESEARCH-NEWS>
+				<PUBLIC-INFO><![CDATA[Market News]]></PUBLIC-INFO>
+			</NewsForSymbol>
+			<CompanyEvents>
+				<CompanyEvents>
+					<![CDATA[  企業情報  ]]>
+				</CompanyEvents>
+			</CompanyEvents>
+			<AnalystResearch>
+				<AnalystResearchReports>
+					<![CDATA[&nbsp; Analyst Research & Reports &nbsp;]]>
+				</AnalystResearchReports>
+				<ResearchReports>
+					<![CDATA[Research Reports]]>
+				</ResearchReports>
+				<AdditionalInfo>
+					<![CDATA[Additional Information]]>
+				</AdditionalInfo>
+				<Nofile>
+					<![CDATA[No file]]>
+				</Nofile>
+				<Symbol>
+					<![CDATA[Symbol]]>
+				</Symbol>
+				<ViewDetail>
+					<Title>
+						<![CDATA[Title]]>
+					</Title>
+					<Symbol>
+						<![CDATA[Symbol(s)]]>
+					</Symbol>
+					<Contributor>
+						<![CDATA[Contributor ]]>
+					</Contributor>
+					<Author>
+						<![CDATA[Author ]]>
+					</Author>
+					<Released-Date>
+						<![CDATA[Released Date ]]>
+					</Released-Date>
+					<Abstract>
+						<![CDATA[Abstract ]]>
+					</Abstract>
+					<Research-File>
+						<![CDATA[Research File ]]>
+					</Research-File>
+					<Language>
+						<![CDATA[Language  &nbsp;]]>
+					</Language>
+				</ViewDetail>
+			</AnalystResearch>
+			<IPOCenter>
+				<IPOCenterNews>
+					<![CDATA[株式会社化及び上場企業の情報]]>
+				</IPOCenterNews>
+				<CenterNews>
+					<![CDATA[公開情報]]>
+				</CenterNews>
+				<PublicInfo>
+					<![CDATA[市場ニュース]]>
+				</PublicInfo>
+				<VNDSNews>
+					<![CDATA[VNダイレクトのニュース]]>
+				</VNDSNews>
+				<MarketCalendar>
+					<![CDATA[イベントカレンダー]]>
+				</MarketCalendar>
+				<IndustryBrowser><![CDATA[Industry Browser]]></IndustryBrowser>
+			</IPOCenter>
+
+				<SearchNews>
+			<Detail><![CDATA[More detail]]></Detail>
+			  <SearchResult><![CDATA[Search Result]]></SearchResult>
+			  <SearchAtVNDS><![CDATA[Finding information at VNDirect:]]></SearchAtVNDS>
+			   <SearchNewsMess><![CDATA[Search News]]></SearchNewsMess>
+			   <ResultByKeyword><![CDATA[Result by keyword ]]></ResultByKeyword>
+			</SearchNews>
+
+			<BasicChartForSymbol>
+				<NAME>
+					<![CDATA[会社名]]>
+				</NAME>
+				<LASTTRADE>
+					<![CDATA[最終取引]]>
+				</LASTTRADE>
+				<CHANGE>
+					<![CDATA[変更]]>
+				</CHANGE>
+				<VOLUME>
+					<![CDATA[数量]]>
+				</VOLUME>
+				<TIME>
+					<![CDATA[時間]]>
+				</TIME>
+			</BasicChartForSymbol>
+			<SearchSymbol>
+				<SelectSymbols>
+					<![CDATA[銘柄コード選択]]>
+				</SelectSymbols>
+				<StartWith>
+					<![CDATA[" キーワード "]]>
+				</StartWith>
+				<Contains>
+					<![CDATA[含めて]]>
+				</Contains>
+				<StockExchange>
+					<![CDATA[証券取引所]]>
+				</StockExchange>
+				<Search>
+					<![CDATA[検索]]>
+				</Search>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<CompanyName>
+					<![CDATA[会社名]]>
+				</CompanyName>
+				<CompanyFullName>
+					<![CDATA[会社名のフルネーム]]>
+				</CompanyFullName>
+				<Sector>
+					<![CDATA[業種]]>
+				</Sector>
+				<ChartAddSymbol>
+					<![CDATA[銘柄コード追加]]>
+				</ChartAddSymbol>
+				<ChartRemoveSymbol>
+					<![CDATA[銘柄コード削除]]>
+				</ChartRemoveSymbol>
+			</SearchSymbol>
+			<ChartAddSymbol>
+				<AddDrawChart>
+					<![CDATA[銘柄コード追加 &  チャート作成]]>
+				</AddDrawChart>
+				<Lookup>
+					<![CDATA[検索]]>
+				</Lookup>
+			</ChartAddSymbol>
+			<ChartRemoveSymbol>
+				<RemoveDrawChart>
+					<![CDATA[銘柄コード削除 &  チャート作成]]>
+				</RemoveDrawChart>
+			</ChartRemoveSymbol>
+			<ChartEMAIndicator>
+				<EMA>
+					<![CDATA[&nbsp;Exponential Moving Averages (EMA)]]>
+				</EMA>
+				<Line1>
+					<![CDATA[Line 1 Period]]>
+				</Line1>
+				<Line2>
+					<![CDATA[Line 2 Period]]>
+				</Line2>
+				<Line3>
+					<![CDATA[Line 3 Period]]>
+				</Line3>
+				<Description>
+					<![CDATA[
+					<div>You have the option to chart up to 3 Exponential   Moving Averages (EMAs) at the same time. The 3 input boxes above represent the   periods of the Exponential Moving Averages you wish to chart </div>
+					<div>If you are charting on minute, daily or weekly   periods, the EMA periods you indicate above will be for minutes, days and weeks,   respectively. An EMA differs slightly from a Simple Moving Average (SMA) in that   it gives extra weight to more recent price data. This allows investors to track   and respond quickly to recent price trends that might take more time to appear   in an SMA. The formula for an EMA is: EMA = price today * K + EMA yest * (1-K)   where K = 2 / (N+1). Like an SMA, it smooths out a data series, making it easier   to spot trends. </div>
+					]]>
+				</Description>
+			</ChartEMAIndicator>
+			<ChartBBandsIndicator>
+				<BBands>
+					<![CDATA[Bollinger Bands (BBands)]]>
+				</BBands>
+				<Period>
+					<![CDATA[Period ]]>
+				</Period>
+				<Deviation>
+					<![CDATA[Deviation  ]]>
+				</Deviation>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the period and   number of standard deviations used to calculate the Bollinger Bands above. The   default period and deviations are set to 20 and 2, respectively. </div>
+					<div>Bollinger Bands are a type of envelope plotted at   standard deviation levels above and below a simple moving average. Since   standard deviation is a measure of volatility, the bands are self-adjusting --   widening during volatile markets and contracting during calmer periods. </div>
+					<div>&quot;The basic interpretation of Bollinger Bands is   that prices tend to stay within the upper and lower band. The spacing between   the bands varies based on the volatility of the prices. During periods of   extreme price changes (i.e. high volatility), the bands widen to become more   forgiving. During periods of stagnant pricing (i.e. low volatility), the bands   narrow to contain prices. <br />
+					  - &quot;Technical Analysis from A to Z&quot; by Stephen   Aechlis </div>
+					]]>
+				</Description>
+			</ChartBBandsIndicator>
+			<ChartFastStochastric>
+				<FastStochastric>
+					<![CDATA[Fast Stochastric]]>
+				</FastStochastric>
+				<KPeriod>
+					<![CDATA[%K Period]]>
+				</KPeriod>
+				<DPeriod>
+					<![CDATA[%D Period]]>
+				</DPeriod>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the %K and %D   periods of the Fast Stochastic above. The default %K and %D periods are set to 5   and 3, respectively.</div>
+					<div>The Fast Stochastic compares where a security's   price closed relative to its price range over a given time period, and is   displayed as two lines. One line is called %K. A second line, called %D, is a   moving average of %K.</div>
+					<ul>
+					  <li>Buy when the Oscillator (either %K or %D) falls below a specific level (e.g.   20) and then rises above that level. Sell when the Oscillator rises above a   specific level (e.g. 80) and then falls below that level. </li>
+					  <li>Buy when the %K line rises above the %D line and sell when the %K line falls   below the %D line. </li>
+					  <li>Look for divergences. For example, where prices are making a series of new   highs and the Slow Stochastic Oscillator is failing to surpass its previous   highs. </li>
+					</ul>
+					- &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis
+					]]>
+				</Description>
+			</ChartFastStochastric>
+			<ChartMACDIndicator>
+				<EMA>
+					<![CDATA[&nbsp;Exponential Moving Averages (EMA)]]>
+				</EMA>
+				<SlowPeriod>
+					<![CDATA[Slow Period]]>
+				</SlowPeriod>
+				<FastPeriod>
+					<![CDATA[Fast Period]]>
+				</FastPeriod>
+				<SignalPeriod>
+					<![CDATA[Signal Period]]>
+				</SignalPeriod>
+				<Optional>
+					<![CDATA[(Optional)]]>
+				</Optional>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the slow, fast and signal periods used to calculate the MACD above. The default slow, fast and signal periods are set to 26, 12 and 9, respectively. Moving Average Convergence Divergence (MACD) is a trend-following momentum indicator that shows the relationship between two moving averages of prices. The default MACD is represented as the difference between a 26-day and 12-day EMA of the price. A 9-day EMA of the MACD, referred to as the signal (or trigger) line, is plotted on top of the MACD to indicate buy/sell opportunities. Divergence, the difference between the MACD and the signal, is also plotted as a histogram. </div>
+					<div>The MACD is most effective in wide-swinging trading markets. There are three standard ways to interprete the MACD: </div>
+					<div><b>• Crossovers</b></div>
+					<div>The basic MACD trading rule is to sell when the MACD falls below its signal line. Similarly, a buy signal occurs when the MACD rises above its signal line. It's also popular to buy/sell when the MACD goes above/below zero. </div>
+					<div><b>• Overbought/Oversold Conditions</b></div>
+					<div>The MACD is also useful as an overbought/oversold indicator. When the shorter moving average pulls away dramatically from the longer moving average (i.e. the MACD rises), it's likely that the security price is overextending and will soon return to more realistic levels. MACD overbought and oversold conditions exist vary from security to security. </div>
+					<div><b>• Divergences</b><div>
+					<div>An indication that an end to the current trend may be near occurs when the MACD diverges from the security. A bearish divergence occurs when the MACD is making new lows while prices fail to reach new lows. A bullish divergence occurs when the MACD is making new highs while prices fail to reach new highs. Both of these divergences are most significant when they occur at relatively overbought/oversold levels. </div>
+					  - &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis </div>
+					]]>
+				</Description>
+			</ChartMACDIndicator>
+			<ChartMFIIndicator>
+				<MFI>
+					<![CDATA[Money Flow Index (MFI)]]>
+				</MFI>
+				<MAPeriod>
+					<![CDATA[MA  Period]]>
+				</MAPeriod>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the period of the   Money Flow Index (MFI) above. The default period is set to 14. Measuring the   strength of money flowing in and out of a security, the Money Flow Index (MFI)   is a momentum indicator similar in function to the Relative Strength Index   (RSI). The primary difference being that while the RSI only incorporates prices,   the MFI accounts for volume.</div>
+					<div>&quot;Look for divergence between the MFI and the price   action. If the price trends higher and the MFI trends lower (or vice versa), a   reversal may be imminent. Look for market tops to occur when the MFI is above   80. Look for market bottoms to occur when the MFI is below 20.&quot;</div>
+					-   &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis
+					]]>
+				</Description>
+			</ChartMFIIndicator>
+			<ChartWilliamsRIndicator>
+				<WilliamsR>
+					<![CDATA[Williams %R]]>
+				</WilliamsR>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the period of the   Williams %R above. The default period is set to 14. The Williams %R indicator   seeks to measure overbought/oversold levels.</div>
+					<div>&quot;Readings in the range of 80 to 100% indicate that   the security is oversold while readings in the 0 to 20% range suggest that it is   overbought.&quot;</div>
+					- &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis
+					]]>
+				</Description>
+			</ChartWilliamsRIndicator>
+			<ChartSMAIndicator>
+				<SMA>
+					<![CDATA[Simple Moving Averages (SMA)]]>
+				</SMA>
+				<Description>
+					<![CDATA[
+					<div>You have the option to chart up to 3 Simple Moving   Averages (SMAs) at the same time. The 3 input boxes above represent the periods   of the Simple Moving Averages you wish to chart.</div>
+					<div>If you are charting on minute, daily or weekly   periods, the SMA periods you indicate above will be for minutes, days and weeks,   respectively. An SMA is calculated by adding the security's prices for the most   recent N time periods and then dividing by N. It smooths out a data series,   making it easier to spot trends. </div>
+					]]>
+				</Description>
+			</ChartSMAIndicator>
+			<ChartPSARIndicator>
+				<PSAR>
+					<![CDATA[Parabolic SAR(PSAR)]]>
+				</PSAR>
+				<StepPeriod>
+					<![CDATA[Step Period ]]>
+				</StepPeriod>
+				<MaxStepPeriod>
+					<![CDATA[Max Step  Period ]]>
+				</MaxStepPeriod>
+				<Description>
+					<![CDATA[
+				<div>You have the option to change the step period and   max step period used to calculate the Parabolic SAR above. The default step and   max periods are set to 0.02 and 0.20, respectively.</div>
+				<div>Also known as the &quot;Parabolic Time/Price System,&quot;   this indicator is used to set trailing price stops and is usually referred to as   the &quot;SAR&quot; (stop-and-reversal).</div>
+				<div>&quot;The Parabolic SAR provides excellent exit points.   You should close long positions when the price falls below the SAR and close   short positions when the price rises above the SAR. If you are long (i.e. the   price is above the SAR), the SAR will move up every day, regardless of the   direction the price is moving. The amount the SAR moves up depends on the amount   that prices move.&quot;</div>
+				- &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis
+				]]>
+				</Description>
+			</ChartPSARIndicator>
+			<ChartROCIndicator>
+				<ROC>
+					<![CDATA[Rate of Change (ROC)]]>
+				</ROC>
+				<Period>
+					<![CDATA[Step Period ]]>
+				</Period>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the period of the   Rate of Change (ROC) above. The default period is set to 12. The Rate of Change   (ROC) indicator displays the difference between the current price and the price   x-time periods ago. The difference can be displayed in either points or as a   percentage.</div>
+					<div>&quot;The 12-day ROC is an excellent short to   intermediate term overbought/oversold indicator. The higher the ROC, the more   overbought the security; the lower the ROC, the more likely a rally. However, as   with all overbought/over-sold indicators, it is prudent to wait for the market   to begin to correct (i.e. turn up or down) before placing your trade. A market   that appears overbought may remain overbought for some time. In fact, extremely   overbought/oversold readings usually imply a continuation of the current trend.   The 12-day ROC tends to be very cyclical, oscillating back and forth in a fairly   regular cycle. Often, price changes can be anticipated by studying the previous   cycles of the ROC and relating the previous cycles to the current   market.&quot;</div>
+					- &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis
+					]]>
+				</Description>
+			</ChartROCIndicator>
+			<ChartRSIIndicator>
+				<RSI>
+					<![CDATA[&nbsp;Relative Strength Index (RSI)]]>
+				</RSI>
+				<Period>
+					<![CDATA[Step Period ]]>
+				</Period>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the period of the   Relative Strength Index (RSI) above. The default period is set to 14. The   Relative Strength Index (RSI) measures the price of a security against its past   performance in order to determine its internal strength (in an attempt to   quantify the security's price momentum).</div>
+					<div>&quot;A popular method of analyzing the RSI is to look   for a divergence in which the security is making a new high, but the RSI is   failing to surpass its previous high. This divergence is an indication of an   impending reversal. When the RSI then turns down and falls below its most recent   trough, it is said to have completed a 'failure swing.' The failure swing is   considered a confirmation of the impending reversal.&quot;</div>
+					- &quot;Technical Analysis   from A to Z&quot; by Stephen Aechlis
+					]]>
+				</Description>
+			</ChartRSIIndicator>
+			<ChartSlowStochast>
+				<SlowStochastric>
+					<![CDATA[Slow Stochastric]]>
+				</SlowStochastric>
+				<KPeriod>
+					<![CDATA[%K Period ]]>
+				</KPeriod>
+				<DPeriod>
+					<![CDATA[%D Period ]]>
+				</DPeriod>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the %K and %D   periods of the Slow Stochastic above. The default %K and %D periods are set to   15 and 5, respectively.</div>
+					<div>The MACD is most effective in wide-swinging   trading markets. There are three popular ways to interpret the Slow Stochastic: </div>
+					<ul>
+					  <li>Buy when the Oscillator (either %K or %D) falls below a specific level (e.g.   20) and then rises above that level. Sell when the Oscillator rises above a   specific level (e.g. 80) and then falls below that level. </li>
+					  <li>Buy when the %K line rises above the %D line and sell when the %K line falls   below the %D line. </li>
+					  <li>Look for divergences. For example, where prices are making a series of new   highs and the Slow Stochastic Oscillator is failing to surpass its previous   highs. </li>
+					</ul>
+					- &quot;Technical Analysis from A to Z&quot; by Stephen Aechlis
+					]]>
+				</Description>
+			</ChartSlowStochast>
+			<ChartVolumeIndicator>
+				<Volume>
+					<![CDATA[Volume]]>
+				</Volume>
+				<Description>
+					<![CDATA[
+					<div>Volume is the number of shares traded in a   security during a given period of time. Volume is plotted automatically as part   of the default chart settings.</div>
+					<div>Volume is an important indicator in technical   analysis as it is used to measure the worth of a market move. If the markets   have made strong price move either up or down, the perceived strength of that   move depends on the volume for that period. The higher the volume during that   price move, the more significant the move.</div>
+					]]>
+				</Description>
+			</ChartVolumeIndicator>
+			<ChartVolumeMAIndicator>
+				<VolumeMA>
+					<![CDATA[Volume + MA]]>
+				</VolumeMA>
+				<MAPeriod>
+					<![CDATA[MA  Period ]]>
+				</MAPeriod>
+				<Description>
+					<![CDATA[
+					<div>You have the option to change the period of the   Volume + MA above. The default period is set to 13. The Volume + MA represents   the number of shares transacted every day. In addition, a 13-day volume   Exponential Moving Average (EMA) overlay is used to provide additional   information on the volume trend </div>
+					]]>
+				</Description>
+			</ChartVolumeMAIndicator>
+
+			<FlashChart>
+				<FlashChartLink><![CDATA[Technical Chart New Version]]></FlashChartLink>
+				<InputSymbol><![CDATA[Enter Symbol: ]]></InputSymbol>
+				<ChangeSymbol><![CDATA[Draw Chart]]></ChangeSymbol>
+
+				<QuickLinks><![CDATA[QUICK LINKS]]></QuickLinks>
+				<HistoricalQuote><![CDATA[Historical Quote]]></HistoricalQuote>
+				<ViewIndustryPeers><![CDATA[View Industry Peers]]></ViewIndustryPeers>
+				<FinancialStatement><![CDATA[Financial Statement]]></FinancialStatement>
+				<CompanyProfiles><![CDATA[Company Profiles]]></CompanyProfiles>
+				<Interactive><![CDATA[Interactive]]></Interactive>
+				<FlashChartOldVersion><![CDATA[Basic Chart]]></FlashChartOldVersion>
+				<FlashPlayerNotice><![CDATA[\<font color=red>"This content requires the Adobe Flash Player.</font> <a href=\"https://www.adobe.com/go/getflashplayer\" class=\"blueUnderline\" target=\"blank\"> Click here to get Flash</a>\" View Basic Chart ]]></FlashPlayerNotice>
+
+			</FlashChart>
+			<RefProgram>
+				<Header><![CDATA[RefProgram]]></Header>
+				<Menu>
+				    <Header><![CDATA[Refer 1, Get 100]]></Header>
+				    <Intro><![CDATA[Refer your friends]]></Intro>
+				    <Detail><![CDATA[Account detail]]></Detail>
+				    <Rule><![CDATA[Program rules]]></Rule>	
+				    <Question><![CDATA[FAQ]]></Question>			    
+				</Menu>
+				
+				<Detail>
+				    <Header><![CDATA[Refer 1, Get 100]]></Header>
+				    <NoOfAccount><![CDATA[Number of refered accounts]]></NoOfAccount>
+				    <Date><![CDATA[Date]]></Date>
+				    <Detail><![CDATA[Details]]></Detail>
+				    <Point><![CDATA[Credit]]></Point>
+				    <DetailLink><![CDATA[Detail]]></DetailLink>
+				    <NonRegisterdLink><![CDATA[Unfinished Referred Account]]></NonRegisterdLink>		
+				    <Detail1><![CDATA[Mr.(Ms.)]]></Detail1>		
+				    <Detail2><![CDATA[has opened an account.]]></Detail2>		    
+					<OfflineIntroed><![CDATA[Introed offline]]></OfflineIntroed>			
+					<NonRegistered><![CDATA[Not Open Yet]]> </NonRegistered>
+					<NonTransaction><![CDATA[Not Trade Yet]]> </NonTransaction>	
+					<Status><![CDATA[Status]]></Status>    	    
+					<Name><![CDATA[Referred Friend]]></Name>    	    
+
+				</Detail>
+
+				<InviteFriends>
+				    <Header><![CDATA[Refer your friends]]></Header>
+				    <Description1><![CDATA[Khi nguoi gioi thieu mo tai khoan* ban va nguoi do se nhan duoc 200 diem cua chuong trinh**]]></Description1>
+				    <Description2><![CDATA[*The account has to be a legitimate account at VNDirect.]]></Description2>
+				    <Description3><![CDATA[**Diem do se duoc cong vao tai khoan diem va co the doi ra qua hoac tien]]></Description3>
+				    <Person1><![CDATA[First friend]]></Person1>
+				    <Person2><![CDATA[Second friend]]></Person2>
+				    <Person3><![CDATA[Third friend]]></Person3>
+				    <Person4><![CDATA[Fourth friend]]></Person4>
+				    <Person5><![CDATA[Fifth friend]]></Person5>
+				    				    				    
+				    <Name><![CDATA[Fullname]]></Name>
+				    <Email><![CDATA[Email]]></Email>			    
+  				    <SendButton><![CDATA[Submit]]></SendButton>			    
+				</InviteFriends>
+				<InviteFriendsResult>
+				    <Header><![CDATA[RefProgram - Refer your friends to VNDirect]]></Header>
+					<InvalidMsg><![CDATA[These following email(s) are invalid]]></InvalidMsg>				    				    				    
+				    <SuccessfulMsg><![CDATA[We have successfully sent your referral to]]></SuccessfulMsg>
+				    <ExistedMsg><![CDATA[These following email(s) are already in our database]]></ExistedMsg>			    
+  				    <Thanks><![CDATA[Thank you for referring your friends to VNDirect Online]]></Thanks>			    
+  				    <ReturnButton><![CDATA[Back]]></ReturnButton>			      				    
+  				    <MoreButton><![CDATA[Refer More]]></MoreButton>			    
+				</InviteFriendsResult>
+				<Help>
+					<Header><![CDATA[Refer a friend VNDirect and you both will receive trade fee for a trade value of]]></Header>
+					<VND><![CDATA[25,000,000 VNĐ]]></VND>
+					<StepsHeader><![CDATA[Refer steps:]]></StepsHeader>
+					<Step1><![CDATA[Send a referral email for your friend to ]]></Step1>
+					<Step2><![CDATA[Your friend go open an account and start trading]]></Step2>
+					<Step3><![CDATA[VNDirect reimburses you and your friend the amount of 100,000 VNĐ]]></Step3>
+					<OpenAccount><![CDATA[open an account]]></OpenAccount>
+					
+				</Help>
+			</RefProgram>
+			
+		</Lables>
+		<CellNames>
+			<KeyStatistic>
+				<MarketCap>
+					<![CDATA[時価総額(ドン)]]>
+				</MarketCap>
+				<EnterpriseVal>
+					<![CDATA[企業価値]]>
+				</EnterpriseVal>
+				<TraillingPE>
+					<![CDATA[実績PER]]>
+				</TraillingPE>
+				<PEGRatio>
+					<![CDATA[PEG指数(3年)]]>
+				</PEGRatio>
+				<TraillingPS>
+					<![CDATA[実績P/S]]>
+				</TraillingPS>
+				<TraillingPB>
+					<![CDATA[実績P/B]]>
+				</TraillingPB>
+				<EnterpriseVR>
+					<![CDATA[企業価値/収益]]>
+				</EnterpriseVR>
+				<EnterpriseValueEBITDA>
+					<![CDATA[企業価値/EBITDA]]>
+				</EnterpriseValueEBITDA>
+				<AverageE>
+					<![CDATA[平均利益成長率(3年)]]>
+				</AverageE>
+				<AverageD>
+					<![CDATA[平均配当成長率(3年)]]>
+				</AverageD>
+				<IncomeStatement>
+					<![CDATA[損益計算表]]>
+				</IncomeStatement>
+				<BalanceSheet>
+					<![CDATA[バランスシート]]>
+				</BalanceSheet>
+				<CashFlow>
+					<![CDATA[キャッシュフロー計算書]]>
+				</CashFlow>
+				<Beta>
+					<![CDATA[ベータ]]>
+				</Beta>
+				<WeekHigh>
+					<![CDATA[52週高値]]>
+				</WeekHigh>
+				<WeekLow>
+					<![CDATA[52週安値]]>
+				</WeekLow>
+				<MovingAverage>
+					<![CDATA[10日移動平均価格]]>
+				</MovingAverage>
+				<AverageVol>
+					<![CDATA[10日移動平均売買高]]>
+				</AverageVol>
+				<ValuePrice>
+					<![CDATA[IPOの平均落札価格]]>
+				</ValuePrice>
+				<ValueEq>
+					<![CDATA[株式会社化を行う時点の企業価値]]>
+				</ValueEq>
+				<DividentSpilit>
+					<![CDATA[配当情報]]>
+				</DividentSpilit>
+				<DeclaredDividends>
+					<![CDATA[公開配当]]>
+				</DeclaredDividends>
+				<DividendsDate>
+					<![CDATA[配当支払日]]>
+				</DividendsDate>
+				<ExDividendDate>
+					<![CDATA[権利落ち日]]>
+				</ExDividendDate>
+				<DividendYeid>
+					<![CDATA[配当/時価]]>
+				</DividendYeid>
+				<PayoutRatio>
+					<![CDATA[配当率]]>
+				</PayoutRatio>
+				<DeclaredSplitDate>
+					<![CDATA[株式分割の公開日]]>
+				</DeclaredSplitDate>
+				<DeclaredSplitFactor>
+					<![CDATA[分割割合]]>
+				</DeclaredSplitFactor>
+				<Xdate>
+					<![CDATA[基準日]]>
+				</Xdate>
+				<Ratio>
+					<![CDATA[割合]]>
+				</Ratio>
+				<Type>
+					<![CDATA[形]]>
+				</Type>
+			</KeyStatistic>
+			<Profile>
+				<IndexMembership>
+					<![CDATA[証券取引所のメンバー]]>
+				</IndexMembership>
+				<Sector>
+					<![CDATA[分野：]]>
+				</Sector>
+				<Industry>
+					<![CDATA[産業：]]>
+				</Industry>
+				<NumberOfBranches>
+					<![CDATA[支店の数：]]>
+				</NumberOfBranches>
+				<FullEmployee>
+					<![CDATA[社員の人数：]]>
+				</FullEmployee>
+				<Name>
+					<![CDATA[名前：]]>
+				</Name>
+				<VietnameseName>
+					<![CDATA[正式名称：]]>
+				</VietnameseName>
+				<Position>
+					<![CDATA[職位：]]>
+				</Position>
+				<InternationalName>
+					<![CDATA[国際名：]]>
+				</InternationalName>
+				<Abbreviation>
+					<![CDATA[略称：]]>
+				</Abbreviation>
+				<Headquarter>
+					<![CDATA[本社：]]>
+				</Headquarter>
+				<Telephone>
+					<![CDATA[電話番号：]]>
+				</Telephone>
+				<Fax>
+					<![CDATA[Fax：]]>
+				</Fax>
+				<History>
+					<![CDATA[沿革]]>
+				</History>
+				<MainBusiness>
+					<![CDATA[事業内容]]>
+				</MainBusiness>
+				<MarketPosition>
+					<![CDATA[会社紹介]]>
+				</MarketPosition>
+				<Plan>
+					<![CDATA[発展投資戦略]]>
+				</Plan>
+			</Profile>
+			<MaijorHolders>
+				<StateOwnership>
+					<![CDATA[政府保有]]>
+				</StateOwnership>
+				<InternalManagementEmployee>
+					<![CDATA[幹部社員保有]]>
+				</InternalManagementEmployee>
+				<StrategicInvestor>
+					<![CDATA[戦略的パートナー保有]]>
+				</StrategicInvestor>
+				<ForeignOwnership>
+					<![CDATA[海外投資家保有]]>
+				</ForeignOwnership>
+				<Other>
+					<![CDATA[その他の株主保有]]>
+				</Other>
+				<Holder>
+					<![CDATA[名前：]]>
+				</Holder>
+				<Position>
+					<![CDATA[職位：]]>
+				</Position>
+				<Shares>
+					<![CDATA[株式数：]]>
+				</Shares>
+				<Reported>
+					<![CDATA[更新日]]>
+				</Reported>
+				<OwnerRatio>
+					<![CDATA[保有率：]]>
+				</OwnerRatio>
+			</MaijorHolders>
+			<InsiderTransactions>
+				<Date>
+					<![CDATA[日付：]]>
+				</Date>
+				<Insider>
+					<![CDATA[インサイダー取引]]>
+				</Insider>
+				<Position>
+					<![CDATA[職位：]]>
+				</Position>
+				<SharesHeld>
+					<![CDATA[取引株式数：]]>
+				</SharesHeld>
+				<Transaction>
+					<![CDATA[取引方法]]>
+				</Transaction>
+				<Price>
+					<![CDATA[価格]]>
+				</Price>
+			</InsiderTransactions>
+			<Snapshot>
+				<WeekRange>
+					<![CDATA[52週の値幅]]>
+				</WeekRange>
+				<WeekHigh>
+					<![CDATA[52週高値]]>
+				</WeekHigh>
+				<WeekLow>
+					<![CDATA[52週安値]]>
+				</WeekLow>
+				<MarketCapital>
+					<![CDATA[時価総額]]>
+				</MarketCapital>
+				<ShareOutstanding>
+					<![CDATA[流通株式数]]>
+				</ShareOutstanding>
+				<DividendYield>
+					<![CDATA[配当率(額面比)]]>
+				</DividendYield>
+				<DeclaredDividend>
+					<![CDATA[公表された配当]]>
+				</DeclaredDividend>
+				<ExDividendDate>
+					<![CDATA[基準日]]>
+				</ExDividendDate>
+				<DividendYeid>
+					<![CDATA[配当率(額面比)]]>
+				</DividendYeid>
+				<ForeignHolding>
+					<![CDATA[海外投資家が保有している株式数]]>
+				</ForeignHolding>
+				<BuyingVolume>
+					<![CDATA[海外投資家の購入株式数]]>
+				</BuyingVolume>
+				<SellingVolume>
+					<![CDATA[海外投資家の売却株式数]]>
+				</SellingVolume>
+				<DividendPayableDate>
+					<![CDATA[配当支払日]]>
+				</DividendPayableDate>
+				<EPS>
+					<![CDATA[EPS]]>
+				</EPS>
+				<ROA>
+					<![CDATA[ROA]]>
+				</ROA>
+				<ROE>
+					<![CDATA[ROE]]>
+				</ROE>
+				<Leverage>
+					<![CDATA[レバレッジ]]>
+				</Leverage>
+				<PE>
+					<![CDATA[PER]]>
+				</PE>
+				<Beta>
+					<![CDATA[ベータ]]>
+				</Beta>
+				<TenDayAverageVolumn>
+					<![CDATA[10日の平均売買高]]>
+				</TenDayAverageVolumn>
+				<CompanyInfo>
+					<OpenPrice>
+						<![CDATA[始値(T1)]]>
+					</OpenPrice>
+					<ClosedPrice>
+						<![CDATA[終値(T3)]]>
+					</ClosedPrice>
+					<TodayChange>
+						<![CDATA[騰落(+/-％)]]>
+					</TodayChange>
+					<BidVolume>
+						<![CDATA[買い気配]]>
+					</BidVolume>
+					<AskVolume>
+						<![CDATA[売り気配]]>
+					</AskVolume>
+					<TransactedVolume>
+						<![CDATA[売買高]]>
+					</TransactedVolume>
+					<HighestPrice>
+						<![CDATA[高値]]>
+					</HighestPrice>
+					<LowestPrice>
+						<![CDATA[安値]]>
+					</LowestPrice>
+					<NetVolume>
+						<![CDATA[実際株式数]]>
+					</NetVolume>
+					<AveragePrice>
+						<![CDATA[平均株価]]>
+					</AveragePrice>
+					<ReferencePrice>
+						<![CDATA[参照価格]]>
+					</ReferencePrice>
+					<CeilingPrice>
+						<![CDATA[ストップ高]]>
+					</CeilingPrice>
+					<FloorPrice>
+						<![CDATA[ストップ安]]>
+					</FloorPrice>
+					<Bid>
+						<![CDATA[買注文]]>
+					</Bid>
+					<Ask>
+						<![CDATA[売り注文]]>
+					</Ask>
+					<Session1>
+						<![CDATA[第1節]]>
+					</Session1>
+					<Session2>
+						<![CDATA[第2節]]>
+					</Session2>
+					<TotalVolume>
+						<![CDATA[総売買高]]>
+					</TotalVolume>
+					<RecentTransaction>
+						<![CDATA[直近の約定]]>
+					</RecentTransaction>
+					<OneYearAgo>
+						<![CDATA[1年前]]>
+					</OneYearAgo>
+					<OneMonthAgo>
+						<![CDATA[1ヵ月前]]>
+					</OneMonthAgo>
+					<OneWeekAgo>
+						<![CDATA[1週間前]]>
+					</OneWeekAgo>
+					<Yesterday>
+						<![CDATA[昨日]]>
+					</Yesterday>
+					<Today>
+						<![CDATA[今日]]>
+					</Today>
+					<Market>
+						<![CDATA[市場]]>
+					</Market>
+					<Open>
+						<![CDATA[取引開始]]>
+					</Open>
+					<Close>
+						<![CDATA[取引終了]]>
+					</Close>
+					<HASTC-INDEX>
+						<![CDATA[HNX指数]]>
+					</HASTC-INDEX>
+					<HOSTC-INDEX>
+						<![CDATA[VN指数]]>
+					</HOSTC-INDEX>
+					<TransactionPrice>
+						<![CDATA[売買代金]]>
+					</TransactionPrice>
+					<TransactionVolume>
+						<![CDATA[売買高]]>
+					</TransactionVolume>
+					<Week52HighestPrice>
+						<![CDATA[52週高値]]>
+					</Week52HighestPrice>
+					<Week52LowestPrice>
+						<![CDATA[52週安値]]>
+					</Week52LowestPrice>
+				</CompanyInfo>
+				<IncomeStatementForecast><![CDATA[*Income Statement Forecast 2009]]></IncomeStatementForecast>
+			</Snapshot>
+			<Finance>
+				<PeriodEnding>PERIOD ENDING</PeriodEnding>
+			</Finance>
+			<CashFlow>
+				<View>
+					<![CDATA[四半期業績]]>
+				</View>
+				<CashFlow>
+					<![CDATA[キャッシュフロー計算書]]>
+				</CashFlow>
+				<MoneyUnit>
+					<![CDATA[単位]]>
+				</MoneyUnit>
+				<MoneyType>
+					<![CDATA[ドン]]>
+				</MoneyType>
+			</CashFlow>
+			<IncomeStatement>
+				<View>
+					<![CDATA[四半期業績]]>
+				</View>
+				<IncomeStatement>
+					<![CDATA[損益計算表]]>
+				</IncomeStatement>
+				<MoneyUnit>
+					<![CDATA[単位]]>
+				</MoneyUnit>
+				<MoneyType>
+					<![CDATA[ベトナムドン]]>
+				</MoneyType>
+				<Forecast><![CDATA[&nbsp;Income statement forecast of &nbsp;]]></Forecast>
+				<FiscalDate><![CDATA[in year&nbsp;]]></FiscalDate>
+				<Unit><![CDATA[Unit: million VND]]></Unit>
+			</IncomeStatement>
+			<BalanceSheet>
+				<View>
+					<![CDATA[四半期業績]]>
+				</View>
+				<BalanceSheet>
+					<![CDATA[バランスシート]]>
+				</BalanceSheet>
+				<MoneyUnit>
+					<![CDATA[単位]]>
+				</MoneyUnit>
+				<MoneyType>
+					<![CDATA[ドン]]>
+				</MoneyType>
+				<NumberTerm><![CDATA[Number of Term]]></NumberTerm>
+			</BalanceSheet>
+		</CellNames>
+		<LinkMessages>
+			<KeyStatistic>
+				<IncomeStatement>
+					<![CDATA[損益計算表]]>
+				</IncomeStatement>
+				<BalanceSheet>
+					<![CDATA[バランスシート]]>
+				</BalanceSheet>
+				<CashFlow>
+					<![CDATA[キャッシュフロー計算書]]>
+				</CashFlow>
+				<AnnualData>
+					<![CDATA[毎年のデータ]]>
+				</AnnualData>
+				<QuarterData>
+					<![CDATA[四半期毎のデータ]]>
+				</QuarterData>
+			</KeyStatistic>
+			<Profile>
+				<KeyStatistic>
+					<![CDATA[ファンダメンタルズ統計]]>
+				</KeyStatistic>
+			</Profile>
+			<Snapshot>
+				<MoreNews>
+					<![CDATA[次を見る]]>
+				</MoreNews>
+				<MoreAnalystResearch>
+					<![CDATA[次に分析情報を見る]]>
+				</MoreAnalystResearch>
+				<FiveDays>
+					<![CDATA[5日間]]>
+				</FiveDays>
+				<OneMonth>
+					<![CDATA[1ヶ月間]]>
+				</OneMonth>
+				<ThreeMonths>
+					<![CDATA[3ヶ月間]]>
+				</ThreeMonths>
+				<OneYear>
+					<![CDATA[1年間]]>
+				</OneYear>
+				<TwoYears>
+					<![CDATA[2年間]]>
+				</TwoYears>
+				<FiveYears>
+					<![CDATA[3年間]]>
+				</FiveYears>
+				<Max>
+					<![CDATA[全部]]>
+				</Max>
+			</Snapshot>
+			<CashFlow>
+				<AnnualData>
+					<![CDATA[毎年のデータ]]>
+				</AnnualData>
+				<QuarterData>
+					<![CDATA[四半期毎のデータ]]>
+				</QuarterData>
+			</CashFlow>
+			<VNMarket>
+				<MoreNews>
+					<![CDATA[次を見る]]>
+				</MoreNews>
+				<Actives>
+					<![CDATA[Actives]]>
+				</Actives>
+				<Gainers>
+					<![CDATA[Gainers]]>
+				</Gainers>
+				<Losers>
+					<![CDATA[Losers]]>
+				</Losers>
+			</VNMarket>
+			<BasicChartForSymbol>
+				<SMA>
+					<![CDATA[Simple Moving Average (SMA)]]>
+				</SMA>
+				<EMA>
+					<![CDATA[Exponential Moving Average (EMA)]]>
+				</EMA>
+				<BBand>
+					<![CDATA[Bollinger Bands (BBand)]]>
+				</BBand>
+				<MFI>
+					<![CDATA[Money Flow Index (MFI)]]>
+				</MFI>
+				<MACD>
+					<![CDATA[MACD]]>
+				</MACD>
+				<PSAR>
+					<![CDATA[Parabolic SAR (PSAR)]]>
+				</PSAR>
+				<ROC>
+					<![CDATA[Rate of exchange (ROC)]]>
+				</ROC>
+				<RSI>
+					<![CDATA[Relative Streng Index (RSI)]]>
+				</RSI>
+				<SlowStochastic>
+					<![CDATA[Slow Stochastic]]>
+				</SlowStochastic>
+				<FastStochastic>
+					<![CDATA[Fast Stochastic]]>
+				</FastStochastic>
+				<Volume>
+					<![CDATA[Volume]]>
+				</Volume>
+				<VolumeMA>
+					<![CDATA[Volume + MA]]>
+				</VolumeMA>
+				<WilliamR>
+					<![CDATA[William %R]]>
+				</WilliamR>
+				<OHLC>
+					<![CDATA[OHLC]]>
+				</OHLC>
+				<Candlestick>
+					<![CDATA[Candlestick]]>
+				</Candlestick>
+				<Line>
+					<![CDATA[Line]]>
+				</Line>
+				<Logarithmic>
+					<![CDATA[Logarithmic]]>
+				</Logarithmic>
+				<Linear>
+					<![CDATA[Linear]]>
+				</Linear>
+				<AddSymbol>
+					<![CDATA[Add an Symbol(s)]]>
+				</AddSymbol>
+				<RemoveSymbol>
+					<![CDATA[Remove an Symbol(s)]]>
+				</RemoveSymbol>
+			</BasicChartForSymbol>
+		</LinkMessages>
+		<MarketCalendar>
+			<SearchEventCalendar>
+				<![CDATA[カレンダー検索]]>
+			</SearchEventCalendar>
+			<SearchDateType>
+				<![CDATA[日付]]>
+			</SearchDateType>
+			<SearchEventType>
+				<![CDATA[種類]]>
+			</SearchEventType>
+			<Title>
+				<![CDATA[毎日のカレンダー]]>
+			</Title>
+			<RegisterDate>
+				<![CDATA[基準日]]>
+			</RegisterDate>
+			<EventDate>
+				<![CDATA[実施日]]>
+			</EventDate>
+			<Symbol>
+				<![CDATA[銘柄コード]]>
+			</Symbol>
+			<EventType>
+				<![CDATA[イベント種類]]>
+			</EventType>
+			<EventNote>
+				<![CDATA[詳細]]>
+			</EventNote>
+			<RightsDate><![CDATA[Right Date]]></RightsDate>
+		</MarketCalendar>
+
+		<SymbolInfoDetail>
+			<Price><![CDATA[Price]]></Price>
+			<BasicInfo><![CDATA[Basic Information]]></BasicInfo>
+
+			<LastPrice><![CDATA[Last Price]]></LastPrice>
+			<TradeDate><![CDATA[Trade]]></TradeDate>
+			<Change><![CDATA[Change]]></Change>
+			<PrevPrice><![CDATA[Prev Close]]></PrevPrice>
+			<CeilingFloor><![CDATA[Ceiling Floor]]></CeilingFloor>
+
+			<WeekHigh><![CDATA[52- week high]]></WeekHigh>
+			<WeekLow><![CDATA[52-week low]]></WeekLow>
+			<MarketCapital><![CDATA[Market Cap]]></MarketCapital>
+			<ShareOutstanding><![CDATA[Share Outstanding]]></ShareOutstanding>
+			<DeclaredDividend><![CDATA[DeclaredDividend]]></DeclaredDividend>
+			<DividendYield><![CDATA[Dividend]]></DividendYield>
+			<ExDividendDate><![CDATA[ExDividendDate]]></ExDividendDate>
+			<DividendPayableDate><![CDATA[DividendPayableDate]]></DividendPayableDate>
+			<Eps><![CDATA[EPS(ttm)]]></Eps>
+			<Roa><![CDATA[Roa]]></Roa>
+			<Roe><![CDATA[Roe]]></Roe>
+			<Leverage><![CDATA[Leverage]]></Leverage>
+			<EarningsValue><![CDATA[Earnings Value]]></EarningsValue>
+			<BookValue><![CDATA[BookValue]]></BookValue>
+			<Beta><![CDATA[Beta]]></Beta>
+			<AverageVolumn><![CDATA[Average Volumn In 10 Days]]></AverageVolumn>
+			<Pe><![CDATA[P/E(ttm)]]></Pe>
+			<ForeignOwnership><![CDATA[ForeignOwnership]]></ForeignOwnership>
+			<ForeignSoldVol><![CDATA[ForeignSoldVol]]></ForeignSoldVol>
+			<ForeignBoughtVol><![CDATA[ForeignBoughtVol]]></ForeignBoughtVol>
+			<CompanyOverview><![CDATA[CompanyOverview]]></CompanyOverview>
+		</SymbolInfoDetail>
+	</Quotes>
+	<Home>
+		<Lables>
+			<Menu-Level2>
+				<OpenAnAccount>
+					<![CDATA[口座開設]]>
+				</OpenAnAccount>
+				<ProductsServices>
+					<![CDATA[商品・サービス]]>
+				</ProductsServices>
+				<FormsApplications>
+					<![CDATA[ダウンロード]]>
+				</FormsApplications>
+				<ContactUs>
+					<![CDATA[お問い合わせ]]>
+				</ContactUs>
+				<CorporateServices>
+					<![CDATA[求人情報]]>
+				</CorporateServices>
+				<AboutUs>
+					<![CDATA[会社案内]]>
+				</AboutUs>
+				<WhyVndirect><![CDATA[&nbsp; Why VNDirect? &nbsp;]]></WhyVndirect>
+				<VNDSNews>
+					<![CDATA[VNダイレクトのニュース]]>
+				</VNDSNews>
+				<SignUp>
+					<![CDATA[登録]]>
+				</SignUp>
+				<HotLine><![CDATA[HotLine: 1900545409]]></HotLine>
+				<VNDSDailyNews><![CDATA[VNDirect's Analyses]]></VNDSDailyNews>
+			</Menu-Level2>
+			<Menu-Level3>
+				<ProductsServices>
+					<InvestmentServices>
+						<![CDATA[投資サービス]]>
+					</InvestmentServices>
+					<ServiceSupport>
+						<![CDATA[資本調達・サポートサービス]]>
+					</ServiceSupport>
+					<CorporateFinanceAdvisory>
+						<![CDATA[企業財務コンサルタント]]>
+					</CorporateFinanceAdvisory>
+				</ProductsServices>
+			</Menu-Level3>
+		</Lables>
+		<SetHomePage>
+			<LinkLable><![CDATA[Set VNDirect as HomePage]]></LinkLable>
+			<UnSupport><![CDATA[Your browser does not allow this operation.]]></UnSupport>
+		</SetHomePage>
+		<Logon>
+			<Title>
+				<![CDATA[ログイン]]>
+			</Title>
+			<UserName>
+				<![CDATA[ユーザーネーム：]]>
+			</UserName>
+			<Password>
+				<![CDATA[パスワード：]]>
+			</Password>
+			<ForgotPWMsg>
+				<![CDATA[パスワード忘れ]]>
+			</ForgotPWMsg>
+			<NeedHelp><![CDATA[Need help]]></NeedHelp>
+			<IDGMsg>
+				<![CDATA[VTOSカードに記載のある数字をご入力下さい]]>
+			</IDGMsg>
+			<IDGSerialCard>
+				<![CDATA[カード番号：]]>
+			</IDGSerialCard>
+			<AdvMsg1>
+				<![CDATA[<span class="title_6">VNダイレクトのオンライン取引サービスご案内</span>
+				<div>
+				・　オンラインでのご注文 <br />
+				・　ポートフォリオマネジメント<br />
+				・　約定結果報告<br />
+				・　取引履歴閲覧<br />
+				<br />
+				<span class="text10"><a href="../../../online/brokerage/pages/ViewPage.do?uriParam=/CustomerServices/CS_Tab1_InstructionToOpenAnAcc5.htm">取引案内</a></span>
+				&nbsp;&nbsp;|&nbsp;&nbsp;
+				<span class="text10"><a href="../../../online/brokerage/pages/ViewPage.do?uriParam=/home/Customer_Agreement.html">免責事項</a></span>
+				</div>]]>
+			</AdvMsg1>
+			<AdvMsg2>
+				<![CDATA[<span class="title_6">VNダイレクトでオンライン取引口座を開設します。</span><br />
+　　　口座をお持ちの方は次のサービスがご利用になれます。<br />
+　　　　　　　　　　　　・　電話でのご注文<br />
+　　　　　　　　　　　　・　オンラインでのご注文<br />
+　　　　　　　　　　　　・　携帯メッセージでの約定結果報告<br />
+　　　　　　　　　　　　・　ポートフォリオのオンライン管理<br />]]>
+			</AdvMsg2>
+			<SecurityInfo>
+				<![CDATA[<b>セキュリティに関するご注意：</b>お客様が一般的なパソコンをご利用されている場合、パソコンから離れる前にVNダイレクトオンライン取引プログラムからログアウトし、ブラウザーが閉じられたことを確認して下さい。また、VNダイレクト証券からお客様のユーザーネーム、パスワード、その他の個人情報についておたずねすることは決してありません。ご不明な点がございましたら、こちらのメールアドレスまでお問い合せ下さい：<a href=mailto:otoiawase@vndirect.com.vn>otoiawase@vndirect.com.vn</a> ]]>
+			</SecurityInfo>
+			<SecurityInfoIDG>
+				<![CDATA[<p class="n-note"><img src="../../../portal/images/icons/flag_warn.gif" width="30" height="28" /><b>注意：</b></p>
+			 <table width="95%" align="right" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td><span>
+			 - VTOSカードのシリアル番号が入力したシリアル番号と同一かどうか確認下さい。<br />
+			 - 認証番号は正確に入力してください。<br />
+				- 認証番号にあるアルファベットは大文字でも小文字でも構いません。<br />
+				- 認証番号の入力を3回間違えると、VTOSカードがロックされます。。<br />
+				-  VTOSカードに関するお問い合わせは、<a href=mailto:otoiawase@vndirect.com.vn>otoiawase@vndirect.com.vn</a>までご連絡ください。
+			</span></td>
+			  	   </tr>
+				</table>
+			]]>
+			</SecurityInfoIDG>
+			<Confirm>
+				<![CDATA[確認]]>
+			</Confirm>
+			<Confirm_Message>
+				<![CDATA[オンラインメンバーへの登録に成功しました。口座をアクティブするため、添付資料に記載されているユーザーネームとパスワードを入力してください。]]>
+			</Confirm_Message>
+		</Logon>
+		<Markets>
+			<Title>
+				<![CDATA[市場]]>
+			</Title>
+			<OverView>
+				<![CDATA[市況]]>
+			</OverView>
+		</Markets>
+		<ChooseAccount>
+			<Title><![CDATA[Choose which account to open]]></Title>
+			<Lable1><![CDATA[Welcome to website VNDirect online!]]></Lable1>
+			<Lable2><![CDATA[<strong>証券口座開設についての日本語のお問い合わせはこちらからどうぞ。 <a href="mailto:otoiawase@vndirect.com.vn">otoiawase@vndirect.com.vn</a></strong>]]></Lable2>
+			<Lable3><![CDATA[VNDirect tool and services]]></Lable3>
+			<Guest><![CDATA[Guest]]></Guest>
+			<FreeAccount><![CDATA[Free-Registed Users]]></FreeAccount>
+			<Register><![CDATA[Sign up now]]></Register>
+			<VndirectCustomer><![CDATA[VNDirect Customers]]></VndirectCustomer>
+			<OpenAccount><![CDATA[Open an Account]]></OpenAccount>
+			<HTMLPriceBoard><![CDATA[HTML Price Board]]></HTMLPriceBoard>
+			<JavaPriceBoard><![CDATA[Java Price Board]]></JavaPriceBoard>
+			<CustomerServices><![CDATA[Customer Services]]></CustomerServices>
+			<SendFeedback><![CDATA[Send Feedback]]></SendFeedback>
+			<StockAlertNotification><![CDATA[Stock Alert & Notification]]></StockAlertNotification>
+			<TradingAndPortfolios><![CDATA[Trading And Portfolios]]></TradingAndPortfolios>
+			<MartketOrders><![CDATA[Martket Orders]]></MartketOrders>
+			<PortfoliosPosition><![CDATA[Portfolios & Position]]></PortfoliosPosition>
+			<ViewOrders><![CDATA[View Orders]]></ViewOrders>
+			<Balances><![CDATA[Balances]]></Balances>
+			<TransactionHistory><![CDATA[Transaction History]]></TransactionHistory>
+			<QuoterResearch><![CDATA[Quoter Research]]></QuoterResearch>
+			<MarketNews><![CDATA[Summary of VN Market News]]></MarketNews>
+			<OTCDirect><![CDATA[UPCOMdirect]]></OTCDirect>
+			<MarketStatisticsPricingSummary><![CDATA[Market Statistics & Pricing Summary]]></MarketStatisticsPricingSummary>
+			<MarketCalendar><![CDATA[Market Calendar]]></MarketCalendar>
+			<TechnicalChart><![CDATA[Technical Chart]]></TechnicalChart>
+			<DownloadPublishedDocument><![CDATA[Download Published Document]]></DownloadPublishedDocument>
+			<MyPortfolios><![CDATA[My Portfolios]]></MyPortfolios>
+			<IndustryIndex><![CDATA[Industry Browser, IndustryIndex, Stock Screener & Stock Wizard]]></IndustryIndex>
+			<InstructionOpenAccount><![CDATA[Instruction to open an account at VNDirect]]></InstructionOpenAccount>
+		</ChooseAccount>
+		<CreateAnAccount>
+			<HowKnown><![CDATA[How do you know about VNDirect online?]]></HowKnown>
+			<HowKnown1><![CDATA[From newspapers, magazines and television]]></HowKnown1>
+			<HowKnown2><![CDATA[From internet]]></HowKnown2>
+			<HowKnown3><![CDATA[From friends]]></HowKnown3>
+			<HowKnown4><![CDATA[Introducer code]]></HowKnown4>
+			<TitleStep1>
+				<![CDATA[  第1ステップ：お客様はベトナム人投資家ですか、それとも外国人投資家ですか?  ]]>
+			</TitleStep1>
+			<VietNamInvertor>
+				<![CDATA[ベトナム人投資家です(ベトナム人であり、人民証明書を持っています)。]]>
+			</VietNamInvertor>
+			<ForeignInvestor>
+				<![CDATA[外国人投資家
+ベトナム法律に基づく外国人投資家の定義：
+・　海外法律、外国人(居住又は非居住)又は海外に住んでいるベトナム人にて設立された機関。
+・　分割される利益或いはベトナムで儲ける合法的な収入で証券を売買する、外資企業の海外パートナー(個人若しくは法人)。]]>
+			</ForeignInvestor>
+			<TitleStep2>
+				<![CDATA[第1ステップ：お客様はベトナムで他の証券会社で口座を開設したことがありますか？]]>
+			</TitleStep2>
+			<Yes>
+				<![CDATA[はい]]>
+			</Yes>
+			<No>
+				<![CDATA[いいえ]]>
+			</No>
+			<TitleStep3>
+				<![CDATA[第1ステップ：VNダイレクトで開設したい口座を選択して下さい。]]>
+			</TitleStep3>
+			<Lable1>
+				<![CDATA[VNダイレクトでオンライン取引口座を開設するのは簡単です。わずか1分程度しかかかりません。]]>
+			</Lable1>
+			<Lable2>
+				<![CDATA[お客様に最も相応しい口座を選択して下さい。]]>
+			</Lable2>
+			<IndividualAccount>
+				<![CDATA[個人口座　：　この口座を所有するのは唯一お客様だけの場合。]]>
+			</IndividualAccount>
+			<JoinAccount>
+				<![CDATA[共同口座　：　他のもう一名様と共同で口座を開設される場合。]]>
+			</JoinAccount>
+			<CustodialAccount>
+				<![CDATA[]]>
+			</CustodialAccount>
+			<CorporateAccount>
+				<![CDATA[法人口座　：　お客様の会社のために口座開設される場合。]]>
+			</CorporateAccount>
+			<InvestmentClub>
+				<![CDATA[投資グループ口座　：　共同で投資されるグループのために口座開設される場合。]]>
+			</InvestmentClub>
+			<GrantAuthority>
+				<![CDATA[委任　：　別の方に委任される口座開設される場合。]]>
+			</GrantAuthority>
+			s
+
+			<TitleStep4>
+				<![CDATA[第1段階：VNダイレクトで開設したい口座を選択して下さい ;]]>
+			</TitleStep4>
+			<Lable3>
+				<![CDATA[VNダイレクトで取引口座を追加開設したいですか？]]>
+			</Lable3>
+			<Lable4>
+				<![CDATA[投資チャンスを待っている間、投資口座を通してVNDダイレクトへご自分の遊休資本の管理を委託されますと、投資口座の資金は国家証券委員会のポートフォリオマネジメントについての規定に従って運用されます。]]>
+			</Lable4>
+			<AccountAgreement>
+				<![CDATA[取り決め事項(誓約書)]]>
+			</AccountAgreement>
+			<Agreement>
+				<![CDATA[証券価格は常に変動し、上昇下落を繰り返します。時には購入された証券が全く価値のないものになってしまうこともあります。こうした証券取引の潜在的なリスク、時には損失が生じるということをご了承ください。また証券取引における第三者への委任は、お客様の元契約と不可分のものではなく、取引委任によって生じるいかなる責任もお客様のものとなります。VNダイレクト証券が提供するオンライン取引のご利用に当たっては、通信量過多、市場変動、システムメンテナンス及びアップグレード、及びその他の理由で、インターネット接続や電子機器のご利用が制限される場合があることをご了承ください。不測の事態、或いはVNダイレクト内の管理管轄以外でも、インターネット回線の閉鎖や通信速度の遅滞が発生する場合もございます。更に、第三者によって個人データ及び情報が不正に取得される場合もあります。こうしたオンライン取引におけるあらゆるリスクをご了承ください。ご契約書にご署名頂いた場合、誓約書の内容について、VNダイレクト証券がお客様に十分にご説明させて頂いたことをご了承頂いたものと見なされます。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　]]>
+			</Agreement>
+			<Lable5>
+				<![CDATA[お客様に対するVNダイレクトの全ての条項をご理解頂けた場合には、”同意する”を選択してください。]]>
+			</Lable5>
+			<Accept>
+				<![CDATA[納税コード]]>
+			</Accept>
+			<Decline>
+				<![CDATA[同意しない]]>
+			</Decline>
+			<Lable6>
+				<![CDATA[もう一度情報をご確認してください。]]>
+			</Lable6>
+			<Lable7>
+				<![CDATA[このページを印刷する]]>
+			</Lable7>
+			<Lable8>
+				<![CDATA[オンライン取引口座開設]]>
+			</Lable8>
+			<AccountNumber>
+				<![CDATA[口座番号]]>
+			</AccountNumber>
+			<TypeAccount>
+				<![CDATA[口座種類]]>
+			</TypeAccount>
+			<Fullname>
+				<![CDATA[フルネーム]]>
+			</Fullname>
+			<DOB>
+				<![CDATA[誕生日]]>
+			</DOB>
+			<Sex>
+				<![CDATA[性別]]>
+			</Sex>
+			<IdentificationType>
+				<![CDATA[身分証明書類]]>
+			</IdentificationType>
+			<IdentificationCode>
+				<![CDATA[身分証明書類/パスポート番号]]>
+			</IdentificationCode>
+			<DateofIssue>
+				<![CDATA[発行日]]>
+			</DateofIssue>
+			<IssuePlace>
+				<![CDATA[発行場所]]>
+			</IssuePlace>
+			<PeriodofReceiving>
+				<![CDATA[口座控え受取時期]]>
+			</PeriodofReceiving>
+			<Receivetradeconfirmation>
+				<![CDATA[取引確認と口座控えの受取方法]]>
+			</Receivetradeconfirmation>
+			<Lable9>
+				<![CDATA[私は口座開設申請書の情報が全て事実であり、関連事項に変更があればVNダイレクト証券へ直ぐに報告することを誓います。]]>
+			</Lable9>
+			<Lable10>
+				<![CDATA[ I understand that this application will not be effective
+						until it is received, verified and accepted by VNDS Company.]]>
+			</Lable10>
+			<Lable11>
+				<![CDATA[ <br />
+						Signature<br />
+						Signature(s) of Applicant(s):<br />
+						Name <br />
+						Date]]>
+			</Lable11>
+			<step2aboutcompany>
+				<![CDATA[会社情報]]>
+			</step2aboutcompany>
+			<LegalName>
+				<![CDATA[法定名]]>
+			</LegalName>
+			<InternationalName>
+				<![CDATA[国際取引名称]]>
+			</InternationalName>
+			<Abbreviation>
+				<![CDATA[略称]]>
+			</Abbreviation>
+			<LicenseNumber>
+				<![CDATA[営業許可番号]]>
+			</LicenseNumber>
+			<AccountStatus>
+				<![CDATA[口座状態]]>
+			</AccountStatus>
+			<AccountType>
+				<![CDATA[口座種類]]>
+			</AccountType>
+			<AccountRegistration>
+				<![CDATA[口座登録日]]>
+			</AccountRegistration>
+			<SearchOnlineAccount>
+				<![CDATA[オンライン口座検索]]>
+			</SearchOnlineAccount>
+			<Issuedate>
+				<![CDATA[発行日]]>
+			</Issuedate>
+			<HeadOffice>
+				<![CDATA[本社]]>
+			</HeadOffice>
+			<Province>
+				<![CDATA[都道府県]]>
+			</Province>
+			<Country>
+				<![CDATA[国]]>
+			</Country>
+			<Telephone>
+				<![CDATA[電話番号]]>
+			</Telephone>
+			<Fax>
+				<![CDATA[Fax]]>
+			</Fax>
+			<BusinessType>
+				<![CDATA[会社形態]]>
+			</BusinessType>
+			<EconomicSector>
+				<![CDATA[経営分野]]>
+			</EconomicSector>
+			<TaxID>
+				<![CDATA[納税コード]]>
+			</TaxID>
+			<Lable12>
+				<![CDATA[営業許可書を持っている国内法人はオンライン取引口座を開設することができます。海外企業の場合は、ここ　をクリックして、ベトナムでの証券取引口座開設の手順をご理解ください。]]>
+			</Lable12>
+			<step3aboutrepresentative>
+				<![CDATA[第3段階：法人口座を委任される方についての情報をお知らせください。]]>
+			</step3aboutrepresentative>
+			<youridentification>
+				<![CDATA[身分証明書類]]>
+			</youridentification>
+			<youridentification_confirm>
+				<![CDATA[ Please review your Identification]]>
+			</youridentification_confirm>
+			<Issuingplace>
+				<![CDATA[発行場所]]>
+			</Issuingplace>
+			<Maritalstatus>
+				<![CDATA[婚姻状況]]>
+			</Maritalstatus>
+			<Lable13>
+				<![CDATA[(ある場合)]]>
+			</Lable13>
+			<yourcontact>
+				<![CDATA[VNダイレクトがお客様へ電話、電子メール、或いは手紙等で直接ご連絡できるよう、情報をご記入ください。お客様が登録した携帯番号(2つ)とFax番号は、電話とFaxを通して注文するのにご利用頂けます。]]>
+			</yourcontact>
+			<yourcontact_confirm>
+				<![CDATA[ VNダイレクトがお客様へ電話、電子メール、或いは手紙等で直接ご連絡できるよう、情報をご記入ください。お客様が登録した携帯番号(2つ)とFax番号は、電話とFaxを通して注文するのにご利用頂けます。]]>
+			</yourcontact_confirm>
+			<MailingAddress>
+				<![CDATA[連絡住所]]>
+			</MailingAddress>
+			<Email>
+				<![CDATA[電子メール]]>
+			</Email>
+			<Telephone1>
+				<![CDATA[電話番号1]]>
+			</Telephone1>
+			<Telephone2>
+				<![CDATA[電話番号2]]>
+			</Telephone2>
+			<Mobiphone>
+				<![CDATA[携帯電話]]>
+			</Mobiphone>
+			<step4EmploymentInformation>
+				<![CDATA[第4ステップ：法人口座を委任される方についての情報をお知らせください。]]>
+			</step4EmploymentInformation>
+			<EducationLevel>
+				<![CDATA[最終学歴]]>
+			</EducationLevel>
+			<Occupation>
+				<![CDATA[職業]]>
+			</Occupation>
+			<CompanyName>
+				<![CDATA[会社名]]>
+			</CompanyName>
+			<EmployerStreetAddress>
+				<![CDATA[会社住所]]>
+			</EmployerStreetAddress>
+			<RepresentativeLevel>
+				<![CDATA[委任レベル]]>
+			</RepresentativeLevel>
+			<Fullpowers>
+				<![CDATA[全部委任]]>
+			</Fullpowers>
+			<Buy>
+				<![CDATA[購入委任]]>
+			</Buy>
+			<Sell>
+				<![CDATA[売却委任]]>
+			</Sell>
+			<Transfertoany>
+				<![CDATA[VNダイレクトから送金委任]]>
+			</Transfertoany>
+			<Transfertospecific>
+				<![CDATA[VNダイレクトからある口座へ送金委任]]>
+			</Transfertospecific>
+			<Lable14>
+				<![CDATA[VNダイレクトからある口座へ送金することを委任する場合、送金先の銀行名と口座番号をご記入ください。]]>
+			</Lable14>
+			<Bankname>
+				<![CDATA[銀行名]]>
+			</Bankname>
+			<BankAccountnumber>
+				<![CDATA[口座番号]]>
+			</BankAccountnumber>
+			<Termofrepresentative>
+				<![CDATA[委任期間]]>
+			</Termofrepresentative>
+			<Notermlimit>
+				<![CDATA[無制限]]>
+			</Notermlimit>
+			<Fromdate>
+				<![CDATA[日から]]>
+			</Fromdate>
+			<todate>
+				<![CDATA[日まで]]>
+			</todate>
+			<isemployed>
+				<![CDATA[お客様は、国家証券委員会のメンバー、或いはその関係者(親族、血縁関係等)でいらっしゃいますか？]]>
+			</isemployed>
+			<ifyes>
+				<![CDATA[(”はい”の場合は、ご関係を明記してください）]]>
+			</ifyes>
+			<isrelationship>
+				<![CDATA[お客様、又はお客様の知合いは、VNダイレクトのスタッフとの関連性がありますか？]]>
+			</isrelationship>
+			<isshareholder>
+				<![CDATA[お客様は、上場企業、あるいはOTC市場の企業の幹部社員、大株主(親族、血縁関係等)の関係者でいらっしゃいますか？]]>
+			</isshareholder>
+			<step5_investment_experience>
+				<![CDATA[第5ステップ：お客様の投資経験と投資目標]]>
+			</step5_investment_experience>
+			<Timetojoin>
+				<![CDATA[いつから市場に参加していますか？]]>
+			</Timetojoin>
+			<StockExchange>
+				<![CDATA[ (SE: Stock Exchange)]]>
+			</StockExchange>
+			<Objectives>
+				<![CDATA[投資に関する知識]]>
+			</Objectives>
+			<Knowledge>
+				<![CDATA[(ひとつを選択してください)]]>
+			</Knowledge>
+			<Selectone>
+				<![CDATA[とても経験があります]]>
+			</Selectone>
+			<Excellent>
+				<![CDATA[すでに経験があります]]>
+			</Excellent>
+			<Good>
+				<![CDATA[ほとんど経験はありません]]>
+			</Good>
+			<Limited>
+				<![CDATA[まだ経験がありません]]>
+			</Limited>
+			<None>
+				<![CDATA[投資経験]]>
+			</None>
+			<Experience>
+				<![CDATA[(少なくても一つを選択してください)]]>
+			</Experience>
+			<Checkatleastone>
+				<![CDATA[株券]]>
+			</Checkatleastone>
+			<Stock>
+				<![CDATA[債券]]>
+			</Stock>
+			<Bond>
+				<![CDATA[外国為替]]>
+			</Bond>
+			<ForeignCurrency>
+				<![CDATA[不動産]]>
+			</ForeignCurrency>
+			<RealEstate>
+				<![CDATA[その他]]>
+			</RealEstate>
+			<Other>
+				<![CDATA[投資基準：]]>
+			</Other>
+			<Capitalpreservation>
+				<![CDATA[安定した収入]]>
+			</Capitalpreservation>
+			<Income>
+				<![CDATA[短期有望株]]>
+			</Income>
+			<Growth>
+				<![CDATA[成長株]]>
+			</Growth>
+			<Speculation>
+				<![CDATA[価値の高い株]]>
+			</Speculation>
+			<IncomeandNetWorth>
+				<![CDATA[収入と総資産：]]>
+			</IncomeandNetWorth>
+			<TotalAssert>
+				<![CDATA[総資産：]]>
+			</TotalAssert>
+			<Select>
+				<![CDATA[一つを選択]]>
+			</Select>
+			<step6_AccountServices>
+				<![CDATA[ <span style="font-weight:bold;">&nbsp; Step 6: </span><span style="font-weight: 700">Account Services</span>]]>
+			</step6_AccountServices>
+			<Lable15>
+				<![CDATA[ご利用になりたい取引形式を選択してください]]>
+			</Lable15>
+			<TransactionExecution>
+				<![CDATA[単独取引]]>
+			</TransactionExecution>
+			<Full-ServicesBrokerage>
+				<![CDATA[サポート付き取引]]>
+			</Full-ServicesBrokerage>
+			<Lable16>
+				<![CDATA[注文方法を選択してください]]>
+			</Lable16>
+			<Lable16_confirm><![CDATA[ <b>Please review the way you want to place an order </b>]]></Lable16_confirm>
+			<Transaction-Type>
+				<![CDATA[取引形式]]>
+			</Transaction-Type>
+			<Employed-Description>
+				<![CDATA[スタッフとの関係を明記してください。]]>
+			</Employed-Description>
+			<Relationship-Description>
+				<![CDATA[スタッフとの関係を明記してください。]]>
+			</Relationship-Description>
+			<Shareholder-Description>
+				<![CDATA[スタッフとの関係を明記してください。]]>
+			</Shareholder-Description>
+			<Place-Order-Method>
+				<![CDATA[証券チャンネル]]>
+			</Place-Order-Method>
+			<Period-Receiving-Statements>
+				<![CDATA[口座控え受取時期]]>
+			</Period-Receiving-Statements>
+			<Method-Receive-Trade-Confirm>
+				<![CDATA[口座控えの確認方法]]>
+			</Method-Receive-Trade-Confirm>
+			<Online>
+				<![CDATA[オンライン]]>
+			</Online>
+			<Bytelephonefax>
+				<![CDATA[電話]]>
+			</Bytelephonefax>
+			<AtFloor>
+				<![CDATA[来店]]>
+			</AtFloor>
+			<pleasespecific>
+				<![CDATA[他のチャンネル]]>
+			</pleasespecific>
+			<YourbankCustody>
+				<![CDATA[証券保管銀行での口座番号(VNダイレクト証券で証券保管を行っていないお客様用)]]>
+			</YourbankCustody>
+			<YourbankCustody_Confirm>
+				<![CDATA[証券保管銀行での口座番号(VNダイレクト証券で証券保管を行っていないお客様用)]]>
+			</YourbankCustody_Confirm>
+			<Periodofreceiving>
+				<![CDATA[口座控え受取時期]]>
+			</Periodofreceiving>
+			<Monthly>
+				<![CDATA[毎月]]>
+			</Monthly>
+			<OnEnquiry><![CDATA[ On Enquiry]]></OnEnquiry>
+			<Quarterly>
+				<![CDATA[四半期毎]]>
+			</Quarterly>
+			<Yearly>
+				<![CDATA[毎年]]>
+			</Yearly>
+			<Whichway>
+				<![CDATA[取引確認及び口座控え受取方法]]>
+			</Whichway>
+			<Whichway1><![CDATA[ Receiving trade confirmation]]></Whichway1>
+			<Whichway2><![CDATA[ Receiving statement confirmation]]></Whichway2>
+			<ByPhone><![CDATA[ By phone]]></ByPhone>
+			<ByPhoneAddress><![CDATA[ By phone number ]]></ByPhoneAddress>
+			<AtVNDS>
+				<![CDATA[店頭(VNダイレクト証券)にて]]>
+			</AtVNDS>
+			<ByEmail>
+				<![CDATA[電子メールで]]>
+			</ByEmail>
+			<declaration>
+				<![CDATA[誓約書]]>
+			</declaration>
+			<contract_no>
+				<![CDATA[契約番号]]>
+			</contract_no>
+			<for_individual>
+				<![CDATA[個人のお客様用]]>
+			</for_individual>
+			<for_join>
+				<![CDATA[ベトナムドン口座を所有しているお客様用]]>
+			</for_join>
+			<signature_first_app>
+				<![CDATA[口座主の署名]]>
+			</signature_first_app>
+			<signature_second_app>
+				<![CDATA[第2口座主の署名]]>
+			</signature_second_app>
+			<for_corporate>
+				<![CDATA[法人のお客様用]]>
+			</for_corporate>
+			<signature_corporate>
+				<![CDATA[口座主の署名]]>
+			</signature_corporate>
+			<open_new_account>
+				<![CDATA[証券取引口座開設申請書]]>
+			</open_new_account>
+			<BymailingAddress>
+				<![CDATA[この電子メールのアドレスで]]>
+			</BymailingAddress>
+			<declaration_individual1>
+				<![CDATA[私は口座開設申請書の情報が全て事実であり、関連事項に変更があればVNダイレクト証券へ直ぐに報告することを誓います。]]>
+			</declaration_individual1>
+			<declaration_individual11>
+				<![CDATA[この口座開設申請書と契約事項が、お客様とのサービス契約内容となります。]]>
+			</declaration_individual11>
+			<declaration_individual2>
+				<![CDATA[この口座開設申請書は、VNダイレクト証券の審査と承認後に、有効となります。]]>
+			</declaration_individual2>
+			<declaration_individual21>
+				<![CDATA[この口座開設申請書は、VNダイレクト証券の審査と承認後に、有効となります。]]>
+			</declaration_individual21>
+			<signature_app_individual>
+				<![CDATA[(主)契約の署名]]>
+			</signature_app_individual>
+			<signature_note>
+				<![CDATA[署名と楷書体による姓名表記]]>
+			</signature_note>
+			<signature_note1>
+				<![CDATA[署名と楷書体による姓名表記、及び捺印]]>
+			</signature_note1>
+			<date_individual>
+				<![CDATA[日・月・年]]>
+			</date_individual>
+			<OpenCustodialAccount_Step2>
+				<![CDATA[第2段階：]]>
+			</OpenCustodialAccount_Step2>
+			<OpenCustodialAccount_Step3>
+				<![CDATA[第3段階：]]>
+			</OpenCustodialAccount_Step3>
+			<OpenCustodialAccount_Step4>
+				<![CDATA[第4段階：]]>
+			</OpenCustodialAccount_Step4>
+			<OpenCustodialAccount_Step5>
+				<![CDATA[第5段階：法人口座の被委任者の職務に関する情報を一部追加してください]]>
+			</OpenCustodialAccount_Step5>
+			<OpenCustodialAccount_Step6>
+				<![CDATA[第6段階：投資経験と目標について]]>
+			</OpenCustodialAccount_Step6>
+			<OpenCustodialAccount_Step7>
+				<![CDATA[第7段階：口座サービス]]>
+			</OpenCustodialAccount_Step7>
+			<OpenIndividualAccount_Step2>
+				<![CDATA[第2段階：口座主の情報(個人口座)]]>
+			</OpenIndividualAccount_Step2>
+			<OpenIndividualAccount_Step3>
+				<![CDATA[第3段階：ご職業の情報について入力ください]]>
+			</OpenIndividualAccount_Step3>
+			<OpenIndividualAccount_Step4>
+				<![CDATA[第4段階：投資経験と目標について]]>
+			</OpenIndividualAccount_Step4>
+			<OpenIndividualAccount_Step5>
+				<![CDATA[第5段階：口座サービス]]>
+			</OpenIndividualAccount_Step5>
+			<OpenJoinAccount_Step2>
+				<![CDATA[第2段階：ベトナムドン口座所有者の第1口座主に関する情報]]>
+			</OpenJoinAccount_Step2>
+			<OpenJoinAccount_Confirm_1>
+				<![CDATA[ベトナムドン口座所有者の第1口座主に関する情報]]>
+			</OpenJoinAccount_Confirm_1>
+			<OpenJoinAccount_Step3>
+				<![CDATA[第3段階：第1口座主の職業に関する情報を入力してください]]>
+			</OpenJoinAccount_Step3>
+			<OpenJoinAccount_Step4>
+				<![CDATA[第4段階：ベトナムドン口座所有者の第2口座主に関する情報]]>
+			</OpenJoinAccount_Step4>
+			<OpenJoinAccount_Confirm_2>
+				<![CDATA[ベトナムドン口座所有者の第2口座主に関する情報]]>
+			</OpenJoinAccount_Confirm_2>
+			<OpenJoinAccount_Step5>
+				<![CDATA[第5段階：第2口座主の職業に関する情報を入力してください]]>
+			</OpenJoinAccount_Step5>
+			<OpenJoinAccount_Step6>
+				<![CDATA[第6段階：投資経験と目標について]]>
+			</OpenJoinAccount_Step6>
+			<OpenJoinAccount_Step7>
+				<![CDATA[第7段階：口座サービス]]>
+			</OpenJoinAccount_Step7>
+			<ValidAgeValue>
+				<![CDATA[18歳]]>
+			</ValidAgeValue>
+			<RejectMessage><![CDATA[ You have not completed all required information, please return to the homepage to complete all the procedures. Thank you very much! ]]></RejectMessage>
+			<TitleReceive><![CDATA[ <span style="font-weight:bold;">&nbsp; Please choose the way you receive Document </span>]]></TitleReceive>
+			<LabelReceiveY><![CDATA[ Please print out and send to VNDirect. ]]></LabelReceiveY>
+			<LabelReceiveN><![CDATA[ VNDirect’s officer will contact you. ]]></LabelReceiveN>
+			<VNDSFreeUser><![CDATA[ VNDS Free Registered User ]]></VNDSFreeUser>
+			<VNDSTradingUser><![CDATA[ VNDS Online Trading User ]]></VNDSTradingUser>
+			<ChooseUserType><![CDATA[ Choose User Type: ]]></ChooseUserType>
+			<SecurityLable><![CDATA[ Please input your hint question & answer ]]></SecurityLable>
+			<SecurityQuestion><![CDATA[ Hint Question ]]></SecurityQuestion>
+			<YourAnswer><![CDATA[ Answer ]]></YourAnswer>
+			<ConfirmSecurityLable><![CDATA[ Please confirm your hint question & answer ]]></ConfirmSecurityLable>
+			<ChooseAccount><![CDATA[ &nbsp; Choose which Account to open ]]></ChooseAccount>
+			<GuidanceNewAccount><![CDATA[ &nbsp; Steps to open a new Account ]]></GuidanceNewAccount>
+			<AccountInformation><![CDATA[ &nbsp; Already an user,<br> manage your Account information ]]></AccountInformation>
+		</CreateAnAccount>
+		<CreateIndividualAccount>
+			<Step1_Title><![CDATA[ <span style="font-weight:bold;">&nbsp; ĐĂNG KÝ TÀI KHOẢN &nbsp;</span>]]></Step1_Title>
+			<Step1_Help><![CDATA[ Quý khách cần trợ giúp?<br/>Hãy gọi: <br />1-900-545409 ấn phím 2 ]]></Step1_Help>
+			<Step1_chat_online><![CDATA[ hoặc sử dụng tiện ích:<br><a class="live-chat"href="#" title="Chat trực tuyến với dịch vụ khách hàng của VNDirect">Chat trực tuyến</a><br /> ]]></Step1_chat_online>
+			<Step1_WorkingTime><![CDATA[ Giờ làm việc <br />8am - 5h30pm <br />Thứ 2 đến thứ 6 ]]></Step1_WorkingTime>
+			<Step1_Start><![CDATA[ Bắt đầu ]]></Step1_Start>
+			<Step1_IsIndividualAccount><![CDATA[ Tài khoản sẽ mở là dành cho cá nhân hay tổ chức? ]]></Step1_IsIndividualAccount>
+			<Step1_IndividualAccount><![CDATA[ Tài khoản cho cá nhân ]]></Step1_IndividualAccount>
+			<Step1_CorporateAccount><![CDATA[ Tài khoản cho tổ chức ]]></Step1_CorporateAccount>
+			<Step1_IsVnAccount><![CDATA[ Tài khoản cho nhà đầu tư Việt Nam hay nhà đầu tư nước ngoài?  ]]></Step1_IsVnAccount>
+			<Step1_Vietnamese><![CDATA[ Nhà đầu tư Việt Nam]]></Step1_Vietnamese>
+			<Step1_Foreign><![CDATA[ Nhà đầu tư nước ngoài]]></Step1_Foreign>
+			<Step1_HeardOfVndirect><![CDATA[ Vì sao quý khách biết đến VNDirect? ]]></Step1_HeardOfVndirect>
+			<Step1_Paper_Tv><![CDATA[ Qua báo chí/Tivi ]]></Step1_Paper_Tv>
+			<Step1_Internet><![CDATA[ Qua Internet ]]></Step1_Internet>
+			<Step1_Friends><![CDATA[ Qua bạn bè ]]></Step1_Friends>
+			<Step1_Other><![CDATA[ Qua một kênh khác ]]></Step1_Other>
+			<Step1_RefCode><![CDATA[ Mã ưu đãi ]]></Step1_RefCode>
+			<Step1_Advertise><![CDATA[  Ads goes here ]]></Step1_Advertise>
+			<Step1_Title_1_2><![CDATA[ Bước 1: Thông tin về chủ tài khoản (1/2) ]]></Step1_Title_1_2>
+			<AccountInfo><![CDATA[ Thông tin về chủ tài khoản ]]></AccountInfo>
+			<Fullname><![CDATA[ Tên đầy đủ ]]></Fullname>
+			<DateOfBirth><![CDATA[ Ngày sinh ]]></DateOfBirth>
+			<Sex><![CDATA[ Giới tính ]]></Sex>
+			<IDType><![CDATA[ Thông tin định dạng ]]></IDType>
+			<IDNumber><![CDATA[ Số CMT/Hộ chiếu ]]></IDNumber>
+			<IssueDate><![CDATA[ Ngày cấp ]]></IssueDate>
+			<ExpiredDate><![CDATA[ Ngày hết hạn ]]></ExpiredDate>
+			<IssuePlace><![CDATA[ Nơi cấp ]]></IssuePlace>
+			<MaritalStatus><![CDATA[ Tình trạng hôn nhân ]]></MaritalStatus>
+			<SpouseName><![CDATA[ Họ và tên vợ/chồng ]]></SpouseName>
+			<SpouseCompany><![CDATA[ Nơi công tác ]]></SpouseCompany>
+			<SpousePosition><![CDATA[ Vị trí ]]></SpousePosition>
+			<AddressInfo><![CDATA[ Thông tin liên lạc ]]></AddressInfo>
+			<StreetAddress><![CDATA[ Địa chỉ liên lạc ]]></StreetAddress>
+			<Province><![CDATA[ Tỉnh thành ]]></Province>
+			<Country><![CDATA[ Nước ]]></Country>
+			<Email><![CDATA[ Email ]]></Email>
+			<HomePhone><![CDATA[ Điện thoại cố định ]]></HomePhone>
+			<MobilePhone><![CDATA[ Điện thoại di động ]]></MobilePhone>
+			<TipGuide><![CDATA[ <span class="blue">TIP</span>: Những mục có dấu (<span class="reg-required">*</span>) là mục bắt buộc phải điền. ]]></TipGuide>
+			<Step1_Title_2_2><![CDATA[ Bước 1: Thông tin về chủ tài khoản (2/2) ]]></Step1_Title_2_2>
+			<Step1_EmploymentInfo><![CDATA[ Thông tin về nghề nghiệp ]]></Step1_EmploymentInfo>
+			<EducationLevel><![CDATA[ Trình độ học vấn ]]></EducationLevel>
+			<CompanyName><![CDATA[ Đơn vị công tác ]]></CompanyName>
+			<Posittion><![CDATA[ Vị trí công tác ]]></Posittion>
+			<CompanyPhone><![CDATA[ Điện thoại cơ quan ]]></CompanyPhone>
+			<Fax><![CDATA[ Fax ]]></Fax>
+			<BankAccountInfo><![CDATA[ Tài khoản ngân hàng ]]></BankAccountInfo>
+			<BankNumber><![CDATA[ Số tài khoản ]]></BankNumber>
+			<BankName><![CDATA[ Tên ngân hàng ]]></BankName>
+			<BankManager><![CDATA[ Người quản lý ]]></BankManager>
+			<OtherInfo><![CDATA[ Thông tin khác ]]></OtherInfo>
+			<PublicManageCompany><![CDATA[ Tên công ty đại chúng mà quý khách nắm chức danh quản lý ]]></PublicManageCompany>
+			<PublicCompanyHolding><![CDATA[ Tên công ty đại chúng mà quý khách sở hữu từ 5% vốn điều lệ trở lên ]]></PublicCompanyHolding>
+			<AccountTip><![CDATA[ <span class="blue">TIP</span>: Chúng tôi không chấp nhận ngân hàng nước ngoài. ]]></AccountTip>
+			<Step2_AccountInfo><![CDATA[ Bước 2: Thông tin tài khoản ]]></Step2_AccountInfo>
+			<Step2_AccountType><![CDATA[ Loại tài khoản ]]></Step2_AccountType>
+			<IsDelegateAccount><![CDATA[ Có phải là tài khoản ủy thác quản lý hay không? ]]></IsDelegateAccount>
+			<Delegater><![CDATA[ Người được ủy thác ]]></Delegater>
+			<DelegatePhone><![CDATA[ Số điện thoại liên lạc ]]></DelegatePhone>
+			<StatementCycle><![CDATA[ Chu kì nhận sao kê ]]></StatementCycle>
+			<Monthly><![CDATA[ Tháng ]]></Monthly>
+			<Quarter><![CDATA[ Quý ]]></Quarter>
+			<StatementMethod><![CDATA[ Phương thức nhận sao kê ]]></StatementMethod>
+			<AtVNDirect><![CDATA[ Tại VNDirect ]]></AtVNDirect>
+			<ByEmail><![CDATA[ Qua Email ]]></ByEmail>
+			<OrderResultMethod><![CDATA[ Phương thức nhận kết quả khớp lệnh ]]></OrderResultMethod>
+			<ByTelephone><![CDATA[ Qua điện thoại ]]></ByTelephone>
+			<BySMS><![CDATA[ Tin nhắn qua điện thoại ]]></BySMS>
+			<NotificationMethod><![CDATA[ Phương thức nhận thông báo ]]></NotificationMethod>
+			<CallToVnDirect><![CDATA[ Khách hàng gọi điện đến VNDirect ]]></CallToVnDirect>
+			<FromPhoneNumber><![CDATA[ Số điện thoại ]]></FromPhoneNumber>
+			<Step3_Tip><![CDATA[ <span class="blue">TIP</span>: Những thông tin trên đây không mang tính bắt buộc mà chỉ để chúng tôi tham khảo nhằm mục đích phục vị quý khách tốt hơn. ]]></Step3_Tip>
+			<Step3_DelegateTraiding><![CDATA[ Bước 3: Ủy quyền giao dịch ]]></Step3_DelegateTraiding>
+			<Step3_Note><![CDATA[ Lưu ý: Quý khách cần đề nghị người được ủy quyền phải có giấy xác nhận của cơ quan nơi họ làm việc hoặc cơ quan có thẩm quyền tại địa phương.  ]]></Step3_Note>
+			<IsDelegateTraiding><![CDATA[ Quý khách có đăng ký ủy quyền giao dịch hay ko? ]]></IsDelegateTraiding>
+			<Step3_Title_1><![CDATA[ Thông tin người được ủy quyền ]]></Step3_Title_1>
+			<Step3_Tip><![CDATA[ <span class="blue">TIP</span>: Khi in phiếu mở tài khoản, phần ủy quyền quý khách vui lòng ký xác nhận vào "Phạm vi ủy quyền" và "Thời gian ủy quyền" nếu quý khách có đăng ký ủy quyền giao dịch.  ]]></Step3_Tip>
+			<Step4_RemoteTraiding><![CDATA[ Bước 3: Đăng ký giao dịch từ xa ]]></Step4_RemoteTraiding>
+			<Step4_OnlineTraiding><![CDATA[ Đăng ký giao dịch trực tuyến ]]></Step4_OnlineTraiding>
+			<OnlineTraidingBy><![CDATA[ Giao dịch trực tuyến được thực hiện bởi]]></OnlineTraidingBy>
+			<OwnerAccount><![CDATA[ Chủ tài khoản ]]></OwnerAccount>
+			<DelegaterUser><![CDATA[ Người được ủy quyền ]]></DelegaterUser>
+			<TraidingByPhone><![CDATA[ Đăng ký giao dịch qua điện thoại ]]></TraidingByPhone>
+			<TraidingPhone><![CDATA[ Số điện thoại giao dịch ]]></TraidingPhone>
+			<TelTraidingBy><![CDATA[ Giao dịch điện thoại được thực hiện bởi]]></TelTraidingBy>
+			<FromRegisterPhone><![CDATA[ Từ các số điện thoại ở bước 2 ]]></FromRegisterPhone>
+			<FromAnyPhone><![CDATA[ Từ một số điện thoại bất kỳ ]]></FromAnyPhone>
+			<PasswordRule><![CDATA[ <span><em>Lưu ý</em>: <font color="red">Yêu cầu nhập 4 chữ số</font> </span>]]></PasswordRule>
+			<Password><![CDATA[ Mật khẩu ]]></Password>
+			<ConfirmPassword><![CDATA[ Xác nhận lại mật khẩu ]]></ConfirmPassword>
+			<AgreementNote><![CDATA[ <ul>
+				<li>Bằng việc kí vào phiếu này, tôi cam kết tuân thủ các quy định về giao dịch qua điện thoại và trực tuyến được cung cấp bởi Công ty Cổ phần Chứng khoán VNDirect ("Công ty") và sử dụng các thông tin nhận dạng đã được đăng kí ở trên.</li>
+				<li>Tôi đồng ý rằng bất kỳ giao dịch trực tuyến và/hoặc qua điện thoại nào với Công ty sử dụng các thông tin nhận dạng đã đăng kí ở trên đều được hiểu là giao dịch do tôi thực hiện.</li>
+				<li>Tôi cam kết chịu trách nhiệm bảo mật các thông tin nhận dạng đã đăng kí ở trên và các thông tin nhận dạng liên quan khác và sẽ hoàn toàn chịu trách nhiệm trong trường hợp thông tin nhận dạng bị tiết lộ.</li>
+			</ul> ]]></AgreementNote>
+			<Agreement><![CDATA[ Cam kết ]]></Agreement>
+			<Yes><![CDATA[ Có ]]></Yes>
+			<No><![CDATA[ Không ]]></No>
+			<ObjectiveCapacity><![CDATA[ Bước 4: Mục tiêu và năng lực đầu tư ]]></ObjectiveCapacity>
+			<ObjectiveInvest><![CDATA[ Mục tiêu đầu tư ]]></ObjectiveInvest>
+			<ObjectiveIncome><![CDATA[ Thu nhập ]]></ObjectiveIncome>
+			<ObjectiveLongterm><![CDATA[ Tăng trưởng dài hạn ]]></ObjectiveLongterm>
+			<ObjectiveNormalterm><![CDATA[ Tăng trưởng trung hạn ]]></ObjectiveNormalterm>
+			<ObjectiveShortterm><![CDATA[ Tăng trưởng ngắn hạn ]]></ObjectiveShortterm>
+			<Total><![CDATA[ Tổng ]]></Total>
+			<RiskInvestment><![CDATA[ Mức độ chấp nhận rủi ro ]]></RiskInvestment>
+			<LowRisk><![CDATA[ Thấp ]]></LowRisk>
+			<NormalRisk><![CDATA[ Trung bình ]]></NormalRisk>
+			<HightRisk><![CDATA[ Cao ]]></HightRisk>
+			<Asset><![CDATA[ Tài sản ]]></Asset>
+			<AssetShortterm><![CDATA[ Ngắn hạn ]]></AssetShortterm>
+			<AssetFix><![CDATA[ Cố định ]]></AssetFix>
+			<AssetCurrent><![CDATA[ Giá trị tài sản ròng ]]></AssetCurrent>
+			<AssetMonthly><![CDATA[ Thu nhập theo tháng ]]></AssetMonthly>
+			<InvestmentKnowledge><![CDATA[ Hiểu biết về đầu tư ]]></InvestmentKnowledge>
+			<KnowledgeExpert><![CDATA[ Rất tốt &nbsp;&nbsp; ]]></KnowledgeExpert>
+			<KnowledgeGood><![CDATA[ Tốt &nbsp;&nbsp; ]]></KnowledgeGood>
+			<KnowledgeLimited><![CDATA[ Còn hạn chế &nbsp;&nbsp; ]]></KnowledgeLimited>
+			<KnowledgeNone><![CDATA[ Chưa hiểu gì &nbsp;&nbsp; ]]></KnowledgeNone>
+			<InvestmentExperience><![CDATA[ Kinh nghiệm về đầu tư ]]></InvestmentExperience>
+			<Stock><![CDATA[ &nbsp;&nbsp;Cổ phiểu  ]]></Stock>
+			<BanKhong><![CDATA[ &nbsp;&nbsp;Bán khống  ]]></BanKhong>
+			<Traiphieu><![CDATA[ &nbsp;&nbsp;Trái phiếu  ]]></Traiphieu>
+			<Chungkhoankhac><![CDATA[ &nbsp;&nbsp;Chứng khoán khác ]]></Chungkhoankhac>
+			<Tinphieu><![CDATA[ &nbsp;&nbsp;Tín phiếu kho bạc ]]></Tinphieu>
+			<NoExperience><![CDATA[ &nbsp;&nbsp;Chưa có kinh nghiệm  ]]></NoExperience>
+			<Step5_Tip><![CDATA[ <span class="blue">TIP</span>: Những thông tin trên đây không mang tính bắt buộc mà chỉ để chúng tôi tham khảo nhằm mục đích phục vị quý khách tốt hơn.  ]]></Step5_Tip>
+		</CreateIndividualAccount>
+		<RegisterUser>
+			<User-Name>
+				<![CDATA[ユーザーネーム]]>
+			</User-Name>
+			<Password>
+				<![CDATA[パスワード]]>
+			</Password>
+			<Confirm-Password>
+				<![CDATA[パスワード再確認]]>
+			</Confirm-Password>
+			<Full-Name>
+				<![CDATA[フルネーム]]>
+			</Full-Name>
+			<Email>
+				<![CDATA[電子メール]]>
+			</Email>
+			<Register-Success>
+				<![CDATA[オンライン利用者登録が成功しました！]]>
+			</Register-Success>
+			<Title_Step1><![CDATA[Step 1: Enter required Information]]></Title_Step1>
+			<IdentificationType><![CDATA[ Identification information ]]></IdentificationType>
+			<DOB><![CDATA[ Date of birth  ]]></DOB>
+			<Sex><![CDATA[ Sex ]]></Sex>
+			<yourcontact><![CDATA[ Please enter your contact.]]></yourcontact>
+			<yourcontact_confirm><![CDATA[  Please review your Contact Address.]]></yourcontact_confirm>
+			<Agreement><![CDATA[ Đồng ý với các điều khoản của chúng tôi ]]></Agreement>
+			<MailingAddress><![CDATA[ Mailing Address]]></MailingAddress>
+			<Province><![CDATA[ Province ]]></Province>
+			<Country><![CDATA[ Country ]]></Country>
+			<Telephone><![CDATA[ Telephone ]]></Telephone>
+			<Title_Step2><![CDATA[Please review your info and click on button Complete to completed register free VNDirect User]]></Title_Step2>	
+			<LableConfirm1><![CDATA[CONFIRM REGISTER INFORMATION]]></LableConfirm1>
+			<LableConfirm2><![CDATA[(For free VNDirect User)]]></LableConfirm2>
+			<Dashboard><![CDATA[ Dashboard ]]></Dashboard>
+			<AccountHome><![CDATA[ Account Home ]]></AccountHome>
+			<MyPorfolios><![CDATA[ My Porfolios ]]></MyPorfolios>
+			<EditUserInfor><![CDATA[ Edit User Infor ]]></EditUserInfor>
+			<Dashboard_Lable><![CDATA[<b><span style="font-size: large;">INVESTING &amp; TRADING WITH VNDIRECT ONLINE<p/>
+<span style="color: #E88920;">Fast and Secure Solution
+Get the VNDirect Online advantage.</span></span></b><p/>
+Monitor your stocks in real-time using VNDirect FREE streaming Quotes, Charts 
+and News.
+Other valuable tools include My Porfolios Integrated Account Management to help 
+you track individual stocks and make timely trades.]]></Dashboard_Lable>
+			<Dashboard_chart><![CDATA[ <span><b>VNDirect Technical Chart</b> </span> ]]></Dashboard_chart>
+			<Dashboard_chart_1><![CDATA[ <span>Intraday, Daily and Weekly, Monthly Chart draws by adjusted price </span> ]]></Dashboard_chart_1>
+			<Dashboard_porfolios><![CDATA[ <span><b>My Porfolios</b></span> ]]></Dashboard_porfolios>
+			<Dashboard_porfolios_1><![CDATA[ <span>Easy Tools to build deversified pofolios</span> ]]></Dashboard_porfolios_1>
+			<Dashboard_index><![CDATA[ <span><b>Industry Performance</b></span> ]]></Dashboard_index>
+			<Dashboard_index_1><![CDATA[ <span>Industry Index for Stocks listed in HOSE & HNX</span> ]]></Dashboard_index_1>
+			<Dashboard_stream><![CDATA[ <span><b>HOSE&HNX STREAM Quotes</b></span> ]]></Dashboard_stream>
+			<Dashboard_stream_1><![CDATA[ <span>Personalized Quotes Lists, Intergrated with your Porfolios</span> ]]></Dashboard_stream_1>
+			<Dashboard_QUOTE><![CDATA[ QUOTE ]]></Dashboard_QUOTE>
+			<Dashboard_PublicInfo><![CDATA[ Public Info ]]></Dashboard_PublicInfo>
+			<Dashboard_VNMarketBrief><![CDATA[ VNDirect MarketBrief ]]></Dashboard_VNMarketBrief>
+			<Dashboard_Advertising><![CDATA[ VNDirect online Advertising ]]></Dashboard_Advertising>
+			<Dashboard_FreeServices><![CDATA[ OUR FREE SERVICES ]]></Dashboard_FreeServices>
+			<Dashboard_Create_A_Account><![CDATA[ Open an Account</a> today and experience the power of VNDirect Online.]]></Dashboard_Create_A_Account>
+			<Title_Step2><![CDATA[Cám ơn quý khách]]></Title_Step2>
+			<Message1><![CDATA[ Xin cảm ơn quý khách ]]></Message1>
+			<Message2><![CDATA[ đã đăng kí sử dụng tài khoản miễn phí tại VNDirect!]]></Message2>
+			<Message3><![CDATA[ Chúng tôi đã gửi email xác nhận đến địa chỉ  ]]></Message3>
+			<Message4><![CDATA[ Quý khách vui lòng kiểm tra email và ấn vào link xác nhận để kích hoạt tài khoản miễn phí của quý khách.]]></Message4>
+			<Message5><![CDATA[ Tel: 1900545409 (Nhánh 2). ]]></Message5>
+			<Message6><![CDATA[ Email: <a href="mailto:support@vndirect.com.vn">support@vndirect.com.vn</a>]]></Message6>
+			<Message7><![CDATA[ Chúng tổi rất hân hạnh được phục vụ quý khách. ]]></Message7>
+			<Message8><![CDATA[ Trân trọng, <br> VNDirect team]]></Message8>
+		</RegisterUser>
+		<RecoverUserInfo>
+			<TabTitle><![CDATA[Recover User Cerdentials]]></TabTitle>
+			<Title1><![CDATA[Please enter your information below:]]></Title1>
+			<QuestionUserName><![CDATA[1. Input your VNDS Username:]]></QuestionUserName>
+			<UserName><![CDATA[VNDS Username]]></UserName>
+			<Message1><![CDATA[I don't remember even my Username]]></Message1>
+			<QuestionUserType><![CDATA[2. Verify your VNDS User type:]]></QuestionUserType>
+			<AccountType><![CDATA[VNDS User type]]></AccountType>
+			<TypeFreeUser><![CDATA[Free Registered User]]></TypeFreeUser>
+			<TypeVNDSUser><![CDATA[VNDS Online Trading Customer]]></TypeVNDSUser>
+			<TypeWebAgent><![CDATA[Web Agent]]></TypeWebAgent>
+			<QuestionExtra><![CDATA[3. Confirm your extra information:]]></QuestionExtra>
+			<ContractNumber><![CDATA[Contract Number]]></ContractNumber>
+			<IndentificationType><![CDATA[Indentification Type]]></IndentificationType>
+			<IndentificationCode><![CDATA[Indentification Code]]></IndentificationCode>
+			<VTOSSericalNumber><![CDATA[VTOS Serical Number]]></VTOSSericalNumber>
+			<HintQuestion><![CDATA[Hint Question]]></HintQuestion>
+			<YourAnswer><![CDATA[Your Answer]]></YourAnswer>
+			<Title2><![CDATA[Now get your password and change it at the next login]]></Title2>
+			<Message2><![CDATA[Your password has been send to your registered email. Please check.]]></Message2>
+			<Message2VNDSUser><![CDATA[
+        Dear <b>{0}</b>,<br>
+We have sent your new log in password to your email at <b>{1}</b>.
+<br>
+<br>
+Regards,<br>VNDirect Team.]]></Message2VNDSUser>
+		</RecoverUserInfo>
+		<Home>
+			<StreamingQuote>
+				<![CDATA[ホーチミン証券取引所とハノイ証券取引所のオンライン株価ボードはこちらから。ご自身でポートフォリオの作成もできます。]]>
+			</StreamingQuote>
+			<FindYourpath>
+				<![CDATA[]]>
+			</FindYourpath>
+			<Leanmore>
+				<![CDATA[詳細]]>
+			</Leanmore>
+			<FindYourpathTitle>
+				<![CDATA[投資サービス]]>
+			</FindYourpathTitle>
+			<StreamingQuoteTitle>
+				<![CDATA[オンライン株価ボード]]>
+			</StreamingQuoteTitle>
+			<CustomerService><![CDATA[Customer service]]></CustomerService>
+			<Guideline><![CDATA[Customer guideline]]></Guideline>
+			<Faqs><![CDATA[FAQs]]></Faqs>
+			<Hotline><![CDATA[Support number 1900 - 545409 (ext 2)]]></Hotline>
+		</Home>
+	</Home>
+	<Account>
+		<Infos>
+			<ChangeAccAddress>
+				<Can_not_update>
+					<![CDATA[情報の更新に失敗しました！]]>
+				</Can_not_update>
+			</ChangeAccAddress>
+		</Infos>
+		<Lables>
+			<Menu-Level2>
+				<CompleteView>
+					<![CDATA[&nbsp;口座情報 &nbsp;]]>
+				</CompleteView>
+				<MyInfo>
+					<![CDATA[&nbsp;個人情報 &nbsp;]]>
+				</MyInfo>
+				<SearchStockOptions><![CDATA[&nbsp; Right Events &nbsp;]]></SearchStockOptions>
+				<AccountRecords>
+					<![CDATA[口座控え]]>
+				</AccountRecords>
+				<FormsApplications>
+					<![CDATA[&nbsp; Forms & Applications  &nbsp;]]>
+				</FormsApplications>
+				<Products>
+					<![CDATA[提供サービス]]>
+				</Products>
+				<Report>
+					<![CDATA[&nbsp; Account Statement &nbsp;]]>
+				</Report>
+				
+			</Menu-Level2>
+			<Menu-Level3>
+				<MyInfo>
+					<MyInfo>
+						<![CDATA[個人情報]]>
+					</MyInfo>
+					<AccountPreferences>
+						<![CDATA[口座情報]]>
+					</AccountPreferences>
+					<SecurityPasswords>
+						<![CDATA[パスワードを変更する]]>
+					</SecurityPasswords>
+				</MyInfo>
+				<ApplicationAndForm>
+					<Application>
+						<![CDATA[&nbsp; Application &nbsp;]]>
+					</Application>
+					<LegalAuthorization>
+						<![CDATA[&nbsp; Legal & Authorization &nbsp;]]>
+					</LegalAuthorization>
+					<TradingTax>
+						<![CDATA[&nbsp; Trading & Tax &nbsp;]]>
+					</TradingTax>
+					<TrasferDistribution>
+						<![CDATA[&nbsp; Trasfer & Distribution &nbsp;]]>
+					</TrasferDistribution>
+				</ApplicationAndForm>
+			</Menu-Level3>
+		</Lables>
+		<CellNames>
+			<MyInfo>
+				<AccountAddresses>
+					<![CDATA[連絡先住所]]>
+				</AccountAddresses>
+				<Phone>
+					<![CDATA[電話番号]]>
+				</Phone>
+				<Home>
+					<![CDATA[自宅]]>
+				</Home>
+				<Province>
+					<![CDATA[都道府県]]>
+				</Province>
+				<Country>
+					<![CDATA[国]]>
+				</Country>
+				<Business>
+					<![CDATA[勤務先]]>
+				</Business>
+				<Mobiphone>
+					<![CDATA[携帯電話番号]]>
+				</Mobiphone>
+				<MailingAddress>
+					<![CDATA[住所]]>
+				</MailingAddress>
+				<E-mailAddresses>
+					<![CDATA[電子メールアドレス]]>
+				</E-mailAddresses>
+				<TradingConfirmationStatement>
+					<![CDATA[取引及び口座控え確認電子メールアドレス]]>
+				</TradingConfirmationStatement>
+				<Change>
+					<![CDATA[変更]]>
+				</Change>
+				<Edit>
+					<![CDATA[変更]]>
+				</Edit>
+				<AccountInfoTitle><![CDATA[Account Holder Profile]]></AccountInfoTitle>
+				<FullName><![CDATA[Full Name]]></FullName>
+				<AccountNumber><![CDATA[Account Number]]></AccountNumber>
+				<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+				<HomePhone><![CDATA[Home Phone]]></HomePhone>
+				<SMSPhone><![CDATA[Mobile Phone for SMS Service]]></SMSPhone>
+				<ServiceRegisted><![CDATA[Registered Services in VNDirect]]></ServiceRegisted>
+				<FloorTrading><![CDATA[Floor Services]]></FloorTrading>
+				<TeleTrading><![CDATA[Call Center Services 1900-5454-09]]></TeleTrading>
+				<TradeFone1><![CDATA[1st Registered Phone Number]]></TradeFone1>
+				<TradeFone2><![CDATA[2nd Registered Phone Number]]></TradeFone2>
+				<TeleTradePassword><![CDATA[Call Center Password]]></TeleTradePassword>
+				<OnlineTrading><![CDATA[Online Trading Services]]></OnlineTrading>
+				<UserName><![CDATA[User name]]></UserName>
+				<Password><![CDATA[Password]]></Password>
+				
+				<InternetEmail><![CDATA[Email for online trading]]></InternetEmail>
+				<InternetEmailNew><![CDATA[New email address]]></InternetEmailNew>
+				<ChangeSuccessful><![CDATA[Your Change has been Successful.]]></ChangeSuccessful>
+				
+				<UpdateUserProfileSuccess><![CDATA[Your profile has been changed successful.]]></UpdateUserProfileSuccess>
+				<UpdateTeleTraddingSuccess><![CDATA[Your telephone trading has been changed successful.]]></UpdateTeleTraddingSuccess>
+				<UpdateTeleTradPwSuccess><![CDATA[Your password for tele trading has been changed successful.]]></UpdateTeleTradPwSuccess>
+
+				<ChangeEmailSuccess><![CDATA[Your email for online trading has been changed successful.]]></ChangeEmailSuccess>
+				<NotifyEmailSuccess><![CDATA[You have been changed email for online trading. Please check old email to confirm this change.]]></NotifyEmailSuccess>
+				<InvalidKey><![CDATA[Invalide key.]]></InvalidKey>
+				
+				<ChangeUserInfo><![CDATA[Change Account Holder Profile]]></ChangeUserInfo>
+				<ChangeRegistedServices><![CDATA[Change Registered Services]]></ChangeRegistedServices>
+				<OldTelePassword><![CDATA[Old Password]]></OldTelePassword>
+				<NewTelePassword><![CDATA[Enter new Password<br><i>(4 number only)</i>]]></NewTelePassword>
+				<ReTypeOldTelePassword><![CDATA[Re-enter Password]]></ReTypeOldTelePassword>
+				<Confirm><![CDATA[Confirm]]></Confirm>
+				<ChangeNote><![CDATA[<i>Note: Review your information to help VNDirect keep contact with you.Be sure to click Confirm button when you're done.<br/>
+										Please enter your online trading password to confirm your change.</i>]]></ChangeNote>
+				<ChangeNote1><![CDATA[<i>Note: This is your telephone numbers for call center 1900-5454-09.<br/>
+										Please enter your online trading password to confirm your change.</i>]]></ChangeNote1>
+				<ChangeNote2><![CDATA[<i>Note: This is your tele password for call center 1900-5454-09.<br/>
+											QPlease enter your online trading password to confirm your change.</i>]]></ChangeNote2>
+				<ChangeNote3><![CDATA[<i>Note: This email user for confirm online trading password and notification about online trading services of VNDirect.<br/>
+										Please enter your online trading password to confirm your change.</i>]]></ChangeNote3>
+			</MyInfo>
+			<SearchStockOptions>
+				<Symbol><![CDATA[Symbol]]></Symbol>
+				<StockOptionType><![CDATA[Event Type]]></StockOptionType>
+				<Status><![CDATA[Status]]></Status>
+				<Search_button><![CDATA[Search]]></Search_button>
+				
+				<SymbolAbrr><![CDATA[Symbol]]></SymbolAbrr>
+				<RightDate><![CDATA[Record Date]]></RightDate>
+				<ExpiredDate><![CDATA[Expired Date]]></ExpiredDate>
+				<EventDate><![CDATA[Exercise Date]]></EventDate>
+				<PositionAtRightDate><![CDATA[Own in Record Date]]></PositionAtRightDate>
+				<StockOptionRatio><![CDATA[Exercise Ratio]]></StockOptionRatio>
+				<StockReceivable><![CDATA[Quantity]]></StockReceivable>
+				<CashReceivable><![CDATA[Cash]]></CashReceivable>
+				<Note><![CDATA[Notice: Right Events listed are only for stocks in your porfolio.]]></Note>
+				<NotExistCAs><![CDATA[No Right Events available]]></NotExistCAs>
+			</SearchStockOptions>
+			<AccountPreferences>
+				<SelectAccount>
+					<![CDATA[口座を選択：]]>
+				</SelectAccount>
+				<AccountRegistration>
+					<![CDATA[Account Registration:]]>
+				</AccountRegistration>
+				<AccountHolders>
+					<![CDATA[Account Holders:]]>
+				</AccountHolders>
+				<SendCorrespondenceTo>
+					<![CDATA[Send correspondence to:]]>
+				</SendCorrespondenceTo>
+				<Business>
+					<![CDATA[Business]]>
+				</Business>
+				<PersonalInformation>
+					<![CDATA[個人情報]]>
+				</PersonalInformation>
+				<No>
+					<![CDATA[いいえ]]>
+				</No>
+				<Yes>
+					<![CDATA[はい]]>
+				</Yes>
+				<IfYesPleaseSpecific>
+					<![CDATA[(”はい”の場合は、ご関係を明記してください）]]>
+				</IfYesPleaseSpecific>
+				<EmployedByASSC>
+					<![CDATA[]]>
+				</EmployedByASSC>
+				<HaveRelationshipWithAStaff>
+					<![CDATA[お客様は、国家証券委員会のメンバー、或いはその関係者(親族、血縁関係等)でいらっしゃいますか？]]>
+				</HaveRelationshipWithAStaff>
+				<WithBigShareHolder>
+					<![CDATA[お客様は、上場企業、あるいはOTC市場の企業の幹部社員、大株主(親族、血縁関係等)の関係者でいらっしゃいますか？]]>
+				</WithBigShareHolder>
+				<InvestmentKnowledge>
+					<![CDATA[投資に関する知識]]>
+				</InvestmentKnowledge>
+				<SelectOne>
+					<![CDATA[(ひとつを選択してください)]]>
+				</SelectOne>
+				<Excellent>
+					<![CDATA[とても経験があります]]>
+				</Excellent>
+				<Limited>
+					<![CDATA[すでに経験があります]]>
+				</Limited>
+				<Good>
+					<![CDATA[ほとんど経験はありません]]>
+				</Good>
+				<None>
+					<![CDATA[まだ経験がありません]]>
+				</None>
+				<InvestmentExperience>
+					<![CDATA[投資経験]]>
+				</InvestmentExperience>
+				<CheckAtLeastOne>
+					<![CDATA[(少なくても一つを選択してください)]]>
+				</CheckAtLeastOne>
+				<Stock>
+					<![CDATA[株券]]>
+				</Stock>
+				<Bond>
+					<![CDATA[債券]]>
+				</Bond>
+				<ForeignCurrency>
+					<![CDATA[外国為替]]>
+				</ForeignCurrency>
+				<RealEstate>
+					<![CDATA[不動産]]>
+				</RealEstate>
+				<Other>
+					<![CDATA[その他]]>
+				</Other>
+				<InvestmentObjectives>
+					<![CDATA[投資基準：]]>
+				</InvestmentObjectives>
+				<CapitalPreservation>
+					<![CDATA[安定した収入]]>
+				</CapitalPreservation>
+				<Income>
+					<![CDATA[短期有望株]]>
+				</Income>
+				<Growth>
+					<![CDATA[成長株]]>
+				</Growth>
+				<Speculation>
+					<![CDATA[価値の高い株]]>
+				</Speculation>
+				<IncomeAndNetWorth>
+					<![CDATA[収入と総資産：]]>
+				</IncomeAndNetWorth>
+				<TotalAssert>
+					<![CDATA[総資産：]]>
+				</TotalAssert>
+				<SelectOne>
+					<![CDATA[(ひとつを選択してください)]]>
+				</SelectOne>
+				<AccountFeatures>
+					<![CDATA[口座サービス]]>
+				</AccountFeatures>
+				<TypeOfTransaction>
+					<![CDATA[ご利用になりたい取引形式を選択してください]]>
+				</TypeOfTransaction>
+				<LearnMore>
+					<![CDATA[追加情報]]>
+				</LearnMore>
+				<Upgrade>
+					<![CDATA[アップグレード]]>
+				</Upgrade>
+				<PlaceAnOrderBy>
+					<![CDATA[証券購入/売却注文チャンネル]]>
+				</PlaceAnOrderBy>
+				<PeriodOfReceivingStatementDocuments>
+					<![CDATA[口座控え受取時期]]>
+				</PeriodOfReceivingStatementDocuments>
+				<ReceiveTradeConfirmationStatement>
+					<![CDATA[取引及び口座控え確認方法]]>
+				</ReceiveTradeConfirmationStatement>
+				<Edit>
+					<![CDATA[修正]]>
+				</Edit>
+				<DeliverTo>
+					<![CDATA[Deliver to:]]>
+				</DeliverTo>
+			</AccountPreferences>
+			<SecurityPasswords>
+				<ChangeMyLogOnPassword><![CDATA[現在のパスワードを変更する：]]></ChangeMyLogOnPassword>
+				<UsedToLogOn><![CDATA[(VNダイレクトのウエブサイトからオンライン注文するためにパスワードを利用する)]]></UsedToLogOn>
+				<ToChangeYourLogOnPassword><![CDATA[現在のパスワードを変更するためには、まず現在のパスワードを入力し、その後新しいパスワードを設定して、選択します。]]></ToChangeYourLogOnPassword>
+				<EnterCurrentLogOnPassword><![CDATA[現在のパスワードを入力します：]]></EnterCurrentLogOnPassword>
+				<EnterNewLogOnPassword><![CDATA[新しいパスワードを入力します：]]></EnterNewLogOnPassword>
+				<ReEnterNewLogOnPassword><![CDATA[新しいパスワードの再確認を行います：]]></ReEnterNewLogOnPassword>
+				<PasswordMustBe6To32Characters><![CDATA[パスワードは6～32文字で、その内1文字は数字が含まれていなければなりません]]></PasswordMustBe6To32Characters>
+				<MiChangePass>
+					<pw-empty><![CDATA[現在のパスワードを入力します]]></pw-empty>
+					<new-pw-empty><![CDATA[新しいパスワードを入力します]]></new-pw-empty>
+					<confirm-pw-empty><![CDATA[パスワードの再確認に失敗しました]]></confirm-pw-empty>
+				</MiChangePass>
+				<PasswordNote><![CDATA[Password use to login and trade]]></PasswordNote>
+			</SecurityPasswords>
+			<CompleteView>
+				<AccountRecords>
+					<![CDATA[取引口座]]>
+				</AccountRecords>
+				<NetAssets>
+					<![CDATA[総資産]]>
+				</NetAssets>
+				<NetValue>
+					<![CDATA[口座残高総額(時価総額に換算した証券を含む)]]>
+				</NetValue>
+				<AvailableForWithdrawal>
+					<![CDATA[引き出し可能な残高]]>
+				</AvailableForWithdrawal>
+				<BottomMsg>
+					<![CDATA[VNダイレクト証券から提供された情報・データを受け取り、ご利用される際には、お客様は、VNダイレクト証券が、1)提供情報・データの著作権を全て持っていること、2)情報・データの保証をするものではないこと、3)この情報・データの間違えによる損失、またはVNダイレクトの管理責任外による損失に対して、いかなる責任も負わないことに同意されたとみなされます。]]>
+				</BottomMsg>
+				<Currency>
+					<![CDATA[$]]>
+				</Currency>
+				<BannerTransfer><![CDATA[<img src="../../../portal/images/logo/banner_transfer_en.jpg"/>]]></BannerTransfer>
+				<ViewMarketVideo><![CDATA[Watch market video]]></ViewMarketVideo>
+			</CompleteView>
+			<ChangeAccAddress>
+				<ChangeAccountAddresses>
+					<![CDATA[口座情報に関する連絡先の変更]]>
+				</ChangeAccountAddresses>
+				<HeaderMsg>
+					<![CDATA[口座連絡住所入力]]>
+				</HeaderMsg>
+				<MailingAddress>
+					<![CDATA[郵便受取住所]]>
+				</MailingAddress>
+				<Province>
+					<![CDATA[都道府県]]>
+				</Province>
+				<Country>
+					<![CDATA[国]]>
+				</Country>
+				<Email>
+					<![CDATA[電子メール]]>
+				</Email>
+				<Telephone1>
+					<![CDATA[電話番号1]]>
+				</Telephone1>
+				<Telephone2>
+					<![CDATA[電話番号2]]>
+				</Telephone2>
+				<Fax>
+					<![CDATA[ファックス番号]]>
+				</Fax>
+				<Mobiphone>
+					<![CDATA[携帯電話番号]]>
+				</Mobiphone>
+			</ChangeAccAddress>
+			<ChangeEmailAddress>
+				<ChangeEmailAddresses>
+					<![CDATA[電子メールアドレス変更]]>
+				</ChangeEmailAddresses>
+				<HeaderMsg>
+					<![CDATA[取引及び口座控え確認のための電子メールアドレスを入力]]>
+				</HeaderMsg>
+				<Email>
+					<![CDATA[電子メール]]>
+				</Email>
+			</ChangeEmailAddress>
+			<ChangeAccFeatures>
+				<SelectType>
+					<![CDATA[ご利用になりたい取引方法を選択ください]]>
+				</SelectType>
+				<TransactionExecutionOnly>
+					<![CDATA[単独取引]]>
+				</TransactionExecutionOnly>
+				<FullServicesBrokerage>
+					<![CDATA[サポート付き取引]]>
+				</FullServicesBrokerage>
+				<SelectPlaceOrder>
+					<![CDATA[注文方法を選択してください]]>
+				</SelectPlaceOrder>
+				<CheckOne>
+					<![CDATA[(少なくても1つを選択してください)]]>
+				</CheckOne>
+				<Online>
+					<![CDATA[オンラインによる注文]]>
+				</Online>
+				<TelephoneFax>
+					<![CDATA[電話による注文]]>
+				</TelephoneFax>
+				<AtFloor>
+					<![CDATA[店頭での注文]]>
+				</AtFloor>
+				<Other>
+					<![CDATA[その他]]>
+				</Other>
+				<Specific>
+					<![CDATA[(具体的に)]]>
+				</Specific>
+				<PeriodOfRec>
+					<![CDATA[口座控え受取時期]]>
+				</PeriodOfRec>
+				<Monthly>
+					<![CDATA[毎月]]>
+				</Monthly>
+				<Quarterly>
+					<![CDATA[四半期毎]]>
+				</Quarterly>
+				<Yearly>
+					<![CDATA[毎年]]>
+				</Yearly>
+				<WhichWay>
+					<![CDATA[取引及び口座控え確認方法]]>
+				</WhichWay>
+				<AtVNDS>
+					<![CDATA[店頭(VNダイレクト証券)で]]>
+				</AtVNDS>
+				<ByEmail>
+					<![CDATA[電子メールで]]>
+				</ByEmail>
+				<ByMailingAddress>
+					<![CDATA[郵便で]]>
+				</ByMailingAddress>
+			</ChangeAccFeatures>
+			<FormAndApplication>
+				<Brokerage>
+					<![CDATA[Brokerage]]>
+				</Brokerage>
+				<PdfWarn>
+					<![CDATA[このサンプルを読むには、Adobe Acrobat Readerが必要です。]]>
+				</PdfWarn>
+				<PdfInvite>
+					<![CDATA[こちらからダウンロードできます。]]>
+				</PdfInvite>
+			</FormAndApplication>
+			<FaLegalandAuthorization>
+				<PdfWarn>
+					<![CDATA[required]]>
+				</PdfWarn>
+				<PdfInvite>
+					<![CDATA[Adobe Acrobat Reader]]>
+				</PdfInvite>
+			</FaLegalandAuthorization>
+		</CellNames>
+		<!-- Core bank Labels -->
+		<CoreBank>
+			<PlzSelectAcc><![CDATA[----Select An Account---]]></PlzSelectAcc>
+			<TransferTile><![CDATA[Money Transfer Oder Placing Service]]></TransferTile>
+			<FromAccount><![CDATA[From]]></FromAccount>
+			<ToAccount><![CDATA[To]]></ToAccount>
+			<TransferButton><![CDATA[Transfer Money]]></TransferButton>
+			<Amount><![CDATA[Amount]]></Amount>
+			<Details><![CDATA[Transfer Details]]></Details>
+			<TransferHistoryLink><![CDATA[Transaction History]]></TransferHistoryLink>
+			<HelpTransferLink><![CDATA[Help with Transfer]]></HelpTransferLink>
+			<TranferMoreLink><![CDATA[Transfer more]]></TranferMoreLink>
+
+			<BankDetailTab><![CDATA[Bank Account Balance]]></BankDetailTab>
+			<BankAccount><![CDATA[Your bank account]]></BankAccount>
+			<BankMoneyAvailable><![CDATA[Money Available in your Bank account]]></BankMoneyAvailable>
+			<OnlineMoneyAvailable><![CDATA[Money Available in your Securities Account]]></OnlineMoneyAvailable>
+			<TotalMoney><![CDATA[Total]]></TotalMoney>
+			<TransferLink><![CDATA[Transfer money </br> for Trading]]></TransferLink>
+			<ViewBankNote><![CDATA[The account balance provided by the Bank is only used for reference. Please verify the credit memo from this bank.]]></ViewBankNote>
+
+			<InvalidTransferTimeWarnMsg><![CDATA[The transaction time is over. Valid time for transaction of the next day is available from 22:00]]></InvalidTransferTimeWarnMsg>
+			<ConfirmTransfer>
+				<Tile><![CDATA[Confirm Transfer Request]]></Tile>
+				<FromAcc><![CDATA[From Account]]></FromAcc>
+				<ReceiverAcc><![CDATA[Beneficiary Account]]></ReceiverAcc>
+				<ReceiverName><![CDATA[Beneficiary]]></ReceiverName>
+				<BankName><![CDATA[Bank Name]]></BankName>
+				<AmountMoney><![CDATA[Amount]]></AmountMoney>
+				<TransferReason><![CDATA[Details]]></TransferReason>
+				<TransferRate><![CDATA[Fee]]></TransferRate>
+				<ChargedForSender><![CDATA[Charged for beneficiary]]></ChargedForSender>
+				<TransferDate><![CDATA[Transfer Date]]></TransferDate>
+				<TradingPasword><![CDATA[Enter Password]]></TradingPasword>
+				<TradingPaswordNote><![CDATA[Note: </strong>Please enter your log-on password<br>
+				Time to transfer money from your account to bank account about 1 or 2 days depending on the bank.<br>]]></TradingPaswordNote>
+
+				<ConfirmButton><![CDATA[Confirm]]></ConfirmButton>
+				<ChangeButton><![CDATA[Change]]></ChangeButton>
+			</ConfirmTransfer>
+		</CoreBank>
+
+	</Account>
+	<TradingPortfolios>
+		<Lables>
+			<Menu-Level2>
+				<Trade>
+					<![CDATA[注文する]]>
+				</Trade>
+				<Portfolios>
+					<![CDATA[ポートフォリオ]]>
+				</Portfolios>
+				<ViewOrders>
+					<![CDATA[取引注文を見る]]>
+				</ViewOrders>
+				<Balances>
+					<![CDATA[口座残高]]>
+				</Balances>
+				<TransactionHistory>
+					<![CDATA[取引履歴]]>
+				</TransactionHistory>
+				<AccountRecords>
+					<![CDATA[口座控え]]>
+				</AccountRecords>
+			</Menu-Level2>
+			<Menu-Level3>
+				<AccountRecords>
+					<Statements>
+						<![CDATA[口座控え]]>
+					</Statements>
+					<TradeConfirmations>
+						<![CDATA[取引確認]]>
+					</TradeConfirmations>
+					<DeliveryOptions>
+						<![CDATA[オプション]]>
+					</DeliveryOptions>
+				</AccountRecords>
+				<Portfolios>
+					<Portfolios>
+						<![CDATA[ポートフォリオ]]>
+					</Portfolios>
+					<Positions>
+						<![CDATA[注文状況]]>
+					</Positions>
+				</Portfolios>
+				<Trade>
+					<ListedStock>
+						<![CDATA[上場株]]>
+					</ListedStock>
+					<OTCStock>
+						<![CDATA[OTC株]]>
+					</OTCStock>
+					<PreviewOrder>
+						<![CDATA[注文する：注文の前に見る]]>
+					</PreviewOrder>
+					<ConfirmOrder>
+						<![CDATA[注文する：注文を確認する]]>
+					</ConfirmOrder>
+				</Trade>
+				<ViewOrders>
+					<ViewOrders>
+						<![CDATA[注文状況を見る]]>
+					</ViewOrders>
+				</ViewOrders>
+				<Balances>
+					<Balances>
+						<![CDATA[口座収支]]>
+					</Balances>
+					<AdvancePayment><![CDATA[Advanced Payment]]></AdvancePayment>
+				</Balances>
+				<TransactionHistory>
+					<Transactions>
+						<![CDATA[取引]]>
+					</Transactions>
+					<MoneyHistory><![CDATA[Transfer Money]]></MoneyHistory>
+					<TransactionMoneyHistory><![CDATA[Transaction Money]]></TransactionMoneyHistory>
+					<TransactionSymbolHistory><![CDATA[Transaction Symbol]]></TransactionSymbolHistory>
+					
+				</TransactionHistory>
+				<Report>
+					<DownloadReport><![CDATA[Account Statment]]></DownloadReport>
+				</Report>				
+				<BuyingRight>
+					<Register><![CDATA[Register Buying Right]]></Register>
+				</BuyingRight>				
+			</Menu-Level3>
+		</Lables>
+		<CellNames>
+			<BuyingRight>
+				<Symbol><![CDATA[Symbol]]></Symbol>
+				<Price><![CDATA[Price]]></Price>
+				<RemainAmount><![CDATA[Total buy option]]></RemainAmount>
+				<RegisterAmount><![CDATA[Register Amount]]></RegisterAmount>
+				<Total><![CDATA[Total]]></Total>
+				<Password><![CDATA[Trading Password]]></Password>
+				<PasswordNote><![CDATA[(Trading Password is login password)]]></PasswordNote>
+				<RegisterRight><![CDATA[Register]]></RegisterRight>
+				<RegisterAnotherRight><![CDATA[Register Another]]></RegisterAnotherRight>
+				
+				<Time><![CDATA[Time]]></Time>
+				<From><![CDATA[From]]></From>
+				<To><![CDATA[To]]></To>
+				<ResultPerPage><![CDATA[Result per page]]></ResultPerPage>
+				<Search><![CDATA[Search]]></Search>
+				<LastDay><![CDATA[Last day to register]]></LastDay>
+				<StockOptionAmount><![CDATA[Stock Option amount]]></StockOptionAmount>
+				<RemainedAmount><![CDATA[Remained Amount]]></RemainedAmount>
+				<RegisteredAmount><![CDATA[Registered Amount]]></RegisteredAmount>
+				<CurrentPosition><![CDATA[Current position]]></CurrentPosition>
+				<NoRecordFound> <![CDATA[You don't have any right]]></NoRecordFound>												
+				<ResultHeader> <![CDATA[You has successfully registered the buying right: ]]></ResultHeader>				
+				<ResultSymbol> <![CDATA[Symbol of ]]></ResultSymbol>				
+				<ResultAmount> <![CDATA[Quantity: ]]></ResultAmount>				
+				<ResultPrice> <![CDATA[Price: ]]></ResultPrice>								
+				<ResultTotal> <![CDATA[Total cost: ]]></ResultTotal>								
+				
+			</BuyingRight>		
+			<Statements>
+				<Account>
+					<![CDATA[口座：]]>
+				</Account>
+				<SearchByDate>
+					<![CDATA[日付による検索(YYYY/MM/DD)]]>
+				</SearchByDate>
+				<DateRange>
+					<![CDATA[おおよそ～日から]]>
+				</DateRange>
+				<ToDate>
+					<![CDATA[～日まで]]>
+				</ToDate>
+				<AdobeReader>
+					<![CDATA[このサンプルを読むには、Adobe Acrobat Readerが必要です。]]>
+				</AdobeReader>
+				<Here>
+					<![CDATA[こちらから無料でダウンロードできます。]]>
+				</Here>
+				<ForCurrent>
+					<![CDATA[&nbsp; For current interest rates, please visit &nbsp;]]>
+				</ForCurrent>
+				<GoPaperless>
+					<![CDATA[&nbsp; Go Paperless with Electronic Delivery &nbsp;]]>
+				</GoPaperless>
+				<StatementEndingDate>
+					<![CDATA[&nbsp; Statement Ending Date &nbsp;]]>
+				</StatementEndingDate>
+				<Description>
+					<![CDATA[ポートレイト]]>
+				</Description>
+				<HisHarrisDirectDocuments>
+					<![CDATA[&nbsp; Historical Harris <i>direct</i> Documents &nbsp;]]>
+				</HisHarrisDirectDocuments>
+				<AccessStatements>
+					<![CDATA[&nbsp; Access Statements &nbsp;]]>
+				</AccessStatements>
+			</Statements>
+			<TradeConfirmations>
+				<Account>
+					<![CDATA[口座]]>
+				</Account>
+				<SearchByDate>
+					<![CDATA[日付による検索(YYYY/MM/DD)]]>
+				</SearchByDate>
+				<Date>
+					<![CDATA[日付]]>
+				</Date>
+				<DateRange>
+					<![CDATA[大よそ～日から]]>
+				</DateRange>
+				<ToDate>
+					<![CDATA[～日まで]]>
+				</ToDate>
+				<AdobeReader>
+					<![CDATA[このサンプルを読むには、Adobe Acrobat Readerが必要です。無料でダウンロードできます。]]>
+				</AdobeReader>
+				<Here>
+					<![CDATA[&nbsp; here &nbsp;]]>
+				</Here>
+				<MultipleTrades>
+					<![CDATA[同じ日に約定した取引は、同一の取引確認書に表記されます。]]>
+				</MultipleTrades>
+				<TradeDate>
+					<![CDATA[取引約定日]]>
+				</TradeDate>
+				<Description>
+					<![CDATA[ポートレイト]]>
+				</Description>
+				<ResultPerPage>
+					<![CDATA[結果番号/ページ：]]>
+				</ResultPerPage>
+			</TradeConfirmations>
+			<DeliveryOptions>
+				<Account>
+					<![CDATA[口座：]]>
+				</Account>
+				<SelectAllDocuments>
+					<![CDATA[全てのデータを選択]]>
+				</SelectAllDocuments>
+				<AccountStatements>
+					<![CDATA[口座控え]]>
+				</AccountStatements>
+				<TradeConfirmations>
+					<![CDATA[取引統計]]>
+				</TradeConfirmations>
+				<Others>
+					<![CDATA[&nbsp; Corporate reports, proxies, reorganization notifications &nbsp;]]>
+				</Others>
+				<EmailAddress>
+					<![CDATA[電子メールアドレス]]>
+				</EmailAddress>
+			</DeliveryOptions>
+			<Portfolios>
+				<DailyChangePrice><![CDATA[前日比]]></DailyChangePrice>
+				<DailyChangePercent><![CDATA[前日比％]]></DailyChangePercent>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<CurrentPrice>
+					<![CDATA[現在の株価]]>
+				</CurrentPrice>
+				<Exchange>
+					<![CDATA[取引所]]>
+				</Exchange>
+				<DailyChange>
+					<![CDATA[一日の変動]]>
+				</DailyChange>
+				<Days>
+					<![CDATA[]]>
+				</Days>
+				<Qty>
+					<![CDATA[数量]]>
+				</Qty>
+				<CostPrice>
+					<![CDATA[購入株価]]>
+				</CostPrice>
+				<TotalGain>
+					<![CDATA[バランス]]>
+				</TotalGain>
+				<MarketVal>
+					<![CDATA[時価総額]]>
+				</MarketVal>
+				<Sell>
+					<![CDATA[売り]]>
+				</Sell>
+				<Buy>
+					<![CDATA[買い]]>
+				</Buy>
+				<Totals>
+					<![CDATA[合計]]>
+				</Totals>
+				<WarnMsg>
+					<![CDATA[投資ポートフォリオ及び名簿は正式な目的での使用は出来ません(例：税務署への申告)。あくまでお客様ご自身の財務管理のサポートとしてご利用ください。お客様の証券に関して十分で正確な情報を入手するためには、口座控え及び/或いは取引確認をご利用ください。　　　　　　VNダイレクト証券から提供された情報・データを受け取り、ご利用される際には、お客様は、VNダイレクト証券が、1)提供情報・データの著作権を全て持っていること、2)情報・データの保障をするものではないこと、3)この情報・データの間違えによる損失、またはVNダイレクトの管理外の原因による損失に対して、いかなる責任も負わないことに同意されたとみなされます。]]>
+				</WarnMsg>
+			</Portfolios>
+			<Positions>
+				<Account>
+					<![CDATA[口座：]]>
+				</Account>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<Secure>
+					<![CDATA[保証金]]>
+				</Secure>
+				<Quantity>
+					<![CDATA[数量]]>
+				</Quantity>
+				<Mortgage><![CDATA[Mortgage]]></Mortgage>
+				<Blocked><![CDATA[Blocked]]></Blocked>
+				<ClearingQuantities>
+					<![CDATA[買い清算を待っている証券]]>
+				</ClearingQuantities>
+				<Available>
+					<![CDATA[取引可能株式数]]>
+				</Available>
+				<Price>
+					<![CDATA[株価]]>
+				</Price>
+				<MarketValue>
+					<![CDATA[時価総額]]>
+				</MarketValue>
+				<SummaryOfTotalMarketValue>
+					<![CDATA[市場価格に基づいた証券総額]]>
+				</SummaryOfTotalMarketValue>
+				<TotalAccountMarketValue-Net>
+					<![CDATA[市場価格に基づいた口座総額]]>
+				</TotalAccountMarketValue-Net>
+				<ClosingPrice>
+					<![CDATA[終値]]>
+				</ClosingPrice>
+			</Positions>
+			<NewOrder>
+				<HASTC><![CDATA[ハノイ市場(HNX)]]></HASTC>
+				<HOSTC><![CDATA[ホーチミン市場(HOSE)]]></HOSTC>
+				<UPCOM><![CDATA[UPCOM]]></UPCOM>
+				<Account>
+					<![CDATA[口座]]>
+				</Account>
+				<NetAccountValue>
+					<![CDATA[口座残高総額(時価総額に換算した証券を含む)]]>
+				</NetAccountValue>
+				<CashAvailable>
+					<![CDATA[現金残高]]>
+				</CashAvailable>
+				<PurchasePower><![CDATA[Purchase Power]]></PurchasePower>
+				
+				<OrderType>
+					<![CDATA[ 注文種類]]>
+				</OrderType>
+				<Shares>
+					<![CDATA[数量]]>
+				</Shares>
+				<Symbol>
+					<![CDATA[銘柄コード]]>
+				</Symbol>
+				<PriceType>
+					<![CDATA[注文方法]]>
+				</PriceType>
+				<StopPrice>
+					<![CDATA[ストップ値]]>
+				</StopPrice>
+				<LimitPrice>
+					<![CDATA[指値]]>
+				</LimitPrice>
+				<Term>
+					<![CDATA[注文の有効期間]]>
+				</Term>
+				<OrderUnit>
+					<![CDATA[(x 1,000 ベトナムドン)]]>
+				</OrderUnit>
+				<CompanyName>
+					<![CDATA[会社名と銘柄コード]]>
+				</CompanyName>
+				<YourPrice>
+					<![CDATA[注文価格]]>
+				</YourPrice>
+				<TotalOrderPrice><![CDATA[注文総額]]></TotalOrderPrice>
+				<TotalFee>
+					<![CDATA[手数料(見込み)]]>
+				</TotalFee>
+				
+				<DownPayment><![CDATA[Tiền mặt kí quỹ]]></DownPayment>
+				<OutstandingBalance><![CDATA[Tiền phải nộp thêm]]></OutstandingBalance>
+				<DepositRatio><![CDATA[Mức kí quỹ]]></DepositRatio>
+				<OrderNumber>
+					<![CDATA[注文順序]]>
+				</OrderNumber>
+				<TimePlace>
+					<![CDATA[注文時間]]>
+				</TimePlace>
+				<CurrentIndex>
+					<![CDATA[指数]]>
+				</CurrentIndex>
+				<TodayChange>
+					<![CDATA[前日比]]>
+				</TodayChange>
+				<ReferencePrice>
+					<![CDATA[参照株価]]>
+				</ReferencePrice>
+				<CeilingPrice>
+					<![CDATA[ストップ高]]>
+				</CeilingPrice>
+				<FloorPrice>
+					<![CDATA[ストップ安]]>
+				</FloorPrice>
+				<RecentPrice><![CDATA[Giá khớp gần nhất]]></RecentPrice>
+				<ShareAbb><![CDATA[KL]]></ShareAbb>
+				<TotalShareAbb><![CDATA[Tổng KLTH]]></TotalShareAbb>
+				
+				<BasicPrice>
+					<![CDATA[Basic Price]]>
+				</BasicPrice>
+				<TodayPrice>
+					<![CDATA[終値]]>
+				</TodayPrice>
+				<Change>
+					<![CDATA[変更]]>
+				</Change>
+				<TradingPassword><![CDATA[Password:]]></TradingPassword>
+				<TradingPasswordInfo><![CDATA[You have to input password before placing order.]]></TradingPasswordInfo>
+
+				<Buttons>
+					<PreviewOrder>
+						<![CDATA[注文の前に見る]]>
+					</PreviewOrder>
+					<CancelOrder>
+						<![CDATA[注文を取消す]]>
+					</CancelOrder>
+					<ChangeOrder>
+						<![CDATA[注文を変更する]]>
+					</ChangeOrder>
+					<PlaceOrder>
+						<![CDATA[注文する]]>
+					</PlaceOrder>
+					<PlaceOrderTrade>
+						<![CDATA[別の注文をする]]>
+					</PlaceOrderTrade>
+					<ViewOrderStatus>
+						<![CDATA[注文状況を見る]]>
+					</ViewOrderStatus>
+				</Buttons>
+				<Lables>
+					<QuoteDetails>
+						<![CDATA[株価詳細]]>
+					</QuoteDetails>
+					<OrderDetails>
+						<![CDATA[注文詳細]]>
+					</OrderDetails>
+					<ConfirmMsg>
+						<![CDATA[注文が間違っていないかもう一度ご確認ください]]>
+					</ConfirmMsg>
+					<CompletedMsg>
+						<![CDATA[お客様の注文はシステムに入力されました]]>
+					</CompletedMsg>
+					<CanceledMsg><![CDATA[Your order has been placed succesful and processing.]]></CanceledMsg>
+					<NoticeMsg>
+						<![CDATA[注意事項：注文の確認をしています。注文の重複を避けるために、クリックは一度だけにしてください。]]>
+					</NoticeMsg>
+					<ImportantMsg>
+						<![CDATA[<b><u>注意事項：</u></b><div style="text-align: left; font-size: 11px; color: red;"> 価格制限にご注意ください、1,000ドン単位での入力となります。例：指数を4万5,600ドンとしたい場合には、45.6と入力してください。また150,000ドンとしたい場合には、150と入力してください。</div>	<br/>]]>
+					</ImportantMsg>
+					<OutOffTradingMsg>
+						<![CDATA[ご注文を承った時点では、取引は終了しております。お客様のご注文はシステムに入力され、受付時間順に優先順位がつけられます。取引が開始された時点で、取引を行います。取引開始後、お客様のご注文が受理されたことをご確認ください。]]>
+					</OutOffTradingMsg>
+					<MarketClosedMsg>
+						<![CDATA[
+取引注文受付時間が終了いたしました。<br>
+
+下記の時間に改めてご注文いただきますようお願いいたします。<br>
+
+■ホーチミン証券取引所：<br>
+　取引日の前日の午後10時～取引当日午前10時30分<br>
+　（日本時間午前0時～午後12時30分） <br>
+
+■ハノイ証券取引所：<br>
+　取引日の前日の午後10時～午前11時  <br>
+　　（日本時間午前0時～午後1時）<br>
+						]]>
+					</MarketClosedMsg>
+					<FirstTradingDateMsg><![CDATA[
+					This is the first trading date of {0} symbol, you can not place order for this symbol
+					]]></FirstTradingDateMsg>
+				</Lables>
+			</NewOrder>
+			<ViewOrders>
+				<TradingTimeWarning><![CDATA[Note: Only orders placed in today's trading hours (8:00 am-11:00 am) are displayed. The full orders history is available out of the trading hours.]]></TradingTimeWarning>
+				<SearchResultNotFound><![CDATA[No result found.]]></SearchResultNotFound>
+				<Account>
+					<![CDATA[口座]]>
+				</Account>
+				<Description>
+					<![CDATA[注釈]]>
+				</Description>
+				<Buttons>
+					<Search>
+						<![CDATA[検索]]>
+					</Search>
+				</Buttons>
+				<SearchCriteria>
+					<OrderStatus>
+						<![CDATA[検索したい注文状況 ]]>
+					</OrderStatus>
+					<OrderType>
+						<![CDATA[注文方法]]>
+					</OrderType>
+					<Symbol>
+						<![CDATA[銘柄コード]]>
+					</Symbol>
+					<DateRange>
+						<![CDATA[]]>
+					</DateRange>
+					<FromDate>
+						<![CDATA[検索対象日]]>
+					</FromDate>
+					<ToDate>
+						<![CDATA[～日まで]]>
+					</ToDate>
+					<DateDescription>
+						<![CDATA[(yyyy/mm/dd)]]>
+					</DateDescription>
+					<ResultPerPage>
+						<![CDATA[表示件数の選択]]>
+					</ResultPerPage>
+				</SearchCriteria>
+				<Order>
+					<TimePlace>
+						<![CDATA[日付]]>
+					</TimePlace>
+					<OrderNumber>
+						<![CDATA[注文番号]]>
+					</OrderNumber>
+					<Type>
+						<![CDATA[モデル]]>
+					</Type>
+					<OrderSummary>
+						<![CDATA[取引注文詳細]]>
+					</OrderSummary>
+					<OrderType>
+						<![CDATA[注文方法]]>
+					</OrderType>
+					<Quantity>
+						<![CDATA[数量(注文済/約定済み)]]>
+					</Quantity>
+					<RootOrder><![CDATA[Original Order]]></RootOrder>
+					<ExecutedOrder><![CDATA[Executed Order]]></ExecutedOrder>
+					<Symbol>
+						<![CDATA[銘柄コード]]>
+					</Symbol>
+					<PriceType>
+						<![CDATA[買い注文価格]]>
+					</PriceType>
+					<Term>
+						<![CDATA[注文の有効期間]]>
+					</Term>
+					<Price>
+						<![CDATA[注文済み価格]]>
+					</Price>
+					<PriceExecuted>
+						<![CDATA[約定済み価格]]>
+					</PriceExecuted>
+					<Status>
+						<![CDATA[状況]]>
+					</Status>
+					<Means>
+						<![CDATA[注文方法]]>
+					</Means>
+					<Security>
+						<![CDATA[Security]]>
+					</Security>
+					<OrderDetailTitle>
+						<![CDATA[注文詳細]]>
+					</OrderDetailTitle>
+					<OtherDetail>
+						<![CDATA[Fee: ]]>
+					</OtherDetail>
+					<ExecQuantity>
+						<![CDATA[Executed Qty]]>
+					</ExecQuantity>
+					<ExecPrice>
+						<![CDATA[Executed Price]]>
+					</ExecPrice>
+					<GuideUpdateCancelOrder><![CDATA[Cancel/Edit Order Guide]]></GuideUpdateCancelOrder>
+
+					<EditLink><![CDATA[Edit]]></EditLink>
+					<CancelLink><![CDATA[Cancel]]></CancelLink>
+				</Order>
+				<Transaction>
+					<Status>
+						<![CDATA[注文状況]]>
+					</Status>
+					<OrderDescription>
+						<![CDATA[注文詳細]]>
+					</OrderDescription>
+					<DateTime>
+						<![CDATA[日と時間]]>
+					</DateTime>
+					<Quantity>
+						<![CDATA[数量]]>
+					</Quantity>
+					<PriceExecuted>
+						<![CDATA[約定価格]]>
+					</PriceExecuted>
+					<CommissionFree>
+						<![CDATA[ブローカー手数料]]>
+					</CommissionFree>
+					<ExpiredDate><![CDATA[ Expired Date ]]></ExpiredDate>
+				</Transaction>
+			</ViewOrders>
+			<CancelOrder>
+				<OrderConfirmationNo><![CDATA[Order Confirmation Number]]></OrderConfirmationNo>
+				<OrderPlace><![CDATA[Order Placed]]></OrderPlace>
+				<ViewOrderStatus><![CDATA[<span style="color:blue;">View Order Status</span>]]></ViewOrderStatus>
+				<ViewPortfolios><![CDATA[<span style="color:blue;">View Portfolios</span>]]></ViewPortfolios>
+				<PlaceAnotherTrade><![CDATA[<span style="color:blue;">Place Another Trade</span>]]></PlaceAnotherTrade>
+				<ConfirmCancelOrder><![CDATA[Confirm Cancel Order]]></ConfirmCancelOrder>
+			</CancelOrder>
+			<ModifyOrder>
+				<CurrentOrder><![CDATA[Current Order]]></CurrentOrder>
+				<EnterNewOrder><![CDATA[Enter new order]]></EnterNewOrder>
+				<PreviewNewOrder><![CDATA[Preview New Order]]></PreviewNewOrder>
+				<DoNotModifyOrder><![CDATA[Do not Modify Order]]></DoNotModifyOrder>
+				<CancelOrder><![CDATA[Cancel Order]]></CancelOrder>
+			</ModifyOrder>
+			<Balances>
+				<SecurityStatus><![CDATA[Trạng thái chứng khoán]]></SecurityStatus>
+				<BuySymbol><![CDATA[Mua CK]]></BuySymbol>
+				<CustomerNumber>
+					<![CDATA[お客様コード]]>
+				</CustomerNumber>
+				<RealTimeValues>
+					<![CDATA[時価総額]]>
+				</RealTimeValues>
+				<NetAccountValue>
+					<![CDATA[口座総額]]>
+				</NetAccountValue>
+				<MarketValueOfSecurities>
+					<![CDATA[口座残高総額(時価総額に換算した証券を含む)]]>
+				</MarketValueOfSecurities>
+				<ClearingAmount>
+					<![CDATA[売りによる清算待ち代金]]>
+				</ClearingAmount>
+				<MoneyAvailableForInvestment>
+					<![CDATA[投資可能残高]]>
+				</MoneyAvailableForInvestment>
+				<CashForWithdrawal>
+					<![CDATA[引出可能残高]]>
+				</CashForWithdrawal>
+				<Debt>
+					<![CDATA[債務]]>
+				</Debt>
+				<DebtDetail>
+					<![CDATA[口座債務詳細]]>
+				</DebtDetail>
+				<AdvancePurchase>
+					<![CDATA[購入前渡し金]]>
+				</AdvancePurchase>
+				<AdvancePayment>
+					<![CDATA[売却前渡し金]]>
+				</AdvancePayment>
+				<Margin>
+					<![CDATA[保証金未払い分]]>
+				</Margin>
+				<CollateralPayable>
+					<![CDATA[担保付貸付未払い分]]>
+				</CollateralPayable>
+				<RepoPayable>
+					<![CDATA[レポ未払い分]]>
+				</RepoPayable>
+				<StockLending>
+					<![CDATA[証券担保貸付未払い分]]>
+				</StockLending>
+				<NomineeAccountPayable>
+					<![CDATA[名義人口座未払い分]]>
+				</NomineeAccountPayable>
+				<SecureAmount>
+					<![CDATA[保証金]]>
+				</SecureAmount>
+				<MoneyBlocked><![CDATA[Money blocked]]></MoneyBlocked>
+				<!--  AdvancePayment -->
+				<AdvPaymentService><![CDATA[Advanced Payment Service Introduction]]></AdvPaymentService>
+				<Date><![CDATA[Date]]></Date>
+				<Symbol><![CDATA[Symbol]]></Symbol>
+				<ExecutedPrice><![CDATA[Executed Price]]></ExecutedPrice>
+				<ExecutedQuantity><![CDATA[Quantity]]></ExecutedQuantity>
+				<TotalExcPrice><![CDATA[Total]]></TotalExcPrice>
+				<MaximumAmountAvailable><![CDATA[Maximum amount Available for advance Payment]]></MaximumAmountAvailable>
+				<FeeEstimate><![CDATA[Fee]]></FeeEstimate>
+				<CurrentPaymentAdvanced><![CDATA[Payment/Amount Advanced]]></CurrentPaymentAdvanced>
+				<PaymentAdvanced><![CDATA[Advance Payment]]></PaymentAdvanced>
+				<Total><![CDATA[Totals]]></Total>
+				<PayAdvAbbr><![CDATA[Preview]]></PayAdvAbbr>
+				<MoneyUnit><![CDATA[<strong>Amount:</strong> VNĐ]]></MoneyUnit>
+				<PaymentAll><![CDATA[Check all]]></PaymentAll>
+
+				<ButtonExc><![CDATA[Preview]]></ButtonExc>
+				<ButtonCancel><![CDATA[Cancel]]></ButtonCancel>
+				<ButtonConfirm><![CDATA[Confirm]]></ButtonConfirm>
+				<ButtonChange><![CDATA[Change]]></ButtonChange>
+
+				<AdvPaymentWarningMsg><![CDATA[Transaction time is over. Time execute from 8:00am - 3:30pm]]></AdvPaymentWarningMsg>
+				<ConfirmMessage><![CDATA[<span style="color:blue; font-weight:bold">Please confirm your advance payment request. Click Submit button to complete transaction</span><br/>]]></ConfirmMessage>
+				<AdvPaymentNote><![CDATA[
+					<table>
+				  		<tr>
+				  			<td valign="top"><span style="color:red; font-weight:bold">Note:&nbsp;</span></td>
+				  			<td>
+				  					Advance Payment fee = (interest rate 10.5%/360 days)* remain day. Minimum fee = 20.000 VND <br/>
+
+				  			</td>
+				  		</tr>
+
+				  	</table>
+				]]></AdvPaymentNote>
+				<AdvPayMessage>
+					<NotIsNumeric><![CDATA[Please enter number only]]></NotIsNumeric>
+					<NotCheckThisOrder><![CDATA[Please enter amount ]]></NotCheckThisOrder>
+					<NotCheckAnyOrders><![CDATA[Please enter checkbox]]></NotCheckAnyOrders>
+				</AdvPayMessage>
+				<!--  AdvancePayment -->
+			</Balances>
+			<TransactionHistory>
+				<TradingTimeWarning><![CDATA[Note: Only transactions in today's trading hours (8:00 am-11:00 am) are displayed. The full transaction history is available out of the trading hours.]]></TradingTimeWarning>
+		   		<QueryResult><![CDATA[Search result from {0} to {1}.]]> </QueryResult>				
+				<Account>
+					<![CDATA[口座]]>
+				</Account>
+				<Buttons>
+					<Search>
+						<![CDATA[検索]]>
+					</Search>
+				</Buttons>
+				<SearchCriteria>
+					<Types>
+						<![CDATA[Type]]>
+					</Types>
+					<OrderNumber>
+						<![CDATA[注文番号]]>
+					</OrderNumber>
+					<Symbol>
+						<![CDATA[銘柄コード]]>
+					</Symbol>
+					<DateRange>
+						<![CDATA[検索対象日]]>
+					</DateRange>
+					<FromDate>
+						<![CDATA[～日から]]>
+					</FromDate>
+					<ToDate>
+						<![CDATA[～日まで]]>
+					</ToDate>
+					<DateDescription>
+						<![CDATA[(dd/mm/yyyy)]]>
+					</DateDescription>
+					<ResultPerPage>
+						<![CDATA[表示件数の選択]]>
+					</ResultPerPage>
+				</SearchCriteria>
+				<Transaction>
+					<TimePlace>
+						<![CDATA[日付]]>
+					</TimePlace>
+					<Type>
+						<![CDATA[取引内容]]>
+					</Type>
+					<Description>
+						<![CDATA[取引詳細]]>
+					</Description>
+					<Amount>
+						<![CDATA[総額]]>
+					</Amount>
+					<Symbol><![CDATA[Symbol]]></Symbol>
+					<Up><![CDATA[Up]]></Up>
+					<Down><![CDATA[Down]]></Down>
+				</Transaction>
+				<TransferMoney>
+					<Date><![CDATA[Date]]></Date>
+					<ReceiverName><![CDATA[Beneficiary]]></ReceiverName>
+					<ReceiverAcc><![CDATA[Beneficiary account]]></ReceiverAcc>
+					<TransferFromBank><![CDATA[Bank name]]></TransferFromBank>
+					<AmountMoney><![CDATA[Amount]]></AmountMoney>
+					<TransferReason><![CDATA[Transfer Details]]></TransferReason>
+					<Status><![CDATA[Status]]></Status>
+					<TransferNote>
+						<![CDATA[Money transfer orders will be processed in 24 hours by VNDirect.<br>]]>
+					</TransferNote>
+				</TransferMoney>
+				<Report>
+					<Date><![CDATA[Date]]></Date>
+					<Download><![CDATA[Download]]></Download>
+					<Description><![CDATA[Description]]></Description>
+				</Report>				
+			</TransactionHistory>
+		</CellNames>
+	</TradingPortfolios>
+	<TradingIdeas>
+	  <Labels>
+		<Menu-Level2>
+		<TradingIdeas><![CDATA[&nbsp; Trading Ideas &nbsp;]]></TradingIdeas>
+			 <StockScreen><![CDATA[&nbsp; StockScreen &nbsp;]]></StockScreen>
+		  </Menu-Level2>
+	  </Labels>
+	  <Industry-Browser>
+	  	<Stock-Research><![CDATA[ &nbsp;Stock Research&nbsp;&nbsp;]]></Stock-Research>
+	  	<Industry-Browser><![CDATA[&nbsp; Industry Browser&nbsp;&nbsp;]]></Industry-Browser>
+	  	<Industry-Center><![CDATA[&nbsp; Industry Center&nbsp;&nbsp;]]></Industry-Center>
+	  	<Industry-Index><![CDATA[&nbsp; Industry Index &nbsp;&nbsp;]]></Industry-Index>
+	  	<SectorTitle1><![CDATA[&nbsp; INDUSTRY CENTER - LIST SECTOR &nbsp;&nbsp;]]></SectorTitle1>
+	  	<IndustryTitle1><![CDATA[&nbsp; INDUSTRY CENTER - LIST INDUSTRIES &nbsp;&nbsp;]]></IndustryTitle1>
+	  	<CompanyTitle1><![CDATA[&nbsp; INDUSTRY CENTER - LIST COMPANIES &nbsp;&nbsp;]]></CompanyTitle1>
+	  	<Download-SpreadSheet><![CDATA[&nbsp; Download SpreadSheet &nbsp;&nbsp;]]></Download-SpreadSheet>
+	  	<Title2><![CDATA[&nbsp; <b>Click on column heading to sort</b> &nbsp;&nbsp;]]></Title2>
+	  	<Sector><![CDATA[Sector]]></Sector>
+	  	<Industries><![CDATA[Industries]]></Industries>
+	  	<Companies><![CDATA[Companies]]></Companies>
+	  	<Description><![CDATA[Description]]></Description>
+	  	<Valuation><![CDATA[Valuation]]></Valuation>
+	  	<Scope><![CDATA[Scope]]></Scope>
+	  	<Growth><![CDATA[Growth]]></Growth>
+	  	<Profitability><![CDATA[Profitability]]></Profitability>
+	  	<Ratio><![CDATA[Ratio]]></Ratio>
+	  	<P-E><![CDATA[P/E]]></P-E>
+	  	<P-B><![CDATA[P/B]]></P-B>
+	  	<Maket-Cap><![CDATA[Maket Cap <br>(bil VNĐ)]]></Maket-Cap>
+	  	<Assets><![CDATA[Assets <br>(bil VNĐ)]]></Assets>
+	  	<Equities><![CDATA[Equities <br>(bil VNĐ)]]></Equities>
+	  	<Asset><![CDATA[Asset <br>(%)]]></Asset>
+	  	<Revenue><![CDATA[Revenue <br>(%)]]></Revenue>
+	  	<ROA><![CDATA[ROA <br>(%)]]></ROA>
+	  	<ROE><![CDATA[ROE <br>(%)]]></ROE>
+	  	<Profit-margin><![CDATA[Profit margin]]></Profit-margin>
+	  	<Debt-Equity><![CDATA[Debt/Equity]]></Debt-Equity>
+	  	<Current-Ratio><![CDATA[Liquidity Ratio]]></Current-Ratio>
+	  	<EBITDA><![CDATA[EBITDA]]></EBITDA>
+	  	<EnterTheSymbol><![CDATA[Enter the symbol]]></EnterTheSymbol>
+	  	<ViewIndustry><![CDATA[View Industry]]></ViewIndustry>
+	  </Industry-Browser>
+		<StockScreen>
+			<StockScreen><![CDATA[Stock Screener]]></StockScreen>
+			<StockWizard><![CDATA[Stock Wizard]]></StockWizard>
+			<SavedScreens><![CDATA[Saved Screens]]></SavedScreens>
+			<Title_1><![CDATA[Define your custom criteria form the categories to narrow the universe of stocks.<br />
+														Select View Results to view the individual companies that match your selections.]]></Title_1>
+			<ViewResult><![CDATA[View Result]]></ViewResult>
+			<There_are><![CDATA[There are ]]></There_are>
+			<of_total><![CDATA[of total]]></of_total>
+			<companies_fits><![CDATA[companies fits your criteria]]></companies_fits>
+			<Total><![CDATA[Total]]></Total>
+			<Market_segment><![CDATA[Market segment]]></Market_segment>
+			<AssetClass><![CDATA[Asset Class]]></AssetClass>
+			<TinyCap><![CDATA[Tiny Cap]]></TinyCap>
+			<SmallCap><![CDATA[Small Cap]]></SmallCap>
+			<MidCap><![CDATA[Mid Cap]]></MidCap>
+			<LargeCap><![CDATA[Large Cap]]></LargeCap>
+			<TinyCapDes><![CDATA[Less than 200 billions VND]]></TinyCapDes>
+			<SmallCapDes><![CDATA[From 200 to 500 billions VND]]></SmallCapDes>
+			<MidCapDes><![CDATA[From 500 to 1000 billions VND]]></MidCapDes>
+			<LargeCapDes><![CDATA[More than 1000 billions VND]]></LargeCapDes>
+			<Component_of><![CDATA[Component of]]></Component_of>
+			<Sector_Industry><![CDATA[Sector/Industry]]></Sector_Industry>
+			<All_sectors><![CDATA[All sectors]]></All_sectors>
+			<All_industries><![CDATA[All industries]]></All_industries>
+			<Cumulative><![CDATA[Cumulative]]></Cumulative>
+			<Price_Volume><![CDATA[Price &amp; Volume]]></Price_Volume>
+			<SharePrice><![CDATA[Share Price]]></SharePrice>
+			<Greater_than ><![CDATA[Greater than ]]></Greater_than>
+			<_1000_VND_and_less_than><![CDATA[x 1000 VND and less than]]></_1000_VND_and_less_than>
+			<_1000_VND ><![CDATA[x 1000 VND ]]></_1000_VND>
+			<Price_Change><![CDATA[Price Change]]></Price_Change>
+			<_over_the_last><![CDATA[% over the last]]></_over_the_last>
+			<_1_Day><![CDATA[1 Day]]></_1_Day>
+			<_5_Days><![CDATA[5 Days]]></_5_Days>
+			<_4_Weeks><![CDATA[4 Weeks]]></_4_Weeks>
+			<_13_Weeks><![CDATA[13 weeks]]></_13_Weeks>
+			<_52_Weeks><![CDATA[52 Weeks]]></_52_Weeks>
+			<price_performance><![CDATA[Price Performance vs. Index]]></price_performance>
+			<Over><![CDATA[Over]]></Over>
+			<Last_4_Weeks><![CDATA[Last 4 Weeks]]></Last_4_Weeks>
+			<Last_12_Weeks><![CDATA[Last 13 Weeks]]></Last_12_Weeks>
+			<Last_52_Weeks><![CDATA[Last 52 Weeks]]></Last_52_Weeks>
+			<Average_Volume><![CDATA[Average Volume]]></Average_Volume>
+			<_and_less_than><![CDATA[and less than]]></_and_less_than>
+			<_over_the_last_10_days><![CDATA[over the last 10 days]]></_over_the_last_10_days>
+			<Fundamental><![CDATA[Fundamental]]></Fundamental>
+			<pe_ratio><![CDATA[P/E Ratio]]></pe_ratio>
+			<Below_Industry_Average><![CDATA[Below Industry Average]]></Below_Industry_Average>
+			<Above_Industry_Average><![CDATA[Above Industry Average]]></Above_Industry_Average>
+			<PEG><![CDATA[PEG]]></PEG>
+			<_1_or_Less><![CDATA[1 or Less]]></_1_or_Less>
+			<More_than_1><![CDATA[More than 1]]></More_than_1>
+			<profit_margin><![CDATA[Profit Margin(TTM)(%)]]></profit_margin>
+			<And><![CDATA[And]]></And>
+			<Or><![CDATA[Or]]></Or>
+			<price_sale_ratio><![CDATA[Price/Sales Ratio(TTM)]]></price_sale_ratio>
+			<price_book_ratio><![CDATA[Price/Book Ratio(MRQ)]]></price_book_ratio>
+			<return_equity><![CDATA[Return on Equity(TTM)(%)]]></return_equity>
+			<return_asset><![CDATA[Return on Assets(TTM)(%)]]></return_asset>
+			<Earnings_and_Dividends><![CDATA[Earnings and Dividends]]></Earnings_and_Dividends>
+			<eps_growth_annual><![CDATA[EPS Growth Annual(%)]]></eps_growth_annual>
+			<Positive_Change><![CDATA[Positive Change]]></Positive_Change>
+			<Negative_Change><![CDATA[Negative Change]]></Negative_Change>
+			<_4_Current_Fiscal_Year><![CDATA[For the <b>Current Fiscal Year</b>]]></_4_Current_Fiscal_Year>
+			<revenue_growth_annual><![CDATA[Revenue Growth Annual(%) ]]></revenue_growth_annual>
+			<eps_growth_quarterly><![CDATA[EPS Growth(Quarterly)(%)]]></eps_growth_quarterly>
+			<revenue_growth_quarterly><![CDATA[Revenue Growth (Quarterly)(%)]]></revenue_growth_quarterly>
+			<dividend_growth_5_year><![CDATA[Dividend Growth 3 Years(%)]]></dividend_growth_5_year>
+			<Positive_Growth><![CDATA[Positive Growth]]></Positive_Growth>
+			<dividend_yield><![CDATA[Dividend Yield(%)]]></dividend_yield>
+			<Positive_Yield><![CDATA[Positive Yield]]></Positive_Yield>
+			<Technicals><![CDATA[Technicals]]></Technicals>
+			<_52_week_high><![CDATA[52 Week High]]></_52_week_high>
+			<Stock_is_within><![CDATA[Stock is within]]></Stock_is_within>
+			<_of_its><![CDATA[% of its]]></_of_its>
+			<_52_week_low><![CDATA[52 Week Low]]></_52_week_low>
+			<price_closes_sam><![CDATA[Price closes [Above/Below] simple moving average (SMA)]]></price_closes_sam>
+			<Above_Below><![CDATA[Above/Below]]></Above_Below>
+			<_13_Day_SMA><![CDATA[13 Day SMA]]></_13_Day_SMA>
+			<_50_Day_SMA><![CDATA[50 day SMA]]></_50_Day_SMA>
+			<_13_50_Day_SMA><![CDATA[13 day SMA is [Above/Below] its 50 day SMA]]></_13_50_Day_SMA>
+			<Below><![CDATA[Below]]></Below>
+			<Above><![CDATA[Above]]></Above>
+			<WaringMsg4NotLogin><![CDATA[You have requested access to a customer-only feature. Click to <a href='../../../online/brokerage/home/Logon.do?fw=../../tradingideas/stock_screen/StockScreener.do'><b>log in</b></a> or<a href='http://www.vndirect.com.vn/forward.do?fw=/online/brokerage/home/CreateIndividualAccount.do'><b> Open An Account</b></a><br>]]></WaringMsg4NotLogin>
+			<WaringMsg4FreeUser><![CDATA[You can not choose more than 2 criteria. You have requested access to a customer-only feature. <a href='http://www.vndirect.com.vn/forward.do?fw=/online/brokerage/home/CreateIndividualAccount.do'><b>Open An Account </b></a> today and experience the power of VNDirect Online]]></WaringMsg4FreeUser>
+			<CurentSaveSearch><![CDATA[Edit your custom criteria for ]]></CurentSaveSearch>
+		</StockScreen>
+		<Result_View>
+			<Matching_Result><![CDATA[We found <b>{0}</b> matches for the following criteria. You can click on the column title to sort your results accordingly.]]></Matching_Result>
+			<MouseOver_4_Details><![CDATA[Mouse over symbol for more detail.]]></MouseOver_4_Details>
+			<ModifySearch_Button><![CDATA[Modify Search]]></ModifySearch_Button>
+			<Save_Screen_Button><![CDATA[Save This Screen]]></Save_Screen_Button>
+			<SaveSearchName><![CDATA[Save Search Name]]></SaveSearchName>
+			<ScreenName><![CDATA[Screen Name]]></ScreenName>
+			<CurrentMatches><![CDATA[Current Matches]]></CurrentMatches>
+			<DateSaved><![CDATA[Date Saved]]></DateSaved>
+			<TotalCurrentMatchs><![CDATA[ <b>{0}</b> Companies ]]></TotalCurrentMatchs>
+			<Tabs>
+				<Summary><![CDATA[Summary]]></Summary>
+				<PricePerformance><![CDATA[Price Performance]]></PricePerformance>
+				<Fundamentals><![CDATA[Fundamentals]]></Fundamentals>
+				<Earning_Dividends><![CDATA[Earning & Dividends]]></Earning_Dividends>
+				<Technicals><![CDATA[Technicals]]></Technicals>
+			</Tabs>
+
+			<Symbol><![CDATA[Symbol]]></Symbol>
+			<CompanyName><![CDATA[Company Name]]></CompanyName>
+			<!-- //Summary -->
+			<Industry><![CDATA[Industry]]></Industry>
+			<PriorClose><![CDATA[Prior Close]]></PriorClose>
+			<TodayChange><![CDATA[Today Chg]]></TodayChange>
+			<_5daysChange><![CDATA[5 Days Chg]]></_5daysChange>
+			<_4weeksChange><![CDATA[4 Weeks Chg]]></_4weeksChange>
+			<_52weeksChange><![CDATA[52 Weeks Chg]]></_52weeksChange>
+			<MarketCap><![CDATA[Mkt Cap<br>(Billion VND]]></MarketCap>
+			<!-- //Price performance -->
+			<PriceChangeOver5Days><![CDATA[Price Change Over 5Days]]></PriceChangeOver5Days>
+			<PriceChangeOver4Weeks><![CDATA[Price Change Over 4Weeks]]></PriceChangeOver4Weeks>
+			<Vs.VnIndex4Weeks><![CDATA[Vs. Index 4 Weeks]]></Vs.VnIndex4Weeks>
+			<Vs.VnIndex13Weeks><![CDATA[Vs. Index 13 Weeks]]></Vs.VnIndex13Weeks>
+			<Vs.VnIndex52Weeks><![CDATA[Vs. Index 52 Weeks]]></Vs.VnIndex52Weeks>
+			<Beta><![CDATA[Beta]]></Beta>
+			<!-- //Fundamentals -->			
+			<pe_ratio><![CDATA[P/E Ratio (TTM)]]></pe_ratio>
+			<PEG><![CDATA[PEG]]></PEG>
+			<profit_margin><![CDATA[Profit Margin(TTM)]]></profit_margin>
+			<price_sale_ratio><![CDATA[Price/Sales Ratio]]></price_sale_ratio>
+			<price_book_ratio><![CDATA[Price/Book Ratio)]]></price_book_ratio>
+			<return_equity><![CDATA[Return on Equity]]></return_equity>
+			<return_asset><![CDATA[Return on Assets]]></return_asset>
+			<!-- //Technicals -->
+			<ChgLast52Weeks><![CDATA[Chg Last 52 weeks]]></ChgLast52Weeks>
+			<Vs13DaysSMA><![CDATA[Vs.13-Day SMA*]]></Vs13DaysSMA>
+			<Vs50DaysSMA><![CDATA[Vs.50-Day SMA*]]></Vs50DaysSMA>
+			<Below52WkHigh><![CDATA[% Below 52Wk High]]></Below52WkHigh>
+			<Above52WkLow><![CDATA[% Above 52Wk Low]]></Above52WkLow>
+			<ShortInterestAsFloat><![CDATA[Short Interest As % Float]]></ShortInterestAsFloat>
+			<SMA><![CDATA[*SMA = Simple Moving Average]]></SMA>
+			<!-- //Earnings&Dividends -->
+			<eps_growth_annual><![CDATA[EPS Growth (CFY)]]></eps_growth_annual>
+			<revenue_growth_annual><![CDATA[Revenue Growth (CFY)]]></revenue_growth_annual>
+			<eps_growth_quarterly><![CDATA[EPS Growth (Quarterly)]]></eps_growth_quarterly>
+			<revenue_growth_quarterly><![CDATA[Revenue Growth (Quarterly)]]></revenue_growth_quarterly>
+			<dividend_yield><![CDATA[Dividend Yield]]></dividend_yield>
+			<dividend_growth_5_year><![CDATA[Dividend Growth 3 Years]]></dividend_growth_5_year>
+		</Result_View>
+		<StockWizard>
+		   <Name_Of_Symbol><![CDATA[Name of sy<u>m</u>bol (s)]]> </Name_Of_Symbol>
+			<Find_Symbol><![CDATA[Find symbol]]></Find_Symbol>
+			<Company_Do><![CDATA[What does the company do?]]></Company_Do>
+			<Company_Grow><![CDATA[How fast is the company growing?]]></Company_Grow>
+			<Sale_Income><![CDATA[Sales &amp; Income (past 12 months)]]></Sale_Income>
+			<Company><![CDATA[Company]]></Company>
+			
+			<Maket_Cap_4_Industry><![CDATA[Maket Capacity for Industry]]></Maket_Cap_4_Industry>
+			<Assets><![CDATA[Assets]]></Assets>
+			<Equities><![CDATA[Equities]]></Equities>
+			<Price_Earning_Ratio><![CDATA[Price_Earning_Ratio]]></Price_Earning_Ratio>
+			<Price_Change_3Mon><![CDATA[3_Mo_Price_Change]]></Price_Change_3Mon>
+			<Price_Change_6Mon><![CDATA[6_Mo_Price_Change]]></Price_Change_6Mon>
+			<Price_Change_12Mon><![CDATA[12_Mo_Price_Change]]></Price_Change_12Mon>
+			<Company_Current_price><![CDATA[{0} current price:]]></Company_Current_price>
+			<First_Resistance_4_Company><![CDATA[First resistance for {0}:]]></First_Resistance_4_Company>
+			<Second_Resistance_4_Company><![CDATA[Second resistance for {0}:]]></Second_Resistance_4_Company>
+			<Support_4_Company_52W_H><![CDATA[Support for {0} (52-week low):]]></Support_4_Company_52W_H>
+			<Support_4_Company_52W_L><![CDATA[Support for {0} (52-week high):]]></Support_4_Company_52W_L>
+			<Who_sold_and_earned><![CDATA[Who_sold_and_earned]]></Who_sold_and_earned>
+			<Profitability_ratios_of_company><![CDATA[Profitability_ratios_of_company]]></Profitability_ratios_of_company>
+			<Whose_shares_are_price_cheapest><![CDATA[Whose_shares_are_price_cheapest]]></Whose_shares_are_price_cheapest>
+			<Whose_financial_health_are_strongest><![CDATA[Whose_financial_health_are_strongest]]></Whose_financial_health_are_strongest>
+			<Whose_share_price_performance_best_last_year><![CDATA[Whose share price has performance best in the last year]]></Whose_share_price_performance_best_last_year>
+
+			<Industry_Group><![CDATA[Industry Group]]></Industry_Group>
+			<Sales_Growth><![CDATA[Sale Growth]]></Sales_Growth>
+			<Income_Growth><![CDATA[Income Growth]]></Income_Growth>
+			<Market_Position><![CDATA[What's the market position?]]></Market_Position>
+			<How_Sale_Earn>
+			<![CDATA[ <p><strong>How much does the company sell and earn?</strong></p>
+			  <p><em>Stock prices change when investors after their opinion about a company's prospects.
+			   Catalysts for new ideas can come from.
+				Stock prices change when investors after their opinion about a company's prospects.</em></p>]]>
+			</How_Sale_Earn>
+
+			<Sale><![CDATA[Sale]]></Sale>
+			<Income><![CDATA[Income]]></Income>
+			<How_Company_Growing><![CDATA[How fast is the company growing?]]></How_Company_Growing>
+
+			<How_Profitable><![CDATA[  <p><strong>How profitable is the company ?</strong></p>
+			  <p><em>Stock prices change when investors after their opinion about a company's prospects.
+			  Catalysts for new ideas can come from. Stock prices change when investors after their opinion about a company's prospects.
+			  Stock prices change when investors after their opinion about a company's prospects.
+			  Catalysts for new ideas can come from. Catalysts for new ideas can come from.</em></p>]]>
+			 </How_Profitable>
+
+			<Net_Profit_Margin><![CDATA[Net_Profit_Margin]]></Net_Profit_Margin>
+			<ROA><![CDATA[ROA]]></ROA>
+			<ROE><![CDATA[REO]]></ROE>
+			<How_Financial_Health><![CDATA[<p><strong>How is the company's financial health?</strong></p>
+			 <p><em>The debt/equity ratio shows how much a firm has borrowed long-term as a percentage of its stock equity.
+			  The lower, the better.</em></p>]]>
+			  </How_Financial_Health>
+			<Debt_Equity_Ratio><![CDATA[Debt/equity ratio]]></Debt_Equity_Ratio>
+			<Fudamentals><![CDATA[<b>Fudamentals</b> <br />What is the company's business? Is it sound? Is it growing?]]></Fudamentals>
+			<Price_History><![CDATA[<b>Price history</b> <br />How much have other investors been willing to pay for the stock?]]></Price_History>
+			<Price_Target><![CDATA[<b>Price target</b> <br />How much are investors likely to pay for the stock in the future?]]></Price_Target>
+			<Comparison><![CDATA[<b>Comparison</b> <br />How does the stock compare to others in its industry?]]></Comparison>
+			<Stock_Research_Wizard>
+			<![CDATA[<p class="t8-tit">Stock Research Wizard</p>
+				  <p style="color:#293761; font-size:15px;">Using a guided approach, VNDirect Stock Research Wizard makes I easy to research stocks.<p>
+				  <p class="t8-tit2"><strong>How it works:</strong></p>
+				  <ul>
+					<li>Enter a stock symbol and click Go.</li>
+					<li>Step through each page and any additional links and functions provided.</li>
+					<li>On the final page, compare your chosen stock to any other stock.</li>
+				  </ul>
+				  <p class="t8-tit2"><strong>Stock Research Wizard helps investor look at five vital issues:</strong></p>]]>
+			  </Stock_Research_Wizard>
+			  <Price_History><![CDATA[Price History]]></Price_History>
+			  <How_Stock_Performed>
+				<![CDATA[<p><strong>How has the stock performed?</strong></p>
+			  <p><em>Stock prices change when investors after their opinion about a company's prospects. Catalysts for new ideas can come from. Stock prices change when investors after their opinion about a company's prospects.  Stock prices change when investors after their opinion about a company's prospects. Catalysts for new ideas can come from. Catalysts for new ideas can come from.</em></p>]]>
+			  </How_Stock_Performed>
+
+			  <three_months><![CDATA[3 months]]></three_months>
+			  <six_months><![CDATA[6 months]]></six_months>
+			  <twelve_months><![CDATA[12 months]]></twelve_months>
+			  <support_and_resistance>
+			  <![CDATA[ <p><strong>Where is the stock's support and resistance?</strong></p>
+			  <p><em>Stock prices change when investors after their opinion about a company's prospects. Catalysts for new ideas can come from. Stock prices change when investors after their opinion about a company's prospects.  Stock prices change when investors after their opinion about a company's prospects. Catalysts for new ideas can come from. Catalysts for new ideas can come from.</em></p>]]>
+			  </support_and_resistance>
+			  			  <Price_History_Title><![CDATA[{0} Price History]]></Price_History_Title>
+			  <Fundamental_Title><![CDATA[{0} Fundamental]]></Fundamental_Title>
+			  <Catalyst><![CDATA[{0} Catalyst]]></Catalyst>
+			  <Comparation><![CDATA[{0} Comparation]]></Comparation>
+			 <View_filling_SEC><![CDATA[{0} Catalyst]]></View_filling_SEC>
+
+			  <stock_stack_up>
+			  <![CDATA[<p><strong>How dose the stock stack up?</strong></p>
+			  <p><em>Investors want to know how a company matches up in key categories against others in its industry. <br />
+				Select up to two peers to compare. The best figure in each categry is highlighted in each row below.  </em></p>]]>
+			  </stock_stack_up>
+
+			  <Enter_symbol_compare>
+				<![CDATA[Enter a symbol to compare:]]>
+			  </Enter_symbol_compare>
+			  <Name><![CDATA[Name]]></Name>
+			  <Industry><![CDATA[Industry]]></Industry>
+			  <Scope><![CDATA[Scope]]></Scope>
+			   <ESP><![CDATA[ESP]]></ESP>
+			   <View_announcements_and_news><![CDATA[View recent {0} company announcements and news]]></View_announcements_and_news>
+			  <company_announcements_news>
+				 <![CDATA[company announcements and news</p>
+				<p>Look for press releases on new products, partnerships, straegies or problem that might improve or diminish the company's
+				 chances of success, and for news reports on new products, strategies alliances or trouble.]]>
+			  </company_announcements_news>
+			  <fil_with_the_SEC><![CDATA[filings with the SEC]]></fil_with_the_SEC>
+			  <fil_with_the_SEC_DES>
+				<![CDATA[<p>Companies must disclose all material facts about their businesses to federal regulators every 3 months.
+				 Read about insider trades and restricted stock sales
+				, institutional ownership changes, special events and other important shareholder issues.</p>]]>
+			  </fil_with_the_SEC_DES>
+			  <View_fil_with_the_SEC><![CDATA[View {0} SEC filings]]></View_fil_with_the_SEC>
+			  <Recent_purchase_and_sell><![CDATA[Recent {0} insider stock purchases and sells]]></Recent_purchase_and_sell>
+			  <Recent_purchase_and_sell_DES><![CDATA[<p>Many investors believe that corporate insiders are the savviest buyers of their own stock.
+			   Insiders can be very early buyers of their stocks at rock-bottom prices.<p>]]></Recent_purchase_and_sell_DES>
+
+		</StockWizard>
+
+	</TradingIdeas>
+	<MyPortfolios>
+		<Lables>
+			<Menu-Level2>
+				<MyPortfolios>
+					<![CDATA[&nbsp; My Portfolios &nbsp;]]>
+				</MyPortfolios>
+			</Menu-Level2>
+			<DayWatchView>
+				<![CDATA[Day Watch View]]>
+			</DayWatchView>
+			<DeleteMyPortfolio>
+				<![CDATA[Delete My Portfolio]]>
+			</DeleteMyPortfolio>
+			<MyPortfoliosOverview>
+				<![CDATA[My Portfolios]]>
+			</MyPortfoliosOverview>
+			<UpdateMyPortfolio>
+				<![CDATA[Create/Update My Portfolio]]>
+			</UpdateMyPortfolio>
+		</Lables>
+		<CellNames>
+			<Watch-List>
+				<![CDATA[&nbsp;&nbsp;&nbsp;<b>Watch List </b>]]>
+			</Watch-List>
+			<Create-List>
+				<![CDATA[Create]]>
+			</Create-List>
+			<Edit-List>
+				<![CDATA[Edit List]]>
+			</Edit-List>
+			<Symbol>
+				<![CDATA[Symbol]]>
+			</Symbol>
+			<Last-Trade>
+				<![CDATA[Last Trade]]>
+			</Last-Trade>
+			<Change>
+				<![CDATA[Change]]>
+			</Change>
+			<Volume>
+				<![CDATA[Volume]]>
+			</Volume>
+			<Releated-Research>
+				<![CDATA[Releated Research]]>
+			</Releated-Research>
+			<Time>
+				<![CDATA[Time]]>
+			</Time>
+			<Price>
+				<![CDATA[Price]]>
+			</Price>
+			<Remove>
+				<![CDATA[Remove]]>
+			</Remove>
+			<Add-Lable>
+				<![CDATA[<b>Add to Watch List: </b>&nbsp;&nbsp;]]>
+			</Add-Lable>
+			<Add-button>
+				<![CDATA[Add Symbol to Watch List]]>
+			</Add-button>
+			<Label>
+				<![CDATA[Enter a series of symbols separated by spaces and/or commans.]]>
+			</Label>
+			<Chart>
+				<![CDATA[Chart]]>
+			</Chart>
+			<Quotes>
+				<![CDATA[Quotes]]>
+			</Quotes>
+			<Watchlist-Name>
+				<![CDATA[Watchlist Name]]>
+			</Watchlist-Name>
+			<Enter-name>
+				<![CDATA[(Enter name of watchlish)]]>
+			</Enter-name>
+			<Edit-Lable>
+				<![CDATA[Enter the series of symbols <br> separated by spaces and/or commans]]>
+			</Edit-Lable>
+			<Enter-Symbol>
+				<![CDATA[Enter Symbols]]>
+			</Enter-Symbol>
+			<Confirm-msg>
+				<![CDATA[Are you sure you would like to delete the watchlist: ]]>
+			</Confirm-msg>
+		</CellNames>
+	</MyPortfolios>
+	<OTCDirect>
+		<Lables>
+			<Menu-Level2>
+				<OTCDirect>
+					<![CDATA[&nbsp; UPCOMdirect &nbsp;]]>
+				</OTCDirect>
+				<OTCTrading><![CDATA[&nbsp; Place An OTC Order &nbsp;]]></OTCTrading>
+				<OTCDirectBoard><![CDATA[&nbsp; UPCOMdirect Board &nbsp;]]></OTCDirectBoard>
+			</Menu-Level2>
+			
+			<!-- OTC News  28 Aug 2008-->
+			<OTCNews><![CDATA[UPCOMdirect regulation]]></OTCNews>
+			<OTCPrice><![CDATA[BẢNG GIÁ OTC THAM KHẢO NGÀY]]></OTCPrice>
+			<ViewNews><![CDATA[Xem tin]]></ViewNews>
+			<Date><![CDATA[Ngày]]></Date>
+			<ChooseDate><![CDATA[Chọn ngày:]]></ChooseDate>
+			<ViewInDate><![CDATA[Xem bản tin OTC theo ngày]]></ViewInDate>
+			<CompanyName><![CDATA[Company Name]]></CompanyName>
+			<Symbol><![CDATA[Symbol]]></Symbol>
+			<FaceValue><![CDATA[Mệnh giá]]></FaceValue>
+			<HighPrice><![CDATA[Cao nhất]]></HighPrice>
+			<LowPrice><![CDATA[Thấp nhất]]></LowPrice>
+			<AveragePrice><![CDATA[Trung bình]]></AveragePrice>
+			<ClosePrice><![CDATA[Giá đóng cửa]]></ClosePrice>
+			<ChangePrice><![CDATA[Thay đổi]]></ChangePrice>
+			<ChangePriceInDay><![CDATA[Biến động giá trong ngày]]></ChangePriceInDay>
+			<CharteredCapital><![CDATA[VĐL (tỷ VNĐ)]]></CharteredCapital>
+			<!-- OTC News --> 
+			
+			<Argreement>
+				<![CDATA[Firm Order]]>
+			</Argreement>
+			<Advertising>
+				<![CDATA[Indicative Order]]>
+			</Advertising>
+			<Detail>
+				<![CDATA[Details]]>
+			</Detail>
+			<VistaDirectAdvertising><![CDATA[<span style="color:red;">&nbsp;VistaDirect công cụ đắc lực của Nhà đầu tư năng động. </span><a href="../../brokerage/vistadirect/vistadirect.do" style="color:blue;">Click để xem ngay</a>]]></VistaDirectAdvertising>
+		</Lables>
+	</OTCDirect>
+	<StreamingQuotes>
+		<Version>
+			<Text><![CDATA[Version]]></Text>
+			<InstallGuilde>
+				<![CDATA[Javaインストールガイド]]>
+			</InstallGuilde>
+			<Applet>
+				<![CDATA[Java ヴァージョン]]>
+			</Applet>
+			<HTML>
+				<![CDATA[HTML ヴァージョン]]>
+			</HTML>
+		</Version>
+		<SelectMarket>
+			<Index>
+				<![CDATA[<span style="font-size: 12px;">Select Market: </span>]]>
+			</Index>
+		</SelectMarket>
+		<Market>
+			<OpenStatus>
+				<![CDATA[取引開始]]>
+			</OpenStatus>
+			<CloseStatus>
+				<![CDATA[取引終了]]>
+			</CloseStatus>
+			<MarketStatus>
+				<![CDATA[市場]]>
+			</MarketStatus>
+			<Index>
+				<![CDATA[指数]]>
+			</Index>
+			<HOSTC-Index>
+				<![CDATA[HOSE-Index]]>
+			</HOSTC-Index>
+			<HASTC-Index>
+				<![CDATA[HNX-Index]]>
+			</HASTC-Index>
+			<Change>
+				<![CDATA[騰落率 +/-]]>
+			</Change>
+			<TransactionValue>
+				<![CDATA[売買代金]]>
+			</TransactionValue>
+			<TransactionVolume>
+				<![CDATA[売買高]]>
+			</TransactionVolume>
+			<Highest>
+				<![CDATA[]]>
+			</Highest>
+			<Lowest>
+				<![CDATA[]]>
+			</Lowest>
+		</Market>
+		<StreamTable>
+			<MoneySymbol><![CDATA[前日比]]></MoneySymbol>
+			<PercentSymbol><![CDATA[前日比％]]></PercentSymbol>
+			<Symbol>
+				<![CDATA[銘柄コード]]>
+			</Symbol>
+			<RefPrice>
+				<![CDATA[前日平均]]>
+			</RefPrice>
+			<CellingPrice>
+				<![CDATA[ストップ高]]>
+			</CellingPrice>
+			<FloorPrice>
+				<![CDATA[ストップ安]]>
+			</FloorPrice>
+			<Bids>
+				<![CDATA[売り気配]]>
+			</Bids>
+			<Ask>
+				<![CDATA[買い気配]]>
+			</Ask>
+			<Match>
+				<![CDATA[売買高]]>
+			</Match>
+			<Change>
+				<![CDATA[騰落率 +/-]]>
+			</Change>
+			<Seesion1>
+				<![CDATA[第1節]]>
+			</Seesion1>
+			<Seesion2>
+				<![CDATA[第2節]]>
+			</Seesion2>
+			<P>
+				<![CDATA[株価]]>
+			</P>
+			<Q>
+				<![CDATA[売買高]]>
+			</Q>
+			<Ps>
+				<![CDATA[価格]]>
+			</Ps>
+			<Qs>
+				<![CDATA[数量]]>
+			</Qs>
+			<P1>
+				<![CDATA[株価]]>
+			</P1>
+			<Q1>
+				<![CDATA[数量1]]>
+			</Q1>
+			<P2>
+				<![CDATA[株価]]>
+			</P2>
+			<Q2>
+				<![CDATA[株数2]]>
+			</Q2>
+			<P3>
+				<![CDATA[株価3]]>
+			</P3>
+			<Q3>
+				<![CDATA[数量3]]>
+			</Q3>
+			<TotalVolumn>
+				<![CDATA[売買高]]>
+			</TotalVolumn>
+			<Open>
+				<![CDATA[始値]]>
+			</Open>
+			<Close>
+				<![CDATA[終値]]>
+			</Close>
+			<Highest>
+				<![CDATA[高値]]>
+			</Highest>
+			<Lowest>
+				<![CDATA[安値]]>
+			</Lowest>
+			<Average>
+				<![CDATA[平均株価]]>
+			</Average>
+			<TradingVolume>
+				<![CDATA[売買高]]>
+			</TradingVolume>
+			<TradingValue>
+				<![CDATA[売買代金]]>
+			</TradingValue>
+		</StreamTable>
+	</StreamingQuotes>
+
+	<Portlet>
+	  <Balances>
+	  <Balance><![CDATA[Balances]]></Balance>
+	  <Position><![CDATA[Positions]]></Position>
+		<Account><![CDATA[Account]]></Account>
+		<Net_Account_Value><![CDATA[Net Account Value]]></Net_Account_Value>
+		<Money_Availble_for_Investment><![CDATA[Money Availble for Investment]]></Money_Availble_for_Investment>
+		<Cash_Availble><![CDATA[Cash Availble]]></Cash_Availble>
+		<Detailed_Blances><![CDATA[Detailed Blances]]></Detailed_Blances>
+		<Buying_Power><![CDATA[Buying power]]></Buying_Power>
+	  </Balances>
+
+	  <MarketOverview>
+		  <Symbol_lookup><![CDATA[Symbol lookup]]></Symbol_lookup>
+		  <Quote><![CDATA[Quote]]></Quote>
+		   <HOSE><![CDATA[HOSE]]></HOSE>
+		   <HASTC><![CDATA[HNX]]></HASTC>
+		   <CLOSING_PRICE><![CDATA[CLOSING PRICE]]></CLOSING_PRICE>
+		   <More_Market_info><![CDATA[More Market info]]></More_Market_info>
+		   <QUOTE_BUTTON><![CDATA[QUOTES]]></QUOTE_BUTTON>
+		   <Detailed_Markets><![CDATA[Detailed Markets &gt;]]></Detailed_Markets>
+		   <Markets><![CDATA[Markets]]></Markets>
+	  </MarketOverview>
+
+	  <Portfolios>
+		<Portfolio><![CDATA[Portfolio]]></Portfolio>
+		<Symbol><![CDATA[Symbol]]></Symbol>
+		<Last><![CDATA[Last]]></Last>
+		<Change><![CDATA[Change]]></Change>
+		<Details><![CDATA[Details]]></Details>
+	  </Portfolios>
+
+	  <Positions>
+	   <Balance><![CDATA[Balances]]></Balance>
+	   <Position><![CDATA[Positions]]></Position>
+	   <Symbol><![CDATA[Symbol]]></Symbol>
+	   <Available><![CDATA[Available]]></Available>
+	   <Quantity><![CDATA[Quantity]]></Quantity>
+	   <Details><![CDATA[Details]]></Details>
+		   <Mortgage><![CDATA[Mortgage]]></Mortgage>
+	  </Positions>
+
+	 <QuitQuotes>
+	   <Markets><![CDATA[Markets]]></Markets>
+	   <Quote><![CDATA[Quote]]></Quote>
+	   <Quote_Button><![CDATA[QUOTES]]></Quote_Button>
+	   <Best_Bid><![CDATA[Best Bid]]></Best_Bid>
+	   <Best_Ask><![CDATA[Best Ask]]></Best_Ask>
+	   <P><![CDATA[P]]></P>
+	   <Q><![CDATA[Q]]></Q>
+	   <Refresh><![CDATA[Refresh]]></Refresh>
+	  </QuitQuotes>
+	  <RefProgram>
+	  	<Header><![CDATA[Refer 1, Get 100]]></Header>
+	  	<See_Detail><![CDATA[See detail]]></See_Detail>
+	  	<Num_Acc><![CDATA[Referred Accounts: ]]></Num_Acc>
+	  	<Account><![CDATA[]]></Account><Description><![CDATA[Refer a friend, Get trade money]]></Description></RefProgram>
+		
+	   <ExchangeRate>
+	    <GoldPrice><![CDATA[GOLD]]></GoldPrice>
+	    <OilPrice><![CDATA[OLD]]></OilPrice>
+	    <USDPrice><![CDATA[USD]]></USDPrice>
+	    <Market><![CDATA[MARKET]]></Market>
+	    <LastestRight><![CDATA[Lastest Rights]]></LastestRight>
+	    <Detail><![CDATA[Detail]]></Detail>
+	  </ExchangeRate>
+	  
+	  <BuySellStockOption>
+	    <Symbol><![CDATA[Symbol]]></Symbol>
+	    <TypeRight><![CDATA[Type Right]]></TypeRight>
+	    <Ratio><![CDATA[Ratio]]></Ratio>
+	  </BuySellStockOption>
+	</Portlet>
+
+	<VideoNews>
+		<Part><![CDATA[Part]]></Part>
+	</VideoNews>
+	
+	<Html>
+		<IntructionOpenAccount><![CDATA[Instruction to Open An Account at VNDIRECT]]></IntructionOpenAccount>
+		<Intruction4Investor><![CDATA[Instruction For VNDIRECT Investors]]></Intruction4Investor>
+		<QuickView><![CDATA[Quick view]]></QuickView>
+		<FQAs><![CDATA[FAQs]]></FQAs>
+	</Html>
+
+	<WebAgent>
+		<CustomerManagment>
+			<Menu2>
+				<CustomerManagment><![CDATA[Customer Managment]]></CustomerManagment>
+				<OpenAnAccount><![CDATA[Open An Account]]></OpenAnAccount>
+			</Menu2>
+			<OpenAnAccount>
+				<ConfirmToCreateContract><![CDATA[Create customer successfull. Do you want to create contract for this customer? ]]></ConfirmToCreateContract>
+				<NotCreatContract><![CDATA[This customer has just got a profile and not been opened an Account with VNDirect yet.<br>]]></NotCreatContract>
+				<CreateContractLink><![CDATA[<b>Create contract for this customer</b]]></CreateContractLink>
+				<UpdateAccDeniedMess><![CDATA[<span style="color:red"><b>You do not have pemission to create contract</b></span>]]></UpdateAccDeniedMess>
+				<OpenAnAccountTitle><![CDATA[Add New Customer]]></OpenAnAccountTitle>
+				<AddCustomerContractTitle><![CDATA[Add Customer Contract]]></AddCustomerContractTitle>
+				<CustomerId><![CDATA[Customer ID]]></CustomerId>
+				<Identification>
+					<Header><![CDATA[Identification]]></Header>
+					<FullName><![CDATA[Full Name]]></FullName>
+					<ShortName><![CDATA[Short Name]]></ShortName>
+					<DoB><![CDATA[Date of birth]]></DoB>
+					<Title><![CDATA[Title]]></Title>
+					<CustomerType><![CDATA[Customer Type]]></CustomerType>
+					<IdentificationType><![CDATA[Identification Type]]></IdentificationType>
+					<IdentificationCode><![CDATA[Identification Code]]></IdentificationCode>
+					<Sex><![CDATA[Sex]]></Sex>
+					<ExpiredDate><![CDATA[Expired Date]]></ExpiredDate>
+					<IssuingPlace><![CDATA[Issuing Place]]></IssuingPlace>
+					<DateOfIssue><![CDATA[Date of issue]]></DateOfIssue>
+					<MarriedStatus><![CDATA[Married Status]]></MarriedStatus>
+					<EducationLevel><![CDATA[Education Level]]></EducationLevel>
+					<TaxCode><![CDATA[Tax Code]]></TaxCode>
+					<Address><![CDATA[Address]]></Address>
+					<Occuptation><![CDATA[Occuptation]]></Occuptation>
+					<Resident><![CDATA[Resident]]></Resident>
+					<Telephone><![CDATA[Telephone]]></Telephone>
+					<Fax><![CDATA[Fax]]></Fax>
+					<MobilePhone><![CDATA[Mobile Phone]]></MobilePhone>
+					<Email><![CDATA[Email]]></Email>
+					<Country><![CDATA[Country]]></Country>
+					<Province><![CDATA[Province]]></Province>
+					<Description><![CDATA[Description]]></Description>
+				</Identification>
+				<Classification>
+					<Header><![CDATA[Classification]]></Header>
+					<Staff><![CDATA[Staff]]></Staff>
+					<Position><![CDATA[Position]]></Position>
+					<CompanyID><![CDATA[CompanyID]]></CompanyID>
+					<BusinessType><![CDATA[Business Type]]></BusinessType>
+					<EconomicSector><![CDATA[Economic Sector]]></EconomicSector>
+					<InvestmentCriteria><![CDATA[Investment Criteria]]></InvestmentCriteria>
+					<InvestmentRange><![CDATA[Investment Range]]></InvestmentRange>
+					<Group><![CDATA[Group]]></Group>
+					<TimeToJoin><![CDATA[Time to join]]></TimeToJoin>
+					<IncomeRange><![CDATA[Income Range]]></IncomeRange>
+					<TotalAssetInVND><![CDATA[Total Asset in VND]]></TotalAssetInVND>
+					<ReferenceBy><![CDATA[Reference By]]></ReferenceBy>
+					<CareBy><![CDATA[Care By]]></CareBy>
+					<Class><![CDATA[Class]]></Class>
+					<InvestmentExperience><![CDATA[Investment Experience]]></InvestmentExperience>
+					<ExperienceType><![CDATA[Experience Type]]></ExperienceType>
+					<Int.experience><![CDATA[Int.experience]]></Int.experience>
+					<Equities><![CDATA[Equities]]></Equities>
+					<Bond><![CDATA[Bond]]></Bond>
+					<Forex><![CDATA[Forex]]></Forex >
+					<RealEst><![CDATA[RealEst]]></RealEst>
+					<Others><![CDATA[Others]]></Others>
+					<FocusType><![CDATA[Focus Type]]></FocusType>
+				</Classification>
+				<ContractInfomation>
+					<Title><![CDATA[Contract Infomation]]></Title>
+					<CustomerID><![CDATA[CustomerID]]></CustomerID>
+					<ProductCode><![CDATA[Product Code]]></ProductCode>
+					<MobilePhone><![CDATA[Mobile Phone]]></MobilePhone>
+					<Email><![CDATA[Email]]></Email>
+					<ICCFCode><![CDATA[ICCF Code]]></ICCFCode>
+					<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+					<IsOTC><![CDATA[Is OTC]]></IsOTC>
+					<FloorTrading><![CDATA[Floor Trading]]></FloorTrading>
+					<OnlineTrading><![CDATA[Online Trading]]></OnlineTrading>
+					<TeleTrading><![CDATA[Tele Trading]]></TeleTrading>
+
+					<FoneTrading><![CDATA[Telephone]]></FoneTrading>
+					<PINCode><![CDATA[PIN]]></PINCode>
+					<SMSFoneNo><![CDATA[Send closing trade SMS to this number]]></SMSFoneNo>
+				</ContractInfomation>
+				<Limit>
+					<Title><![CDATA[Limit]]></Title>
+					<MarginLimit><![CDATA[Margin Limit]]></MarginLimit>
+					<TradingLimit><![CDATA[Trading Limit]]></TradingLimit>
+					<AdvanceLimit><![CDATA[Advance Limit]]></AdvanceLimit>
+					<RepoLimit><![CDATA[Repo Limit]]></RepoLimit>
+					<DepositLimit><![CDATA[Deposit Limit]]></DepositLimit>
+					<SecureRatio><![CDATA[Secure Ratio]]></SecureRatio>
+					<RebateDepositeFee><![CDATA[Rebate Deposite Fee]]></RebateDepositeFee>
+					<RebateTradingFee><![CDATA[Rebate Trading Fee]]></RebateTradingFee>
+					<FeeBase><![CDATA[Fee Base]]></FeeBase>
+				</Limit>
+				<AuthorizerProfile>
+					<Title><![CDATA[Authorizer Profile]]></Title>
+					<IdentifycationNo><![CDATA[Identifycation No]]></IdentifycationNo>
+					<FullName><![CDATA[FullName]]></FullName>
+					<CustomerId><![CDATA[CustomerId]]></CustomerId>
+					<ValidDate><![CDATA[ValidDate]]></ValidDate>
+					<ExpiredDate><![CDATA[ExpiredDate]]></ExpiredDate>
+					<Address><![CDATA[Address]]></Address>
+					<ViewRule><![CDATA[View]]></ViewRule>
+					<BuyRule><![CDATA[Buy]]></BuyRule>
+					<SellRule><![CDATA[Sell]]></SellRule>
+					<TransferRule><![CDATA[Transfer]]></TransferRule>
+					<AccountName><![CDATA[Account Name]]></AccountName>
+					<BankAccount><![CDATA[Bank Account]]></BankAccount>
+					<BankName><![CDATA[Bank Name]]></BankName>
+					<Yes><![CDATA[Yes]]></Yes>
+					<No><![CDATA[No]]></No>
+					<IsExistAuthorizer><![CDATA[Do you want to authorize your account?]]></IsExistAuthorizer>
+					<NotFoundWarn><![CDATA[This customer is not existed.]]></NotFoundWarn>
+					<Find_link><![CDATA[Find]]></Find_link>
+				</AuthorizerProfile>
+				<RegisterInfomation>
+					<Title><![CDATA[Bank Infomation]]></Title>
+					<AccountHolderIs ><![CDATA[Account Holder Is]]></AccountHolderIs>
+					<AccountHolderName><![CDATA[Account Holder Name]]></AccountHolderName>
+					<BankAccountNo><![CDATA[Bank Account No]]></BankAccountNo>
+					<BankName><![CDATA[Bank Name]]></BankName>
+					<AllowDebit><![CDATA[Allow Debit]]></AllowDebit>
+					<SwiffCode><![CDATA[Swiff Code]]></SwiffCode>
+				</RegisterInfomation>
+				<Account>
+					<Title><![CDATA[Account]]></Title>
+					<MoneyForInvestment><![CDATA[Money for Investment]]></MoneyForInvestment>
+					<Porfolio><![CDATA[Porfolio]]></Porfolio>
+					<Symbol><![CDATA[Symbol]]></Symbol>
+					<Quantity><![CDATA[Quantity]]></Quantity>
+					<Blocked><![CDATA[Blocked]]></Blocked>
+					<ClearingQuantity><![CDATA[Clearing Quantity]]></ClearingQuantity>
+					<Secure><![CDATA[Secure]]></Secure>
+					<Availble><![CDATA[Availble]]></Availble>
+					<PlaceAnOrder><![CDATA[Place An Order]]></PlaceAnOrder>
+				</Account>
+				<Buttons>
+					<CreateNewCustomer><![CDATA[Create New Customer]]></CreateNewCustomer>
+					<CreateContract><![CDATA[Create Contract]]></CreateContract>
+					<Cancel><![CDATA[Cancel]]></Cancel>
+				</Buttons>
+			</OpenAnAccount>
+			<Profile>
+				<SearchCustomer>
+					<FullName><![CDATA[Full Name]]></FullName>
+					<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+					<CustomerId><![CDATA[Customer ID]]></CustomerId>
+					<IDNumber><![CDATA[ID Number]]></IDNumber>
+					<SearchAll><![CDATA[All]]></SearchAll>
+					<SearchNotCreateContract><![CDATA[Contrac is not created]]></SearchNotCreateContract>
+
+					<DoB><![CDATA[Date of Birth]]></DoB>
+					<Status><![CDATA[Status]]></Status>
+					<CustomerType><![CDATA[Customer Type]]></CustomerType>
+					<AccountNumber><![CDATA[Account Number]]></AccountNumber>
+					<NetAsset><![CDATA[Net Asset]]></NetAsset>
+					<Availble4Withdrawal><![CDATA[Availble for withdrawal]]></Availble4Withdrawal>
+					<Search-Button><![CDATA[Search]]></Search-Button>
+					<CreateContractLink><![CDATA[Create Contract]]></CreateContractLink>
+				</SearchCustomer>
+				<Buttons>
+					<OK><![CDATA[OK]]></OK>
+					<Update><![CDATA[Update]]></Update>
+					<Go2Contract><![CDATA[Go to contract]]></Go2Contract>
+				</Buttons>
+			</Profile>
+			<Contract>
+				<Menu>
+					<CustomerProfile><![CDATA[Customer Profile]]></CustomerProfile>
+					<CustomerContract><![CDATA[Customer Contract]]></CustomerContract>
+					<CustomerReports><![CDATA[Customer Reports]]></CustomerReports>
+				</Menu>
+				<SearchContract>
+					<FullName><![CDATA[Full Name]]></FullName>
+					<ContractNumber><![CDATA[Contract Number]]></ContractNumber>
+					<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+					<CustomerId><![CDATA[CustomerID]]></CustomerId>
+					<IDNumber><![CDATA[ID Number]]></IDNumber>
+
+					<CustomerName><![CDATA[Customer Name]]></CustomerName>
+					<ContractNo><![CDATA[Contract No]]></ContractNo>
+					<Status><![CDATA[Status]]></Status>
+					<TypeName><![CDATA[Type Name]]></TypeName>
+					<TelTrading><![CDATA[Tel Trading]]></TelTrading>
+					<OnlineTrading><![CDATA[Online Trading]]></OnlineTrading>
+					<Search-Button><![CDATA[Search]]></Search-Button>
+				</SearchContract>
+				<UpdateContract>
+					<ContractNo><![CDATA[Contract No]]></ContractNo>
+					<Type><![CDATA[Type]]></Type>
+					<SelectContract><![CDATA[Select contract]]></SelectContract>
+				</UpdateContract>
+				<Buttons>
+					<OK><![CDATA[OK]]></OK>
+					<Update><![CDATA[Update]]></Update>
+					<Go2Contract><![CDATA[Go to contract]]></Go2Contract>
+				</Buttons>
+			</Contract>
+
+			<Confirm>
+				<Header1><![CDATA[New Account of]]></Header1>
+				<Header2><![CDATA[is opened in VNDirect Securities Company]]></Header2>
+				<Name><![CDATA[Tên]]></Name>
+				<DateOfBirth><![CDATA[Date of birth]]></DateOfBirth>
+				<IDNumber><![CDATA[IDNumber]]></IDNumber>
+				<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+				<Address><![CDATA[Address]]></Address>
+				<ContractNo><![CDATA[Contract Number]]></ContractNo>
+				<ConfirmInfor1><![CDATA[Please, verify the above information and good fund on this customer's account for submission completed application package to VNDirect Head-office with all revelant documents.]]></ConfirmInfor1>
+				<ConfirmInfor2><![CDATA[VNDIRECT SECURITIES COMPANY IS HONOURED TO SERVE CUSTOMERS.]]></ConfirmInfor2>
+				<ConfirmButton><![CDATA[Confirm]]></ConfirmButton>
+			</Confirm>
+
+		</CustomerManagment>
+
+		<Tradding-Portfolios>
+		 <Trading>
+			<Search><![CDATA[SEARCH]]></Search>
+			<FullName><![CDATA[Full Name]]></FullName>
+			<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+			<CustomerID><![CDATA[Customer ID]]></CustomerID>
+			<AccountNumber><![CDATA[Account]]></AccountNumber>
+			<DateOfBirth><![CDATA[Data Of Birth]]></DateOfBirth>
+			<IDType><![CDATA[ID Type]]></IDType>
+			<NetAsset><![CDATA[Net Asset]]></NetAsset>
+			<AvailbleForWithdrawal><![CDATA[Availble For Withdrawal]]></AvailbleForWithdrawal>
+			<Account><![CDATA[ACCOUNT]]></Account>
+			<FindAccount><![CDATA[Find Account]]></FindAccount>
+			<AdvancedSearch><![CDATA[Advance Search]]></AdvancedSearch>
+			<IDNumber><![CDATA[ID Number]]></IDNumber>
+			<ContractNo><![CDATA[Contract No]]></ContractNo>
+		  </Trading>
+		</Tradding-Portfolios>
+
+		<CustomerReport>
+			<ExportToPdf><![CDATA[Export to PDF]]></ExportToPdf>
+			<CreateNewReport><![CDATA[Create new report]]></CreateNewReport>
+			<ReportForAgent><![CDATA[Report for ]]></ReportForAgent>
+			<TabOrderReport><![CDATA[Order Report]]></TabOrderReport>
+			<TabCIReport><![CDATA[CI Report]]></TabCIReport>
+			<TabSEReport><![CDATA[SE Report]]></TabSEReport>
+			<TabFeeReport><![CDATA[Fee Report]]></TabFeeReport>
+			<FromDate><![CDATA[From Date]]></FromDate>
+			<ToDate><![CDATA[To Date]]></ToDate>
+			<InDate><![CDATA[In Date]]></InDate>
+			<Account><![CDATA[Account]]></Account>
+			<Symbol><![CDATA[Symbol]]></Symbol>
+			<CreateReport><![CDATA[Create Report]]></CreateReport>
+			<OrderReport>
+				<Title><![CDATA[ORDER REPORT]]></Title>
+				<FromDate><![CDATA[From Date]]></FromDate>
+				<ToDate><![CDATA[To Date]]></ToDate>
+				<No><![CDATA[No.]]></No>
+				<OrderNumber><![CDATA[Order No.]]></OrderNumber>
+				<OrderType><![CDATA[Type]]></OrderType>
+				<Symbol><![CDATA[Symbol]]></Symbol>
+				<ContractNo><![CDATA[Contract No.]]></ContractNo>
+				<CustomerName><![CDATA[Customer Name]]></CustomerName>
+				<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+				<OriginalOrder><![CDATA[Original Order]]></OriginalOrder>
+				<MatchOrder><![CDATA[Match Order]]></MatchOrder>
+				<OriginalOrderQuantity><![CDATA[Qty]]></OriginalOrderQuantity>
+				<OriginalOrderPrice><![CDATA[Price]]></OriginalOrderPrice>
+				<MatchQuantity><![CDATA[Qty]]></MatchQuantity>
+				<MatchPrice><![CDATA[Price]]></MatchPrice>
+				<MatchValue><![CDATA[Value]]></MatchValue>
+				<MatchFee><![CDATA[Fee]]></MatchFee>
+				<MatchPercentFee><![CDATA[% Fee]]></MatchPercentFee>
+				<Total><![CDATA[TOTAL]]></Total>
+			</OrderReport>
+			<CIReport>
+				<Title><![CDATA[CI ACCOUNT REPORT]]></Title>
+				<FromDate><![CDATA[From Date]]></FromDate>
+				<ToDate><![CDATA[To Date]]></ToDate>
+				<No><![CDATA[STT]]></No>
+				<CustomerName><![CDATA[Full name]]></CustomerName>
+				<ContractNo><![CDATA[Contract No.]]></ContractNo>
+				<OpenningBalance><![CDATA[Opening Balance]]></OpenningBalance>
+				<TotalDebit><![CDATA[Total Dr.]]></TotalDebit>
+				<TotalCredit><![CDATA[Total Cr.]]></TotalCredit>
+				<AvailableBalance><![CDATA[Available]]></AvailableBalance>
+				<OverdraftBalance><![CDATA[Overdraft]]></OverdraftBalance>
+				<ClosingBalance><![CDATA[Closing Balance]]></ClosingBalance>
+			</CIReport>
+			<SEReport>
+				<Title><![CDATA[SE ACCOUNT SUMMARY REPORT]]></Title>
+				<Date><![CDATA[Date]]></Date>
+				<No><![CDATA[No.]]></No>
+				<CustomerId><![CDATA[CustomerID]]></CustomerId>
+				<CustomerName><![CDATA[Full name]]></CustomerName>
+				<ContractNo><![CDATA[Contract No.]]></ContractNo>
+				<CustodyCode><![CDATA[Custody Code]]></CustodyCode>
+				<Symbol><![CDATA[Symbol]]></Symbol>
+				<StockBalanceReport><![CDATA[STOCK BALANCE REPORT]]></StockBalanceReport>
+				<PendingBalance><![CDATA[Pending]]></PendingBalance>
+				<TradingBalance><![CDATA[Trading]]></TradingBalance>
+				<SecureBalance><![CDATA[Secure]]></SecureBalance>
+				<MortageBalance><![CDATA[Mortage]]></MortageBalance>
+				<BlockBalance><![CDATA[Block]]></BlockBalance>
+				<Total><![CDATA[TOTAL]]></Total>
+				<WaitingDepositoryBalance><![CDATA[Waiting Depository Balance]]></WaitingDepositoryBalance>
+				<UserCreated><![CDATA[Creator]]></UserCreated>
+			</SEReport>
+			<FeeReport>
+				<Title><![CDATA[FEE REPORT]]></Title>
+				<FromDate><![CDATA[From Date]]></FromDate>
+				<ToDate><![CDATA[To Date]]></ToDate>
+				<No><![CDATA[No.]]></No>
+				<CustomerName><![CDATA[Full name]]></CustomerName>
+				<ContractNo><![CDATA[Contract No.]]></ContractNo>
+				<TotalFee><![CDATA[Total Fees]]></TotalFee>
+				<TotalMatchingValue><![CDATA[Total Matching Value]]></TotalMatchingValue>
+				<PercentFee><![CDATA[% Fee]]></PercentFee>
+				<PercentTotalFee><![CDATA[% Total Fee]]></PercentTotalFee>
+				<Total><![CDATA[TOTAL]]></Total>
+			</FeeReport>
+		</CustomerReport>
+		<Messages>
+			<UpdateCustomerSuccess><![CDATA[Update successfully!]]></UpdateCustomerSuccess>
+			<UpdateContractSuccess><![CDATA[Update successfully!]]></UpdateContractSuccess>
+			<CreatCustomerSuccess><![CDATA[Create customer successfully!]]></CreatCustomerSuccess>
+			<SearchResultZero><![CDATA[No result found!]]></SearchResultZero>
+		</Messages>
+
+		<Signature>
+			<Title><![CDATA[Signature]]></Title>
+			<FileNameBlank><![CDATA[Browse a signature image is this customer and click Upload.]]></FileNameBlank>
+			<OverMaxSize><![CDATA[The file size must be less than 22Kb.]]></OverMaxSize>
+			<InvalidExtend><![CDATA[This file extension is invalid.]]></InvalidExtend>
+			<ExistedFile><![CDATA[This image has already been uploaded.]]></ExistedFile>
+		</Signature>
+	</WebAgent>
+
+</Messages>

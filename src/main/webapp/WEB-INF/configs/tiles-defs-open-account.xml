@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="account.open.directAccount" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/openaccount/directAccount.jsp" />
+		<put-list-attribute name="js">
+			<!-- <add-attribute value="/js/web/openaccount/openaccount.step1.js" />
+			<add-attribute value="/js/web/openaccount/openaccount.step2.js" />
+			<add-attribute value="/js/web/openaccount/openaccount.step3.js" />
+			<add-attribute value="/js/web/openaccount/openaccount.step4.js" />  --> 
+			<add-attribute value="/js/web/openaccount/jqui.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="account.open.freeUser" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/openaccount/freeUser.jsp" />
+    </definition>
+    <definition name="account.open.realEstateTrading" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/openaccount/realEstateTrading.jsp" />
+    </definition>
+    <definition name="account.open.realEstateBroker" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/openaccount/realEstateBroker.jsp" />
+    </definition>
+
+	<!-- ####################### Direct Account ####################### -->
+
+	<definition name="OpenAccount.DirectAccountStep1" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/DirectAccountStep1.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step1.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.DirectAccountStep2" extends="Base.Web">
+		<put-attribute name="body" type="template"
+			value="/WEB-INF/jsps/openaccount/DirectAccountStep2.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+		    <add-attribute value="/js/jquery.autotab.js" />
+			<add-attribute value="/js/web/openaccount/openaccount.step2.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.DirectAccountStep3" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/DirectAccountStep3.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step3.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.DirectAccountStep4" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/DirectAccountStep4.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step4.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.DirectAccountFinish" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/DirectAccountFinish.jsp" />
+		<put-list-attribute name="css">
+            <add-attribute value="/css/motk.css"/>
+        </put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.ActiveAccountPage" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/ActiveAccountPage.jsp" />
+		<put-list-attribute name="css">
+            <add-attribute value="/css/motk.css"/>
+        </put-list-attribute>
+	</definition>
+	<definition name="OpenAccount.ActiveAccountErorPage" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/ActiveAccountErrorPage.jsp" />
+		<put-list-attribute name="css">
+            <add-attribute value="/css/motk.css"/>
+        </put-list-attribute>
+	</definition>
+	<definition name="OpenAccount.DeniedActiveAccountPage" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/DirectAccountForm.jsp" />
+		<put-list-attribute name="css">
+            <add-attribute value="/css/motk.css"/>
+        </put-list-attribute>
+        <put-list-attribute name="js">
+            <add-attribute value="/js/jquery.autotab.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountMain.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountComp.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountModel.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountView.js" />
+            <add-attribute value="/js/web/openaccount/recaptcha_ajax.js" />
+        </put-list-attribute>
+	</definition>
+	
+	<definition name="OpenAccount.DirectAccountForm" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/DirectAccountForm.jsp" />
+		<put-list-attribute name="css">
+		    <add-attribute value="/css/motk.css"/>
+        </put-list-attribute>
+        <put-list-attribute name="js">
+             <add-attribute value="/js/jquery.autotab.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountMain.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountComp.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountModel.js" />
+            <add-attribute value="/js/web/openaccount/openOnlineAccountView.js" />
+            <add-attribute value="/js/web/openaccount/recaptcha_ajax.js" />
+        </put-list-attribute>
+	</definition>
+
+	<!-- ####################### Prime Account ####################### -->
+
+	<definition name="OpenAccount.PrimeAccountStep1" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/PrimeAccountStep1.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step1.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.PrimeAccountStep2" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/PrimeAccountStep2.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step2.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.PrimeAccountStep3" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/PrimeAccountStep3.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.PrimeAccountStep4" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/PrimeAccountStep4.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step3.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.PrimeAccountStep5" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/PrimeAccountStep5.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/openaccount/openaccount.step4.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.PrimeAccountFinish" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/PrimeAccountFinish.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.FreeRegistedUsers" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/freeUserInput.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/openaccount/classes/openaccount.clazz.FreeRegistedUsers.js" />
+			<add-attribute value="/js/web/openaccount/openaccount.FreeRegistedUsers.js" />
+			<add-attribute value="/js/web/openaccount/jqui.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="OpenAccount.FreeRegistedUsersSuccess"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/openaccount/FreeRegistedUsersSuccess.jsp" />
+	</definition>
+
+	<!--
+		################################TEMPLATE#############################################
+	-->
+
+	<definition name="PrimeAccount"
+		template="/WEB-INF/jsps/openaccount/PrimeAccountTmpl.jsp">
+	</definition>
+	<definition name="DirectAccount"
+		template="/WEB-INF/jsps/openaccount/DirectAccountTmpl.jsp">
+	</definition>
+
+</tiles-definitions>

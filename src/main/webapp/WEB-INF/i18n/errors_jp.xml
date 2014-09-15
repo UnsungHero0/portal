@@ -1,0 +1,731 @@
+<ErrorMessage>
+	<Commons>
+		<InputWarnMsg>
+			<![CDATA[ご入力頂いた一部の情報は相応しくありません。]]>
+		</InputWarnMsg>
+		<SystemError>
+			<![CDATA[Internal server error: {0}!. Please logout and login again. ]]>
+		</SystemError>
+		<InvalidAuthLevel1>
+			<![CDATA[VNダイレクト証券のオンラインサービスをご利用になるためにはログインする必要があります。]]>
+		</InvalidAuthLevel1>
+		<InvalidAuthLevel2>
+			<![CDATA[お客様はこの機能をご利用になれません。システムからログアウトして別の口座から再度ログインしてください。詳細の情報については、恐れ入りますが、VNダイレクト証券までご連絡ください。]]>
+		</InvalidAuthLevel2>
+		<length_of_field_too_long>
+			<![CDATA[フィールドの長さ {0}は長すぎます。最大な長さは {1)。]]>
+		</length_of_field_too_long>
+		<email_used><![CDATA[この電子メールアドレスは既に登録されています。]]></email_used>
+	</Commons>
+	<IDG>
+		<RemoteError>
+			<![CDATA[VNダイレクトサービスへ接続できません！このエラーをVNダイレクトまでご連絡ください。]]>
+		</RemoteError>
+		<AuthFault>
+			<![CDATA[システム接続権の認証エラー{0}]]>
+		</AuthFault>
+	</IDG>
+	<AJAX>
+		<QuickSearchSymbol>
+			<symbol-incorrect>
+				<![CDATA[Symbol[{0}] is incorrect...]]>
+			</symbol-incorrect>
+		</QuickSearchSymbol>
+	</AJAX>
+	<FLASH>
+		<InvalidMethod><![CDATA[The input method for searching is invalid]]></InvalidMethod>
+		<InvalidPeriodicity><![CDATA[The periodicity should be DAY, MONTH or YEAR]]></InvalidPeriodicity>
+		<InvalidDateFormat><![CDATA[The date format should be DDMMYYYY]]></InvalidDateFormat>
+		<InvalidSymbol><![CDATA[Please enter the corrected symbol for searching]]></InvalidSymbol>
+		<InvalidIndicator><![CDATA[The indicator is invalid]]></InvalidIndicator>
+	</FLASH>
+	<Quotes>
+		<MsgCreateNew>
+			<subject-required>
+				<![CDATA[情報のテーマを入力してください。]]>
+			</subject-required>
+		</MsgCreateNew>
+	</Quotes>
+	<Home>
+		<Logon>
+			<login-invalid>
+				<![CDATA[ユーザーネーム又はパスワードが正しくありません。]]>
+			</login-invalid>
+			<unactive>
+				<![CDATA[この口座はまだご利用できません。詳細把握のため、VNダイレクトまでご連絡ください。]]>
+			</unactive>
+			<idg-auth>
+				<![CDATA[認証番号が正しくありません。]]>
+			</idg-auth>
+		</Logon>
+		<OnlineAccount>
+			<fields-invalid>This field {0} is invalid.</fields-invalid>
+			<fields-required>
+				This field {0} is mandatory.
+			</fields-required>
+			<invalid-between-dob-doi>
+				<![CDATA[誕生日と身分証明書{パスポート}発効日が正しくありません。]]>
+			</invalid-between-dob-doi>
+			<age-invalid>
+				<![CDATA[…歳以上に限り、口座を開設することができます。]]>
+			</age-invalid>
+			<password-invalid>Mật khẩu phải là một tổ hợp 4 chữ số</password-invalid>
+			<remote_trading_agreement>Quý khách phải đồng ý với cam kết giao dịch từ xa của chúng tôi để có thể mở tài khoản giao dịch từ xa.</remote_trading_agreement>
+			<online_trading_agreement>Quý khách phải đồng ý với điều khoản của chúng tôi để có thể mở tài khoản giao dịch tại VNDirect.</online_trading_agreement>
+			<ref_code_used>Mã ưu đãi này đã được sử dụng, quý khách vui lòng nhập mã ưu đãi khác.</ref_code_used>
+			<investmentError>Quý khách nhập mục tiêu đầu tư chưa đúng.</investmentError>
+			<riskError>Quý khách nhập mức độ chấp nhận rủi ro  chưa đúng.</riskError>
+		</OnlineAccount>
+		<RegisterUser>
+			<username-invalid>
+				<![CDATA[ユーザーネームが正しくありません。]]>
+			</username-invalid>
+			<username-required>
+				<![CDATA[ユーザーネームを入力してください。]]>
+			</username-required>
+			<password-invalid>
+				<![CDATA[パスワードが正しくありません。]]>
+			</password-invalid>
+			<confirm-pw-incorrect>
+				<![CDATA[パスワードの再確認に失敗しました。]]>
+			</confirm-pw-incorrect>
+			<full-name-invalid>
+				<![CDATA[フルネームが正しくありません。]]>
+			</full-name-invalid>
+			<full-name-required>
+				<![CDATA[フルネームを入力して下さい。]]>
+			</full-name-required>
+			<email-invalid>
+				<![CDATA[電子メールアドレスが正しくありません。]]>
+			</email-invalid>
+			<email-required>
+				<![CDATA[電子メールアドレスを入力してください。]]>
+			</email-required>
+			<disagreement><![CDATA[Quý khách phải đồng ý với các điều khoản của công ty trước khi gửi đi]]></disagreement>
+		</RegisterUser>
+		<UserProfile>
+			<field-required><![CDATA[{0} have to input.]]></field-required>
+			<emailConfirm-invalid><![CDATA[Email confirm invalid.]]></emailConfirm-invalid>
+			<fone-number-invalid><![CDATA[{0} please enter number only.]]></fone-number-invalid>
+			<trading-pw-incorrect><![CDATA[You online trading password is not correct. ]]></trading-pw-incorrect>
+			<old-tele-trade-pw-incorrect><![CDATA[Your Old tele password is not correct. ]]></old-tele-trade-pw-incorrect>
+			<trade-fones-required><![CDATA[Please input at least one telephone number for your tele trading.]]></trade-fones-required>
+			<retype-tele-trade-pw-invalid><![CDATA[New tele password confirm is not the same.]]></retype-tele-trade-pw-invalid>
+			<tele-trade-pw-invalid><![CDATA[New tele password is invalid. Tele password must be 4 number.]]></tele-trade-pw-invalid>
+		</UserProfile>
+	</Home>
+	<Trading>
+		<ChangePassword>
+			<pw-incorrect><![CDATA[Old Password is incorrect.]]></pw-incorrect>
+			<new-pw-incorrect><![CDATA[New Password is incorrect.]]></new-pw-incorrect>
+			<confirm-pw-incorrect><![CDATA[Confirm Password is not match.]]></confirm-pw-incorrect>
+			<newpw-invalid><![CDATA[New Password is invalid.<br/>Password must be 6 to 32 characters long and contain at least one number.]]></newpw-invalid>
+			<newpw-confirm-wrong><![CDATA[New Password and Confirm New Password are not the same.]]></newpw-confirm-wrong>
+		</ChangePassword>
+		<AccountRecord>
+			<date-invalid>Date field is invalid.</date-invalid>
+			<dateRangeFrom-invalid>
+				Date Range From field is invalid.
+			</dateRangeFrom-invalid>
+			<dateRangeTo-invalid>
+				Date Range To field is invalid.
+			</dateRangeTo-invalid>
+			<dateRangeFromTo-invalid>
+				Date Range From must before Date Range To field.
+			</dateRangeFromTo-invalid>
+		</AccountRecord>
+		<CreateOrder>
+			<symbol-not-existed>
+				<![CDATA[銘柄コードが見つかりません。]]>
+			</symbol-not-existed>
+			<missing-symbol>
+				<![CDATA[銘柄コードが入力されていません。]]>
+			</missing-symbol>
+			<missing-order-type>
+				<![CDATA[注文方法が選択されていません。]]>
+			</missing-order-type>
+			<missing-price-type>
+				<![CDATA[指値が選択されていません。]]>
+			</missing-price-type>
+			<missing-term>
+				<![CDATA[注文の効力を選択して下さい。]]>
+			</missing-term>
+			<shares-price-error>
+				<![CDATA[注文数量は必ず正の整数です。]]>
+			</shares-price-error>
+			<limit-price-error>
+				<![CDATA[リミット値の価値は必ず正の整数です。]]>
+			</limit-price-error>
+			<stop-price-error>
+				<![CDATA[ストップ値の価値は必ず正の整数です。]]>
+			</stop-price-error>
+			<limit-stop-price-error>
+				<![CDATA[リミット・ストップ値の価値は必ず正の整数です。]]>
+			</limit-stop-price-error>
+			<not-enough-cash>
+				<![CDATA[この注文を実行するには口座残高が不足しています。]]>
+			</not-enough-cash>
+			<shares-price-max-error><![CDATA[Giá trị của 'Số lượng' ko duoc lớn hơn so luong cu~.]]></shares-price-max-error>
+			<index-time-error>
+				<![CDATA[上場株の注文時間が終了しています。次の営業日にご注文ください。]]>
+			</index-time-error>
+			<market-time-error>
+				<![CDATA[取引は終了しました。次の営業日にご注文ください。]]>
+			</market-time-error>
+			<cannot-place-ato-type><![CDATA[This is the first trading time of {0}. You can not place order with ATO type for this symbol]]></cannot-place-ato-type>
+			<cannot-place-order-type><![CDATA[This is the first trading time of {0}. You can not place order for this symbol]]></cannot-place-order-type>
+			<trading-pw-incorrect><![CDATA[The trading password is incorrect. Please try again!.]]></trading-pw-incorrect>
+			<limit-hastc-value-error><![CDATA[Online Trading order value in HNX must be more than five thousand VNĐ (> 5.000.000 VNĐ). All the orders under five thousand VNĐ, please place an order via VNDirect floor chanel.]]></limit-hastc-value-error>
+			<not-support-upcom><![CDATA[You can not buy/sell UPCOM symbols via online. Please call to 1900-545409 to place an order.]]></not-support-upcom>
+			<missing-expired-date><![CDATA[The expired date is blank or invalid format (DD/MM/YYYY). ]]></missing-expired-date>
+			<invalid-expired-date><![CDATA[GTC order will be auto expired after {0} days from today.]]></invalid-expired-date>
+			<WarningMsg><![CDATA[Please re-place your order, do not use "Back" button of the browser.]]></WarningMsg>
+			<gtc_for_hnx_error><![CDATA[You can not place GTC for symbol in HNX Exchange]]></gtc_for_hnx_error>
+			<pre_order_for_hnx_error><![CDATA[The market HNX is closed. You can not place order for symbol in HNX.]]></pre_order_for_hnx_error>
+		</CreateOrder>
+		<CancelOrder>
+			<index-time-error><![CDATA[The market was closed.You only can place order when the market is opening.]]></index-time-error>
+			<market-time-error><![CDATA[The market was closed]]></market-time-error>
+			<trading-pw-incorrect><![CDATA[Invalid password. Please try again]]></trading-pw-incorrect>
+			<order-not-existed><![CDATA[This oder does not existed.]]></order-not-existed>
+			<order-status-error><![CDATA[You can not cancel or modify this order.]]></order-status-error>
+			<account-not-existed><![CDATA[Invalid account.]]></account-not-existed>
+			<cancel-order-successful><![CDATA[Your order has been placed succesful and processing.]]></cancel-order-successful>
+			<session-error><![CDATA[Cannot cancel or modify limit order placed in the same session.]]></session-error>
+		</CancelOrder>
+		<AdvancePayment>
+			<NotGreaterThanZero><![CDATA[Advance payment amount enter must be greater than 0.]]></NotGreaterThanZero>
+			<GreaterThanMaxValue><![CDATA[Advance payment amount enter must be less than Maximum amount available for Advanced Payment]]></GreaterThanMaxValue>
+			<AdvancePaymentTimeError><![CDATA[Transaction time is over. Time execute from 8:00am - 3:30pm.]]></AdvancePaymentTimeError>
+		</AdvancePayment>
+		
+		<Porfolio>
+		  <CreateNewProfolio>
+		      <SymbolNameEmpty><![CDATA[Symbol Name is mandatory.]]></SymbolNameEmpty>
+		      <SymbolEmpty><![CDATA[Symbol is mandatory.]]></SymbolEmpty>  
+		  </CreateNewProfolio>  
+		   
+		  </Porfolio>
+		 <BuyingRight>
+		      <RegisterAmount><![CDATA[Register amount is not correct.]]> </RegisterAmount>
+		      <Password><![CDATA[Password is not correct.]]> </Password>
+		      <NotEnoughMoney><![CDATA[You don't have enough money to register this right.]]> </NotEnoughMoney>
+		      <BigAmount><![CDATA[The number of securities you register to buy is greater than yours.]]> </BigAmount>
+   		      <Symbol><![CDATA[Please enter symbol.]]> </Symbol>
+  		      <WrongDates><![CDATA[From date is greater than to date]]> </WrongDates>
+  		      
+		 </BuyingRight> 
+		 <Common>
+		 	<InvalidAccountNumber><![CDATA[Account number is invalid.]]></InvalidAccountNumber>		 		 
+		 	<InvalidFromDate><![CDATA[From Date is invalid.]]></InvalidFromDate>
+			<InvalidToDate><![CDATA[To Date is invalid.]]></InvalidToDate>
+		 </Common>		
+	</Trading>
+	<MyPortfolios>
+		<CreateUpdateMyPortfolio>
+			<WatchListNameEmpty>
+				<![CDATA[The Watch List's name is empty.]]>
+			</WatchListNameEmpty>
+		</CreateUpdateMyPortfolio>
+	</MyPortfolios>
+	<BOService>
+		<Online-CustomerIDNull><![CDATA[Session timeout.Please log in again.<br/> If you see this message again, contact us: support@vndirect.com.vn.]]></Online-CustomerIDNull>
+		<WebAgent-CustomerIDNull><![CDATA[Please select a customer before using this function.]]></WebAgent-CustomerIDNull>
+
+		<SessionIdNull>
+			<![CDATA[オンライントレイディングサービスへの接続が確立できません。もう一度ログインしてみてください。もう一度このメッセージが出た場合には、このエラーについて、VNダイレクト証券までご連絡ください。]]>
+		</SessionIdNull>
+		<RemoteError>
+			<![CDATA[オンライントレーディングサービスのサーバーへ接続できません。VNダイレクト証券までこのエラーをご連絡ください。]]>
+		</RemoteError>
+		<RemoteError-PlaceOrder>
+			<![CDATA[オンライントレーディングサービスのサーバーへ接続できません。VNダイレクト証券までこのエラーをご連絡ください。]]>
+		</RemoteError-PlaceOrder>
+		<UNKNOW_STATUS>
+			<![CDATA[システムエラーです。システムからログアウトしてから再度ログインして下さい。またエラーが出た場合には、VNダイレクト証券・電話番号８４-４-９７２４６８８へお問い合わせください。]]>
+		</UNKNOW_STATUS>
+		<ERR_SYSTEM_OK>
+			<![CDATA[]]>
+		</ERR_SYSTEM_OK>
+		<SYSTEM_UNKNOW_ERR>
+			<![CDATA[システムエラーです。システムからログアウトしてから再度ログインして下さい。またエラーが出た場合には、VNダイレクト証券・電話番号８４-４-９７２４６８８へお問い合わせください。]]>
+		</SYSTEM_UNKNOW_ERR>
+		<ERR_SA_LOGIN_NOT_SUCCESSFUL>
+			<![CDATA[接続が解除されました。継続して取引をご希望される場合には、再度ログインしてください。]]>
+		</ERR_SA_LOGIN_NOT_SUCCESSFUL>
+
+		<ERR_SESSION_TIME_OUT><![CDATA[Session time out! Please log out then log in again.]]></ERR_SESSION_TIME_OUT>
+		<ERR_DUPLICATE_ORDER><![CDATA[The system detected duplicated Order! Please check View Order Screen to avoid duplicated order. If you are still place this order, click Place Order button]]></ERR_DUPLICATE_ORDER>
+		<ERR_INVALID_SEARCH_FILTER><![CDATA[Invalid Search Filter]]></ERR_INVALID_SEARCH_FILTER>
+		<ERR_CUST_ID_ALREADY_HAVE_CONTRACT><![CDATA[Contract of this customer was created.]]></ERR_CUST_ID_ALREADY_HAVE_CONTRACT>
+
+		<ERR_OD_ODTYPE_NOTFOUND>
+			<![CDATA[該当する契約が見つかりません。]]>
+		</ERR_OD_ODTYPE_NOTFOUND>
+		<ERR_CF_AFMAST_NOTFOUND>
+			<![CDATA[該当する契約コードが見つかりません。]]>
+		</ERR_CF_AFMAST_NOTFOUND>
+		<ERR_CI_CIMAST_NOTFOUND>
+			<![CDATA[お客様の口座はまだ取引できません。取引を開始される前に、口座には資金或いは証券を入金(登録)ください。]]>
+		</ERR_CI_CIMAST_NOTFOUND>
+		<ERR_OD_ATO_ORDER_IN_LISTTING_DATE><![CDATA[Can not place order for this symbol]]></ERR_OD_ATO_ORDER_IN_LISTTING_DATE>
+		<ERR_OD_QTTY_TRADELOT_INCORRECT>
+			<![CDATA[ホーチミン証券取引所の売買単位は10株、ハノイ証券取引所は100株です。この単位の倍数で注文してください。]]>
+		</ERR_OD_QTTY_TRADELOT_INCORRECT>
+		<ERR_OD_LO_PRICE_ISNOT_FLOOR_CEILLING>
+			<![CDATA[入力した価格は値幅制限をオーバーしています。価格を再度入力して下さい。]]>
+		</ERR_OD_LO_PRICE_ISNOT_FLOOR_CEILLING>
+		<ERR_OD_TICKSIZE_INCOMPLIANT>
+			<![CDATA[指値の単位が正しくありません。入力した価格を再度確認してください。注意：5万ドン未満は100ドン単位、5万～10万ドン未満は500ドン単位、10万ドン以上は1,000ドン単位。]]>
+		</ERR_OD_TICKSIZE_INCOMPLIANT>
+		<ERR_OD_TICKSIZE_UNDEFINED>
+			<![CDATA[システムエラーです。システムからログアウトしてから再度ログインして下さい。またエラーが出た場合には、VNダイレクト証券・電話番号８４-４-９７２４６８８へお問い合わせください。]]>
+		</ERR_OD_TICKSIZE_UNDEFINED>
+		<ERR_OD_BUYSELL_SAME_SECURITIES>
+			<![CDATA[同じ日に同じ銘柄を売買することはできません。]]>
+		</ERR_OD_BUYSELL_SAME_SECURITIES>
+		<ERR_OD_SECURITIES_INFO_UNDEFINED>
+			<![CDATA[この銘柄コードは見つかりません。入力した銘柄コードを再度確認してください。銘柄コードは必ず大文字で入力してください。]]>
+		</ERR_OD_SECURITIES_INFO_UNDEFINED>
+		<ERR_CF_AFMAST_STATUS_INVALIDE>
+			<![CDATA[お客様の口座は現在一時的に取引できません。詳しくはVNダイレクト証券までお問い合わせください。]]>
+		</ERR_CF_AFMAST_STATUS_INVALIDE>
+		<ERR_OD_LISTED_NEEDCUSTODYCD>
+			<![CDATA[現在、お客様の口座は上場株を取引することができません。]]>
+		</ERR_OD_LISTED_NEEDCUSTODYCD>
+		<ERR_SE_ACTYPE_TRADE_NOTENOUGHT>
+			<![CDATA[お客様の口座の証券は売り注文を出すには数量が不足しています。]]>
+		</ERR_SE_ACTYPE_TRADE_NOTENOUGHT>
+		<ERR_SA_CHECKER1_OVR>
+			<![CDATA[お客様の注文は制限数量をオーバーしています。注文をご確認頂くか、詳しくはVNダイレクト証券までお問い合わせください。]]>
+		</ERR_SA_CHECKER1_OVR>
+		<ERR_SA_CHECKER2_OVR>
+			<![CDATA[お客様の注文は制限数量をオーバーしています。注文をご確認頂くか、詳しくはVNダイレクト証券までお問い合わせください。]]>
+		</ERR_SA_CHECKER2_OVR>
+		<ERR_CI_CIMAST_BALANCE_NOTENOUGHT>
+			<![CDATA[お客様の口座の残金は買い注文を出すには金額が不足しています。]]>
+		</ERR_CI_CIMAST_BALANCE_NOTENOUGHT>
+		<ERR_OD_ODMAST_TRADE_NOTENOUGHT>
+			<![CDATA[お客様の口座の証券は売り注文を出すには数量が不足しています。]]>
+		</ERR_OD_ODMAST_TRADE_NOTENOUGHT>
+		<ERR_OD_ORDER_OVER_QUANTITY>
+			<![CDATA[1万9,999株を上回る取引は相対取引で行われます。詳しくはVNダイレクト証券までお問い合わせください。]]>
+		</ERR_OD_ORDER_OVER_QUANTITY>
+		
+		
+		<ERR_OD_MSORDER_OVER_QUANTITY><![CDATA[お客様の口座の証券は売り注文を出すには数量が不足しています。]]></ERR_OD_MSORDER_OVER_QUANTITY>
+		
+
+		<ERR_SPECIAL_ORDER><![CDATA[Original order is being process. Please view status order and try again]]></ERR_SPECIAL_ORDER>
+
+		<ERR_OVER_BALANCE>
+			<![CDATA[お客様の入力された注文は制限数量をオーバーしています。詳しくはVNダイレクト証券までお問い合わせください。]]>
+		</ERR_OVER_BALANCE>
+		<!-- [AGENT]:Create customer -->
+		<ERR_CF_IDTYPE_DUPLICATED><![CDATA[Identification Code was existed.]]></ERR_CF_IDTYPE_DUPLICATED>
+		<ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE><![CDATA[Expired date  is smaller than current date.]]></ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE>
+		<!-- 30/01/2008 -->
+		<C100025><![CDATA[Internal Code is duplicated]]></C100025>
+		<C100026><![CDATA[Currency is not exist]]></C100026>
+		<C100027><![CDATA[Cannot delete the Securities which contains related data]]></C100027>
+		<C100028><![CDATA[Issuer id is not exists]]></C100028>
+		<C100031><![CDATA[Secticksize is duplicated]]></C100031>
+		<C100032><![CDATA[Currency id is duplicated]]></C100032>
+		<C100033><![CDATA[Issuer id is duplicated]]></C100033>
+		<C100034><![CDATA[Customer id is not exists]]></C100034>
+		<C100035><![CDATA[Cannot delete the issuer which contains related data]]></C100035>
+		<C100037><![CDATA[Report code is duplicated]]></C100037>
+		<C100038><![CDATA[Module code is not exist]]></C100038>
+		<C100040><![CDATA[Branch code is not exist]]></C100040>
+		<C100041><![CDATA[Ratenum is not exist]]></C100041>
+		<C100042><![CDATA[Cannot delete the Currency which contains related data]]></C100042>
+		<C100043><![CDATA[This user is existed in assignment list]]></C100043>
+		<C100044><![CDATA[This user is existed in transaction execute list]]></C100044>
+		<C100045><![CDATA[This group is existed in assignment list]]></C100045>
+		<C100046><![CDATA[This group is existed in transaction execute list]]></C100046>
+		<C100047><![CDATA[You do not have permission to execute this transaction]]></C100047>
+		<C100048><![CDATA[Can not delete current user]]></C100048>
+		<C100049><![CDATA[User name is duplicated]]></C100049>
+		<C100050><![CDATA[Group name is duplicated]]></C100050>
+		<C100051><![CDATA[Transaction limit is over]]></C100051>
+		<C100052><![CDATA[Approve limit is over]]></C100052>
+		<C100053><![CDATA[Cash limit is over]]></C100053>
+		<C100055><![CDATA[You do not have permission to approve this transaction]]></C100055>
+		<C100056><![CDATA[You do not have permission to cash this transaction]]></C100056>
+		<C100066><![CDATA[You are not a teller]]></C100066>
+		<C100067><![CDATA[You are not a cashier]]></C100067>
+		<C100068><![CDATA[You are not a officer]]></C100068>
+		<C100069><![CDATA[You are not a checker]]></C100069>
+		<C100070><![CDATA[Transaction limit is not defined]]></C100070>
+		<C100071><![CDATA[Cash limit is not defined]]></C100071>
+		<C100072><![CDATA[Approve limit is not defined]]></C100072>
+		<C100073><![CDATA[Risk approve limit is not defined]]></C100073>
+		<C100078><![CDATA[No data found]]></C100078>
+		<C100081><![CDATA[GLBANK is not exists. Cannot add new or edit GL account]]></C100081>
+		<C100085><![CDATA[Error on create transaction]]></C100085>
+		<C100093><![CDATA[Deposit id has been duplicate]]></C100093>
+		<C100094><![CDATA[This group is caring customers]]></C100094>
+		<C200001><![CDATA[Mã loại hình hợp đồng bị trùng]]></C200001>
+		<C200002><![CDATA[Thông tin khách hàng không tồn tại]]></C200002>
+		<C200023><![CDATA[Customer ID is not exists]]></C200023>
+		<C200047><![CDATA[INVALID OTC STAUS]]></C200047>
+		<C200050><![CDATA[You do not care this customer]]></C200050>
+		<C400009><![CDATA[Product type id is duplicated]]></C400009>
+		<C400010><![CDATA[Currency id is not exists]]></C400010>
+		<C400011><![CDATA[GL group code is not exists]]></C400011>
+		<C400012><![CDATA[Cannot delete the Product type which contains related data]]></C400012>
+		<C400016><![CDATA[Cannot delete the CI account number  which contains related data]]></C400016>
+		<C400017><![CDATA[GL master id is not exists]]></C400017>
+		<C400018><![CDATA[CI account number is duplicated]]></C400018>
+		<C400019><![CDATA[Product type is not exists]]></C400019>
+		<C400020><![CDATA[Currency id is not exists]]></C400020>
+		<C400021><![CDATA[Contract number is not exists]]></C400021>
+		<C500001><![CDATA[Fixed asset code is duplicated]]></C500001>
+		<C500002><![CDATA[Cannot delete the Account number which contains related data]]></C500002>
+		<C500003><![CDATA[GL account is duplicated]]></C500003>
+		<C500004><![CDATA[GL code is not exists]]></C500004>
+		<C500005><![CDATA[gc_ERRCODE_GL_ACCTENTRY_DOESNOTBALANCE]]></C500005>
+		<C500006><![CDATA[gc_ERRCODE_GL_ACCTENTRY_OFFBALANCESHEET]]></C500006>
+		<C500007><![CDATA[gc_ERRCODE_GL_ACCTENTRY_NOTSAMECCYCD]]></C500007>
+		<C500008><![CDATA[Cannot delete the GL account which contains related data]]></C500008>
+		<C500009><![CDATA[Invalid balance type]]></C500009>
+		<C500012><![CDATA[TODAY IS HOLIDAY. YOU CANNOT EXECUTE THIS TRANSACTION]]></C500012>
+		<C600001><![CDATA[Rate id is duplicated]]></C600001>
+		<C600003><![CDATA[Currency id is not exists]]></C600003>
+		<C600004><![CDATA[Cannot delete the Floating interest which contains related data]]></C600004>
+		<C700001><![CDATA[gc_ERRCODE_OD_ACTYPE_DUPLICATED]]></C700001>
+		<C700002><![CDATA[gc_ERRCODE_OD_GLGRP_NOTFOUND]]></C700002>
+		<C700015><![CDATA[BUYSELL SAME SECURITIES]]></C700015>
+		<C900012><![CDATA[TRADE NOT ENOUGHT]]></C900012>
+		<C900018><![CDATA[AMOUNT OVER DEPOSIT]]></C900018>
+		<ERR_ACTIONDATE_INVALID><![CDATA[ERR_ACTIONDATE_INVALID]]></ERR_ACTIONDATE_INVALID>
+		<ERR_ACTIONDATE_IS_BUSDATE><![CDATA[ERR_ACTIONDATE_IS_BUSDATE]]></ERR_ACTIONDATE_IS_BUSDATE>
+		<ERR_CF_ACCTNO_DUPLICATE><![CDATA[ERR_CF_ACCTNO_DUPLICATE]]></ERR_CF_ACCTNO_DUPLICATE>
+		<ERR_CF_ACTYPE_HAS_CONSTRAINTS><![CDATA[ERR_CF_ACTYPE_HAS_CONSTRAINTS]]></ERR_CF_ACTYPE_HAS_CONSTRAINTS>
+		<ERR_CF_ACTYPE_HAS_CONTRACT><![CDATA[ERR_CF_ACTYPE_HAS_CONTRACT]]></ERR_CF_ACTYPE_HAS_CONTRACT>
+		<ERR_CF_AFMAST_ALREADY_EXIST><![CDATA[ERR_CF_AFMAST_ALREADY_EXIST]]></ERR_CF_AFMAST_ALREADY_EXIST>
+		<ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE><![CDATA[ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE]]></ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE>
+		<ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE><![CDATA[ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE]]></ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE>
+		<ERR_CF_AFMAST_NOTFOUND><![CDATA[ERR_CF_AFMAST_NOTFOUND]]></ERR_CF_AFMAST_NOTFOUND>
+		<ERR_CF_AFMAST_OVER_ADVANCELIMIT><![CDATA[ERR_CF_AFMAST_OVER_ADVANCELIMIT]]></ERR_CF_AFMAST_OVER_ADVANCELIMIT>
+		<ERR_CF_AFMAST_OVER_DEPOSITLIMIT><![CDATA[ERR_CF_AFMAST_OVER_DEPOSITLIMIT]]></ERR_CF_AFMAST_OVER_DEPOSITLIMIT>
+		<ERR_CF_AFMAST_OVER_MARGINLIMIT><![CDATA[ERR_CF_AFMAST_OVER_MARGINLIMIT]]></ERR_CF_AFMAST_OVER_MARGINLIMIT>
+		<ERR_CF_AFMAST_OVER_REPOLIMIT><![CDATA[ERR_CF_AFMAST_OVER_REPOLIMIT]]></ERR_CF_AFMAST_OVER_REPOLIMIT>
+		<ERR_CF_AFMAST_OVER_TRADELIMIT><![CDATA[ERR_CF_AFMAST_OVER_TRADELIMIT]]></ERR_CF_AFMAST_OVER_TRADELIMIT>
+		<ERR_CF_AFMAST_RISKOVER_AFTYPE><![CDATA[ERR_CF_AFMAST_RISKOVER_AFTYPE]]></ERR_CF_AFMAST_RISKOVER_AFTYPE>
+		<ERR_CF_AFMAST_STATUS_INVALID><![CDATA[ERR_CF_AFMAST_STATUS_INVALID]]></ERR_CF_AFMAST_STATUS_INVALID>
+		<ERR_CF_AFMAST_STATUS_INVALIDE><![CDATA[ERR_CF_AFMAST_STATUS_INVALIDE]]></ERR_CF_AFMAST_STATUS_INVALIDE>
+		<ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE><![CDATA[ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE]]></ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE>
+		<ERR_CF_AFTYPE_NOTFOUND><![CDATA[ERR_CF_AFTYPE_NOTFOUND]]></ERR_CF_AFTYPE_NOTFOUND>
+		<ERR_CF_CANNOT_CLOSE><![CDATA[ERR_CF_CANNOT_CLOSE]]></ERR_CF_CANNOT_CLOSE>
+		<ERR_CF_CAREBY_NOT_EXIT><![CDATA[ERR_CF_CAREBY_NOT_EXIT]]></ERR_CF_CAREBY_NOT_EXIT>
+		<ERR_CF_CI_NOT_EXIT><![CDATA[ERR_CF_CI_NOT_EXIT]]></ERR_CF_CI_NOT_EXIT>
+		<ERR_CF_CONTRACT_HAS_TRANSACTION><![CDATA[ERR_CF_CONTRACT_HAS_TRANSACTION]]></ERR_CF_CONTRACT_HAS_TRANSACTION>
+		<ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE><![CDATA[ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE]]></ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE>
+		<ERR_CF_CURRDATE_SMALLER_THAN_VALDATE><![CDATA[ERR_CF_CURRDATE_SMALLER_THAN_VALDATE]]></ERR_CF_CURRDATE_SMALLER_THAN_VALDATE>
+		<ERR_CF_CUSTID_CONSTRAINTS><![CDATA[ERR_CF_CUSTID_CONSTRAINTS]]></ERR_CF_CUSTID_CONSTRAINTS>
+		<ERR_CF_CUSTID_DUPLICATED><![CDATA[ERR_CF_CUSTID_DUPLICATED]]></ERR_CF_CUSTID_DUPLICATED>
+		<ERR_CF_CUSTID_INVALID><![CDATA[ERR_CF_CUSTID_INVALID]]></ERR_CF_CUSTID_INVALID>
+		<ERR_CF_CUSTODYCD_DUPLICATED><![CDATA[ERR_CF_CUSTODYCD_DUPLICATED]]></ERR_CF_CUSTODYCD_DUPLICATED>
+		<ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE><![CDATA[ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE]]></ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE>
+		<ERR_CF_IDTYPE_DUPLICATED><![CDATA[ERR_CF_IDTYPE_DUPLICATED]]></ERR_CF_IDTYPE_DUPLICATED>
+		<ERR_CF_INTERNATION_NOTEMPTY><![CDATA[ERR_CF_INTERNATION_NOTEMPTY]]></ERR_CF_INTERNATION_NOTEMPTY>
+		<ERR_CF_OVER_ADVANCELINE><![CDATA[ERR_CF_OVER_ADVANCELINE]]></ERR_CF_OVER_ADVANCELINE>
+		<ERR_CF_OVER_DEPOSITLINE><![CDATA[ERR_CF_OVER_DEPOSITLINE]]></ERR_CF_OVER_DEPOSITLINE>
+		<ERR_CF_OVER_MARGINLIMIT><![CDATA[ERR_CF_OVER_MARGINLIMIT]]></ERR_CF_OVER_MARGINLIMIT>
+		<ERR_CF_OVER_REPOLINE><![CDATA[ERR_CF_OVER_REPOLINE]]></ERR_CF_OVER_REPOLINE>
+		<ERR_CF_OVER_TRADELIMIT><![CDATA[ERR_CF_OVER_TRADELIMIT]]></ERR_CF_OVER_TRADELIMIT>
+		<ERR_CF_OVER_TRADELINE><![CDATA[ERR_CF_OVER_TRADELINE]]></ERR_CF_OVER_TRADELINE>
+		<ERR_CF_PIN_DIFFRENCE><![CDATA[ERR_CF_PIN_DIFFRENCE]]></ERR_CF_PIN_DIFFRENCE>
+		<ERR_CF_PIN_ISNOT_NULL><![CDATA[ERR_CF_PIN_ISNOT_NULL]]></ERR_CF_PIN_ISNOT_NULL>
+		<ERR_CF_RECUSTID_NOTFOUND><![CDATA[ERR_CF_RECUSTID_NOTFOUND]]></ERR_CF_RECUSTID_NOTFOUND>
+		<ERR_CF_SE_NOT_EXIT><![CDATA[ERR_CF_SE_NOT_EXIT]]></ERR_CF_SE_NOT_EXIT>
+		<ERR_CF_TAXCODE_ISNOT_NULL><![CDATA[ERR_CF_TAXCODE_ISNOT_NULL]]></ERR_CF_TAXCODE_ISNOT_NULL>
+		<ERR_CF_TRADEPHONE_ISNOTEMPTY><![CDATA[ERR_CF_TRADEPHONE_ISNOTEMPTY]]></ERR_CF_TRADEPHONE_ISNOTEMPTY>
+		<ERR_CI_AAMT><![CDATA[ERR_CI_AAMT]]></ERR_CI_AAMT>
+		<ERR_CI_ACCTNO_DUPLICATED><![CDATA[ERR_CI_ACCTNO_DUPLICATED]]></ERR_CI_ACCTNO_DUPLICATED>
+		<ERR_CI_ACTYPE_NOTFOUND><![CDATA[ERR_CI_ACTYPE_NOTFOUND]]></ERR_CI_ACTYPE_NOTFOUND>
+		<ERR_CI_AFACCTNO_NOTFOUND><![CDATA[ERR_CI_AFACCTNO_NOTFOUND]]></ERR_CI_AFACCTNO_NOTFOUND>
+		<ERR_CI_AFTYPE_NOTFOUND><![CDATA[ERR_CI_AFTYPE_NOTFOUND]]></ERR_CI_AFTYPE_NOTFOUND>
+		<ERR_CI_BAMT><![CDATA[ERR_CI_BAMT]]></ERR_CI_BAMT>
+		<ERR_CI_CIMAST_ALREADY_EXIST><![CDATA[ERR_CI_CIMAST_ALREADY_EXIST]]></ERR_CI_CIMAST_ALREADY_EXIST>
+		<ERR_CI_CIMAST_BALANCE_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_BALANCE_NOTENOUGHT]]></ERR_CI_CIMAST_BALANCE_NOTENOUGHT>
+		<ERR_CI_CIMAST_CRINTACR_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_CRINTACR_NOTENOUGHT]]></ERR_CI_CIMAST_CRINTACR_NOTENOUGHT>
+		<ERR_CI_CIMAST_NOTFOUND><![CDATA[ERR_CI_CIMAST_NOTFOUND]]></ERR_CI_CIMAST_NOTFOUND>
+		<ERR_CI_CIMAST_ODINTACR_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_ODINTACR_NOTENOUGHT]]></ERR_CI_CIMAST_ODINTACR_NOTENOUGHT>
+		<ERR_CI_CIMAST_RAMT_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_RAMT_NOTENOUGHT]]></ERR_CI_CIMAST_RAMT_NOTENOUGHT>
+		<ERR_CI_CIMAST_STATUS_INVALID><![CDATA[ERR_CI_CIMAST_STATUS_INVALID]]></ERR_CI_CIMAST_STATUS_INVALID>
+		<ERR_CI_EMKAMT><![CDATA[ERR_CI_EMKAMT]]></ERR_CI_EMKAMT>
+		<ERR_CI_MARGINBAL><![CDATA[ERR_CI_MARGINBAL]]></ERR_CI_MARGINBAL>
+		<ERR_CI_MMARGINBAL><![CDATA[ERR_CI_MMARGINBAL]]></ERR_CI_MMARGINBAL>
+		<ERR_CI_NAMT><![CDATA[ERR_CI_NAMT]]></ERR_CI_NAMT>
+		<ERR_CI_RAMT><![CDATA[ERR_CI_RAMT]]></ERR_CI_RAMT>
+		<ERR_INVALIF_CFMAST_STATUS><![CDATA[ERR_INVALIF_CFMAST_STATUS]]></ERR_INVALIF_CFMAST_STATUS>
+		<ERR_OD_ATO_ORDER_IN_LISTTING_DATE><![CDATA[ERR_OD_ATO_ORDER_IN_LISTTING_DATE]]></ERR_OD_ATO_ORDER_IN_LISTTING_DATE>
+		<ERR_OD_ODTYPE_NOTFOUND><![CDATA[ERR_OD_ODTYPE_NOTFOUND]]></ERR_OD_ODTYPE_NOTFOUND>
+		<ERR_OOD_STATUS_BLOCKED><![CDATA[ERR_OOD_STATUS_BLOCKED]]></ERR_OOD_STATUS_BLOCKED>
+		<ERR_OOD_STATUS_SENT><![CDATA[ERR_OOD_STATUS_SENT]]></ERR_OOD_STATUS_SENT>
+		<ERR_REPORTDATE_INVALID><![CDATA[ERR_REPORTDATE_INVALID]]></ERR_REPORTDATE_INVALID>
+		<ERR_SA_ACCTNO_NOTFOUND><![CDATA[ERR_SA_ACCTNO_NOTFOUND]]></ERR_SA_ACCTNO_NOTFOUND>
+		<ERR_SA_APPCHK_ACCTNO_NOTFOUND><![CDATA[ERR_SA_APPCHK_ACCTNO_NOTFOUND]]></ERR_SA_APPCHK_ACCTNO_NOTFOUND>
+		<ERR_SA_APPCHK_MISSING><![CDATA[ERR_SA_APPCHK_MISSING]]></ERR_SA_APPCHK_MISSING>
+		<ERR_SA_BDS_OPERATION_ISINACTIVE><![CDATA[End of day processing haven't  been completed. Please come back after 15 minutes.]]></ERR_SA_BDS_OPERATION_ISINACTIVE>
+		<ERR_SA_BDS_OPERATION_STILLACTIVE><![CDATA[ERR_SA_BDS_OPERATION_STILLACTIVE]]></ERR_SA_BDS_OPERATION_STILLACTIVE>
+		<ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT><![CDATA[ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT]]></ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT>
+		<ERR_SA_CALENDAR_MISSING><![CDATA[ERR_SA_CALENDAR_MISSING]]></ERR_SA_CALENDAR_MISSING>
+		<ERR_SA_CANNOT_DELETETRANSACTION><![CDATA[ERR_SA_CANNOT_DELETETRANSACTION]]></ERR_SA_CANNOT_DELETETRANSACTION>
+		<ERR_SA_CCYCD_NOTACTIVE><![CDATA[ERR_SA_CCYCD_NOTACTIVE]]></ERR_SA_CCYCD_NOTACTIVE>
+		<ERR_SA_CDVAL_DUPLICATED><![CDATA[ERR_SA_CDVAL_DUPLICATED]]></ERR_SA_CDVAL_DUPLICATED>
+		<ERR_SA_CHECKER1_OVR><![CDATA[ERR_SA_CHECKER1_OVR]]></ERR_SA_CHECKER1_OVR>
+		<ERR_SA_CHECKER2_OVR><![CDATA[ERR_SA_CHECKER2_OVR]]></ERR_SA_CHECKER2_OVR>
+		<ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT><![CDATA[ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT]]></ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT>
+		<ERR_SA_HOST_OPERATION_ISINACTIVE><![CDATA[End of day processing haven't  been completed. Please come back after 15 minutes.]]></ERR_SA_HOST_OPERATION_ISINACTIVE>
+		<ERR_SA_HOST_OPERATION_STILLACTIVE><![CDATA[ERR_SA_HOST_OPERATION_STILLACTIVE]]></ERR_SA_HOST_OPERATION_STILLACTIVE>
+		<ERR_SA_IBT_DOESNOTALLOW><![CDATA[ERR_SA_IBT_DOESNOTALLOW]]></ERR_SA_IBT_DOESNOTALLOW>
+		<ERR_SA_ICCFTIER_DUPLICATED><![CDATA[ERR_SA_ICCFTIER_DUPLICATED]]></ERR_SA_ICCFTIER_DUPLICATED>
+		<ERR_SA_ICCFTYPEDEF_DUPLICATED><![CDATA[ERR_SA_ICCFTYPEDEF_DUPLICATED]]></ERR_SA_ICCFTYPEDEF_DUPLICATED>
+		<ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10><![CDATA[ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10]]></ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10>
+		<ERR_SA_ISSUER_HAS_ONE_NORMALSHARE><![CDATA[ERR_SA_ISSUER_HAS_ONE_NORMALSHARE]]></ERR_SA_ISSUER_HAS_ONE_NORMALSHARE>
+		<ERR_SA_LICENSENO_ISNOT_EMPTY><![CDATA[ERR_SA_LICENSENO_ISNOT_EMPTY]]></ERR_SA_LICENSENO_ISNOT_EMPTY>
+		<ERR_SA_ONLY_HEADOFFICE_RUNBATCH><![CDATA[ERR_SA_ONLY_HEADOFFICE_RUNBATCH]]></ERR_SA_ONLY_HEADOFFICE_RUNBATCH>
+		<ERR_SA_PRINTINFO_ACCTNOTFOUND><![CDATA[ERR_SA_PRINTINFO_ACCTNOTFOUND]]></ERR_SA_PRINTINFO_ACCTNOTFOUND>
+		<ERR_SA_READ_TRADING_RESULT_TWICE><![CDATA[ERR_SA_READ_TRADING_RESULT_TWICE]]></ERR_SA_READ_TRADING_RESULT_TWICE>
+		<ERR_SA_SECTICKSIZE_CONSTRAINTS><![CDATA[ERR_SA_SECTICKSIZE_CONSTRAINTS]]></ERR_SA_SECTICKSIZE_CONSTRAINTS>
+		<ERR_SA_SECTICKSIZE_INVALID><![CDATA[ERR_SA_SECTICKSIZE_INVALID]]></ERR_SA_SECTICKSIZE_INVALID>
+		<ERR_SA_SHOULDAPPROVE_BEFORECASHIER><![CDATA[ERR_SA_SHOULDAPPROVE_BEFORECASHIER]]></ERR_SA_SHOULDAPPROVE_BEFORECASHIER>
+		<ERR_SA_STCSE_DUPLICATED><![CDATA[ERR_SA_STCSE_DUPLICATED]]></ERR_SA_STCSE_DUPLICATED>
+		<ERR_SA_STILLHAS_BRGRP_ACTIVE><![CDATA[ERR_SA_STILLHAS_BRGRP_ACTIVE]]></ERR_SA_STILLHAS_BRGRP_ACTIVE>
+		<ERR_SA_SYMBOL_DUPLICATED><![CDATA[ERR_SA_SYMBOL_DUPLICATED]]></ERR_SA_SYMBOL_DUPLICATED>
+		<ERR_SA_SYMBOL_NOTFOUND><![CDATA[ERR_SA_SYMBOL_NOTFOUND]]></ERR_SA_SYMBOL_NOTFOUND>
+		<ERR_SA_TLLOG_INVALID_STATUS><![CDATA[ERR_SA_TLLOG_INVALID_STATUS]]></ERR_SA_TLLOG_INVALID_STATUS>
+		<ERR_SA_TLTXCD_NOTFOUND><![CDATA[ERR_SA_TLTXCD_NOTFOUND]]></ERR_SA_TLTXCD_NOTFOUND>
+		<ERR_SA_TL_CURRENT_USR><![CDATA[ERR_SA_TL_CURRENT_USR]]></ERR_SA_TL_CURRENT_USR>
+		<ERR_SA_TRADING_RESULT_INVALID_DATE><![CDATA[ERR_SA_TRADING_RESULT_INVALID_DATE]]></ERR_SA_TRADING_RESULT_INVALID_DATE>
+		<ERR_SA_TRANSACTION_NOTFOUND><![CDATA[ERR_SA_TRANSACTION_NOTFOUND]]></ERR_SA_TRANSACTION_NOTFOUND>
+		<ERR_SA_VARIABLE_NOTFOUND><![CDATA[ERR_SA_VARIABLE_NOTFOUND]]></ERR_SA_VARIABLE_NOTFOUND>
+		<ERR_SE_BLOCKED><![CDATA[ERR_SE_BLOCKED]]></ERR_SE_BLOCKED>
+		<ERR_SE_DEPOSIT><![CDATA[ERR_SE_DEPOSIT]]></ERR_SE_DEPOSIT>
+		<ERR_SE_LOAN><![CDATA[ERR_SE_LOAN]]></ERR_SE_LOAN>
+		<ERR_SE_MARGIN><![CDATA[ERR_SE_MARGIN]]></ERR_SE_MARGIN>
+		<ERR_SE_MORTAGE><![CDATA[ERR_SE_MORTAGE]]></ERR_SE_MORTAGE>
+		<ERR_SE_NETTING><![CDATA[ERR_SE_NETTING]]></ERR_SE_NETTING>
+		<ERR_SE_PENDING><![CDATA[ERR_SE_PENDING]]></ERR_SE_PENDING>
+		<ERR_SE_RECEIVING><![CDATA[ERR_SE_RECEIVING]]></ERR_SE_RECEIVING>
+		<ERR_SE_REPO><![CDATA[ERR_SE_REPO]]></ERR_SE_REPO>
+		<ERR_SE_SECURED><![CDATA[ERR_SE_SECURED]]></ERR_SE_SECURED>
+		<ERR_SE_STANDING><![CDATA[ERR_SE_STANDING]]></ERR_SE_STANDING>
+		<ERR_SE_TRANSFER><![CDATA[ERR_SE_TRANSFER]]></ERR_SE_TRANSFER>
+		<ERR_SE_WITHDRAW><![CDATA[ERR_SE_WITHDRAW]]></ERR_SE_WITHDRAW>
+
+		<ERR_OD_ORDER_OVER_NUMBER_CORRECTION><![CDATA[You can not cancel/modify this order anymore.The original order is over correction number.]]></ERR_OD_ORDER_OVER_NUMBER_CORRECTION>
+		
+		<ERR_OD_TRADEPLACE_HOSE_NOT_AMEND><![CDATA[This order is processing in HOSE. Cannot edit this order.]]></ERR_OD_TRADEPLACE_HOSE_NOT_AMEND>
+		<ERR_OD_TRADERID_NOT_INVALID><![CDATA[System error. Please place this order via call center 1900-545409. We are sorry for any convenient.]]></ERR_OD_TRADERID_NOT_INVALID>
+		<ERR_OD_ROOM_NOT_ENOUGH><![CDATA[Current Room = 0. This order can not executed.]]></ERR_OD_ROOM_NOT_ENOUGH>
+		
+	</BOService>
+	<VNDSService>
+		<Systems>
+			<UNKNOW_STATUS>
+				<![CDATA[システムエラー：code:{0}, message:{1} ....]]>
+			</UNKNOW_STATUS>
+			<ERR_AUTH>
+				<![CDATA[VNダイレクトサービスへ接続する権利がありません。]]>
+			</ERR_AUTH>
+			<ERR_SYSTEM_EXCEPTION>
+				<![CDATA[システムエラー…]]>
+			</ERR_SYSTEM_EXCEPTION>
+			<ERR_FUNCTIONAL_EXCEPTION>
+				<![CDATA[システムエラー…]]>
+			</ERR_FUNCTIONAL_EXCEPTION>
+			<ERR_UNKNOW_EXCEPTION>
+				<![CDATA[システムエラー…]]>
+			</ERR_UNKNOW_EXCEPTION>
+			<ERR_INPUT_NULL>
+				<![CDATA[システムエラー…]]>
+			</ERR_INPUT_NULL>
+		</Systems>
+		<OnlineUser>
+			<ERR_ONLINE_USER_EXISTED>
+				<![CDATA[このユーザは既に存在しています。]]>
+			</ERR_ONLINE_USER_EXISTED>
+			<ERR_EMAIL_USED>
+				<![CDATA[この電子メールアドレスは既に登録されています。]]>
+			</ERR_EMAIL_USED>
+			<USER_NAME_TOO_LONG>
+				<![CDATA[ユーザネームは255文字をオーバーしてはいけません。]]>
+			</USER_NAME_TOO_LONG>
+			<FULL_NAME_TOO_LONG>
+				<![CDATA[フルネームは255文字オーバーしてはいけません。]]>
+			</FULL_NAME_TOO_LONG>
+			<PASSWORD_TOO_LONG>
+				<![CDATA[パスワードは50文字をオーバーしてはいけません。]]>
+			</PASSWORD_TOO_LONG>
+			<EMAIL_TOO_LONG>
+				<![CDATA[電子メールアドレスは250文字をオーバーしてはいけません。]]>
+			</EMAIL_TOO_LONG>
+			<ERR_USER_DISABLED>
+				<![CDATA[現在このユーザーはサービスをご利用になれません。詳しくはVNダイレクト証券までお問い合わせください。]]>
+			</ERR_USER_DISABLED>
+			<USER_UNACTIVE>
+				<![CDATA[The user is unactive. Please acvive before using. The active information is sent by email registed with system.]]>
+			</USER_UNACTIVE>
+			<ERR_USER_UNEXIST><![CDATA[The user does not exist!]]></ERR_USER_UNEXIST>
+		</OnlineUser>
+		<StreamQuotes></StreamQuotes>
+		<PendingAccount></PendingAccount>
+		<IdentityGuard>
+			<REMOTE_ERROR>
+				<![CDATA[セキュリティサーバーへの接続ができません。VNダイレクト証券までお問い合わせください。]]>
+			</REMOTE_ERROR>
+			<ANON_AUTH_DISABLED>
+				<![CDATA[ANON_AUTH_DISABLED]]>
+			</ANON_AUTH_DISABLED>
+			<AUTH_FAILED_USER_LOCKED>
+				<![CDATA[お客様のVTOSカードがロックされました。VNダイレクト証券のオンラインサービスのご利用を登録した電子メールアドレスでVTOSカードのアンロックを要求するメールをsupport@vndirect.com.vnまで送って下さい(フルネーム、口座番号とVTOSカード番号を書いて下さい)。お客様のメール受領1日後に、VNダイレクト証券はVTOSカードをアンロックします。(注意：お客様のVTOSカードが1ヶ月以内に3回ロックされると、永久にロックされることになります。その場合は、新しいカードを申請するため、恐れいますがVNダイレクト証券までご足労下さい。)]]>
+			</AUTH_FAILED_USER_LOCKED>
+			<AUTH_TYPE_NOT_ALLOWED>
+				<![CDATA[AUTH_TYPE_NOT_ALLOWED]]>
+			</AUTH_TYPE_NOT_ALLOWED>
+			<CARD_SUPERSEDED>
+				<![CDATA[CARD_SUPERSEDED]]>
+			</CARD_SUPERSEDED>
+			<INVALID_PARAMETER>
+				<![CDATA[VTOSカードの数字通り入力して下さい。]]>
+			</INVALID_PARAMETER>
+			<INVALID_RESPONSE>
+				<![CDATA[VTOSカードのパスワードが正しくありません。再度入力して下さい。]]>
+			</INVALID_RESPONSE>
+			<INVALID_TOKEN_PIN_CHANGE>
+				<![CDATA[INVALID_TOKEN_PIN_CHANGE]]>
+			</INVALID_TOKEN_PIN_CHANGE>
+			<NO_ACTIVE_CARDS>
+				<![CDATA[NO_ACTIVE_CARDS]]>
+			</NO_ACTIVE_CARDS>
+			<NO_ACTIVE_TOKENS>
+				<![CDATA[NO_ACTIVE_TOKENS]]>
+			</NO_ACTIVE_TOKENS>
+			<NO_EXTERNAL_AUTH_CONFIGURED>
+				<![CDATA[NO_EXTERNAL_AUTH_CONFIGURED]]>
+			</NO_EXTERNAL_AUTH_CONFIGURED>
+			<NO_OTP>
+				<![CDATA[NO_OTP]]>
+			</NO_OTP>
+			<NO_VALID_CARDS>
+				<![CDATA[NO_VALID_CARDS]]>
+			</NO_VALID_CARDS>
+			<NO_VALID_TOKENS>
+				<![CDATA[NO_VALID_TOKENS]]>
+			</NO_VALID_TOKENS>
+			<OTP_EXPIRED>
+				<![CDATA[OTP_EXPIRED]]>
+			</OTP_EXPIRED>
+			<PIN_EXPIRED>
+				<![CDATA[PIN_EXPIRED]]>
+			</PIN_EXPIRED>
+			<PIN_MAX_USES>
+				<![CDATA[PIN_MAX_USES]]>
+			</PIN_MAX_USES>
+			<QA_NOT_ENOUGH_QUESTIONS>
+				<![CDATA[QA_NOT_ENOUGH_QUESTIONS]]>
+			</QA_NOT_ENOUGH_QUESTIONS>
+			<SHARED_SECRET_GET_ERROR>
+				<![CDATA[SHARED_SECRET_GET_ERROR]]>
+			</SHARED_SECRET_GET_ERROR>
+			<SHARED_SECRET_MAX_NUM>
+				<![CDATA[SHARED_SECRET_MAX_NUM]]>
+			</SHARED_SECRET_MAX_NUM>
+			<SHARED_SECRET_MAX_VALUE_SIZE>
+				<![CDATA[SHARED_SECRET_MAX_VALUE_SIZE]]>
+			</SHARED_SECRET_MAX_VALUE_SIZE>
+			<SHARED_SECRET_REMOVE_ERROR>
+				<![CDATA[SHARED_SECRET_REMOVE_ERROR]]>
+			</SHARED_SECRET_REMOVE_ERROR>
+			<SHARED_SECRET_SET_ERROR>
+				<![CDATA[SHARED_SECRET_SET_ERROR]]>
+			</SHARED_SECRET_SET_ERROR>
+			<SYSTEM_ERROR>
+				<![CDATA[セキュリティシステムのエラーです。このエラーをVNダイレクト証券へお知らせください。]]>
+			</SYSTEM_ERROR>
+			<USER_DOES_NOT_EXIST>
+				<![CDATA[このVTOSカードは存在していません。詳しくはVNダイレクト証券までお問い合わせください。]]>
+			</USER_DOES_NOT_EXIST>
+			<USER_LOCKED>
+				<![CDATA[お客様のVTOSカードがロックされました。VNダイレクト証券のオンラインサービスのご利用を登録した電子メールアドレスでVTOSカードのアンロックを要求するメールをsupport@vndirect.com.vnまで送って下さい(フルネーム、口座番号とVTOSカード番号を書いて下さい)。お客様のメール受領1日後に、VNダイレクト証券はVTOSカードをアンロックします。(注意：お客様のVTOSカードが1ヶ月以内に3回ロックされると、永久にロックされることになります。その場合は、新しいカードを申請するため、恐れいますがVNダイレクト証券までご足労下さい。)]]>
+			</USER_LOCKED>
+			<USER_NO_CHALLENGE>
+				<![CDATA[Please Log in Again.]]>
+			</USER_NO_CHALLENGE>
+			<USER_UPDATE_ERROR>
+				<![CDATA[USER_UPDATE_ERROR]]>
+			</USER_UPDATE_ERROR>
+			<USERNAME_NOT_UNIQUE>
+				<![CDATA[USERNAME_NOT_UNIQUE]]>
+			</USERNAME_NOT_UNIQUE>
+			<INVALID_SERIAL_NUMBER><![CDATA[Invalid serial number]]></INVALID_SERIAL_NUMBER>
+		</IdentityGuard>
+		<Portfolios>
+			<ERR_ONLINE_USER_NOT_EXISTED>
+				<![CDATA[このユーザーは存在していません。]]>
+			</ERR_ONLINE_USER_NOT_EXISTED>
+			<PORTFOLIO_NAME_TOO_LONG>
+				<![CDATA[ネームは20文字をオーバーしてはいけません。]]>
+			</PORTFOLIO_NAME_TOO_LONG>
+			<PORTFOLIO_SYMBOL_TOO_LONG>
+				<![CDATA[シンボルは20文字をオーバーしてはいけません。]]>
+			</PORTFOLIO_SYMBOL_TOO_LONG>
+		</Portfolios>
+	</VNDSService>
+
+	<WebAgent>
+		<Service_errors>
+			<RemoteError><![CDATA[Can not connect to VNDSService server!]]></RemoteError>
+		</Service_errors>
+		<Commons>
+			<mandatory-field><![CDATA[{0} is mandatory.]]></mandatory-field>
+		</Commons>
+		<Customer>
+			<INVALID_EMAIL><![CDATA[Email is invalid.]]></INVALID_EMAIL>
+			<INVALID_DATE_OF_BIRTH><![CDATA[Date of birth is invalid.]]></INVALID_DATE_OF_BIRTH>
+			<YEAR_OLDS_RULE><![CDATA[This customer is under 18 years old.]]></YEAR_OLDS_RULE>
+			<INVALID_MOBILE_PHONE><![CDATA[Mobile Phone is invalid.]]></INVALID_MOBILE_PHONE>
+			<INVALID_EXPIRED_DATE><![CDATA[Expired date is invalid.]]></INVALID_EXPIRED_DATE>
+			<INVALID_DATE_OF_ISSUE><![CDATA[Date of issue is invalid.]]></INVALID_DATE_OF_ISSUE>
+			<DATE_OF_ISSUE_RULE><![CDATA[Date of issue must be smaller than current date.]]></DATE_OF_ISSUE_RULE>
+			<DATE_OF_ISSUE_RULE_01><![CDATA[Date of issue must be greater than date of birth.]]></DATE_OF_ISSUE_RULE_01>
+			<DATE_OF_ISSUE_RULE_02><![CDATA[Date of issue must be at least 15-year greater than Date of birth.]]></DATE_OF_ISSUE_RULE_02>
+			<EXPIRED_DATE_RULE><![CDATA[Expired date must be greater than current date.]]></EXPIRED_DATE_RULE>
+			<INVALID_FROM_DATE><![CDATA[Fromdate is invalid.]]></INVALID_FROM_DATE>
+			<INVALID_FROM_DATE><![CDATA[Todate is invalid.]]></INVALID_FROM_DATE>
+			<BLANK_SINGATURE><![CDATA[Signature is blank.]]></BLANK_SINGATURE>
+			<UPLOAD_SIGNATURE_FAILED><![CDATA[Warning: You can not open contract now because the customer profile is not complete. Please contact with Customer service department in Head-office for more detail.]]></UPLOAD_SIGNATURE_FAILED>
+
+						<!-- Authorizer -->
+			<INFO_AUTH_BLANK><![CDATA[You do not enter Authorizer Information.]]></INFO_AUTH_BLANK>
+			<AUTH_VALID_DATE_BLANK><![CDATA[You do not enter Validate]]></AUTH_VALID_DATE_BLANK>
+			<AUTH_VALID_DATE_INVALID><![CDATA[Valid date is invalid]]></AUTH_VALID_DATE_INVALID>
+			<AUTH_EXPIRED_DATE_BLANK><![CDATA[You do not enter Validate]]></AUTH_EXPIRED_DATE_BLANK>
+			<AUTH_EXPIRED_DATE_INVALID><![CDATA[Expired date is invalid]]></AUTH_EXPIRED_DATE_INVALID>
+			<AUTH_RULE_BLANK><![CDATA[You do not choose any rule for this authorizer.]]></AUTH_RULE_BLANK>
+			<AUTH_ACCOUNT_NAME_BLANK><![CDATA[You do not enter Account name of this authorizer]]></AUTH_ACCOUNT_NAME_BLANK>
+			<AUTH_BANK_ACCOUNT_BLANK><![CDATA[You do not enter Bank Account of this authorizer]]></AUTH_BANK_ACCOUNT_BLANK>
+			<AUTH_EXPIRED_DATE_RULE><![CDATA[Expired date must be greater than Valid date]]></AUTH_EXPIRED_DATE_RULE>
+			<AUTH_ACCOUNT_NAME_TOO_LONG><![CDATA[Length of Account name of this authorizer must be smaller than 20 words]]></AUTH_ACCOUNT_NAME_TOO_LONG>
+		</Customer>
+		<SearchAccount>
+			<CannotFindAccount><![CDATA[Can not find accout matching, please use Advance Search for free search.]]></CannotFindAccount>
+			<AccountNumberEmpty><![CDATA[ACCOUNT can not empty.]]></AccountNumberEmpty>
+		</SearchAccount>
+	</WebAgent>
+
+	<CoreBank>
+		<FROM_ACCOUNT_BLANK><![CDATA[From acc is mandatory]]></FROM_ACCOUNT_BLANK>
+		<TO_ACC_BALANK><![CDATA[To acc is mandatory]]></TO_ACC_BALANK>
+		<AMOUNT_BLANK><![CDATA[You do not input amount to transfer]]></AMOUNT_BLANK>
+		<AMOUNT_INVALID><![CDATA[Do not enter numbers or invalid characters. The units must be filled in completely.]]></AMOUNT_INVALID>
+		<AMOUNT_TOO_BIG><![CDATA[Your transferred amount is over available amount.]]></AMOUNT_TOO_BIG>
+		<DETAILS_BLANK><![CDATA[You do not input any details.]]></DETAILS_BLANK>
+		<TRANSFER_TIME_ERROR><![CDATA[Transaction time is over.]]></TRANSFER_TIME_ERROR>
+		<MIN_ALLOW><![CDATA[Amount to transfer must be greater than {0}.]]></MIN_ALLOW>
+	</CoreBank>
+</ErrorMessage>

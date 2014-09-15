@@ -1,0 +1,66 @@
+#apply_icons a[href$=".pdf"], #apply_icons a[href$=".txt"], #apply_icons a[href$=".mp3"], #apply_icons a[href$=".aiff"], #apply_icons a[href$=".wav"], #apply_icons a[href$=".ogg"], #apply_icons a[href$=".wma"]
+, #apply_icons a[href$=".zip"], #apply_icons a[href$=".rar"], #apply_icons a[href$=".ace"], #apply_icons a[href$=".tar.gz"], #apply_icons a[href$=".tgz"]
+, #apply_icons a[href$=".mpg"], #apply_icons a[href$=".mpeg"], #apply_icons a[href$=".avi"], #apply_icons a[href$=".mv2"], #apply_icons a[href$=".mov"], #apply_icons a[href$=".mp4"], #apply_icons a[href$=".wmv"]
+, #apply_icons a[href$=".swf"], #apply_icons a[href$=".xls"], #apply_icons a[href$=".xlsx"], #apply_icons a[href$=".doc"], #apply_icons a[href$=".docx"], #apply_icons a[href$=".ppt"], #apply_icons a[href$=".pptx"]
+, #apply_icons a[href*="trackback"], #apply_icons a[href*="@"], #apply_icons a[href*="rss2"], #apply_icons a[href*="feed"], #apply_icons a[href*="postcomment"], #apply_icons a[href*="respond"]
+, #apply_icons a[href$=".h"], #apply_icons a[href$=".hpp"], #apply_icons a[href$=".c"], #apply_icons a[href$=".cpp"]
+, #apply_icons a[href*="action=edit"]
+, #apply_icons a[href*="filetype=camera"] , #apply_icons a[href*=".gif"], #apply_icons a[href*=".jpg"]
+{
+	padding-bottom: 2px;
+	padding-left: 22px;
+	padding-top: 2px;
+	background: transparent;
+}
+
+#apply_icons a[href$=".pdf"] {
+	background: url(images/page_white_acrobat.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".txt"] {
+	background: url(images/page_white_text.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".mp3"], #apply_icons a[href$=".aiff"], #apply_icons a[href$=".wav"], #apply_icons a[href$=".ogg"], #apply_icons a[href$=".wma"] {
+	background: url(images/music.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".zip"], #apply_icons a[href$=".rar"], #apply_icons a[href$=".ace"], #apply_icons a[href$=".tar.gz"], #apply_icons a[href$=".tgz"] {
+	background: url(images/page_white_compressed.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".mpg"], #apply_icons a[href$=".mpeg"], #apply_icons a[href$=".avi"], #apply_icons a[href$=".mv2"], #apply_icons a[href$=".mov"], #apply_icons a[href$=".mp4"], #apply_icons a[href$=".wmv"] {
+	background: url(images/film.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".swf"] {
+	background: url(images/page_white_flash.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".xls"], #apply_icons a[href$=".xlsx"] {
+	background: url(images/page_white_excel.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".doc"], #apply_icons a[href$=".docx"] {
+	background: url(images/page_white_word.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".ppt"], #apply_icons a[href$=".pptx"] {
+	background: url(images/page_white_powerpoint.png) no-repeat scroll left center;
+}
+#apply_icons a[href*="trackback"] {
+	background: url(images/link.png) no-repeat scroll left center;
+}
+#apply_icons a[href*="@"] {
+	background: url(images/email.png) no-repeat scroll left center;
+}
+#apply_icons a[href*="rss2"], #apply_icons a[href*="feed"] {
+	background: url(images/rss.png) no-repeat scroll left center;
+}
+#apply_icons a[href*="postcomment"], #apply_icons a[href*="respond"] {
+	background: url(images/comment.png) no-repeat scroll left center;
+}
+#apply_icons a[href*="action=edit"] {
+	background: url(images/page_white_edit.png) no-repeat scroll left center;
+}
+#apply_icons a[href*="filetype=camera"], #apply_icons a[href*=".gif"], #apply_icons a[href*=".jpg"] {
+		background: url(images/page_white_camera.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".c"] {
+		background: url(images/page_white_c.png) no-repeat scroll left center;
+}
+#apply_icons a[href$=".h"], #apply_icons a[href$=".hpp"], #apply_icons a[href$=".cpp"] {
+		background: url(images/page_white_cplusplus.png) no-repeat scroll left center;
+}

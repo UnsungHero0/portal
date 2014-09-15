@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Define HomePage Module -->
+	<package name="Home" namespace="/home" extends="default-web">
+		<action name="RedirectUrl*">
+			<result>RedirectUrlPage</result>
+		</action>
+	</package>
+
+	<package name="CommonWebAction" namespace="/" extends="default-web">
+		<!-- Page not found -->
+		<action name="page-not-found*" class="springEmptyAction" method="viewPageNotFound">
+			<result>PageNotFound.Home</result>
+		</action>
+		<!-- Session Timeout -->
+		<action name="timeout*" class="springEmptyAction" method="viewSessionTimeout">
+			<result>SessionTimeout.Page</result>
+		</action>
+		<!-- ForBidden -->
+		<action name="for-bidden*" class="springEmptyAction" method="viewForBidden">
+			<result>ForBidden.Home</result>
+		</action>
+	</package>
+
+	<!-- Gioi thieu VnDirect -->
+	<package name="AboutVnDirect" namespace="/vndirect" extends="default-web">
+		<action name="gioi-thieu-vndirect*" class="springEmptyAction" method="viewAboutVndirectVision">
+			<param name="pageTitle">aboutVndirect.aboutUs.title</param>
+			<param name="pageDescription">aboutVndirect.aboutUs.desc</param>
+			<param name="pageKeywords">aboutVndirect.aboutUs.keywords</param>
+			<result>about.vision</result>
+		</action>
+		<action name="lich-su-phat-trien*" class="springHistoryAction" method="execute">
+			<param name="pageTitle">aboutVndirect.history.title</param>
+			<param name="pageDescription">aboutVndirect.history.desc</param>
+			<param name="pageKeywords">aboutVndirect.history.keywords</param>
+			<param name="subjectCode">history-tongquan</param>
+			<result>about.history</result>
+		</action>
+		<action name="doi-ngu-lanh-dao*" class="springEmptyAction" method="viewAboutVndirectBoardOfDirectors">
+			<param name="pageTitle">aboutVndirect.boards.title</param>
+			<param name="pageDescription">aboutVndirect.boards.desc</param>
+			<param name="pageKeywords">aboutVndirect.boards.keywords</param>
+			<result>about.board</result>
+		</action>
+		<!-- San pham dich vu -->
+		<action name="san-pham-dich-vu*" class="springEmptyAction" method="viewServiceAndProducts">
+			<param name="pageTitle">products.title</param>
+			<param name="pageDescription">products.description</param>
+			<param name="pageKeywords">products.keyWords</param>
+			<result>Product.TradingService</result>
+		</action>
+		<!-- Tin VnDirect -->
+		<action name="tin-vndirect*" class="springNewsAction" method="viewNewsOfVNDIRECT">
+			<result>Info.NewsOfVndirect</result>
+		</action>
+	</package>
+	<package name="AboutVnDirectAJAX" namespace="/ajax/vndirect" extends="default-web">
+		<action name="/history/*" class="springHistoryAction" method="getHistory">
+			<param name="subjectCode">{1}</param>
+			<result>about.history1</result>
+		</action>
+	</package>
+	<package name="LoadMoreVnDirectNewsAjax" namespace="/ajax/loadMoreNews" extends="default-web">
+		<action name="vndirectNews*" class="springNewsAction" method="getVnDirectNewsAjax">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+	</package>
+
+	<!-- Quan he co dong -->
+	<package name="Investor-Relations" namespace="/quan-he-co-dong-vndirect" extends="default-web">
+		<action name="tong-quan*" class="springEmptyAction" method="viewIRSnapshot">
+			<result>InvestorRelations.Snapshot</result>
+		</action>
+		<action name="cong-bo-thong-tin*" class="springNewsAction" method="viewIRDisclosure">
+			<result>InvestorRelations.NewsForSymbol</result>
+		</action>
+		<action name="tin-doanh-nghiep*" class="springNewsAction" method="viewIRCompanyEvents">
+			<result>InvestorRelations.CompanyEvents</result>
+		</action>
+		<action name="lich-su-kien*" class="springMarketCalendarAction" method="viewMarketCalendarVndirect">
+			<result>InvestorRelations.MarketCalendar</result>
+		</action>
+
+		<!-- Thong tin co phieu -->
+		<action name="thong-tin-co-ban*" class="springSnapshotAction" method="getIRStockInformation">
+			<result>ir.si.thongtincoban</result>
+		</action>
+		<action name="/bieu-do-ky-thuat*" class="springHighStockAction" method="initIrSiChart">
+			<result>ir.si.chart</result>
+		</action>
+		<action name="/lich-su-gia*" class="springMarketStatisticsAction" method="viewIRSIHistoricalPrice">
+			<param name="from">5</param>
+			<result>ir.si.historicalPrice</result>
+		</action>
+		<action name="/giao-dich-nha-dau-tu-nuoc-ngoai*" class="springMarketStatisticsAction" method="viewIRSIForeignTrading">
+			<result>ir.si.foreignTrading
+			</result>
+		</action>
+		<action name="/ket-qua-giao-dich*" class="springMarketStatisticsAction" method="viewIRSITradingStatisticsForSymbol">
+			<result>ir.si.tradingStatistics
+			</result>
+		</action>
+		<action name="/quyen-so-huu*" class="springMaijorHoldersAction" method="viewIRSIMajorHolders">
+			<result>ir.si.ownerShip</result>
+		</action>
+
+		<!-- Thong tin tai chinh -->
+		<action name="thong-ke-co-ban*" class="springKeyStatisticAction" method="viewIRKeyStatic">
+			<param name="symbol">VND</param>
+			<result>InvestorRelations.KeyStatistic</result>
+		</action>
+		<action name="bao-cao-tai-chinh*" class="springSSCFillingAction" method="viewIRSSCFilling">
+			<param name="symbol">VND</param>
+			<result>InvestorRelations.SSCFilling</result>
+		</action>
+		<action name="bao-cao-thuong-nien-cao-bach*" class="springHolderRelationAction" method="viewIRAnnualReport">
+			<result>InvestorRelations.AnnualReport</result>
+		</action>
+		<!-- Thong tin quan tri -->
+		<action name="dieu-le-cong-ty*" class="springHolderRelationAction" method="viewIRRegulation">
+			<result>InvestorRelations.Regulations</result>
+		</action>
+		<!-- <action name="ban-dieu-hanh*" class="springHolderRelationAction" method="viewIRGovernanceCommittee">
+			<result>InvestorRelations.GovernanceCommittee</result>
+		</action> -->
+		<action name="ban-kiem-soat*" class="springHolderRelationAction" method="viewIRInspectionCommittee">
+			<result>InvestorRelations.InspectionCommittee</result>
+		</action>
+		<action name="hoi-dong-quan-tri*" class="springHolderRelationAction" method="viewIRBoardOfDirectors">
+			<result>InvestorRelations.BoardOfDirectors</result>
+		</action>
+	</package>
+	<package name="IR-Snapshot-Ajax" namespace="/ajax/irSnapshot" extends="default-web">
+		<action name="getCompanyQuote" class="springIRSnapshotAjaxAction" method="getCompanyQuote">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getMostNews" class="springIRSnapshotAjaxAction" method="getMostNews">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getReports" class="springIRSnapshotAjaxAction" method="getReports">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="Help-DownloadForm" namespace="/" extends="default-web">
+		<action name="bieu-mau-ung-dung*" class="springEmptyAction" method="viewHelpForms">
+			<result>home.help.form</result>
+		</action>
+	</package>
+	<!-- Tro giup -->
+	<package name="Help" namespace="/tro-giup" extends="default-web">
+		<action name="/hoi-dap-huong-dan*" class="springEmptyAction" method="viewHelpGuides">
+			<result>home.help.qa</result>
+		</action>
+	</package>
+	<package name="Help-TroGiup" namespace="/tro-giup" extends="default-web">
+		<action name="/*" class="springHelpAction" method="execute">
+			<param name="subjectCode">{1}</param>
+			<param name="productCode">tro-giup</param>
+			<result>home.help.tradingGuide</result>
+		</action>
+	</package>
+	<package name="Help-TroGiupSPDV" namespace="/tro-giup-san-pham-dich-vu" extends="default-web">
+		<action name="/*" class="springHelpAction" method="execute">
+			<param name="subjectCode">{1}</param>
+			<param name="productCode">tro-giup-san-pham-dich-vu</param>
+			<result>home.help.tradingGuide</result>
+		</action>
+	</package>
+	<package name="Help-TroGiupGD" namespace="/tro-giup-giao-dich" extends="default-web">
+		<action name="/*" class="springHelpAction" method="execute">
+			<param name="subjectCode">{1}</param>
+			<param name="productCode"> tro-giup-giao-dich</param>
+			<result>home.help.tradingGuide</result>
+		</action>
+	</package>
+	<!-- Release Note -->
+	<package name="Release-Note" namespace="/" extends="default-web">
+		<action name="/release-note*" class="springEmptyAction" method="viewReleaseNoteList">
+			<result>home.help.releaseNote</result>
+		</action>
+		<action name="/release-note/*" class="springReleaseNoteAction" method="releaseNoteDetails">
+			<param name="newsType">VNDIRECT</param>
+			<param name="newsURL">{1}</param>
+			<result>home.help.releaseNoteDetail</result>
+		</action>
+	</package>
+	<!-- End release note -->
+	<package name="DKSD" namespace="/" extends="default-web">
+		<action name="dieu-khoan-su-dung-website*" class="springEmptyAction" method="viewDKSD">
+			<result>common.dieuKhoanSuDungWebsite</result>
+		</action>
+	</package>
+
+	<package name="Home-Service-Product-Ajax" namespace="/ajax/home/service" extends="default-web">
+		<action name="DirectAccount*">
+			<result>Service.Product.DirectAccount</result>
+		</action>
+		<action name="PrimeAccount*">
+			<result>Service.Product.PrimeAccount</result>
+		</action>
+		<action name="SpecialAccount*">
+			<result>Service.Product.SpecialAccount</result>
+		</action>
+		<action name="PMDirect*">
+			<result>Service.Product.PMDirect</result>
+		</action>
+
+		<action name="phiGiaoDich*">
+			<result>Service.Product.phigiaodich</result>
+		</action>
+		<action name="sanPhamGiaoDich*">
+			<result>Service.Product.sanphamgiaodich</result>
+		</action>
+		<action name="sanPhamHoTroTaiChinh*">
+			<result>Service.Product.sanphamhotrotaichinh</result>
+		</action>
+		<action name="sanPhamThongTinCoBan*">
+			<result>Service.Product.sanphamthongtincoban</result>
+		</action>
+		<action name="banTinChienLuocDauTu*">
+			<result>Service.Product.bantinchienluocdautu</result>
+		</action>
+		<action name="chuyenVienTuVan*">
+			<result>Service.Product.chuyenvientuvan</result>
+		</action>
+		<action name="phanMemHoTro*">
+			<result>Service.Product.phanmemhotro</result>
+		</action>
+		<action name="mobiDirect*">
+			<result>Service.Product.mobiDirect</result>
+		</action>
+		<action name="smsDirect*">
+			<result>Service.Product.smsDirect</result>
+		</action>
+		<action name="directBoard*">
+			<result>Service.Product.directBoard</result>
+		</action>
+		<action name="activeDirect*">
+			<result>Service.Product.activeDirect</result>
+		</action>
+		<action name="brokerDesk*">
+			<result>Service.Product.brokerDesk</result>
+		</action>
+		<action name="ProductAJAX_*-*" class="springProductAction" method="execute{1}">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+	</package>
+    <package name="stockMarketInfo" namespace="/" extends="default-web">
+        <action name="getMarketInfo" class="springMarketOverviewAJAXAction" method="executeMarketOverviewHome">
+            <result name="input" type="json">
+                <param name="excludeProperties">
+                    model.*
+                </param>
+            </result>
+            <result type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+        </action>
+    </package>
+    <!-- Stock highlights -->
+	<!-- <package name="Stock-Highlight" namespace="/" extends="default-web">
+		<action name="co-phieu-tam-diem/xem-bao-cao*" class="springStockHighlightsAction" method="viewReportDetail">
+            <result>stockHighlights.report</result>
+        </action>
+        <action name="co-phieu-tam-diem/xem-thu-bao-cao*" class="springStockHighlightsAction" method="viewFreeReportDetail">
+            <result>stockHighlights.report</result>
+        </action>
+		<action name="co-phieu-tam-diem*" class="springStockHighlightsAction" method="initializePage">
+			<result>stockHighlights.page</result>
+		</action>
+	</package>
+	<package name="Stock-Highlight-Ajax" namespace="/ajax/stock-highlights" extends="default-web">
+		<action name="getNewestReports*" class="springStockHighlightsAction" method="getNewestReportsAjax">
+            <result>stockHighlights.dialog.tabledata</result>
+        </action>
+        <action name="getListSymbolsHaveReports*" class="springStockHighlightsAction" method="getListSymbolsHaveReportsAjax">
+            <result>stockHighlights.listSymbol</result>
+        </action>
+        <action name="getRelatedReports*" class="springStockHighlightsAction" method="getRelatedReportsAJAX">
+            <result>stockHighlights.dialog.relatedReportsData</result>
+        </action>
+	</package> -->
+	
+	<package name="Stock-Highlight-Export" namespace="/" extends="default-web">
+        <action name="atd-hdsd*" class="springStockHighlightsAction" method="initializePage">
+            <result>stockHighlights.report.onlybody</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,37 @@
+<a href="javascript:performChangeLanguage('vn');" class="icon-vn print"><img src="$contextPath/images/front/flags_3.gif" hspace="3" /></a>
+<a href="javascript:performChangeLanguage('en_GB');" class="icon-el print"><img src="$contextPath/images/front/flags_2.gif" hspace="3" /></a>
+<a href="javascript:performChangeLanguage('jp');" class="icon-japan print"><img src="$contextPath/images/front/flags_1.gif" hspace="3" /></a>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var current_lang = '$current_lang.getCode()';
+	if(current_lang == 'jp'){
+		$('.icon-japan').addClass('active');
+		$('html').attr('lang', 'ja');
+		$('html').attr('xml:lang', 'ja');
+	} else if(current_lang == 'en_GB'){
+		$('.icon-el').addClass('active');
+		$('html').attr('lang', 'en');
+		$('html').attr('xml:lang', 'en');
+	} else{
+		$('.icon-vn').addClass('active');
+		$('html').attr('lang', 'vi');
+		$('html').attr('xml:lang', 'vi');
+	}
+});
+<!--
+function performChangeLanguage(lang) {
+	document.vndirectChangeLang.request_locale.value = lang;
+	document.vndirectChangeLang.submit();
+	return;
+}
+//-->
+</script>
+<form name="vndirectChangeLang" action="$reqActionFormUrl" method="post">
+	<input type="hidden" name="CHANGE_LANG_ACTION" value="ChangeLang"/>
+	<input type="hidden" name="request_locale" value="$current_lang.getCode()">
+
+	<input type="hidden" name="_CacheChangeLang" value="$cacheChangeLang"/>
+</form>
+

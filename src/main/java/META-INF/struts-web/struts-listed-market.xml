@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Define Listed Market Module -->
+	<package name="ListedMarket" namespace="/listed" extends="default-web">
+		<action name="ListedMarket*" class="springListedMarket" method="viewListedMarketPage">
+			<result>ListedMarket</result>
+		</action>
+		<action name="CompanyBreakdown*" class="springMaijorHoldersAction"
+			method="viewCompanyBreakdown">
+			<result type="dispatcher">/WEB-INF/jsps/listedmarket/CompanyBreakdownChartJsonData.jsp
+			</result>
+		</action>
+		<action name="MacroNews_IPO*" class="springMacroNewsAction">
+			<param name="newsType">IPO</param>
+			<result>ListedMarket.MacroNews</result>
+		</action>
+		<action name="MacroNews*" class="springMacroNewsAction">
+			<result>ListedMarket.MacroNews</result>
+		</action>
+	</package>
+
+	<package name="ListedMarketAjax" namespace="/ajax/listed"
+		extends="default-web">
+		<action name="SearchIncomeStatement*" class="springIncomeStatementAJAXAction"
+			method="executeSearchIncomeStatement">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="SearchCashFlow*" class="springCashFlowAJAXAction"
+			method="executeSearchCashFlow">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="TradingForeignInvestors*" class="springMarketStatisticsAJAXAction"
+			method="executeTradingForeignInvestors">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="foreign-trading*" class="springMarketStatisticsAJAXAction"
+			method="executeForeignTradingForSymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<!-- fix -->
+		<action name="SearchHistoricalPrice*" class="springMarketStatisticsAJAXAction"
+			method="executeSearchHistoricalPrice">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="SearchHistoricalPriceForSymbol*" class="springMarketStatisticsAJAXAction"
+			method="executeSearchHistoricalPriceForSymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="TradingStatistics*" class="springMarketStatisticsAJAXAction"
+			method="executeTradingStatistics">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="TradingForSymbol*" class="springMarketStatisticsAJAXAction"
+			method="executeTradingForSymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="DownloadReportForSymbol*" class="springMarketStatisticsAJAXAction"
+			method="executeDownloadReportForSymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="DownloadTradingStatistics*" class="springMarketStatisticsAJAXAction"
+			method="executeDownloadTradingStatistics">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="GetMostActiveCompany*" class="springMostActiveCompanyAJAXAction"
+			method="executeGetMostActiveCompany">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="GetMarketCalendar*" class="springMarketCalendarAJAXAction"
+			method="executeGetMarketCalendar">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="MostPopularSymbol*" class="springMostPopularSymbolAJAXAction"
+			method="executeMostPopularSymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="GetVote*" class="springVoteAJAXAction" method="executeGetVote">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="SubmitVote*" class="springVoteAJAXAction" method="executeSubmitVote">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+					</param>
+			</result>
+		</action>
+		<action name="SearchRelatedCompany*" class="springSnapshotAJAXAction"
+			method="executeSearchRelatedCompany">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+					</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoComSnapshotViewExt,
+					model.ifoCompanyCalcView,
+					model.ifoCompanyIndustryView
+					</param>
+			</result>
+		</action>
+	</package>
+</struts>

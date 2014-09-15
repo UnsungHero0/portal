@@ -1,0 +1,125 @@
+/* CSS Document */
+table#scr-top
+{
+	border-collapse: collapse;
+	border-top: 1px solid #AAAAAA;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+table#scr-top td
+{
+	border-bottom: 1px solid #AAAAAA;
+}
+table.screener
+{
+	width:100%;
+	border-collapse:collapse;
+	border: 1px solid #AAAAAA;
+}
+table.screener th
+{
+	border: 1px solid gray;
+	background-color:#CCCCCC;
+	text-align: left;
+	padding-left: 5px;
+}
+table.screener td.result
+{
+	text-align: right;
+	font-weight:bold;
+	border-left: 1px solid #AAAAAA;
+}
+table.screener td.screener-title
+{
+	font-weight: bold;
+} 
+
+table.screener td
+{
+	padding-top: 1em;
+	padding-bottom:1em;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #AAAAAA;
+}
+span.scr-btn
+{
+	margin:5px 5px 5px 5px;
+	
+}
+span.scr-btn span
+{
+	height:16px;
+	margin-left: -3px;
+	background: url(../images/commons/btn_bg.png) repeat-x scroll 0 0;
+	border-bottom: 1px solid black;	
+}
+span.scr-btn span a
+{
+	height: 16px;
+	/*margin-top: -2px;*/
+	font-family: arial;
+	font-size: 10px;
+	text-decoration: none;
+	padding-left: 2px;
+	padding-top: 2px;
+}
+span.scr-btn span a:hover
+{
+	color: orange;
+}
+span.scr-btn img
+{
+	height: 16px;
+	width: 4px;
+	margin-bottom: -4px;
+}
+/*button down begin*/
+span.scr-btn-down
+{
+	margin:5px 5px 5px 5px;
+}
+span.scr-btn-down span
+{
+	height:16px;
+	margin-left: -3px;
+	background: url(../images/commons/btn_bg_d.png) repeat-x scroll 0 0;
+	border-bottom: 1px solid black;	
+}
+span.scr-btn-down span a
+{
+	height: 16px;
+	color: black;
+	/*margin-top: -2px;*/
+	font-family: arial;
+	font-size: 10px;
+	/*font-weight: bold;*/
+	text-decoration: none;
+	padding-left: 2px;
+}
+span.scr-btn-down span a:hover
+{
+	color: orange;
+}
+span.scr-btn-down img
+{
+	height: 16px;
+	width: 4px;
+	margin-bottom: -4px;
+}
+/*Button down end*/
+table.screener-result th
+{
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+	text-align:center;
+}
+table.screener-result td
+{
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #AAAAAA;
+}

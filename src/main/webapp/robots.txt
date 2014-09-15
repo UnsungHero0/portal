@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /trade/
+Disallow: /portal/thong-tin-co-ban.html
+Disallow: /portal/thong-tin-giao-dich.html
+
+Allow: /

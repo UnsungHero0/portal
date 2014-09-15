@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="Open-Direct-Account" namespace="/mo-tai-khoan-nha-dau-tu"
+		extends="default-web">
+		<!-- <action name="buoc-1*" class="springDirectAccountAction"
+			method="stepOne">
+			<result name="input">OpenAccount.DirectAccountStep1</result>
+			<result>OpenAccount.DirectAccountStep1</result>
+		</action> 
+		<action name="buoc-2*" class="springDirectAccountAction"
+			method="stepTwo">
+			<result name="input">OpenAccount.DirectAccountStep1</result>
+			<result>OpenAccount.DirectAccountStep2</result>
+		</action>
+		<action name="buoc-3*" class="springDirectAccountAction"
+			method="stepThree">
+			<result name="input">OpenAccount.DirectAccountStep1</result>
+			<result>OpenAccount.DirectAccountStep3</result>
+		</action>
+		<action name="buoc-4*" class="springDirectAccountAction"
+			method="stepFour">
+			<result name="input">OpenAccount.DirectAccountStep1</result>
+			<result>OpenAccount.DirectAccountStep4</result>
+		</action>  -->
+		<!-- <action name="hoan-tat-dang-ky*" class="springDirectAccountAction" method="finish">
+			<param name="pageTitle">home.account.open.directAccount.finish.title</param>
+			<param name="pageDescription">home.account.open.directAccount.finish.desc</param>
+			<param name="pageKeywords">home.account.open.directAccount.finish.keywords</param>
+			<result name="startOver">OpenAccount.DirectAccountStep1</result>
+			<result name="input">OpenAccount.DirectAccountStep4</result>
+			<result>OpenAccount.DirectAccountFinish</result>
+		</action> -->
+		<action name="activeOnlineUser*" class="springDirectAccountAction" method="activateFreeOnlineUser">
+		    <result name="success">OpenAccount.ActiveAccountPage</result>
+		    <result name="error">OpenAccount.ActiveAccountErorPage</result>
+		</action>
+		<action name="denieActivatingOnlineUser*" class="springDirectAccountAction" method="denieActivatingOnlineUser">
+		    <result name="success">OpenAccount.DeniedActiveAccountPage</result>
+		    <result name="error">OpenAccount.ActiveAccountPage</result>
+		</action>
+		<action name="tai-khoan-giao-dich*" class="springDirectAccountAction" method="openFreeOnlineAccount">
+		    <result name="success">OpenAccount.DirectAccountForm</result>
+		</action>
+		
+		<action name="dang-ky-tai-khoan*" class="springDirectAccountAction" method="registerOnlineAccount">
+            <param name="pageTitle">home.account.open.directAccount.finish.title</param>
+            <param name="pageDescription">home.account.open.directAccount.finish.desc</param>
+            <param name="pageKeywords">home.account.open.directAccount.finish.keywords</param>
+            <result name="input">OpenAccount.DirectAccountForm</result>
+            <result type="redirectAction">hoan-tat-dang-ky</result>
+        </action>
+        
+		<action name="hoan-tat-dang-ky*" class="springDirectAccountAction" method="finishOpenAccount">
+		    <param name="pageTitle">home.account.open.directAccount.finish.title</param>
+            <param name="pageDescription">home.account.open.directAccount.finish.desc</param>
+            <param name="pageKeywords">home.account.open.directAccount.finish.keywords</param>
+		    <result>OpenAccount.DirectAccountFinish</result>
+		</action>
+	</package>
+
+	<package name="Account" namespace="/account" extends="default-web">
+		<!-- ####################### Prime Account ####################### -->
+		<action name="PrimeAccountStep1*" class="springDirectAccountAction"
+			method="stepOne">
+			<result name="input">OpenAccount.PrimeAccountStep1</result>
+			<result>OpenAccount.PrimeAccountStep1</result>
+		</action>
+		<action name="PrimeAccountStep2*" class="springDirectAccountAction"
+			method="stepTwo">
+			<result name="input">OpenAccount.PrimeAccountStep1</result>
+			<result>OpenAccount.PrimeAccountStep2</result>
+		</action>
+		<action name="PrimeAccountStep3*" class="springDirectAccountAction"
+			method="stepThree">
+			<result name="input">OpenAccount.PrimeAccountStep1</result>
+			<result>OpenAccount.PrimeAccountStep3</result>
+		</action>
+		<action name="PrimeAccountStep4*" class="springDirectAccountAction"
+			method="stepThree">
+			<result name="input">OpenAccount.PrimeAccountStep1</result>
+			<result>OpenAccount.PrimeAccountStep4</result>
+		</action>
+		<action name="PrimeAccountStep5*" class="springDirectAccountAction"
+			method="stepFour">
+			<result name="input">OpenAccount.PrimeAccountStep1</result>
+			<result>OpenAccount.PrimeAccountStep5</result>
+		</action>
+		<action name="PrimeAccountFinish*" class="springDirectAccountAction"
+			method="finish">
+			<result name="startOver">OpenAccount.PrimeAccountStep1</result>
+			<result name="input">OpenAccount.PrimeAccountStep5</result>
+			<result>OpenAccount.PrimeAccountFinish</result>
+		</action>
+	</package>
+
+	<!-- Mo tai khoan -->
+	<package name="Home-OpenAccount" namespace="/" extends="default-web">
+		<action name="mo-tai-khoan-nha-dau-tu*" class="springDirectAccountAction" method="openFreeOnlineAccount">
+			<result name="success">OpenAccount.DirectAccountForm</result>
+		</action>
+		<!-- <action name="mo-tai-khoan-mien-phi*" class="springFreeRegistedUsersAction"
+			method="showFreeRegistedUsers">
+			<param name="pageTitle">home.account.open.free.title</param>
+			<param name="pageDescription">home.account.open.free.desc</param>
+			<param name="pageKeywords">home.account.open.free.keywords</param>
+			<result>OpenAccount.FreeRegistedUsers</result>
+		</action>-->
+		<action name="/mo-tai-khoan*" class="springDirectAccountAction" method="openFreeOnlineAccount">
+			<result name="success">OpenAccount.DirectAccountForm</result>
+		</action> 
+	</package>
+	
+	<!-- <package name="Open-Free-User" namespace="/mo-tai-khoan-mien-phi"
+		extends="default-web">
+		<action name="nhap-thong-tin*" class="springFreeRegistedUsersAction"
+			method="showFreeRegistedUsers">
+			<result>OpenAccount.FreeRegistedUsers</result>
+		</action>
+		<action name="dang-ky*" class="springFreeRegistedUsersAction"
+			method="executeFreeRegistedUsers">
+			<result name="input">OpenAccount.FreeRegistedUsers</result>
+			<result name="success">OpenAccount.FreeRegistedUsersSuccess</result>
+		</action>
+	</package> -->
+	
+	<package name="AjaxOpenAccount" namespace="/ajax/openaccount" extends="default-web">
+	    <action name="getBranches" class="springDirectAccountAction" method="getBranches">
+	        <result type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+	    </action>
+	    <action name="checkIdentityNumber*" class="springDirectAccountAction" method="checkIdentityNumber">
+	        <result type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+	    </action>
+	    <action name="checkEmailOrUsername*" class="springDirectAccountAction" method="checkEmailOrUsername">
+	        <result type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+	    </action>
+	</package>
+</struts>

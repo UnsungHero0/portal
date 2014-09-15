@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+						http://www.springframework.org/schema/tx
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+						http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	xmlns:tx="http://www.springframework.org/schema/tx">
+
+	<context:component-scan base-package="vn.com.vndirect" />
+	<context:annotation-config />
+	
+	<bean id="reCaptcha" class="net.tanesha.recaptcha.ReCaptchaImpl">
+        <property name="privateKey" value="6LccgewSAAAAAIvbVL6Li4wCfJUd3obdaiH-y3ey"></property>
+    </bean>
+	
+	<!-- ========================= GENERAL DEFINITIONS ========================= -->
+
+	<!-- Configurer that replaces ${...} placeholders with values from properties 
+		files -->
+	<!-- (in this case, mail and JDBC related properties) -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>/WEB-INF/configs/spring-server-config.properties</value>
+				<value>/WEB-INF/configs/webservice.properties</value>
+				<value>/WEB-INF/configs/db-embedded.properties</value>
+				<value>/WEB-INF/configs/oscache.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- =================== DEFINE VELOCITY TOOLS ============================= -->
+	<bean id="SpringVelocityTools" class="vn.com.web.commons.velocity.SpringVelocityTools">
+		<property name="toolCfg" value="tools.xml" />
+		<property name="velocityCfg" value="velocity.properties" />
+	</bean>
+
+	<bean id="VelocityTemplate" class="vn.com.web.commons.velocity.VelocityTemplate">
+		<property name="mapTmplNames">
+			<map>
+				<entry key="MULTI_LANGUAGE" value="${vTemplate.multi_language}" />
+				<entry key="QUOTES_COMPANY_SNAPSHOT" value="${vTemplate.quotes_company_snapshot}" />
+				<entry key="QUOTES_COMPANY_SNAPSHOT_FOR_CHART" value="${vTemplate.quotes_company_snapshot_for_chart}" />
+				<entry key="QUOTES_COMPANY_INFO" value="${vTemplate.quotes_company_info}" />
+				<entry key="SLIDE_NEWS" value="${vTemplate.slideNews}" />
+			</map>
+		</property>
+	</bean>
+	
+	<!-- LOCALE MAPPING -->
+	<bean id="LocaleUtil" class="vn.com.vndirect.commons.utility.LocaleUtil">
+		<property name="localeISO6391">
+			<map>
+				<entry key="vn" value="${locale.vietnamese}" />
+				<entry key="en_GB" value="${locale.english}" />
+				<entry key="jp" value="${locale.japanese}" />
+			</map>
+		</property>
+	</bean>
+	
+	<!-- ServerConfigLoader -->
+	<bean id="ServerConfigLoader" class="vn.com.web.commons.servercfg.ServerConfigLoader">
+		<property name="serverConfig" value="${server.config}" />
+	</bean>
+
+	<!-- URLPatternLoader -->
+	<bean id="URLPatternLoader" class="vn.com.web.commons.urlpattern.URLPatternLoader">
+		<property name="urlPatternConfig" value="${urlpattern.config}" />
+	</bean>
+
+	<!-- ========================= Define FileServerHelper ========================= -->
+	<bean id="FileServerHelper" class="vn.com.web.commons.fileserver.FileServerHelper"
+		depends-on="ServerConfigLoader" />
+
+	<!-- ===================== GuestSessionStatisticContext ===================== -->
+	<bean id="GuestSessionStatisticContext"
+		class="vn.com.vndirect.commons.web.GuestSessionStatisticContext" />
+
+	<!-- ========================= Define Consumer Pattern ========================= -->
+	<bean id="SpringConsumerResolver" class="vn.com.web.commons.consumer.SpringConsumerResolver">
+		<property name="consumers">
+			<map>
+				<entry key="emailConsumer" value-ref="EmailConsumer" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- Define Email Consumer -->
+	<bean id="EmailOutDataService" class="vn.com.web.commons.consumer.email.EmailOutDataService">
+		<property name="mailSender" ref="MailSender" />
+	</bean>
+
+	<bean id="EmailInDataService" class="vn.com.web.commons.consumer.email.EmailInDataService">
+	</bean>
+
+	<bean id="EmailConsumer" class="vn.com.web.commons.consumer.Consumer">
+		<property name="name" value="EmailConsumer" />
+		<property name="inDataService" ref="EmailInDataService" />
+		<property name="outDataService" ref="EmailOutDataService" />
+	</bean>
+
+	<!-- It is implement JavaMailSender interface -->
+	<bean id="MailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${mail.host}" />
+		<property name="username" value="${mail.username}" />
+		<property name="password" value="${mail.password}" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.port">${mail.smtp.port}</prop>
+				<prop key="mail.smtp.starttls.enable">${mail.smtp.starttls.enable}</prop>
+				<prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+				<prop key="mail.smtp.timeout">${mail.smtp.timeout}</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- ========================= BATCH PROCESS DEFINITIONS ==================== -->
+	<!-- Quartz Scheduler, with pre-registered triggers -->
+	<!-- Will automatically start scheduling on context startup -->
+	<bean id="scheduler"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref local="startFinfoDBCachingTrigger" />
+				<ref local="refreshFinfoDBCachingTrigger" />
+
+				<ref local="checkWorldIndexTrigger" />
+
+				<!-- //alerting batchjob. <ref local="alertingSymbolsTrigger"/> -->
+			</list>
+		</property>
+	</bean>
+
+	<!-- Define WorldMarketAdapter -->
+	<bean id="WorldMarketManager" class="vn.com.vndirect.worldmarket.WorldMarketManager">
+		<!-- <property name="mapQuoteYAH" ref="MapQuoteYAH"/> <property name="mapQuoteGOO" 
+			ref="MapQuoteGOO"/> -->
+		<property name="worldMarketYAHAdapter">
+			<bean class="vn.com.vndirect.worldmarket.adapter.YahooWorldMarketDAO"
+				init-method="init">
+				<property name="quoteUrl"
+					value="http://finance.yahoo.com/d/quotes.csv?e=.csv" />
+				<property name="mapSymbols" ref="MapQuoteYAH" />
+			</bean>
+		</property>
+		<property name="worldMarketGOOAdapter">
+			<bean class="vn.com.vndirect.worldmarket.adapter.GoogleWorldMarketDAO"
+				init-method="init">
+				<property name="quoteUrl"
+					value="http://finance.google.com/finance/info?client=ig" />
+				<property name="mapSymbols" ref="MapQuoteGOO" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="MapQuoteYAH" class="vn.com.vndirect.worldmarket.adapter.MapQuote">
+		<property name="addUsaQuotes">
+			<list>
+				<!-- US market -->
+				<!-- <value><![CDATA[^DJI=Dow Jones]]></value> <value><![CDATA[^IXIC=Nasdaq]]></value> 
+					<value><![CDATA[^GSPC=S&P 500]]></value> <value><![CDATA[DX-Y.NYB=USD-Idx 
+					Future]]></value> -->
+				<value><![CDATA[CLZ11.NYM=Oil]]></value>
+				<value><![CDATA[GCX11.CMX=Gold]]></value>
+			</list>
+		</property>
+		<property name="addEuropeQuotes">
+			<list>
+				<!-- EUROPE market -->
+				<!-- <value><![CDATA[^FTSE=FTSE 100]]></value> <value><![CDATA[^GDAXI=DAX]]></value> 
+					<value><![CDATA[^FCHI=CAC 40]]></value> -->
+			</list>
+		</property>
+		<property name="addAsiaQuotes">
+			<list>
+				<!-- ASIA market -->
+				<!-- <value><![CDATA[^N225=Nikkei 225]]></value> <value><![CDATA[000001.SS=Shanghai 
+					Com]]></value> <value><![CDATA[^HSI=Hang Seng]]></value> <value><![CDATA[^KS11=KOSPI 
+					Index]]></value> <value><![CDATA[^STI=Straits Times]]></value> -->
+			</list>
+		</property>
+	</bean>
+
+	<bean id="MapQuoteGOO" class="vn.com.vndirect.worldmarket.adapter.MapQuote">
+		<property name="addUsaQuotes">
+			<list>
+				<!-- US market -->
+				<value><![CDATA[.DJI=Dow Jones]]></value>
+				<value><![CDATA[.INX=S&P 500]]></value>
+				<value><![CDATA[.IXIC=Nasdaq]]></value>
+			</list>
+		</property>
+		<property name="addEuropeQuotes">
+			<list>
+				<!-- EUROPE market -->
+				<value><![CDATA[SX5E=STOXX 50]]></value>
+				<value><![CDATA[UKX=FTSE 100]]></value>
+				<value><![CDATA[DAX=DAX]]></value>
+				<value><![CDATA[PX1=CAC 40]]></value>
+			</list>
+		</property>
+		<property name="addAsiaQuotes">
+			<list>
+				<!-- ASIA market -->
+				<value><![CDATA[NI225=Nikkei 225]]></value>
+				<value><![CDATA[SHA:000001=Shanghai Com]]></value>
+				<value><![CDATA[HSI=Hang Seng]]></value>
+			</list>
+		</property>
+	</bean>
+	<!-- Define MethodJobDetail -->
+	<bean id="WorldMarketJobDetail" class="vn.com.vndirect.worldmarket.WorldMarketJobDetail"
+		scope="singleton">
+		<property name="worldMarketManager" ref="WorldMarketManager" />
+	</bean>
+
+	<!-- Job definition that delegates to the specified 'initFinfoDBCachingJobDetail' 
+		method -->
+	<bean id="checkWorldIndexJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="WorldMarketJobDetail" />
+		<property name="targetMethod" value="checkWorldIndex" />
+	</bean>
+
+	<!-- Trigger for the job defined above -->
+	<!-- Registered by the 'scheduler' bean -->
+	<!--<bean id="refreshFinfoDBCachingTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean"> -->
+	<bean id="checkWorldIndexTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<property name="jobDetail" ref="checkWorldIndexJobDetail" />
+		<!-- run every morning at 5 AM -->
+		<!-- <property name="cronExpression" value="0 0 5 * * ?" /> -->
+		<property name="startDelay" value="10000" />
+		<!-- repeatInterval: 5 *60*1000 (s) : 5 minutes -->
+		<property name="repeatInterval" value="300000" />
+	</bean>
+
+	<!-- Define MethodJobDetail -->
+	<bean id="VNDirectMethodJobDetail" class="vn.com.vndirect.batch.MethodJobDetail"
+		scope="singleton">
+		<!-- <property name="embeddedDBManager" ref="EmbedFinfoDBManager" /> -->
+		<!-- <property name="embeddedDBParam" ref="EmbeddedDBParam" /> -->
+	</bean>
+
+	<!-- Job definition that delegates to the specified 'initFinfoDBCachingJobDetail' 
+		method -->
+	<bean id="initFinfoDBCachingJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="VNDirectMethodJobDetail" />
+		<property name="targetMethod" value="initFinfoDBCachingData" />
+	</bean>
+	<bean id="refreshFinfoDBCachingJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="VNDirectMethodJobDetail" />
+		<property name="targetMethod" value="refreshFinfoDBCachingData" />
+	</bean>
+
+	<!-- Trigger for the job defined above -->
+	<!-- Registered by the 'scheduler' bean -->
+	<bean id="startFinfoDBCachingTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<property name="jobDetail" ref="initFinfoDBCachingJobDetail" />
+		<!-- startDelay: 10*1000 (s) -->
+		<property name="startDelay" value="10000" />
+		<!-- repeatInterval: 12*30*24*60*60*1000 (s) : one year -->
+		<property name="repeatInterval" value="1039228928" />
+	</bean>
+	<!--<bean id="refreshFinfoDBCachingTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean"> -->
+	<bean id="refreshFinfoDBCachingTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<property name="jobDetail" ref="refreshFinfoDBCachingJobDetail" />
+		<!-- run every morning at 5 AM -->
+		<!-- <property name="cronExpression" value="0 0 5 * * ?" /> -->
+
+		<property name="startDelay" value="10000" />
+		<!-- repeatInterval: 2*60*60*1000 (s) : 2 h -->
+		<property name="repeatInterval" value="7200000" />
+
+	</bean>
+	
+	
+</beans>

@@ -1,0 +1,6 @@
+.ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+.ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.ui-icon { width: 16px; height: 16px; background-image: url(jquery.ui/redmond/images/ui-icons_469bdd_256x240.png); }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-state-active .ui-icon {background-image: url(jquery.ui/redmond/images/ui-icons_f9bd01_256x240.png); }

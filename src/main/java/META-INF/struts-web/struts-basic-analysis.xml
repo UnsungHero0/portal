@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="Basic-Analysis" namespace="/" extends="default-web">
+		<action name="/asd/*" class="springBasicAnalysisAction" method="">
+			<param name="symbol">{1}</param>
+			<result>basicAnalysis.snapshot</result>
+		</action>
+		<action name="/loceps*">
+            <result>basicAnalysis.loceps</result>
+        </action>
+	</package>
+	<package name="Basic-Analysis-AJAX" namespace="/basic-analysis-ajax" extends="default-web">
+	   <action name="/loceps*" class="springBasicAnalysisAction" method="analysisByCanslim">
+            <result name="input" type="json">
+            </result>
+            <result type="json">
+            </result>
+        </action>
+		<action name="/viewROE*" class="springBasicAnalysisAction" method="viewROE">
+			<result name="input" type="json">
+			</result>
+			<result type="json">
+			</result>
+		</action>
+		
+		<action name="/viewYearlyIncome*" class="springBasicAnalysisAction" method="viewYearlyIncome">
+            <result name="input" type="json">
+            </result>
+            <result type="json">
+            </result>
+        </action>
+        
+        <action name="/viewHNXSymbols*" class="springBasicAnalysisAction" method="viewHNXSymbols">
+            <result name="input" type="json">
+            </result>
+            <result type="json">
+            </result>
+        </action>
+        
+        <action name="/viewHOSESymbols*" class="springBasicAnalysisAction" method="viewHOSESymbols">
+            <result name="input" type="json">
+            </result>
+            <result type="json">
+            </result>
+        </action>
+	</package>
+</struts>

@@ -1,0 +1,40 @@
+#if ($securitiesInfo.getExchangeCode() == $HOSTC || $securitiesInfo.getExchangeCode() == $HASTC || $securitiesInfo.getExchangeCode() == $VN30 || $securitiesInfo.getExchangeCode() == $HNX30) 
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tbl_bdkt">
+	<tr>
+          	<td class="market" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.Market')</td>
+          	#if ($securitiesInfo.getExchangeCode() == $HOSTC) 
+              	<td class="codeid" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.HOSTC-INDEX')</td>
+          	#elseif ($securitiesInfo.getExchangeCode() == $VN30) 
+              	<td class="codeid" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">VN30-INDEX</td>
+            #elseif ($securitiesInfo.getExchangeCode() == $HNX30) 
+              	<td class="codeid" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">HNX30-INDEX</td>
+           #else
+           	<td class="codeid" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.HASTC-INDEX')</td>
+           #end
+           <td class="change_3" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.TodayChange')</td>
+           <td class="price_gd" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.TransactionPrice')</td>
+           <td class="kl_gd" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.TransactionVolume')</td>
+           <td class="price_max" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.Week52HighestPrice')</td>
+           <td class="price_min"  style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom; border-right:none">$i18n.getText('Snapshot.CompanyInfo.CellName.Week52LowestPrice')</td>
+       </tr>		
+       <tr class="row_value">
+       	#if ($securitiesInfo.getTimeType() == 1)
+			<td>$i18n.getText('Snapshot.CompanyInfo.CellName.Open')</td>
+		#else
+			<td>$i18n.getText('Snapshot.CompanyInfo.CellName.Close')</td>
+		#end
+           <td>$securitiesInfo.getStrMarketIndex()</td>
+           #if ($utils.lessThanZezo($securitiesInfo.getTodayChangePrice()))
+           	<td class="cl_red">$securitiesInfo.getStrTodayChange() ($securitiesInfo.getStrTodayChangePercent()%)</td>
+           #elseif ($utils.greaterThanZezo($securitiesInfo.getTodayChangePrice()))
+           	<td class="cl_green">+$securitiesInfo.getStrTodayChange() (+$securitiesInfo.getStrTodayChangePercent()%)</td>
+           #else
+           	<td class="cl_red">$securitiesInfo.getStrTodayChange() ($securitiesInfo.getStrTodayChangePercent()%)</td>
+           #end
+           <td>$securitiesInfo.getStrTransactionPrice()</td>
+           <td>$securitiesInfo.getStrTransactionVolume()</td>
+           <td>$securitiesInfo.getStr52WeekHighestPrice()</td>
+           <td style="border:none;">$securitiesInfo.getStr52WeekLowestPrice()</td>
+       </tr>
+</table>
+#end

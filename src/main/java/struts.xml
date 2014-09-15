@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd/">
+
+<struts>
+	<!-- Define struts's constants -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.locale" value="vn" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.custom.i18n.resources"
+		value="global-messages,boservice-message-keys,META-INF/i18n/messages, META-INF/i18n/security_messages" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<constant name="struts.enable.SlashesInActionNames" value="true" />
+	<constant name="struts.mapper.alwaysSelectFullNamespace"
+		value="false" />
+	<constant name="struts.action.extension" value="shtml," />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<!-- uses javax.servlet.context.tempdir by default -->
+	<constant name="struts.multipart.saveDir" value="" />
+	<!-- default upload size: 2M = 2097152 -->
+	<constant name="struts.multipart.maxSize" value="20097152" />
+	<!-- Development setting -->
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.i18n.reload" value="false" />
+	<constant name="struts.configuration.xml.reload" value="false" />
+	<!-- Define default-web package: struts-default -->
+	<constant name="struts.convention.default.parent.package" value="default-web"/>
+	<package name="default-web" namespace="/" extends="json-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" default="true" />
+		</result-types>
+
+		<default-interceptor-ref name="defaultStack" />
+
+		<global-results>
+			<result name="home_page"></result>
+
+			<!-- Define Exception Forward -->
+			<!-- <result name="func_exception" type="dispatcher">/WEB-INF/jsps/exceptions/FunctionalException.jsp</result> 
+				<result name="sys_exception" type="dispatcher">/WEB-INF/jsps/exceptions/SystemException.jsp</result> -->
+			<result name="func_exception">FunctionalExceptionPage</result>
+			<result name="sys_exception">SystemExceptionPage</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping result="func_exception"
+				exception="vn.com.web.commons.exception.FunctionalException" />
+			<exception-mapping result="sys_exception"
+				exception="vn.com.web.commons.exception.SystemException" />
+			<exception-mapping result="sys_exception"
+				exception="java.lang.Exception" />
+			<exception-mapping result="sys_exception"
+				exception="java.lang.RuntimeException" />
+		</global-exception-mappings>
+	</package>
+
+	<!-- Define for JS files -->
+	<package name="WebJS" namespace="/admin/web/js" extends="default-web">
+		<action name="WebI18n*" class="springJSWebI18NMessageAction">
+			<result name="success" type="stream">
+				<param name="contentType">text/javascript</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">filename="${fileName}"</param>
+				<param name="bufferSize">256</param>
+			</result>
+		</action>
+	</package>
+
+	<!-- ===== Include Web Module Configuration ===== -->
+	<include file="META-INF/struts-web/struts-homepage.xml"></include>
+	<include file="META-INF/struts-web/struts-osc.xml"></include>
+	<include file="META-INF/struts-web/struts-invest-tools.xml"></include>
+	<include file="META-INF/struts-web/struts-analysis-tools.xml"></include>
+	<include file="META-INF/struts-web/struts-institutions.xml"></include>
+	<include file="META-INF/struts-web/struts-listed-market.xml"></include>
+	<include file="META-INF/struts-web/struts-common.xml"></include>
+	<include file="META-INF/struts-web/struts-news-info.xml"></include>
+	<include file="META-INF/struts-web/struts-open-account.xml"></include>
+	<include file="META-INF/struts-web/struts-basic-analysis.xml"></include>
+</struts>

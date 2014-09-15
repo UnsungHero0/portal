@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ErrorMessage>
+	<Commons>
+		<InputWarnMsg><![CDATA[Lỗi:]]></InputWarnMsg>
+		<SystemError><![CDATA[Lỗi truy cập: {0}!. Vui lòng click sang menu khác để hệ thống tự động load lại thông tin hoặc vui lòng logout ra và login lại lần nữa.]]></SystemError>
+		<InvalidAuthLevel1><![CDATA[Quý khách vui lòng đăng nhập để sử dụng các dịch vụ vủa VNDirect Online. ]]></InvalidAuthLevel1>
+		<InvalidAuthLevel2><![CDATA[Để sử dụng chức năng này, Quý Khách vui lòng truy cập vào tài khoản giao dịch
+trực tuyến của Quý Khách tại VNDirect. ]]></InvalidAuthLevel2>
+		<length_of_field_too_long><![CDATA[Độ dài của trường {0} quá dài. Độ dài tối đa là {1).]]></length_of_field_too_long>
+		<email_used><![CDATA[Email này đã được dùng để đăng ký, xin quý khách vui lòng chọn email khác.]]></email_used>
+	</Commons>
+	<IDG>
+		<RemoteError><![CDATA[Không kết nối được với VNDSService!. Xin vui lòng thông báo với chúng tôi về lỗi này.]]></RemoteError>
+		<AuthFault><![CDATA[Lỗi kiểm tra quyền truy cập hệ thống: {0}!]]></AuthFault>
+	</IDG>
+	<AJAX>
+		<QuickSearchSymbol>
+			<symbol-incorrect><![CDATA[Sai mã chứng khoán [{0}] ...]]></symbol-incorrect>
+		</QuickSearchSymbol>
+	</AJAX>
+	<FLASH>
+		<InvalidMethod><![CDATA[Hãy nhập lại thông tin tìm kiếm.]]></InvalidMethod>
+		<InvalidPeriodicity><![CDATA[Tính chu kỳ theo Ngày, Tháng, Năm]]></InvalidPeriodicity>
+		<InvalidDateFormat><![CDATA[Nhập lại ngày tháng theo định dạng DDMMYYYY]]></InvalidDateFormat>
+		<InvalidSymbol><![CDATA[Vui lòng nhập đúng Mã chứng khoán cần tìm kiếm.]]></InvalidSymbol>
+		<InvalidIndicator><![CDATA[Sai lệnh.]]></InvalidIndicator>
+	</FLASH>
+	<Quotes>
+		<MsgCreateNew>
+			<subject-required><![CDATA[Nhập chủ đề cho thông tin.]]></subject-required>
+		</MsgCreateNew>
+		<Alert>
+			<Un_Check_To_Del><![CDATA[Vui lòng chọn mã danh mục để xoá.]]></Un_Check_To_Del>
+			<No_Alert_To_Save><![CDATA[Vui lòng nhập mã chứng khoán để tạo Alert.]]></No_Alert_To_Save>
+			<Symbol_Mandatory><![CDATA[Qúy khách chưa nhập mã chứng khoán.]]></Symbol_Mandatory>
+			<Invalid_Symbol><![CDATA[Mã chứng khoán ‘{0}’ nhập không chính xác, vui lòng nhập lại mã đúng]]></Invalid_Symbol>
+			<PerHighTarget_Invalid><![CDATA[Vui lòng nhập số cho PE Cao.]]></PerHighTarget_Invalid>
+			<PerLowTarget_Invalid><![CDATA[Vui lòng nhập số cho PE Thấp.]]></PerLowTarget_Invalid>
+			<HighTarget_Invalid><![CDATA[Vui lòng nhập số cho Giá cao.]]></HighTarget_Invalid>
+			<LowTarget_Invalid><![CDATA[Vui lòng nhập số cho Giá thấp.]]></LowTarget_Invalid>
+			<Volume_Invalid><![CDATA[Vui lòng nhập số cho KLGD.]]></Volume_Invalid>
+		</Alert>
+	</Quotes>
+	<Home>
+		<Logon>
+			<login-invalid><![CDATA[Thông tin User Name or Password không đúng.]]></login-invalid>
+			<unactive><![CDATA[Tài khoản này chưa sẵn sàng sử dụng. Xin liên lạc với chúng tôi để biết thêm chi tiết.]]></unactive>
+			<idg-auth><![CDATA[Số bảo mật không đúng.]]></idg-auth>
+		</Logon>
+		<OnlineAccount>
+			<fields-invalid>Quý khách nhập sai giá trị của <b>{0}</b>.</fields-invalid>
+			<fields-required>Quý khách phải nhập giá trị của <b>{0}</b>.</fields-required>
+			<age-invalid><![CDATA[Quý khách phải <b>{0}</b> trở lên mới có quyền mở tài khoản]]></age-invalid>
+			<invalid-between-dob-doi><![CDATA[Không hợp lệ giữa ngày sinh và ngày cấp CMT/Hộ chiếu.]]></invalid-between-dob-doi>
+			<fields-invalid>Quý khách nhập sai giá trị của <b>{0}</b>.</fields-invalid>
+			<password-invalid>Mật khẩu phải là một tổ hợp 4 chữ số</password-invalid>
+			<remote_trading_agreement>Quý khách phải đồng ý với cam kết giao dịch từ xa của chúng tôi để có thể mở tài khoản giao dịch từ xa.</remote_trading_agreement>
+			<online_trading_agreement>Quý khách phải đồng ý với điều khoản của chúng tôi để có thể mở tài khoản giao dịch tại VNDirect.</online_trading_agreement>
+			<ref_code_used>Mã ưu đãi này đã được sử dụng, quý khách vui lòng nhập mã ưu đãi khác.</ref_code_used>
+			<investmentError>Quý khách nhập mục tiêu đầu tư chưa đúng.</investmentError>
+			<riskError>Quý khách nhập mức độ chấp nhận rủi ro  chưa đúng.</riskError>
+		</OnlineAccount>
+		<RegisterUser>
+			<username-invalid><![CDATA[Tên đăng nhập bị sai.]]></username-invalid>
+			<username-required><![CDATA[Tên đăng nhập bắt buộc phải nhập.]]></username-required>
+			<password-invalid><![CDATA[Mật khẩu bị sai.]]></password-invalid>
+			<confirm-pw-incorrect><![CDATA[Xác định lại mật khẩu không đúng.]]></confirm-pw-incorrect>
+			<full-name-invalid><![CDATA[Tên đầy đủ bị sai.]]></full-name-invalid>
+			<full-name-required><![CDATA[Tên đầy đủ bắt buộc phải nhập.]]></full-name-required>
+			<email-invalid><![CDATA[Email bị sai.]]></email-invalid>
+			<email-required><![CDATA[Email bắt buộc phải nhập.]]></email-required>
+			<disagreement><![CDATA[Quý khách phải đồng ý với các điều khoản của công ty trước khi gửi đi]]></disagreement>
+		</RegisterUser>
+		<UserProfile>
+			<field-required><![CDATA[{0} bắt buộc phải nhập.]]></field-required>
+			<emailConfirm-invalid><![CDATA[Địa chỉ Email xác nhận bị sai.]]></emailConfirm-invalid>
+			<fone-number-invalid><![CDATA[{0} chỉ cho phép nhập các ký tự là số, không có các ký tự đặc biệt.]]></fone-number-invalid>
+			<trading-pw-incorrect><![CDATA[Mật khẩu giao dịch trực tuyến của quý khách không đúng. ]]></trading-pw-incorrect>
+			<old-tele-trade-pw-incorrect><![CDATA[Mật khẩu đặt lệnh Tele cũ của quý khách không đúng. ]]></old-tele-trade-pw-incorrect>
+			<trade-fones-required><![CDATA[Quý khách phải nhập một số điện thoại đặt lệnh.]]></trade-fones-required>
+			<retype-tele-trade-pw-invalid><![CDATA[Mật khẩu đặt lệnh Tele mới và Nhập lại mật khẩu Tele mới không giống nhau.]]></retype-tele-trade-pw-invalid>
+			<tele-trade-pw-invalid><![CDATA[Mật khẩu đặt lệnh Tele mới của quý khách không đúng. Mật khẩu đặt lệnh Tele phải có 4 ký tự là số.]]></tele-trade-pw-invalid>
+		</UserProfile>
+	</Home>
+	<TradingIdeas>
+	 <fields-required><![CDATA[Please input a symbol.]]></fields-required>
+	</TradingIdeas>
+	<Trading>
+		<ChangePassword>
+			<pw-incorrect><![CDATA[Mật khẩu cũ của Quý khách không đúng.]]></pw-incorrect>
+			<newpw-invalid><![CDATA[Mât khẩu mới của Quý khách không hợp lệ.<br/>Mật khẩu phải từ 6 đến 32 ký tự và có ít nhất một ký tự là số.]]></newpw-invalid>
+			<new-pw-incorrect><![CDATA[Mật khẩu mới của Quý khách không đúng.]]></new-pw-incorrect>
+			<confirm-pw-incorrect><![CDATA[Confirm New Password của Quý khách không trùng nhau.]]></confirm-pw-incorrect>
+			<newpw-confirm-wrong><![CDATA[New Password và Confirm New Password không trùng nhau.]]></newpw-confirm-wrong>
+		</ChangePassword>
+		<AccountRecord>
+			<date-invalid>Giá trị ngày tháng không đúng định dạng.</date-invalid>
+			<dateRangeFrom-invalid>Giá trị trong trường "Từ ngày" không hợp lệ.</dateRangeFrom-invalid>
+			<dateRangeTo-invalid>Giá trị trong trường "Đến ngày" không hợp lệ.</dateRangeTo-invalid>
+			<dateRangeFromTo-invalid>Khoảng ngày trong trường "Từ ngày" phải trước khoảng ngày trong trường "Đến ngày".</dateRangeFromTo-invalid>
+		</AccountRecord>
+		<CreateOrder>
+			<symbol-not-existed><![CDATA[Mã chứng khoán không tồn tại.]]></symbol-not-existed>
+			<missing-symbol><![CDATA[Quý khách chưa nhập mã chứng khoán.]]></missing-symbol>
+			<missing-order-type><![CDATA[Quý khách chưa lựa chọn loại lệnh.]]></missing-order-type>
+			<missing-price-type><![CDATA[Quý khách chưa lựa chọn loại giá đặt.]]></missing-price-type>
+			<missing-term><![CDATA[Quý khách chưa lựa chọn loại hiệu lực của lệnh.]]></missing-term>
+			<shares-price-error><![CDATA[Giá trị của 'Số lượng' phải là số nguyên và lớn hơn 0.]]></shares-price-error>
+			<limit-price-error><![CDATA[Giá trị của 'Giá Limit' phải là số nguyên và lớn hơn 0.]]></limit-price-error>
+			<stop-price-error><![CDATA[Giá trị của 'Giá Stop' phải là số nguyên và lớn hơn 0.]]></stop-price-error>
+			<limit-stop-price-error><![CDATA[Giá trị của 'Giá Limit Stop' phải là số nguyên và lớn hơn 0.]]></limit-stop-price-error>
+			<not-enough-cash><![CDATA[Tài khoản của Quý khách không đủ số dư để thực hiện lệnh này.]]></not-enough-cash>
+			<shares-price-max-error><![CDATA[Giá trị của 'Số lượng' sửa không được lớn hơn số lượng cũ.]]></shares-price-max-error>
+			<index-time-error><![CDATA[Đã hết giờ đặt lệnh đối với chứng khoán niêm yết trên sàn {0}.<br/> Xin quý khách vui lòng đặt lệnh vào phiên giao dịch sau.]]></index-time-error>
+			<market-time-error><![CDATA[Thị trường đã đóng cửa.<br/> Xin quý khách vui lòng đặt lệnh vào phiên giao dịch sau.]]></market-time-error>
+			<cannot-place-ato-type><![CDATA[Đây là ngày giao dịch đầu tiên của {0}. Quý khách không thể đặt loại ATO cho loại chứng khoán này]]></cannot-place-ato-type>
+			<cannot-place-order-type><![CDATA[Đây là ngày giao dịch đầu tiên của {0}. Quý khách không thể đặt lện giao dịch cho chứng khoán này]]></cannot-place-order-type>
+			<trading-pw-incorrect><![CDATA[Mật khẩu của quý khách không đúng. Xin quý khách vui lòng nhập lại mật khẩu trước khi đặt lệnh.]]></trading-pw-incorrect> 
+			<limit-hastc-value-error><![CDATA[Giá trị đặt lệnh trên sàn HNX qua kênh online phải > 5.000.000 (năm triệu đồng) . Lệnh HNX có giá trị < 5.000.000 quý khách vui lòng đặt lệnh qua sàn giao dịch hoặc thông qua các đại lý nhận lệnh của VNDirect.]]></limit-hastc-value-error>
+			<not-support-upcom><![CDATA[Hệ thống tạm thời chưa hỗ trợ đặt lệnh online mua/bán cổ phiếu sàn UPCOM. Vui lòng gọi điện giao dịch UPCOM tại sàn giao dịch của VNDirect hoặc qua tổng đài đặt lệnh 1900-545409.]]></not-support-upcom>
+			<missing-expired-date><![CDATA[Quý khách chưa nhập hoặc nhập sai ngày hết hiệu lực của lệnh (DD/MM/YYYY).]]></missing-expired-date>
+			<invalid-expired-date><![CDATA[Hiệu lực của lệnh nhiều ngày cho phép từ 1 đến {0} ngày kể từ ngày đặt lệnh.]]></invalid-expired-date>
+			<WarningMsg><![CDATA[Quý khách vui lòng đặt lại lệnh, không sử dụng nút "Back" trên trình duyệt.]]></WarningMsg>
+			<gtc_for_hnx_error><![CDATA[Hệ thống online tạm thời chưa hỗ trợ đặt lệnh nhiều ngày đối với cổ phiếu sàn trên sàn HNX.]]></gtc_for_hnx_error>
+			<pre_order_for_hnx_error><![CDATA[Hệ thống online tạm thời chưa hỗ trợ đặt lệnh trước giờ giao dịch đối với cổ phiếu sàn trên sàn HNX.]]></pre_order_for_hnx_error>
+		</CreateOrder>
+		<CancelOrder>
+			<index-time-error><![CDATA[Đã hết giờ đặt lệnh đối với chứng khoán niêm yết trên sàn.]]></index-time-error>
+			<market-time-error><![CDATA[Thị trường đã đóng cửa]]></market-time-error>
+			<trading-pw-incorrect><![CDATA[Mật khẩu đặt lệnh chưa chính xác]]></trading-pw-incorrect>
+			<order-not-existed><![CDATA[Lệnh đặt không tồn tại]]></order-not-existed>
+			<order-status-error><![CDATA[Không được hủy/sửa lệnh này. Vui lòng xem hướng dẫn để hiểu quy định hủy/sửa. ]]></order-status-error>
+			<account-not-existed><![CDATA[Tài khoản không tồn tại.]]></account-not-existed>
+			<cancel-order-successful><![CDATA[Lệnh đã chính thức được gửi đến VNDirect để chờ xử lý. Xem trạng thái lệnh để biết kết quả xử lý lệnh.]]></cancel-order-successful>
+			<session-error><![CDATA[Không được hủy/sửa lệnh giới hạn trong cùng đợt khớp lệnh định kỳ.]]></session-error>
+		</CancelOrder>
+		<AdvancePayment>
+			<NotGreaterThanZero><![CDATA[Nhập giá trị Ứng trước tiền bán phải lớn hơn 0.]]></NotGreaterThanZero>
+			<GreaterThanMaxValue><![CDATA[Ứng trước tiền bán phải phải nhỏ hơn hoặc bằng số tiền tối đa có thể UTTB.]]></GreaterThanMaxValue>
+			<AdvancePaymentTimeError><![CDATA[Đã hết giờ giao dịch. Giờ thực hiện giao dịch từ 22:00 ngày giao dịch liền trước 15:30 ngày giao dịch kế tiếp bao gồm cả ngày lễ.]]></AdvancePaymentTimeError>
+		</AdvancePayment>
+		<Porfolio>
+		     <CreateNewProfolio>
+		      <SymbolNameEmpty><![CDATA[Vui lòng nhập tên mã danh mục.]]></SymbolNameEmpty>
+		      <SymbolEmpty><![CDATA[Vui lòng nhập mã chứng khoán.]]></SymbolEmpty> 
+		      <PriceInvalidNumber><![CDATA[Price phải là số.]]></PriceInvalidNumber> 
+		      <ShareInvalidNumber><![CDATA[Share phải là số.]]></ShareInvalidNumber>
+		      <UncheckToDelete><![CDATA[Vui lòng chọn mã chứng khoán để xoá.]]></UncheckToDelete>
+		      <UncheckToDeleteMyPort><![CDATA[Vui lòng chọn Portfolio để xoá.]]></UncheckToDeleteMyPort>
+		      <SymbolInvalid><![CDATA[Mã chứng khoán ‘{0}’ nhập không chính xác, vui lòng nhập lại mã đúng]]></SymbolInvalid>
+		     </CreateNewProfolio>  
+		 </Porfolio>
+		 <BuyingRight>
+		      <RegisterAmount><![CDATA[Số lượng đăng ký mua quý khách nhập không đúng.]]> </RegisterAmount>
+		      <Password><![CDATA[Mật khẩu giao dịch quý khách nhập không đúng.]]> </Password>
+		      <NotEnoughMoney><![CDATA[Quý khách hàng không có đủ tiền để đăng kí quyền mua này]]> </NotEnoughMoney>
+		      <BigAmount><![CDATA[Số lượng chứng khoán quý khách đăng kí mua vượt quá quyền mua của quý khách.]]> </BigAmount>
+   		      <Symbol><![CDATA[Vui lòng nhập mã chứng khoán.]]> </Symbol>
+  		      <WrongDates><![CDATA[Ngày bắt đầu lớn hơn ngày kết thúc.]]> </WrongDates>		      
+		 </BuyingRight> 
+		 <Common>
+		 	<InvalidAccountNumber><![CDATA[Account number không hợp lệ.]]></InvalidAccountNumber>		 		 
+		 	<InvalidFromDate><![CDATA[Ngày bắt đầu không hợp lệ.]]></InvalidFromDate>
+			<InvalidToDate><![CDATA[Ngày kết thúc không hợp lệ.]]></InvalidToDate>
+		 </Common>
+		 
+	</Trading>
+	<MyPortfolios>
+		<CreateUpdateMyPortfolio>
+			<WatchListNameEmpty><![CDATA[Tên của Bảng theo dõi bị bỏ trống.]]></WatchListNameEmpty>
+		</CreateUpdateMyPortfolio>
+	</MyPortfolios>
+	<BOService>
+		<Online-CustomerIDNull><![CDATA[Không thiết lập được phiên làm việc của Quý khách đến dịch vụ OnlineTrading. Vui lòng thử đăng nhập lần nửa.<br/> Nếu thông báo này vẫn xuất hiện, vui lòng liên hệ với chúng tôi về lỗi này.]]></Online-CustomerIDNull>
+		<WebAgent-CustomerIDNull><![CDATA[Bạn phải lựa chọn một tài khoản trước khi thực hiện chức năng này.]]></WebAgent-CustomerIDNull>
+
+		<SessionIdNull><![CDATA[Không thiết lập được phiên làm việc của Quý khách đến dịch vụ OnlineTrading. Vui lòng thử đăng nhập lần nửa.<br/> Nếu thông báo này vẫn xuất hiện, vui lòng liên hệ với chúng tôi về lỗi này.]]></SessionIdNull>
+		<RemoteError><![CDATA[Không kết nối được đến máy chủ dịch vụ OnlineTrading. Vui lòng thông báo với chúng tôi về lỗi này.]]></RemoteError>
+		<RemoteError-PlaceOrder><![CDATA[Không kết nối được với VNDirect Services. Lệnh của quý khách có thể đã được gửi tới VNDirect. Xin quý khách kiểm tra lại màn hình Xem lệnh giao dịch hoặc gọi đến 1900545409 để kiểm tra trước khi đặt lệnh mới.]]></RemoteError-PlaceOrder>
+
+		<!-- Service Message Error Keys -->
+		<UNKNOW_STATUS><![CDATA[Lỗi truy cập. Xin hãy thoát khỏi hệ thống và đăng nhập lại lần nữa. Nếu vẫn gặp lỗi này hãy liên lạc với chúng tôi qua số điện thoại: 043.9410622]]></UNKNOW_STATUS>
+		<ERR_SYSTEM_OK><![CDATA[]]></ERR_SYSTEM_OK>
+		<SYSTEM_UNKNOW_ERR><![CDATA[Lỗi truy cập. Xin hãy thoát khỏi hệ thống và đăng nhập lại lần nữa. Nếu vẫn gặp lỗi này hãy liên lạc với chúng tôi qua số điện thoại: 043.9410622]]></SYSTEM_UNKNOW_ERR>
+		<ERR_SA_LOGIN_NOT_SUCCESSFUL><![CDATA[Phiên làm việc của Quý khách đã kết thúc! Quý khách có thể thoát ra & đăng nhập lại để làm việc với phiên làm việc mới.]]></ERR_SA_LOGIN_NOT_SUCCESSFUL>
+
+		<ERR_SESSION_TIME_OUT><![CDATA[Phiên làm việc của Quý khách đã kết thúc! Quý khách có thể thoát ra & đăng nhập lại để làm việc với phiên làm việc mới.]]></ERR_SESSION_TIME_OUT>
+		<ERR_DUPLICATE_ORDER><![CDATA[Hệ thống phát hiện có lệnh giống hệt đã được nhập vào hệ thống. Vui lòng kiểm tra màn hình Xem Lệnh giao dịch để xem lại lệnh đã đặt để tránh đặt trùng lệnh. Nếu bạn vẫn muốn đặt lệnh này thì chọn nút Đặt lệnh.]]></ERR_DUPLICATE_ORDER>
+		<ERR_INVALID_SEARCH_FILTER><![CDATA[Điều kiện lọc không hợp lệ.]]></ERR_INVALID_SEARCH_FILTER>
+		<ERR_CUST_ID_ALREADY_HAVE_CONTRACT><![CDATA[Hợp đồng của khách hàng này đã được tạo.]]></ERR_CUST_ID_ALREADY_HAVE_CONTRACT>
+
+		<ERR_OD_ATO_ORDER_IN_LISTTING_DATE><![CDATA[Đây là ngày giao dịch đầu tiên của chứng khoán này. Quý khách không thể đặt lện giao dịch cho chứng khoán này]]></ERR_OD_ATO_ORDER_IN_LISTTING_DATE>
+		<ERR_OD_ODTYPE_NOTFOUND><![CDATA[Loại hình hợp đồng không tồn tại]]></ERR_OD_ODTYPE_NOTFOUND>
+		<ERR_CF_AFMAST_NOTFOUND><![CDATA[Mã hợp đồng không tồn tại]]></ERR_CF_AFMAST_NOTFOUND>
+		<ERR_CI_CIMAST_NOTFOUND><![CDATA[Tài khoản của Quý khách chưa thể giao dịch được. Vui lòng ký quỹ tiền hoặc chứng khoán vào tài khoản trước khi bắt đầu giao dịch]]></ERR_CI_CIMAST_NOTFOUND>
+		<ERR_OD_QTTY_TRADELOT_INCORRECT><![CDATA[Lưu ý Quý khách không thể thực hiện giao dịch khối lượng chứng khoán lô lẻ <10 cổ phiếu đối với sàn HOSE và lô lẻ <100 cổ phiếu đối với sàn HNX. Khối lượng đặt mua phải là bội số của 10 và 100]]></ERR_OD_QTTY_TRADELOT_INCORRECT>
+		<ERR_OD_LO_PRICE_ISNOT_FLOOR_CEILLING><![CDATA[Giá Quý khách nhập không nằm trong biên độ giá cho phép. Vui lòng nhập lại giá trong biên độ trần sàn]]></ERR_OD_LO_PRICE_ISNOT_FLOOR_CEILLING>
+		<ERR_OD_TICKSIZE_INCOMPLIANT><![CDATA[Đơn vị nhập giá không chính xác. Vui lòng kiểm tra lại giá Quý khách đã nhập. Chú ý: Giá ≤ 49.900 đơn vị đơn vị yết giá là 100 đồng. Giá từ 50.000 – 99.500 đơn vị yết giá là 500 đồng. Giá ≥ 100.000 đồng đơn vị yết giá là 1000.]]></ERR_OD_TICKSIZE_INCOMPLIANT>
+		<ERR_OD_TICKSIZE_UNDEFINED><![CDATA[Lỗi ticksize. Xin hãy thoát khỏi hệ thống và đăng nhập lại lần nữa. Nếu vẫn gặp lỗi này hãy liên lạc với chúng tôi qua số điện thoại: 043.9410622 (máy lẻ 6666)]]></ERR_OD_TICKSIZE_UNDEFINED>
+		<ERR_OD_BUYSELL_SAME_SECURITIES><![CDATA[Không được mua bán cùng một mã chứng khoán trong cùng một ngày]]></ERR_OD_BUYSELL_SAME_SECURITIES>
+		<ERR_OD_SECURITIES_INFO_UNDEFINED><![CDATA[Mã chứng khoán này không tồn tại. Vui lòng kiểm tra lại mã chứng khoán Quý khách đã nhập. Mã chứng khoán nhập vào phải là chữ in hoa]]></ERR_OD_SECURITIES_INFO_UNDEFINED>
+
+		<ERR_CF_AFMAST_STATUS_INVALIDE><![CDATA[Tài khoản của Quý khách hiện đang bị khóa, tạm thời Quý khách không thể thực hiện giao dịch được. Vui lòng liên lạc với VNDirect để biết thêm chi tiết. ]]></ERR_CF_AFMAST_STATUS_INVALIDE>
+		<ERR_OD_LISTED_NEEDCUSTODYCD><![CDATA[Tài khoản của Quý khách hiện tại không được giao dịch chứng khoán niêm yết.]]></ERR_OD_LISTED_NEEDCUSTODYCD>
+		<ERR_SE_ACTYPE_TRADE_NOTENOUGHT><![CDATA[Quý khách không có đủ chứng khoán trong tài khoản để đặt lệnh bán]]></ERR_SE_ACTYPE_TRADE_NOTENOUGHT>
+
+		<ERR_SA_CHECKER1_OVR><![CDATA[Lệnh đặt của Quý khách vượt hạn mức cho phép. Vui lòng kiểm tra lại lệnh đặt của Quý khách hoặc liên hệ với chúng tôi để kiểm tra chi tiểt.]]></ERR_SA_CHECKER1_OVR>
+		<ERR_SA_CHECKER2_OVR><![CDATA[Lệnh đặt của Quý khách vượt hạn mức cho phép. Vui lòng kiểm tra lại lệnh đặt của Quý khách hoặc liên hệ với chúng tôi để kiểm tra chi tiểt.]]></ERR_SA_CHECKER2_OVR>
+
+		<ERR_CI_CIMAST_BALANCE_NOTENOUGHT><![CDATA[Số dư tài khoản của Quý khách không đủ để đặt lệnh mua.]]></ERR_CI_CIMAST_BALANCE_NOTENOUGHT>
+		<ERR_OD_ODMAST_TRADE_NOTENOUGHT><![CDATA[Số lượng chứng khoán của Quý khách không đủ để đặt lệnh bán.]]></ERR_OD_ODMAST_TRADE_NOTENOUGHT>
+
+		<ERR_OD_ORDER_OVER_QUANTITY><![CDATA[Với giao dịch > 19990 cổ phiếu Quý khách phải thực hiện giao dịch thỏa thuận. Hãy liên lạc với chúng tôi để được hướng dẫn chi tiết về giao dịch thỏa thuận.]]></ERR_OD_ORDER_OVER_QUANTITY>
+		
+		<ERR_OD_MSORDER_OVER_QUANTITY><![CDATA[Quý khách không có đủ chứng khoán trong tài khoản để đặt lệnh bán]]></ERR_OD_MSORDER_OVER_QUANTITY>
+
+		<ERR_SPECIAL_ORDER><![CDATA[Lệnh gốc đang được đọc lên sàn nên tạm thời không huỷ/sửa được. Quý khách vui lòng quay lại màn hình Chi tiết lệnh đặt để xem lại trạng thái lệnh.]]></ERR_SPECIAL_ORDER>
+		<ERR_OVER_BALANCE><![CDATA[Lệnh đặt của Quý khách thành công nhưng vượt hạn mức cho phép. Vui lòng liên hệ với chúng tôi để kiểm tra chi tiểt.]]></ERR_OVER_BALANCE>
+		<!-- [AGENT]:Create customer -->
+		<ERR_CF_IDTYPE_DUPLICATED><![CDATA[Số chứng minh thư này đã tồn tại.]]></ERR_CF_IDTYPE_DUPLICATED>
+		<ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE><![CDATA[Ngày hết hạn phải nhỏ hơn ngày hiện tại.]]></ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE>
+		<!-- 30/01/2008 -->
+		<C100025><![CDATA[Internal Code is duplicated]]></C100025>
+		<C100026><![CDATA[Currency is not exist]]></C100026>
+		<C100027><![CDATA[Cannot delete the Securities which contains related data]]></C100027>
+		<C100028><![CDATA[Issuer id is not exists]]></C100028>
+		<C100031><![CDATA[Secticksize is duplicated]]></C100031>
+		<C100032><![CDATA[Currency id is duplicated]]></C100032>
+		<C100033><![CDATA[Issuer id is duplicated]]></C100033>
+		<C100034><![CDATA[Customer id is not exists]]></C100034>
+		<C100035><![CDATA[Cannot delete the issuer which contains related data]]></C100035>
+		<C100037><![CDATA[Report code is duplicated]]></C100037>
+		<C100038><![CDATA[Module code is not exist]]></C100038>
+		<C100040><![CDATA[Branch code is not exist]]></C100040>
+		<C100041><![CDATA[Ratenum is not exist]]></C100041>
+		<C100042><![CDATA[Cannot delete the Currency which contains related data]]></C100042>
+		<C100043><![CDATA[This user is existed in assignment list]]></C100043>
+		<C100044><![CDATA[This user is existed in transaction execute list]]></C100044>
+		<C100045><![CDATA[This group is existed in assignment list]]></C100045>
+		<C100046><![CDATA[This group is existed in transaction execute list]]></C100046>
+		<C100047><![CDATA[You do not have permission to execute this transaction]]></C100047>
+		<C100048><![CDATA[Can not delete current user]]></C100048>
+		<C100049><![CDATA[User name is duplicated]]></C100049>
+		<C100050><![CDATA[Group name is duplicated]]></C100050>
+		<C100051><![CDATA[Transaction limit is over]]></C100051>
+		<C100052><![CDATA[Approve limit is over]]></C100052>
+		<C100053><![CDATA[Cash limit is over]]></C100053>
+		<C100055><![CDATA[You do not have permission to approve this transaction]]></C100055>
+		<C100056><![CDATA[You do not have permission to cash this transaction]]></C100056>
+		<C100066><![CDATA[You are not a teller]]></C100066>
+		<C100067><![CDATA[You are not a cashier]]></C100067>
+		<C100068><![CDATA[You are not a officer]]></C100068>
+		<C100069><![CDATA[You are not a checker]]></C100069>
+		<C100070><![CDATA[Transaction limit is not defined]]></C100070>
+		<C100071><![CDATA[Cash limit is not defined]]></C100071>
+		<C100072><![CDATA[Approve limit is not defined]]></C100072>
+		<C100073><![CDATA[Risk approve limit is not defined]]></C100073>
+		<C100078><![CDATA[No data found]]></C100078>
+		<C100081><![CDATA[GLBANK is not exists. Cannot add new or edit GL account]]></C100081>
+		<C100085><![CDATA[Error on create transaction]]></C100085>
+		<C100093><![CDATA[Deposit id has been duplicate]]></C100093>
+		<C100094><![CDATA[This group is caring customers]]></C100094>
+		<C200001><![CDATA[Mã lỗi loại hình hợp đồng bị trùng]]></C200001>
+		<C200002><![CDATA[Thông tin khách hàng không tồn tại]]></C200002>
+		<C200023><![CDATA[Customer ID is not exists]]></C200023>
+		<C200047><![CDATA[INVALID OTC STATUS]]></C200047>
+		<C200050><![CDATA[You do not care this customer]]></C200050>
+		<C400009><![CDATA[Product type id is duplicated]]></C400009>
+		<C400010><![CDATA[Currency id is not exists]]></C400010>
+		<C400011><![CDATA[GL group code is not exists]]></C400011>
+		<C400012><![CDATA[Cannot delete the Product type which contains related data]]></C400012>
+		<C400016><![CDATA[Cannot delete the CI account number  which contains related data]]></C400016>
+		<C400017><![CDATA[GL master id is not exists]]></C400017>
+		<C400018><![CDATA[CI account number is duplicated]]></C400018>
+		<C400019><![CDATA[Product type is not exists]]></C400019>
+		<C400020><![CDATA[Currency id is not exists]]></C400020>
+		<C400021><![CDATA[Contract number is not exists]]></C400021>
+		<C500001><![CDATA[Fixed asset code is duplicated]]></C500001>
+		<C500002><![CDATA[Cannot delete the Account number which contains related data]]></C500002>
+		<C500003><![CDATA[GL account is duplicated]]></C500003>
+		<C500004><![CDATA[GL code is not exists]]></C500004>
+		<C500005><![CDATA[gc_ERRCODE_GL_ACCTENTRY_DOESNOTBALANCE]]></C500005>
+		<C500006><![CDATA[gc_ERRCODE_GL_ACCTENTRY_OFFBALANCESHEET]]></C500006>
+		<C500007><![CDATA[gc_ERRCODE_GL_ACCTENTRY_NOTSAMECCYCD]]></C500007>
+		<C500008><![CDATA[Cannot delete the GL account which contains related data]]></C500008>
+		<C500009><![CDATA[Invalid balance type]]></C500009>
+		<C500012><![CDATA[Không phải là ngày giao dịch nên không thể thực hiện giao dịch này]]></C500012>
+		<C600001><![CDATA[Rate id is duplicated]]></C600001>
+		<C600003><![CDATA[Currency id is not exists]]></C600003>
+		<C600004><![CDATA[Cannot delete the Floating interest which contains related data]]></C600004>
+		<C700001><![CDATA[gc_ERRCODE_OD_ACTYPE_DUPLICATED]]></C700001>
+		<C700002><![CDATA[gc_ERRCODE_OD_GLGRP_NOTFOUND]]></C700002>
+		<C700015><![CDATA[Không được thực hiện giao dịch mua/bán 1 mã chứng khoán trong cùng 1 ngày]]></C700015>
+		<C900012><![CDATA[TRADE NOT ENOUGHT]]></C900012>
+		<C900018><![CDATA[AMOUNT OVER DEPOSIT]]></C900018>
+		<ERR_ACTIONDATE_INVALID><![CDATA[ERR_ACTIONDATE_INVALID]]></ERR_ACTIONDATE_INVALID>
+		<ERR_ACTIONDATE_IS_BUSDATE><![CDATA[ERR_ACTIONDATE_IS_BUSDATE]]></ERR_ACTIONDATE_IS_BUSDATE>
+		<ERR_CF_ACCTNO_DUPLICATE><![CDATA[ERR_CF_ACCTNO_DUPLICATE]]></ERR_CF_ACCTNO_DUPLICATE>
+		<ERR_CF_ACTYPE_HAS_CONSTRAINTS><![CDATA[ERR_CF_ACTYPE_HAS_CONSTRAINTS]]></ERR_CF_ACTYPE_HAS_CONSTRAINTS>
+		<ERR_CF_ACTYPE_HAS_CONTRACT><![CDATA[ERR_CF_ACTYPE_HAS_CONTRACT]]></ERR_CF_ACTYPE_HAS_CONTRACT>
+		<ERR_CF_AFMAST_ALREADY_EXIST><![CDATA[ERR_CF_AFMAST_ALREADY_EXIST]]></ERR_CF_AFMAST_ALREADY_EXIST>
+		<ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE><![CDATA[ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE]]></ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE>
+		<ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE><![CDATA[ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE]]></ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE>
+		<ERR_CF_AFMAST_NOTFOUND><![CDATA[ERR_CF_AFMAST_NOTFOUND]]></ERR_CF_AFMAST_NOTFOUND>
+		<ERR_CF_AFMAST_OVER_ADVANCELIMIT><![CDATA[ERR_CF_AFMAST_OVER_ADVANCELIMIT]]></ERR_CF_AFMAST_OVER_ADVANCELIMIT>
+		<ERR_CF_AFMAST_OVER_DEPOSITLIMIT><![CDATA[ERR_CF_AFMAST_OVER_DEPOSITLIMIT]]></ERR_CF_AFMAST_OVER_DEPOSITLIMIT>
+		<ERR_CF_AFMAST_OVER_MARGINLIMIT><![CDATA[ERR_CF_AFMAST_OVER_MARGINLIMIT]]></ERR_CF_AFMAST_OVER_MARGINLIMIT>
+		<ERR_CF_AFMAST_OVER_REPOLIMIT><![CDATA[ERR_CF_AFMAST_OVER_REPOLIMIT]]></ERR_CF_AFMAST_OVER_REPOLIMIT>
+		<ERR_CF_AFMAST_OVER_TRADELIMIT><![CDATA[ERR_CF_AFMAST_OVER_TRADELIMIT]]></ERR_CF_AFMAST_OVER_TRADELIMIT>
+		<ERR_CF_AFMAST_RISKOVER_AFTYPE><![CDATA[ERR_CF_AFMAST_RISKOVER_AFTYPE]]></ERR_CF_AFMAST_RISKOVER_AFTYPE>
+		<ERR_CF_AFMAST_STATUS_INVALID><![CDATA[ERR_CF_AFMAST_STATUS_INVALID]]></ERR_CF_AFMAST_STATUS_INVALID>
+		<ERR_CF_AFMAST_STATUS_INVALIDE><![CDATA[ERR_CF_AFMAST_STATUS_INVALIDE]]></ERR_CF_AFMAST_STATUS_INVALIDE>
+		<ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE><![CDATA[ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE]]></ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE>
+		<ERR_CF_AFTYPE_NOTFOUND><![CDATA[ERR_CF_AFTYPE_NOTFOUND]]></ERR_CF_AFTYPE_NOTFOUND>
+		<ERR_CF_CANNOT_CLOSE><![CDATA[ERR_CF_CANNOT_CLOSE]]></ERR_CF_CANNOT_CLOSE>
+		<ERR_CF_CAREBY_NOT_EXIT><![CDATA[ERR_CF_CAREBY_NOT_EXIT]]></ERR_CF_CAREBY_NOT_EXIT>
+		<ERR_CF_CI_NOT_EXIT><![CDATA[ERR_CF_CI_NOT_EXIT]]></ERR_CF_CI_NOT_EXIT>
+		<ERR_CF_CONTRACT_HAS_TRANSACTION><![CDATA[ERR_CF_CONTRACT_HAS_TRANSACTION]]></ERR_CF_CONTRACT_HAS_TRANSACTION>
+		<ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE><![CDATA[ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE]]></ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE>
+		<ERR_CF_CURRDATE_SMALLER_THAN_VALDATE><![CDATA[ERR_CF_CURRDATE_SMALLER_THAN_VALDATE]]></ERR_CF_CURRDATE_SMALLER_THAN_VALDATE>
+		<ERR_CF_CUSTID_CONSTRAINTS><![CDATA[ERR_CF_CUSTID_CONSTRAINTS]]></ERR_CF_CUSTID_CONSTRAINTS>
+		<ERR_CF_CUSTID_DUPLICATED><![CDATA[ERR_CF_CUSTID_DUPLICATED]]></ERR_CF_CUSTID_DUPLICATED>
+		<ERR_CF_CUSTID_INVALID><![CDATA[ERR_CF_CUSTID_INVALID]]></ERR_CF_CUSTID_INVALID>
+		<ERR_CF_CUSTODYCD_DUPLICATED><![CDATA[ERR_CF_CUSTODYCD_DUPLICATED]]></ERR_CF_CUSTODYCD_DUPLICATED>
+		<ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE><![CDATA[ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE]]></ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE>
+		<ERR_CF_IDTYPE_DUPLICATED><![CDATA[ERR_CF_IDTYPE_DUPLICATED]]></ERR_CF_IDTYPE_DUPLICATED>
+		<ERR_CF_INTERNATION_NOTEMPTY><![CDATA[ERR_CF_INTERNATION_NOTEMPTY]]></ERR_CF_INTERNATION_NOTEMPTY>
+		<ERR_CF_OVER_ADVANCELINE><![CDATA[ERR_CF_OVER_ADVANCELINE]]></ERR_CF_OVER_ADVANCELINE>
+		<ERR_CF_OVER_DEPOSITLINE><![CDATA[ERR_CF_OVER_DEPOSITLINE]]></ERR_CF_OVER_DEPOSITLINE>
+		<ERR_CF_OVER_MARGINLIMIT><![CDATA[ERR_CF_OVER_MARGINLIMIT]]></ERR_CF_OVER_MARGINLIMIT>
+		<ERR_CF_OVER_REPOLINE><![CDATA[ERR_CF_OVER_REPOLINE]]></ERR_CF_OVER_REPOLINE>
+		<ERR_CF_OVER_TRADELIMIT><![CDATA[ERR_CF_OVER_TRADELIMIT]]></ERR_CF_OVER_TRADELIMIT>
+		<ERR_CF_OVER_TRADELINE><![CDATA[ERR_CF_OVER_TRADELINE]]></ERR_CF_OVER_TRADELINE>
+		<ERR_CF_PIN_DIFFRENCE><![CDATA[ERR_CF_PIN_DIFFRENCE]]></ERR_CF_PIN_DIFFRENCE>
+		<ERR_CF_PIN_ISNOT_NULL><![CDATA[ERR_CF_PIN_ISNOT_NULL]]></ERR_CF_PIN_ISNOT_NULL>
+		<ERR_CF_RECUSTID_NOTFOUND><![CDATA[ERR_CF_RECUSTID_NOTFOUND]]></ERR_CF_RECUSTID_NOTFOUND>
+		<ERR_CF_SE_NOT_EXIT><![CDATA[ERR_CF_SE_NOT_EXIT]]></ERR_CF_SE_NOT_EXIT>
+		<ERR_CF_TAXCODE_ISNOT_NULL><![CDATA[ERR_CF_TAXCODE_ISNOT_NULL]]></ERR_CF_TAXCODE_ISNOT_NULL>
+		<ERR_CF_TRADEPHONE_ISNOTEMPTY><![CDATA[ERR_CF_TRADEPHONE_ISNOTEMPTY]]></ERR_CF_TRADEPHONE_ISNOTEMPTY>
+		<ERR_CI_AAMT><![CDATA[ERR_CI_AAMT]]></ERR_CI_AAMT>
+		<ERR_CI_ACCTNO_DUPLICATED><![CDATA[ERR_CI_ACCTNO_DUPLICATED]]></ERR_CI_ACCTNO_DUPLICATED>
+		<ERR_CI_ACTYPE_NOTFOUND><![CDATA[ERR_CI_ACTYPE_NOTFOUND]]></ERR_CI_ACTYPE_NOTFOUND>
+		<ERR_CI_AFACCTNO_NOTFOUND><![CDATA[ERR_CI_AFACCTNO_NOTFOUND]]></ERR_CI_AFACCTNO_NOTFOUND>
+		<ERR_CI_AFTYPE_NOTFOUND><![CDATA[ERR_CI_AFTYPE_NOTFOUND]]></ERR_CI_AFTYPE_NOTFOUND>
+		<ERR_CI_BAMT><![CDATA[ERR_CI_BAMT]]></ERR_CI_BAMT>
+		<ERR_CI_CIMAST_ALREADY_EXIST><![CDATA[ERR_CI_CIMAST_ALREADY_EXIST]]></ERR_CI_CIMAST_ALREADY_EXIST>
+		<ERR_CI_CIMAST_BALANCE_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_BALANCE_NOTENOUGHT]]></ERR_CI_CIMAST_BALANCE_NOTENOUGHT>
+		<ERR_CI_CIMAST_CRINTACR_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_CRINTACR_NOTENOUGHT]]></ERR_CI_CIMAST_CRINTACR_NOTENOUGHT>
+		<ERR_CI_CIMAST_NOTFOUND><![CDATA[ERR_CI_CIMAST_NOTFOUND]]></ERR_CI_CIMAST_NOTFOUND>
+		<ERR_CI_CIMAST_ODINTACR_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_ODINTACR_NOTENOUGHT]]></ERR_CI_CIMAST_ODINTACR_NOTENOUGHT>
+		<ERR_CI_CIMAST_RAMT_NOTENOUGHT><![CDATA[ERR_CI_CIMAST_RAMT_NOTENOUGHT]]></ERR_CI_CIMAST_RAMT_NOTENOUGHT>
+		<ERR_CI_CIMAST_STATUS_INVALID><![CDATA[ERR_CI_CIMAST_STATUS_INVALID]]></ERR_CI_CIMAST_STATUS_INVALID>
+		<ERR_CI_EMKAMT><![CDATA[ERR_CI_EMKAMT]]></ERR_CI_EMKAMT>
+		<ERR_CI_MARGINBAL><![CDATA[ERR_CI_MARGINBAL]]></ERR_CI_MARGINBAL>
+		<ERR_CI_MMARGINBAL><![CDATA[ERR_CI_MMARGINBAL]]></ERR_CI_MMARGINBAL>
+		<ERR_CI_NAMT><![CDATA[ERR_CI_NAMT]]></ERR_CI_NAMT>
+		<ERR_CI_RAMT><![CDATA[ERR_CI_RAMT]]></ERR_CI_RAMT>
+		<ERR_INVALIF_CFMAST_STATUS><![CDATA[ERR_INVALIF_CFMAST_STATUS]]></ERR_INVALIF_CFMAST_STATUS>
+		<ERR_OD_ATO_ORDER_IN_LISTTING_DATE><![CDATA[ERR_OD_ATO_ORDER_IN_LISTTING_DATE]]></ERR_OD_ATO_ORDER_IN_LISTTING_DATE>
+		<ERR_OD_ODTYPE_NOTFOUND><![CDATA[ERR_OD_ODTYPE_NOTFOUND]]></ERR_OD_ODTYPE_NOTFOUND>
+		<ERR_OOD_STATUS_BLOCKED><![CDATA[ERR_OOD_STATUS_BLOCKED]]></ERR_OOD_STATUS_BLOCKED>
+		<ERR_OOD_STATUS_SENT><![CDATA[ERR_OOD_STATUS_SENT]]></ERR_OOD_STATUS_SENT>
+		<ERR_REPORTDATE_INVALID><![CDATA[ERR_REPORTDATE_INVALID]]></ERR_REPORTDATE_INVALID>
+		<ERR_SA_ACCTNO_NOTFOUND><![CDATA[ERR_SA_ACCTNO_NOTFOUND]]></ERR_SA_ACCTNO_NOTFOUND>
+		<ERR_SA_APPCHK_ACCTNO_NOTFOUND><![CDATA[ERR_SA_APPCHK_ACCTNO_NOTFOUND]]></ERR_SA_APPCHK_ACCTNO_NOTFOUND>
+		<ERR_SA_APPCHK_MISSING><![CDATA[ERR_SA_APPCHK_MISSING]]></ERR_SA_APPCHK_MISSING>
+		<ERR_SA_BDS_OPERATION_ISINACTIVE><![CDATA[Tạm thời hệ thống chưa xử lý xong dữ liệu ngày cũ, quý khách vui lòng quay lại thực hiện giao dịch sau 15 phút nữa]]></ERR_SA_BDS_OPERATION_ISINACTIVE>
+		<ERR_SA_BDS_OPERATION_STILLACTIVE><![CDATA[ERR_SA_BDS_OPERATION_STILLACTIVE]]></ERR_SA_BDS_OPERATION_STILLACTIVE>
+		<ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT><![CDATA[ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT]]></ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT>
+		<ERR_SA_CALENDAR_MISSING><![CDATA[ERR_SA_CALENDAR_MISSING]]></ERR_SA_CALENDAR_MISSING>
+		<ERR_SA_CANNOT_DELETETRANSACTION><![CDATA[ERR_SA_CANNOT_DELETETRANSACTION]]></ERR_SA_CANNOT_DELETETRANSACTION>
+		<ERR_SA_CCYCD_NOTACTIVE><![CDATA[ERR_SA_CCYCD_NOTACTIVE]]></ERR_SA_CCYCD_NOTACTIVE>
+		<ERR_SA_CDVAL_DUPLICATED><![CDATA[ERR_SA_CDVAL_DUPLICATED]]></ERR_SA_CDVAL_DUPLICATED>
+		<ERR_SA_CHECKER1_OVR><![CDATA[ERR_SA_CHECKER1_OVR]]></ERR_SA_CHECKER1_OVR>
+		<ERR_SA_CHECKER2_OVR><![CDATA[ERR_SA_CHECKER2_OVR]]></ERR_SA_CHECKER2_OVR>
+		<ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT><![CDATA[ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT]]></ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT>
+		<ERR_SA_HOST_OPERATION_ISINACTIVE><![CDATA[Tạm thời hệ thống chưa xử lý xong dữ liệu ngày cũ, quý khách vui lòng quay lại thực hiện giao dịch sau 15 phút nữa]]></ERR_SA_HOST_OPERATION_ISINACTIVE>
+		<ERR_SA_HOST_OPERATION_STILLACTIVE><![CDATA[ERR_SA_HOST_OPERATION_STILLACTIVE]]></ERR_SA_HOST_OPERATION_STILLACTIVE>
+		<ERR_SA_IBT_DOESNOTALLOW><![CDATA[ERR_SA_IBT_DOESNOTALLOW]]></ERR_SA_IBT_DOESNOTALLOW>
+		<ERR_SA_ICCFTIER_DUPLICATED><![CDATA[ERR_SA_ICCFTIER_DUPLICATED]]></ERR_SA_ICCFTIER_DUPLICATED>
+		<ERR_SA_ICCFTYPEDEF_DUPLICATED><![CDATA[ERR_SA_ICCFTYPEDEF_DUPLICATED]]></ERR_SA_ICCFTYPEDEF_DUPLICATED>
+		<ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10><![CDATA[ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10]]></ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10>
+		<ERR_SA_ISSUER_HAS_ONE_NORMALSHARE><![CDATA[ERR_SA_ISSUER_HAS_ONE_NORMALSHARE]]></ERR_SA_ISSUER_HAS_ONE_NORMALSHARE>
+		<ERR_SA_LICENSENO_ISNOT_EMPTY><![CDATA[ERR_SA_LICENSENO_ISNOT_EMPTY]]></ERR_SA_LICENSENO_ISNOT_EMPTY>
+		<ERR_SA_ONLY_HEADOFFICE_RUNBATCH><![CDATA[ERR_SA_ONLY_HEADOFFICE_RUNBATCH]]></ERR_SA_ONLY_HEADOFFICE_RUNBATCH>
+		<ERR_SA_PRINTINFO_ACCTNOTFOUND><![CDATA[ERR_SA_PRINTINFO_ACCTNOTFOUND]]></ERR_SA_PRINTINFO_ACCTNOTFOUND>
+		<ERR_SA_READ_TRADING_RESULT_TWICE><![CDATA[ERR_SA_READ_TRADING_RESULT_TWICE]]></ERR_SA_READ_TRADING_RESULT_TWICE>
+		<ERR_SA_SECTICKSIZE_CONSTRAINTS><![CDATA[ERR_SA_SECTICKSIZE_CONSTRAINTS]]></ERR_SA_SECTICKSIZE_CONSTRAINTS>
+		<ERR_SA_SECTICKSIZE_INVALID><![CDATA[ERR_SA_SECTICKSIZE_INVALID]]></ERR_SA_SECTICKSIZE_INVALID>
+		<ERR_SA_SHOULDAPPROVE_BEFORECASHIER><![CDATA[ERR_SA_SHOULDAPPROVE_BEFORECASHIER]]></ERR_SA_SHOULDAPPROVE_BEFORECASHIER>
+		<ERR_SA_STCSE_DUPLICATED><![CDATA[ERR_SA_STCSE_DUPLICATED]]></ERR_SA_STCSE_DUPLICATED>
+		<ERR_SA_STILLHAS_BRGRP_ACTIVE><![CDATA[ERR_SA_STILLHAS_BRGRP_ACTIVE]]></ERR_SA_STILLHAS_BRGRP_ACTIVE>
+		<ERR_SA_SYMBOL_DUPLICATED><![CDATA[ERR_SA_SYMBOL_DUPLICATED]]></ERR_SA_SYMBOL_DUPLICATED>
+		<ERR_SA_SYMBOL_NOTFOUND><![CDATA[ERR_SA_SYMBOL_NOTFOUND]]></ERR_SA_SYMBOL_NOTFOUND>
+		<ERR_SA_TLLOG_INVALID_STATUS><![CDATA[ERR_SA_TLLOG_INVALID_STATUS]]></ERR_SA_TLLOG_INVALID_STATUS>
+		<ERR_SA_TLTXCD_NOTFOUND><![CDATA[ERR_SA_TLTXCD_NOTFOUND]]></ERR_SA_TLTXCD_NOTFOUND>
+		<ERR_SA_TL_CURRENT_USR><![CDATA[ERR_SA_TL_CURRENT_USR]]></ERR_SA_TL_CURRENT_USR>
+		<ERR_SA_TRADING_RESULT_INVALID_DATE><![CDATA[ERR_SA_TRADING_RESULT_INVALID_DATE]]></ERR_SA_TRADING_RESULT_INVALID_DATE>
+		<ERR_SA_TRANSACTION_NOTFOUND><![CDATA[ERR_SA_TRANSACTION_NOTFOUND]]></ERR_SA_TRANSACTION_NOTFOUND>
+		<ERR_SA_VARIABLE_NOTFOUND><![CDATA[ERR_SA_VARIABLE_NOTFOUND]]></ERR_SA_VARIABLE_NOTFOUND>
+		<ERR_SE_BLOCKED><![CDATA[ERR_SE_BLOCKED]]></ERR_SE_BLOCKED>
+		<ERR_SE_DEPOSIT><![CDATA[ERR_SE_DEPOSIT]]></ERR_SE_DEPOSIT>
+		<ERR_SE_LOAN><![CDATA[ERR_SE_LOAN]]></ERR_SE_LOAN>
+		<ERR_SE_MARGIN><![CDATA[ERR_SE_MARGIN]]></ERR_SE_MARGIN>
+		<ERR_SE_MORTAGE><![CDATA[ERR_SE_MORTAGE]]></ERR_SE_MORTAGE>
+		<ERR_SE_NETTING><![CDATA[ERR_SE_NETTING]]></ERR_SE_NETTING>
+		<ERR_SE_PENDING><![CDATA[ERR_SE_PENDING]]></ERR_SE_PENDING>
+		<ERR_SE_RECEIVING><![CDATA[ERR_SE_RECEIVING]]></ERR_SE_RECEIVING>
+		<ERR_SE_REPO><![CDATA[ERR_SE_REPO]]></ERR_SE_REPO>
+		<ERR_SE_SECURED><![CDATA[ERR_SE_SECURED]]></ERR_SE_SECURED>
+		<ERR_SE_STANDING><![CDATA[ERR_SE_STANDING]]></ERR_SE_STANDING>
+		<ERR_SE_TRANSFER><![CDATA[ERR_SE_TRANSFER]]></ERR_SE_TRANSFER>
+		<ERR_SE_WITHDRAW><![CDATA[ERR_SE_WITHDRAW]]></ERR_SE_WITHDRAW>
+
+		<ERR_OD_ORDER_OVER_NUMBER_CORRECTION><![CDATA[Lệnh gốc đã hết số lần được thực hiện hủy/sửa.]]></ERR_OD_ORDER_OVER_NUMBER_CORRECTION>
+		
+		<ERR_OD_TRADEPLACE_HOSE_NOT_AMEND><![CDATA[Lệnh đã được đưa vào hệ thống xử lý lệnh của HOSE nên quý khách không thể sửa lệnh này được nữa.]]></ERR_OD_TRADEPLACE_HOSE_NOT_AMEND>
+		<ERR_OD_TRADERID_NOT_INVALID><![CDATA[Lệnh online bị từ chối thực hiện. Quý khách vui lòng đặt lệnh này tại sàn hoặc qua điện thoại 1900545409.]]></ERR_OD_TRADERID_NOT_INVALID>
+		<ERR_OD_ROOM_NOT_ENOUGH><![CDATA[Room dành cho nhà đầu tư nước ngoài của cổ phiếu này đã hết. Lệnh đặt không được thực hiện.]]></ERR_OD_ROOM_NOT_ENOUGH>
+
+	</BOService>
+
+	<VNDSService>
+		<Systems>
+			<UNKNOW_STATUS><![CDATA[Lỗi truy cập tài khoản: code:{0}, message:{1} ..... Click sang menu khác để hệ thống tự động load lại thông tin hoặc vui lòng logout và login lại lần nữa.]]></UNKNOW_STATUS>
+			<ERR_AUTH><![CDATA[Không có quyền truy cập vào VNDSService...]]></ERR_AUTH>
+			<ERR_SYSTEM_EXCEPTION><![CDATA[Lỗi truy cập.... ]]></ERR_SYSTEM_EXCEPTION>
+			<ERR_FUNCTIONAL_EXCEPTION><![CDATA[Lỗi chức năng....]]></ERR_FUNCTIONAL_EXCEPTION>
+			<ERR_UNKNOW_EXCEPTION><![CDATA[Lỗi ....]]></ERR_UNKNOW_EXCEPTION>
+			<ERR_INPUT_NULL><![CDATA[Lỗi dữ liệu input...]]></ERR_INPUT_NULL>
+		</Systems>
+
+		<OnlineUser>
+			<ERR_ONLINE_USER_EXISTED><![CDATA[Người dùng này đã tồn tại.]]></ERR_ONLINE_USER_EXISTED>
+			<ERR_EMAIL_USED><![CDATA[Email này đã được dùng để đăng ký, xin quý khách vui lòng chọn email khác.]]></ERR_EMAIL_USED>
+
+			<USER_NAME_TOO_LONG><![CDATA[UserName không dài quá 255 ký tự.]]></USER_NAME_TOO_LONG>
+			<FULL_NAME_TOO_LONG><![CDATA[FullName không dài quá 255 ký tự.]]></FULL_NAME_TOO_LONG>
+			<PASSWORD_TOO_LONG><![CDATA[Mật khẩu không dài quá 50 ký tự.]]></PASSWORD_TOO_LONG>
+			<EMAIL_TOO_LONG><![CDATA[Địa chỉ email không dài quá 250 ký tự.]]></EMAIL_TOO_LONG>
+
+			<ERR_USER_DISABLED><![CDATA[Hiện nay người dùng đang bị khoá. Vui lòng liên hệ với chúng tôi để mở khoá.]]></ERR_USER_DISABLED>
+			<ERR_USER_UNACTIVE><![CDATA[Hiện nay người dùng này chưa được kích hoạt. Thông tin kích hoạt được gửi theo địa chỉ email đăng ký.]]></ERR_USER_UNACTIVE>
+			<ERR_USER_UNEXIST><![CDATA[Người dùng không tồn tại.]]></ERR_USER_UNEXIST>
+		</OnlineUser>
+
+		<StreamQuotes>
+		</StreamQuotes>
+
+		<PendingAccount>
+		</PendingAccount>
+
+		<IdentityGuard>
+			<REMOTE_ERROR><![CDATA[Không kết nối được đến máy chủ bảo mật. Vui lòng thông báo với chúng tôi về lỗi này.]]></REMOTE_ERROR>
+			<ANON_AUTH_DISABLED><![CDATA[ANON_AUTH_DISABLED]]></ANON_AUTH_DISABLED>
+			<AUTH_FAILED_USER_LOCKED><![CDATA[Thẻ VTOS của Quý khách đã bị khóa do nhập sai thông tin 3 lần. Khách hàng bị khóa thẻ vui lòng sử dụng email đã đăng ký sử dụng dịch vụ của VNDirect Online gửi mail yêu cầu giải tỏa thẻ VTOS bị block (trong email gửi nêu đầy đủ họ và tên, số tài khoản, số serial thẻ) đến địa chỉ support@vndirect.com.vn. Hoặc gọi điện đến số: 04.3.9410622/ 1900545409 để yêu cầu được giải tỏa thẻ VTOS và tiếp tục giao dịch.]]></AUTH_FAILED_USER_LOCKED>
+			<AUTH_TYPE_NOT_ALLOWED><![CDATA[AUTH_TYPE_NOT_ALLOWED]]></AUTH_TYPE_NOT_ALLOWED>
+			<CARD_SUPERSEDED><![CDATA[CARD_SUPERSEDED]]></CARD_SUPERSEDED>
+			<INVALID_PARAMETER><![CDATA[Vui lòng nhập đúng giá trị trên thẻ VTOS theo yêu cầu.]]></INVALID_PARAMETER>
+			<INVALID_RESPONSE><![CDATA[Quý khách nhập chưa đúng mã số. Vui lòng nhập đúng giá trị trên thẻ VTOS theo yêu cầu.]]></INVALID_RESPONSE>
+			<INVALID_TOKEN_PIN_CHANGE><![CDATA[INVALID_TOKEN_PIN_CHANGE]]></INVALID_TOKEN_PIN_CHANGE>
+			<NO_ACTIVE_CARDS><![CDATA[NO_ACTIVE_CARDS]]></NO_ACTIVE_CARDS>
+			<NO_ACTIVE_TOKENS><![CDATA[NO_ACTIVE_TOKENS]]></NO_ACTIVE_TOKENS>
+			<NO_EXTERNAL_AUTH_CONFIGURED><![CDATA[NO_EXTERNAL_AUTH_CONFIGURED]]></NO_EXTERNAL_AUTH_CONFIGURED>
+			<NO_OTP><![CDATA[NO_OTP]]></NO_OTP>
+			<NO_VALID_CARDS><![CDATA[NO_VALID_CARDS]]></NO_VALID_CARDS>
+			<NO_VALID_TOKENS><![CDATA[NO_VALID_TOKENS]]></NO_VALID_TOKENS>
+			<OTP_EXPIRED><![CDATA[OTP_EXPIRED]]></OTP_EXPIRED>
+			<PIN_EXPIRED><![CDATA[PIN_EXPIRED]]></PIN_EXPIRED>
+			<PIN_MAX_USES><![CDATA[PIN_MAX_USES]]></PIN_MAX_USES>
+			<QA_NOT_ENOUGH_QUESTIONS><![CDATA[QA_NOT_ENOUGH_QUESTIONS]]></QA_NOT_ENOUGH_QUESTIONS>
+			<SHARED_SECRET_GET_ERROR><![CDATA[SHARED_SECRET_GET_ERROR]]></SHARED_SECRET_GET_ERROR>
+			<SHARED_SECRET_MAX_NUM><![CDATA[SHARED_SECRET_MAX_NUM]]></SHARED_SECRET_MAX_NUM>
+			<SHARED_SECRET_MAX_VALUE_SIZE><![CDATA[SHARED_SECRET_MAX_VALUE_SIZE]]></SHARED_SECRET_MAX_VALUE_SIZE>
+			<SHARED_SECRET_REMOVE_ERROR><![CDATA[SHARED_SECRET_REMOVE_ERROR]]></SHARED_SECRET_REMOVE_ERROR>
+			<SHARED_SECRET_SET_ERROR><![CDATA[SHARED_SECRET_SET_ERROR]]></SHARED_SECRET_SET_ERROR>
+			<SYSTEM_ERROR><![CDATA[Lỗi bảo mật. Vui lòng thông báo cho chúng tôi lỗi này 1900545409.]]></SYSTEM_ERROR>
+			<USER_DOES_NOT_EXIST><![CDATA[Thẻ bảo mật của Quý khách không tồn tại. Vui lòng liên hệ với chúng tôi để biết thêm chi tiết.]]></USER_DOES_NOT_EXIST>
+			<USER_LOCKED><![CDATA[Thẻ VTOS của Quý khách đã bị khóa do nhập sai thông tin 3 lần. Khách hàng bị khóa thẻ vui lòng sử dụng email đã đăng ký sử dụng dịch vụ của VNDirect Online gửi mail yêu cầu giải tỏa thẻ VTOS bị block (trong email gửi nêu đầy đủ họ và tên, số tài khoản, số serial thẻ) đến địa chỉ support@vndirect.com.vn. Hoặc gọi điện đến số: 04.3.9410622/ 1900545409 để yêu cầu được giải tỏa thẻ VTOS và tiếp tục giao dịch.]]></USER_LOCKED>
+			<USER_NO_CHALLENGE><![CDATA[Vui lòng đăng nhập lại lần nữa]]></USER_NO_CHALLENGE>
+			<USER_UPDATE_ERROR><![CDATA[USER_UPDATE_ERROR]]></USER_UPDATE_ERROR>
+			<USERNAME_NOT_UNIQUE><![CDATA[USERNAME_NOT_UNIQUE]]></USERNAME_NOT_UNIQUE>
+			<INVALID_SERIAL_NUMBER><![CDATA[Quý khách nhập sai giá trị của 'Mã thẻ VTOS']]></INVALID_SERIAL_NUMBER>
+		</IdentityGuard>
+
+		<Portfolios>
+			<ERR_ONLINE_USER_NOT_EXISTED><![CDATA[Người dùng không tồn tại.]]></ERR_ONLINE_USER_NOT_EXISTED>
+			<PORTFOLIO_NAME_TOO_LONG><![CDATA[Tên không dài quá 20 ký tự.]]></PORTFOLIO_NAME_TOO_LONG>
+			<PORTFOLIO_SYMBOL_TOO_LONG><![CDATA[Symbol không dài quá 20 ký tự.]]></PORTFOLIO_SYMBOL_TOO_LONG>
+		</Portfolios>
+	</VNDSService>
+
+	<WebAgent>
+		<Service_errors>
+			<RemoteError><![CDATA[Không kết nối được với hệ thống VNDSService!]]></RemoteError>
+		</Service_errors>
+		<Commons>
+			<mandatory-field><![CDATA[{0} bắt buộc phải nhập.]]></mandatory-field>
+		</Commons>
+		<Customer>
+			<INVALID_EMAIL><![CDATA[Email không hợp lệ.]]></INVALID_EMAIL>
+			<INVALID_DATE_OF_BIRTH><![CDATA[Ngày sinh không hợp lệ.]]></INVALID_DATE_OF_BIRTH>
+			<YEAR_OLDS_RULE><![CDATA[Khách hàng này chưa đủ 18 tuổi.]]></YEAR_OLDS_RULE>
+			<INVALID_MOBILE_PHONE><![CDATA[Mobile Phone không hợp lệ.]]></INVALID_MOBILE_PHONE>
+			<INVALID_EXPIRED_DATE><![CDATA[Ngày hết hạn không hợp lệd.]]></INVALID_EXPIRED_DATE>
+			<INVALID_DATE_OF_ISSUE><![CDATA[Ngày cấp không hợp lệ.]]></INVALID_DATE_OF_ISSUE>
+			<DATE_OF_ISSUE_RULE><![CDATA[Ngày cấp không được lớn hơn ngày hiện tại.]]></DATE_OF_ISSUE_RULE>
+			<DATE_OF_ISSUE_RULE_01><![CDATA[Ngày cấp không được nhỏ hơn ngày sinh.]]></DATE_OF_ISSUE_RULE_01>
+			<DATE_OF_ISSUE_RULE_02><![CDATA[Ngày cấp CMT phải lớn hơn ngày sinh ít nhất 15 năm.]]></DATE_OF_ISSUE_RULE_02>
+			<EXPIRED_DATE_RULE><![CDATA[Ngày hết hạn không được nhỏ hơn ngày hiện tại.]]></EXPIRED_DATE_RULE>
+			<INVALID_FROM_DATE><![CDATA[Fromdate nhập không đúng.]]></INVALID_FROM_DATE>
+			<INVALID_FROM_DATE><![CDATA[Todate đầu nhập không đúng.]]></INVALID_FROM_DATE>
+			<BLANK_SINGATURE><![CDATA[Khách hàng này chưa có chữ ký.]]></BLANK_SINGATURE>
+			<UPLOAD_SIGNATURE_FAILED><![CDATA[Xin lỗi Quý khách phần tạo hợp đồng này chưa hoàn thành vì bước upload chữ ký khách hàng không thành công. Xin vui lòng gửi file ảnh chữ ký đến bộ phận Chăm sóc khách hàng tại Hội sở để được trợ giúp.]]></UPLOAD_SIGNATURE_FAILED>
+
+			<!-- Authozirer -->
+			<INFO_AUTH_BLANK><![CDATA[Chưa nhập thông tin người uỷ quyền.]]></INFO_AUTH_BLANK>
+			<AUTH_VALID_DATE_BLANK><![CDATA[Chưa nhập ngày hiệu lực cho người uỷ quyền]]></AUTH_VALID_DATE_BLANK>
+			<AUTH_VALID_DATE_INVALID><![CDATA[Ngày hiệu lực của người uỷ quyền không đúng.]]></AUTH_VALID_DATE_INVALID>
+			<AUTH_EXPIRED_DATE_BLANK><![CDATA[Chưa nhập ngày hết hiệu lực cho người uỷ quyền.]]></AUTH_EXPIRED_DATE_BLANK>
+			<AUTH_EXPIRED_DATE_INVALID><![CDATA[Ngày hết hiệu lực của người uỷ quyền không đúng.]]></AUTH_EXPIRED_DATE_INVALID>
+			<AUTH_RULE_BLANK><![CDATA[Chưa chọn quyền nào cho người uỷ quyền.]]></AUTH_RULE_BLANK>
+			<AUTH_ACCOUNT_NAME_BLANK><![CDATA[Chưa nhập Tên chủ tài khoản của người uỷ quyền.]]></AUTH_ACCOUNT_NAME_BLANK>
+			<AUTH_BANK_ACCOUNT_BLANK><![CDATA[Chưa nhập Số TK ngân hang của người uỷ quyền.]]></AUTH_BANK_ACCOUNT_BLANK>
+			<AUTH_EXPIRED_DATE_RULE><![CDATA[Ngày hết hiệu lực phải lớn hơn ngày hiệu lực.]]></AUTH_EXPIRED_DATE_RULE>
+			<AUTH_ACCOUNT_NAME_TOO_LONG><![CDATA[Tên chủ tài khoản của người ủy quyền phải ít hơn 20 ký tự.]]></AUTH_ACCOUNT_NAME_TOO_LONG>
+		</Customer>
+		<SearchAccount>
+			<CannotFindAccount><![CDATA[Không tìm thấy tài khoản nào khớp, vui lòng sử dụng chức năng Tìm kiếm TK.]]></CannotFindAccount>
+			<AccountNumberEmpty><![CDATA[Trường Tài khoản bắt buộc nhập.]]></AccountNumberEmpty>
+		</SearchAccount>
+	</WebAgent>
+
+	<CoreBank>
+		<FROM_ACCOUNT_BLANK><![CDATA[Vui lòng chọn Từ tài khoản nào.]]></FROM_ACCOUNT_BLANK>
+		<TO_ACC_BALANK><![CDATA[Quý khách vui lòng lựa chọn Tài khoản chuyển đến.]]></TO_ACC_BALANK>
+		<AMOUNT_BLANK><![CDATA[Bạn chưa nhập số tiền cần chuyển.]]></AMOUNT_BLANK>
+		<AMOUNT_INVALID><![CDATA[Quý khách vui lòng chỉ nhập giá trị là các chữ số và không có các ký tự đặc biệt. Đơn vị nhập đầy đủ đến hàng đơn vị.]]></AMOUNT_INVALID>
+		<AMOUNT_TOO_BIG><![CDATA[Quý khách đã chuyển tiền vượt quá số dư trong tài khoản.]]></AMOUNT_TOO_BIG>
+		<DETAILS_BLANK><![CDATA[Bạn chưa nhập Nội dung lệnh chuyển.]]></DETAILS_BLANK>
+		<TRANSFER_TIME_ERROR><![CDATA[Đã hết giờ chuyển tiền.]]></TRANSFER_TIME_ERROR>
+		<MIN_ALLOW><![CDATA[Số tiền chuyển phải lớn hơn {0}.]]></MIN_ALLOW>
+	</CoreBank>
+	<RefProgram>
+		<InviteError><![CDATA[Bạn cần nhập đầy đủ thông tin để giới thiệu ít nhất một người]]></InviteError>		
+	</RefProgram>	
+</ErrorMessage>

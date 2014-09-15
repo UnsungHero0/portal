@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	xmlns:tx="http://www.springframework.org/schema/tx">
+
+	<!-- Define for Common Module -->
+	<bean id="springJSWebI18NMessageAction" class="vn.com.vndirect.web.struts2.common.WebI18NMessageAction"
+		scope="prototype">
+	</bean>
+
+	<bean id="springCommonSymbolAutoSuggestAJAXAction"
+		class="vn.com.vndirect.web.struts2.common.SymbolAutoSuggestAJAXAction"
+		scope="prototype">
+		<!-- <property name="embeddedDBManager" ref="EmbedFinfoDBManager" /> -->
+	</bean>
+	<bean id="springHomeInvalidateSessionAJAXAction"
+		class="vn.com.vndirect.web.struts2.common.InvalidateSessionAJAXAction"
+		scope="prototype">
+	</bean>
+	<bean id="springCommonSymbolProcessingAJAXAction"
+		class="vn.com.vndirect.web.struts2.common.SymbolProcessingAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<!-- For ChartData -->
+	<bean id="springChartDataAJAXAction" class="vn.com.vndirect.web.struts2.chart.ChartDataAJAXAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager" /> -->
+	</bean>
+	<bean id="springFlashChartAPIAction" class="vn.com.vndirect.web.struts2.chart.FlashChartAPIAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager" /> -->
+		<!-- <property name="chartManager" ref="TAChartManager" /> -->
+	</bean>
+	<bean id="springTechnicalChartAction" class="vn.com.vndirect.web.struts2.chart.TechnicalChartAction"
+		scope="prototype">
+		<!-- <property name="chartManager" ref="TAChartManager" /> -->
+		<!-- <property name="quotesManager" ref="QuotesManager" /> -->
+	</bean>
+
+	<!-- Define for Search News Module -->
+	<bean id="springSearchNewsAction" class="vn.com.vndirect.web.struts2.newsinfo.SearchNewsAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<!-- Define for Captcha Image Security -->
+	<!-- <bean id="springCaptchaImageAction" class="vn.com.vndirect.web.struts2.common.CaptchaImageAction"
+		scope="prototype">
+		<property name="captchaEngineProxy" ref="CaptchaEngineProxy" />
+	</bean> -->
+
+	<!-- Define for Home Module -->
+	<!-- <bean id="springHomePageAction" class="vn.com.vndirect.web.struts2.home.HomePageAction"
+		scope="prototype">
+	</bean> -->
+	<bean id="springReleaseNoteAction" class="vn.com.vndirect.web.struts2.home.help.ReleaseNoteAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+	<!-- Define for News Portlet Module -->
+	<bean id="springNewsOnlineAJAXAction"
+		class="vn.com.vndirect.web.struts2.portlet.NewsOnlineAJAXAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<bean id="springNewsAction" class="vn.com.vndirect.web.struts2.newsinfo.NewsAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springTradingStatisticAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.TradingStatisticAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springForeignStatisticAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.ForeignStatisticAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springHistoricalPriceAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.HistoricalPriceAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springLastestMarketNewsAJAXAction"
+		class="vn.com.vndirect.web.struts2.portlet.LastestMarketNewsAJAXAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<bean id="springMarketNewsHomeAJAXAction"
+		class="vn.com.vndirect.web.struts2.portlet.MarketNewsAJAXAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<bean id="springMarketOverviewAJAXAction"
+		class="vn.com.vndirect.web.struts2.portlet.MarketOverviewAJAXAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<!-- Define for Analysis Module -->
+	<bean id="springListSectorAction"
+		class="vn.com.vndirect.web.struts2.analysistools.ListSectorAction"
+		scope="prototype">
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<bean id="springSectorOverviewAction"
+		class="vn.com.vndirect.web.struts2.analysistools.SectorOverviewAction"
+		scope="prototype">
+		<!-- <property name="manager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<bean id="springStockScreenerAction"
+		class="vn.com.vndirect.web.struts2.analysistools.StockScreenerAction"
+		scope="prototype">
+		<!-- <property name="finfoDBManager" ref="EmbedFinfoDBManager"></property> -->
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<bean id="springStockScreenerAJAXAction"
+		class="vn.com.vndirect.web.struts2.analysistools.StockScreenerAJAXAction"
+		scope="prototype">
+		<!-- <property name="finfoDBManager" ref="EmbedFinfoDBManager"></property> -->
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<bean id="springReportAction"
+		class="vn.com.vndirect.web.struts2.analysistools.AnalysisReportAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<!-- Define for stock wizard module -->
+	<bean id="springStockWizardAction"
+		class="vn.com.vndirect.web.struts2.analysistools.StockWizardAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<!-- Define for power rating module -->
+	<bean id="springPowerRatingAction"
+		class="vn.com.vndirect.web.struts2.analysistools.PowerRatingAction"
+		scope="prototype">
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springPowerRatingDetailAction"
+		class="vn.com.vndirect.web.struts2.analysistools.PowerRatingDetailAction"
+		scope="prototype">
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<!-- Define for Macro News module -->
+	<bean id="springMacroNewsAction"
+		class="vn.com.vndirect.web.struts2.analysistools.MacroNewsAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<bean id="springMacroReportNewsAction"
+		class="vn.com.vndirect.web.struts2.analysistools.MacroReportNewsAction"
+		scope="prototype">
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<!-- Define for ListedMarket Module -->
+	<bean id="springListedMarket"
+		class="vn.com.vndirect.web.struts2.listedmarket.ListMarketOverviewAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springMarketCalendarAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MarketCalendarAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+	</bean>
+
+	<bean id="springMarketCalendarAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MarketCalendarAJAXAction">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+	</bean>
+
+	<bean id="springSnapshotAction" class="vn.com.vndirect.web.struts2.listedmarket.SnapshotAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+		<!--
+			property name="finfoDBManager" ref="EmbedFinfoDBManager"></property
+		-->
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+	</bean>
+
+	<bean id="springSnapshotAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.SnapshotAJAXAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+		<!-- <property name="finfoDBManager" ref="EmbedFinfoDBManager"></property> -->
+		<!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+		<property name="auditManager" ref="AuditManager"></property>
+	</bean>
+
+	<bean id="springProfileAction" class="vn.com.vndirect.web.struts2.listedmarket.ProfileAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springKeyStatisticAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.KeyStatisticAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springIncomeStatementForecastAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.IncomeStatementForecastAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springSSCFillingAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.SSCFillingAction"
+		scope="prototype">
+		<!--
+			<property name="listedMarketManager"
+			ref="ListedMarketManager"></property>
+		-->
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springBalanceSheetAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.BalanceSheetAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+		<!-- <property name="commonManager" ref="CommonManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springIncomeStatementAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.IncomeStatementAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+		<!-- <property name="commonManager" ref="CommonManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springIncomeStatementAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.IncomeStatementAJAXAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springCashFlowAction" class="vn.com.vndirect.web.struts2.listedmarket.CashFlowAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+		<!-- <property name="commonManager" ref="CommonManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springCashFlowAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.CashFlowAJAXAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springMarketStatisticsAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MarketStatisticsAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+	</bean>
+
+	<bean id="springMarketStatisticsAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MarketStatisticsAJAXAction"
+		scope="prototype">
+		<!-- <property name="listedMarketManager" ref="ListedMarketManager"></property> -->
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springMaijorHoldersAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MaijorHoldersAction">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springInsiderTransactionsAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.InsiderTransactionsAction">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springMostActiveCompanyAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MostActiveCompanyAJAXAction">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springMostPopularSymbolAJAXAction"
+		class="vn.com.vndirect.web.struts2.listedmarket.MostPopularSymbolAJAXAction">
+		<property name="auditManager" ref="AuditManager"></property>
+	</bean>
+
+	<bean id="springVoteAJAXAction" class="vn.com.vndirect.web.struts2.listedmarket.VoteAJAXAction">
+		<!-- <property name="commonManager" ref="CommonManager"></property> -->
+	</bean>
+
+	<bean id="springFlashChartAction"
+		class="vn.com.vndirect.web.struts2.analysistools.FlashChartAction">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+	</bean>
+
+	<bean id="springExpertsAction" class="vn.com.vndirect.web.struts2.analysistools.ExpertsAction">
+		<!-- <property name="onlineServiceManager" ref="OnlineServiceManager"></property> -->
+	</bean>
+
+	<!-- Define for OSC Module -->
+	<bean id="springOSCAction" class="vn.com.vndirect.web.struts2.osc.OSCAction"
+		scope="prototype">
+		<!-- <property name="onlineServiceManager" ref="OnlineServiceManager"></property> -->
+	</bean>
+
+	<bean id="springUserProfileAction" class="vn.com.vndirect.web.struts2.osc.UserProfileAction"
+		scope="prototype">
+		<property name="tradingManager" ref="TradingManager"></property>
+		<property name="userManager" ref="UserManager"></property>
+		<!-- <property name="commonManager" ref="CommonManager"></property> -->
+	</bean>
+
+	<bean id="springUserProfileAJAXAction" class="vn.com.vndirect.web.struts2.osc.UserProfileAJAXAction"
+		scope="prototype">
+		<property name="tradingManager" ref="TradingManager"></property>
+		<property name="userManager" ref="UserManager"></property>
+	</bean>
+
+	<bean id="springProductAction" class="vn.com.vndirect.web.struts2.newsinfo.ProductAction"
+		scope="prototype">
+		<!-- <property name="onlineServiceManager" ref="OnlineServiceManager"></property> -->
+	</bean>
+
+	<!-- Define for Open Account Module -->
+	<bean id="springFreeRegistedUsersAction"
+		class="vn.com.vndirect.web.struts2.openaccount.FreeRegistedUsersAction"
+		scope="prototype">
+		<property name="accountManager" ref="AccountManager"></property>
+	</bean>
+
+	<bean id="springDirectAccountAction"
+		class="vn.com.vndirect.web.struts2.openaccount.DirectAccountAction"
+		scope="prototype">
+		<property name="manager" ref="AccountManager"></property>
+	</bean>
+
+	<bean id="springWorldIndexAJAXAction"
+		class="vn.com.vndirect.web.struts2.portlet.WorldIndexAJAXAction"
+		scope="prototype">
+		<property name="mapQuoteYAH" ref="MapQuoteYAH" />
+		<property name="mapQuoteGOO" ref="MapQuoteGOO" />
+		<property name="worldMarketManager" ref="WorldMarketManager" />
+	</bean>
+
+	<!-- Define for Share Holder Relation module -->
+	<bean id="springHolderRelationAction"
+		class="vn.com.vndirect.web.struts2.holderrelation.ShareHolderRelationAction"
+		scope="prototype">
+		<!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+		<!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+	</bean>
+
+	<bean id="springEmptyAction" class="vn.com.vndirect.web.struts2.common.EmptyAction"
+		scope="prototype">
+	</bean>
+	<bean id="springHelpAction" class="vn.com.vndirect.web.struts2.home.help.HelpAction"
+		scope="prototype">
+		<!-- <property name="onlineServiceManager" ref="OnlineServiceManager"></property> -->
+	</bean>
+	<bean id="springHistoryAction" class="vn.com.vndirect.web.struts2.home.history.HistoryAction"
+        scope="prototype">
+        <!-- <property name="onlineServiceManager" ref="OnlineServiceManager"></property> -->
+    </bean>
+	<bean id="springHighStockAction" class="vn.com.vndirect.web.struts2.chart.HighStockAction"
+        scope="prototype">
+        <!-- <property name="highStockManager" ref="HighStockManager"></property> -->
+        <!-- <property name="chartManager" ref="TAChartManager"></property> -->
+        <!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+    </bean>
+    <bean id="springIRSnapshotAjaxAction" class="vn.com.vndirect.web.struts2.home.IRSnapshotAjaxAction"
+        scope="prototype">
+        <!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+        <!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+    </bean>
+    <bean id="springSitemapAction" class="vn.com.vndirect.web.struts2.common.SitemapAction"
+        scope="prototype">
+        <!-- <property name="commonManager" ref="CommonManager"></property> -->
+        <!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+        <!-- <property name="analysisToolsManager" ref="AnalysisToolsManager"></property> -->
+    </bean>
+    
+    <bean id="springStockHighlightsAction" class="vn.com.vndirect.web.struts2.stockHighlights.StockHighlightsAction"
+        scope="prototype">
+        <!-- <property name="quotesManager" ref="QuotesManager"></property> -->
+        <!-- <property name="newsInfoManager" ref="NewsInfoManager"></property> -->
+    </bean>
+    
+    <bean id="springStockPickAction" class="vn.com.vndirect.web.struts2.consultingcenter.StockPickAction"
+        scope="prototype">
+        <property name="stockPickManager" ref="StockPickManager"></property>
+        <property name="newsInfoManager" ref="NewsInfoManager"></property>
+        <property name="tradingManager" ref="TradingManager"></property>
+    </bean>
+    
+    <bean id="springBasicAnalysisAction" class="vn.com.vndirect.basicanalysis.BasicAnalysisAction"
+        scope="prototype">
+    </bean>
+</beans>

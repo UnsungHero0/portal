@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+	<definition name="FreeAfterLogin" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/FreeAfterLogin.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+		    <!--
+			<add-attribute value="/js/web/osc/classes/osc.clazz.NewsHelper.js"/>
+			<add-attribute value="/js/web/osc/classes/osc.clazz.NewsOnlineFreeAfterLogin.js"/>
+			<add-attribute value="/js/web/osc/osc.NewOnlineFreeAfterLogin.js"/>
+			<add-attribute value="/js/web/osc/classes/osc.clazz.MarketOverview.js"/>
+			<add-attribute value="/js/web/osc/osc.MarketOverview.js"/>
+		    -->
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="OSCAfterLogin" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/OSCAfterLogin.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.OSCAfterLogin.js"/>
+			<add-attribute value="/js/web/osc/osc.OSCAfterLogin.js"/> 
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="OSCContentDetail" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/OSCContentContainer.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.OSCAfterLogin.js"/>
+			<add-attribute value="/js/web/osc/osc.OSCAfterLogin.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="AskExpert" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/AskExpert.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.AskExpert.js"/>
+			<add-attribute value="/js/web/osc/osc.AskExpert.js"/> 
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="UserProfile" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/UserProfile.jsp"></put-attribute>
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.UserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.UserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="UserTrading" extends="Base.Web">
+        <put-attribute name="body" value="/WEB-INF/jsps/osc/UserTrading.jsp"></put-attribute>
+        <put-list-attribute name="css">
+        </put-list-attribute>
+        <put-list-attribute name="js">
+            <add-attribute value="/js/web/osc/classes/osc.clazz.UserProfile.js"/>
+            <add-attribute value="/js/web/osc/osc.UserProfile.js"/>
+        </put-list-attribute>
+    </definition>
+	
+	<definition name="UserHelp" extends="Base.Web">
+        <put-attribute name="body" value="/WEB-INF/jsps/osc/UserHelp.jsp"></put-attribute>
+        <put-list-attribute name="css">
+        </put-list-attribute>
+        <put-list-attribute name="js">
+        </put-list-attribute>
+    </definition>
+	
+	
+	<definition name="MiChangeUserProfile" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeUserProfile.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	
+	<definition name="MiChangeMailingAddress" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeMailingAddress.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeHomePhone" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeHomePhone.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeMobilePhone" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeMobilePhone.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeEmailConfirm" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeEmailConfirm.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>	
+	<definition name="MiChangeTeleTradeFones" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeTeleTradeFones.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeTeleTradeFones2" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeTeleTradeFones2.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeUserProfile.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeUserProfile.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeTeleTradePassword" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeTeleTradePassword.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeTeleTradePassword.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeTeleTradePassword.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeInternetEmail" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeInternetEmail.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangeInternetEmail.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangeInternetEmail.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangeSuccess" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangeUserProfileSuccess.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+		</put-list-attribute>
+	</definition>
+	<definition name="MiChangePassword" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/MiChangePassword.jsp"></put-attribute>
+		<put-list-attribute name="css"></put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.ChangePassword.js"/>
+			<add-attribute value="/js/web/osc/osc.ChangePassword.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="RecoverUserInfo.Input" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/RecoveUserInfoInput.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="RecoverUserInfo.Finish" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/osc/RecoveUserInfoFinish.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="common.dieuKhoanSuDungWebsite" extends="Base.Web">
+        <put-attribute name="body" value="/WEB-INF/jsps/osc/dieuKhoanSuDungWebsite.jsp"></put-attribute>
+    </definition>
+</tiles-definitions>

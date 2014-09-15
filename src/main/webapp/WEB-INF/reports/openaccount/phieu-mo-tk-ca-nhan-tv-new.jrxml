@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="phieu-mo-tk-ca-nhan-tv" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.3310000000000017"/>
+	<property name="ireport.x" value="170"/>
+	<property name="ireport.y" value="267"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<field name="married" class="java.lang.String"/>
+	<field name="notMarried" class="java.lang.String"/>
+	<field name="highSchoolLevel" class="java.lang.String"/>
+	<field name="graduateLevel" class="java.lang.String"/>
+	<field name="postGraduateLevel" class="java.lang.String"/>
+	<field name="othersLevel" class="java.lang.String"/>
+	<field name="male" class="java.lang.String"/>
+	<field name="female" class="java.lang.String"/>
+	<field name="fullname" class="java.lang.String"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="birthDate" class="java.lang.String"/>
+	<field name="idNumber" class="java.lang.String"/>
+	<field name="receiveDate" class="java.lang.String"/>
+	<field name="receivedAddress" class="java.lang.String"/>
+	<field name="expiredDate" class="java.lang.String"/>
+	<field name="persistenceAddress" class="java.lang.String"/>
+	<field name="contactAddress" class="java.lang.String"/>
+	<field name="fixPhone" class="java.lang.String"/>
+	<field name="mobilePhone" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="workPosition" class="java.lang.String"/>
+	<field name="companyPhone" class="java.lang.String"/>
+	<field name="companyFax" class="java.lang.String"/>
+	<field name="fullnameSecond" class="java.lang.String"/>
+	<field name="investmentLevel_1" class="java.lang.String"/>
+	<field name="investmentLevel_2" class="java.lang.String"/>
+	<field name="investmentLevel_3" class="java.lang.String"/>
+	<field name="investmentLevel_4" class="java.lang.String"/>
+	<field name="investExpLevel_1" class="java.lang.String"/>
+	<field name="investExpLevel_2" class="java.lang.String"/>
+	<field name="investExpLevel_3" class="java.lang.String"/>
+	<field name="investExpLevel_4" class="java.lang.String"/>
+	<field name="investExpLevel_5" class="java.lang.String"/>
+	<field name="investExpLevel_6" class="java.lang.String"/>
+	<field name="accOTC" class="java.lang.String"/>
+	<field name="accListedStock" class="java.lang.String"/>
+	<field name="authorizedAcct" class="java.lang.String"/>
+	<field name="nonAuthorizedAcct" class="java.lang.String"/>
+	<field name="statementMonthly" class="java.lang.String"/>
+	<field name="statementQuarterly" class="java.lang.String"/>
+	<field name="statementDirectly" class="java.lang.String"/>
+	<field name="statementByEmail" class="java.lang.String"/>
+	<field name="onlineTrading_YES" class="java.lang.String"/>
+	<field name="onlineTrading_NO" class="java.lang.String"/>
+	<field name="ownerTrading" class="java.lang.String"/>
+	<field name="authorizedTrading" class="java.lang.String"/>
+	<field name="teleTrading_YES" class="java.lang.String"/>
+	<field name="teleTrading_NO" class="java.lang.String"/>
+	<field name="authorizedTrading2" class="java.lang.String"/>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="ownerTrading2" class="java.lang.String"/>
+	<field name="companyNameSecond" class="java.lang.String"/>
+	<field name="workPositionSecond" class="java.lang.String"/>
+	<field name="authorizedName" class="java.lang.String"/>
+	<field name="authorizedPhone" class="java.lang.String"/>
+	<field name="organization1" class="java.lang.String"/>
+	<field name="organization2" class="java.lang.String"/>
+	<field name="incomePurposeInvest" class="java.lang.String"/>
+	<field name="longTermPurposeInvest" class="java.lang.String"/>
+	<field name="midTermPurposeInvest" class="java.lang.String"/>
+	<field name="shortTermPurposeInvest" class="java.lang.String"/>
+	<field name="highAcceptedLevel" class="java.lang.String"/>
+	<field name="belowAcceptedLevel" class="java.lang.String"/>
+	<field name="middleAcceptedLevel" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="atBank" class="java.lang.String"/>
+	<field name="accountOwner" class="java.lang.String"/>
+	<field name="assetShortTerm" class="java.lang.String"/>
+	<field name="assetNetIncome" class="java.lang.String"/>
+	<field name="assetFix" class="java.lang.String"/>
+	<field name="assetTotalIncome" class="java.lang.String"/>
+	<field name="notificationEmail" class="java.lang.String"/>
+	<field name="notificationMobilePhone" class="java.lang.String"/>
+	<field name="orderResultMobilePhone" class="java.lang.String"/>
+	<field name="orderResultMethodByPhone" class="java.lang.String"/>
+	<field name="orderResultMethodByCallToAgent" class="java.lang.String"/>
+	<field name="notificationMethodByPhone" class="java.lang.String"/>
+	<field name="notificationMethodByEmail" class="java.lang.String"/>
+	<field name="taxNumber" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<image hAlign="Center">
+				<reportElement key="image-1" x="0" y="1" width="535" height="183"/>
+				<imageExpression class="java.lang.String"><![CDATA["hopdong-header.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement key="line-1" x="0" y="177" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-16" x="405" y="183" width="117" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Quốc tịch: ...............]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-19" x="3" y="203" width="237" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ Số CMND: ...............................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-20" x="373" y="263" width="149" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Mã số thuế: .......................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-21" x="3" y="223" width="501" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Địa chỉ liên lạc: .....................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-22" x="3" y="265" width="201" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Điện thoại cố định: .............................]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-9" x="67" y="182" width="198" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fullname}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-10" x="330" y="182" width="71" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{birthDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="75" y="202" width="190" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{idNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="329" y="201" width="74" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{receiveDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="454" y="202" width="98" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{receivedAddress}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="445" y="262" width="90" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" size="10" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{taxNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="87" y="223" width="437" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" size="10" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{contactAddress}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="109" y="264" width="111" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fixPhone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="109" y="284" width="111" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{mobilePhone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="299" y="284" width="223" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-93" x="278" y="202" width="115" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp: ..................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-95" x="408" y="203" width="127" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nơi cấp: ......................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-101" x="3" y="285" width="201" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Điện thoại di động: ..............................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-102" x="226" y="285" width="278" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Địa chỉ Email: .........................................................]]></text>
+			</staticText>
+			<elementGroup/>
+			<line>
+				<reportElement key="line-6" x="0" y="177" width="1" height="123"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="535" y="177" width="1" height="122"/>
+			</line>
+			<line>
+				<reportElement key="line-2" x="0" y="299" width="535" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-2" x="0" y="279" width="535" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-2" x="0" y="260" width="535" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="220" y="261" width="1" height="39"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="369" y="261" width="1" height="19"/>
+			</line>
+			<line>
+				<reportElement key="line-2" x="1" y="218" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-13" x="278" y="182" width="115" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ngày sinh: ...............]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-6" x="273" y="178" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="404" y="177" width="1" height="41"/>
+			</line>
+			<line>
+				<reportElement key="line-2" x="0" y="198" width="535" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-2" x="0" y="239" width="535" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-21" x="3" y="245" width="521" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Địa chỉ thường trú: ..................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-16" x="224" y="265" width="132" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ Fax: ..............................]]></text>
+			</staticText>
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField-11" x="254" y="264" width="122" height="16"/>
+				<textElement>
+					<font fontName="SansSerif" size="10" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-16" x="464" y="183" width="88" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-21" x="5" y="183" width="235" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Họ và tên: ...............................................]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" hAlign="Center">
+				<reportElement key="image-2" stretchType="RelativeToTallestObject" x="0" y="308" width="535" height="494"/>
+				<imageExpression class="java.lang.String"><![CDATA["hopdong-ttct.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

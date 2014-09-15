@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+               
+	<!-- =================== DEFINE WEBSERVICE MANAGER ================= -->
+	
+	<bean id="WebServiceLocator" class="vn.com.vndirect.webservice.WebServiceLocator">
+		<property name="wsurl">
+			<map>
+				<entry key="STREAM_QUOTES_WS_URL" value="${ws.url.streamQuotesService}"/>
+				<entry key="ONLINE_USER_WS_URL" value="${ws.url.onlineUserService}"/>
+				<entry key="OPEN_ACCOUNT_WS_URL" value="${ws.url.openAccountService}"/>									
+				<!-- <entry key="ONLINE_ACCOUNT_WS_URL" value="${ws.url.onlineAccountService}"/> 
+				<entry key="PORTFOLIO_WS_URL" value="${ws.url.portfolioService}"/>				
+				<entry key="OTC_WS_URL" value="${ws.url.otcService}"/>				
+				<entry key="WEB_AGENT_USER_WS_URL" value="${ws.url.webAgentUserService}"/>				
+				<entry key="ALERT_WS_URL" value="${ws.url.alertService}"/>
+				 -->				
+				<entry key="AUDIT_WS_URL" value="${ws.url.auditService}"/>	
+				<entry key="NEWS_READER_WS_URL" value="${ws.url.newsReaderService}"/>
+				<!-- 
+				<entry key="REF_PROGRAM_WS_URL" value="${ws.url.refProgramService}"/>								
+				<entry key="OSC_WS_URL" value="${ws.url.oscService}"/>
+				 -->			
+				<entry key="TRADING_IDEAS_WS_URL" value="${ws.url.tradingIdeasService}"/>
+				
+				<entry key="BO_ONLINE_TRADING_WS_URL" value="${ws.url.boOnlineTradingService}"/>
+				<entry key="BO_AUTHENTICATE_WS_URL" value="${ws.url.boAuthenticateService}"/>
+				<entry key="BO_CUSTOMER_WS_URL" value="${ws.url.boCustomerService}"/>				
+				<entry key="BO_WEB_AGENT_WS_URL" value="${ws.url.boWebAgentService}"/>
+				<entry key="BO_CORE_BANK_WS_URL" value="${ws.url.boCoreBankService}"/>	
+				
+				<entry key="CRM_CREATE_CONTRACT_WS_URL" value="${ws.url.crmCreateLeadContractService}"/>				
+				<entry key="PAYDIRECT_BANKSERVICE_WS_URL" value="${ws.url.paydirectBankingService}"/>				
+			</map>
+		</property>		
+		<property name="wstimeout">			
+			<map>
+				<entry key="TIMEOUT_VNDS" value="${timeout.vnds}"/>
+				<entry key="TIMEOUT_BPS" value="${timeout.bps}"/>
+				<entry key="TIMEOUT_CRM" value="${timeout.crm}"/>								
+			</map>
+		</property>
+	</bean>
+		
+	<!-- Authentication configuration -->
+	<bean id="AuthenticationHelper" class="vn.com.vndirect.wsutility.AuthenticationHelper">
+		 <!-- For VNDSService -->
+ 		 <property name="vndsAuthHeaderUserName" value="${vndsservice.username}"/>
+ 		 <property name="vndsAuthHeaderPassword" value="${vndsservice.password}"/>		 
+ 		 
+ 		 <!-- For BOProxyServices -->
+ 		 <property name="boProxyAuthHeaderUserName" value="${boservice.username}"/>
+ 		 <property name="boProxyAuthHeaderPassword" value="${boservice.password}"/>
+ 		 
+ 		 <!-- For Paydirect banking Services -->
+ 		 <property name="homedirectAuthenticationHeaderUserName" value="${paydirect.banking.username}"/>
+ 		 <property name="homedirectAuthenticationHeaderPassword" value="${paydirect.banking.password}"/>
+	</bean>
+	
+	<bean id="Header" class="vn.com.vndirect.domain.crm.Header">
+ 		 <!-- For CRM Services -->
+ 		 <property name="userName" value="${crmservice.username}"/>
+ 		 <property name="password" value="${crmservice.password}"/>
+	</bean>
+</beans>

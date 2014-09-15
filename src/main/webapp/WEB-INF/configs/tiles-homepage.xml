@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- Define Struts Tile for Front-End module -->
+	<definition name="IndexPage" extends="Base.Web">
+		<put-attribute name="body" value="/index.jsp" />
+	</definition>
+	
+	<definition name="HomePage" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/homepage.jsp" />
+		<put-attribute name="nhapmaCK"
+			value="/WEB-INF/jsps/nhapmaCK_homepage.jsp" />
+		<put-list-attribute name="js">
+		    
+		    <add-attribute value="/js/web/quote/vnd.price.js" />
+            <add-attribute value="/js/web/quote/vndirect.portal.quotes.js" />
+            <add-attribute value="/js/web/quote/vndirect.portal.quotes.support.js" />
+            <add-attribute value="/js/web/home/homepage.js" />
+            <add-attribute value="/js/web/home/jquery.event.drag-2.0.min.js" />
+            <add-attribute value="/js/web/home/mousehold.js" />
+            <add-attribute value="/js/web/home/jquery.mousewheel.js" />
+            <!-- <add-attribute value="/js/web/home/aplweb.scrollbars.js" /> -->
+            <add-attribute value="/js/web/home/jquery.nicescroll.js" />
+            <add-attribute value="/js/web/home/jquery.pubsub.js" />
+
+            <!-- js loading tong quan thi truong -->
+           <add-attribute value="/js/highstock/highstock.js" />
+            <add-attribute value="/js/highstock/vndirect.market-overview.highstock.js" />
+            <add-attribute value="/js/web/listedmarket/indexMarketFromDirectBoard.js" />
+            <add-attribute value="/js/web/newsinfo/classes/newsinfo.clazz.LatestMarketNewsListedMarket.js" />
+            <add-attribute value="/js/web/newsinfo/newsinfo.LatestMarketNewsListedMarket.js" />
+            <add-attribute value="/js/web/listedmarket/classes/listedmarket.clazz.MostActive.js" />
+            <add-attribute value="/js/web/listedmarket/listedmarket.MostActive.js" />
+            <add-attribute value="/js/web/listedmarket/listedMarket.market-insight.functions.js" /> 
+            
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="home.help.qa" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/home/help/helpQA.jsp" />
+	</definition>
+	
+	<definition name="home.help.form" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/home/help/helpDownloadForm.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/osc/classes/osc.clazz.OSCAfterLogin.js" />
+			<add-attribute value="/js/web/osc/osc.OSCAfterLogin.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="home.help.tradingGuide" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/home/help/tradingGuide.jsp" />
+	</definition>
+	
+	<definition name="home.help.releaseNote" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/home/help/releaseNotes.jsp" />
+	</definition>
+	
+	<definition name="home.help.releaseNoteDetail" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/home/help/releaseNoteDetail.jsp" />
+    </definition>
+	
+	<definition name="SystemExceptionPage" extends="Base.Web">
+        <put-attribute name="news" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsps/exceptions/SystemException.jsp" />
+		<put-attribute name="nhapmaCK" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+	</definition>
+	
+	<definition name="FunctionalExceptionPage" extends="Base.Web">
+		<put-attribute name="left-menu"
+			value="/WEB-INF/jsps/layouts/LeftMenu-ListedMarket.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/exceptions/FunctionalException.jsp" />
+	</definition>
+	
+	<definition name="RedirectUrlPage" extends="Base.Web">
+		<put-attribute name="left-menu"
+			value="/WEB-INF/jsps/layouts/LeftMenu-ListedMarket.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsps/RedirectUrl.jsp" />
+	</definition>
+	
+	<definition name="FwdUrlPage" extends="Base.Web">
+		<put-attribute name="left-menu"
+			value="/WEB-INF/jsps/layouts/LeftMenu-ListedMarket.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsps/FwdUrl.jsp" />
+	</definition>
+	
+	<definition name="FwdSecUrlPage" extends="Base.Web">
+		<put-attribute name="left-menu"
+			value="/WEB-INF/jsps/layouts/LeftMenu-ListedMarket.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsps/FwdSecUrl.jsp" />
+	</definition>
+	
+	<definition name="PageNotFound.Home" extends="Base.Web">
+		<put-attribute name="news" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsps/PageNotFound.jsp" />
+		<put-attribute name="nhapmaCK" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+	</definition>
+	
+	<definition name="SessionTimeout.Page" extends="Base.Web">
+        <put-attribute name="news" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsps/common/SessionTimeout.jsp" />
+        <put-attribute name="nhapmaCK" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+    </definition>
+	
+    <definition name="ForBidden.Home" extends="Base.Web">
+        <put-attribute name="news" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsps/ForBidden.jsp" />
+        <put-attribute name="nhapmaCK" value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+    </definition>
+</tiles-definitions>

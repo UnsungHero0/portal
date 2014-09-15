@@ -1,0 +1,12 @@
+#### Home site: http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+## Demo site: http://jquery.bassistance.de/validate/demo/
+jquery.validate.pack.js
+(libs: jquery.metadata.js, jquery.form.js, jquery.js)
+
+
+#####  http://docs.jquery.com/Plugins/Validation/Methods
+ar validator = $("#myform").validate();
+validator.showErrors({"firstname": "I know that your firstname is Pete, Pete!"});
+
+Note: errors 	Object<String, String>	
+One or more key/value pairs of input names and messages.

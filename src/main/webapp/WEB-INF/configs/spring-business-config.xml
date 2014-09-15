@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+        <!-- ========================= BUSINESS OBJECT DEFINITIONS ======================== -->
+        <!--
+        - A parent bean definition which is a base definition for transaction proxies.
+        - It's marked as abstract, since it's not supposed to be instantiated itself.
+        - We set shared transaction attributes here, following our naming patterns.
+        - The attributes can still be overridden in child bean definitions.
+    -->
+
+    <!-- =================== DEFINE EMBEDDED DB MANAGER ============================ -->
+    <!--  Define EmbedFinfoDBManager -->
+    <!-- <bean id="EmbedFinfoDBManager" parent="transactionProxy">
+        <property name="target">
+            <bean class="vn.com.vndirect.embeddb.EmbeddedDBManagerImpl">
+                Define Parameter & Mapping object
+                <property name="embeddedDBParam" ref="EmbeddedDBParam"/>
+                <property name="dbItemCodeMapping" ref="EDBItemCodeMapping"/>
+
+                Define embedded DAO
+                <property name="runDBScriptDAO" ref="EmbeddedDBRunDBScriptDAO"/>
+                <property name="stockExchangeDAO" ref="EmbeddedDBStockExchangeDAO"/>
+                <property name="itemCodeRefDAO" ref="EmbeddedDBItemCodeRefDAO"/>
+
+                <property name="companyItemCalcViewDAO" ref="EmbeddedDBCompanyItemCalcViewDAO"/>
+                <property name="industryItemCalcViewDAO" ref="EmbeddedDBIndustryItemCalcViewDAO"/>
+
+                <property name="industryCalcViewDAO" ref="EmbeddedDBIndustryCalcViewDAO"/>
+                <property name="sectorCalcViewDAO" ref="EmbeddedDBSectorCalcViewDAO"/>
+                <property name="companyCalcViewDAO" ref="EmbeddedDBCompanyCalcViewDAO"/>
+                <property name="dynamicTableDAO" ref="EmbeddedDBDynamicTableDAO"/>
+
+                <property name="dbEmbedConfigDAO" ref="EmbeddedDbEmbedConfigDAO"/>
+
+                <property name="secLastPriceViewDAO" ref="EmbeddedDBSecLastPriceViewDAO"/>
+
+                Define IFO DB DAO
+                <property name="ifoDBLoaderDAO" ref="IfoDBLoaderDAO"/>
+            </bean>
+        </property>
+    </bean> -->
+    <!-- ====================================== -->
+    <!-- <bean ref="FinfoDBManager" parent="EmbedFinfoDBManager"/> -->
+    
+    <bean id="EmbeddedDBParam" class="vn.com.vndirect.embeddb.EmbeddedDBParam">
+        <property name="defaultLang" value="${dbembedded.defaultLang}"/>
+        <property name="initOption" value="${dbembedded.dbscript.initOption}"/>
+        <property name="itemcodeMappingPath" value="${dbembedded.mapping_itemcode}"/>
+        <property name="initDBScriptPath" value="${dbembedded.dbscript.initDBScriptPath}"/>
+        <property name="cleanDBScriptPath" value="${dbembedded.dbscript.cleanDBScriptPath}"/>
+        <property name="rebuild" value="${dbembedded.dbscript.rebuild}"/>
+    </bean>
+
+    <bean id="EDBItemCodeMapping" class="vn.com.vndirect.embeddb.EDBItemCodeMapping">
+        <property name="embeddedDBParam" ref="EmbeddedDBParam"/>
+        <property name="companyViewKey" value="filter.company_view"/>
+        <property name="industryViewKey" value="filter.industry_view"/>
+        <property name="percentKey" value="percent.item_code"/>
+        <property name="prefixMapping" value="mapping."/>
+    </bean>
+
+
+    <!-- =================== DEFINE BUSINESS MANAGER ================= -->
+
+    <bean id="BaseManager" class="vn.com.vndirect.business.BaseManager">
+        <property name="serviceLocator" ref="WebServiceLocator"/>
+        <property name="authenticationHelper" ref="AuthenticationHelper"/>
+        <property name="header" ref="Header"/>
+    </bean>
+
+    <bean id="CommonManager" parent="transactionProxy">
+        <property name="target">
+            <bean class="vn.com.vndirect.business.CommonManager" parent="BaseManager">
+                <property name="ifoDataRefDAO" ref="IfoDataRefDAO"/>
+                <property name="voteDAO" ref="VoteDAO"/>
+                <property name="ifoCompanyDAO" ref="IfoCompanyDAO"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--  Define ChartManager -->
+    <bean id="TAChartManager" parent="transactionProxy">
+        <property name="target">
+            <bean class="vn.com.vndirect.business.ChartManager">
+                <property name="ifoSecPriceViewDAO" ref="IfoSecPriceViewDAO"/>
+                <property name="ifoBreakdownViewDAO" ref="IfoBreakdownViewDAO"/>
+                <property name="ifoMarketCalendarViewDAO" ref="IfoMarketCalendarViewDAO"/>
+
+                <property name="chartsManager" ref="ChartsManager"/>
+                <property name="flashChartsManager" ref="FlashChartsManager"/>
+                <property name="oscache" ref="OSCache"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--  define ChartsManager -->
+    <bean id="ChartsManager" class="vn.com.vndirect.commons.jfreechart.ChartsManager" scope="prototype" destroy-method="destroy" >
+        <property name="chartsAdapter" ref="ChartsAdapter"/>
+    </bean>
+
+    <!--  define FlashChartsManager -->
+    <bean id="FlashChartsManager" class="vn.com.vndirect.commons.flashchart.ChartsManager" scope="prototype" destroy-method="destroy"/>
+
+    <!-- ChartsAdapter -->
+    <bean id="ChartsAdapter" class="vn.com.vndirect.commons.jfreechart.ChartsAdapterImpl" scope="prototype"/>
+
+    <!-- Define OSCache  -->
+    <bean id="OSCache" class="com.opensymphony.oscache.general.GeneralCacheAdministrator" destroy-method="destroy">
+        <constructor-arg index="0">
+            <props>
+                <prop key="cache.memory">${cache.memory}</prop>
+                <prop key="cache.capacity">${cache.capacity}</prop>
+                <prop key="cache.algorithm">${cache.algorithm}</prop>
+                <prop key="cache.blocking">${cache.blocking}</prop>
+            </props>
+        </constructor-arg>
+    </bean>
+
+    <bean id="OnlineServiceManager" parent="transactionProxy">
+        <property name="target">
+            <bean class="vn.com.vndirect.business.OnlineServiceManager" parent="BaseManager">
+                <property name="wpProductDAO" ref="WpProductDAO"/>
+                <property name="wpSubjectDAO" ref="WpSubjectDAO"/>
+                <property name="wpDocumentDAO" ref="WpDocumentDAO"/>
+                <property name="wpTopicDAO" ref="WpTopicDAO"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="TradingManager" class="vn.com.vndirect.business.TradingManager" parent="BaseManager">
+    </bean>
+
+    <bean id="UserManager" class="vn.com.vndirect.business.UserManager" parent="BaseManager">
+    </bean>
+
+    <bean id="AccountManager" class="vn.com.vndirect.business.AccountManager" parent="BaseManager">
+    </bean>
+    
+    <bean id="CRMServiceManager" class="vn.com.vndirect.service.crm.CRMServiceManager" parent="BaseManager">
+    </bean>
+    
+    <bean id="BankServiceManager" class="vn.com.vndirect.service.bank.BanksServiceManager" parent="BaseManager">
+    </bean>
+
+    <bean id="NewsInfoManager" class="vn.com.vndirect.business.NewsInfoManager" parent="BaseManager">
+        <property name="ifoNewsDAO" ref="IfoNewsDAO"></property>
+        <property name="ifoCategoryNewsDAO" ref="IfoCategoryNewsDAO"></property>
+        <property name="newsAttachmentsDAO" ref="NewsAttachmentsDAO"></property>
+    </bean>
+    
+    <bean id="StockHighlightsManager" class="vn.com.vndirect.business.StockHighlightsManager" parent="BaseManager">
+        <property name="stockHighlightsDAO" ref="StockHighlightsDAO"></property>
+    </bean>
+    <bean id="StockPickManager" class="vn.com.vndirect.business.StockPickManager" parent="BaseManager">
+        <property name="stockPickDAO" ref="stockPickDAO"></property>
+        <property name="registStockPickDAO" ref="registStockPickDAO"></property>
+    </bean>
+
+    <bean id="QuotesManager" class="vn.com.vndirect.business.QuotesManager" parent="BaseManager">
+        <property name="ifoCompanySnapshotViewDAO" ref="IfoCompanySnapshotViewDAO"></property>
+        <property name="ifoCompanyNameViewDAO" ref="IfoCompanyNameViewDAO"></property>
+        <property name="ifoStockExchangeViewDAO" ref="IfoStockExchangeViewDAO"></property>
+        <property name="ifoCompanyIndustryViewDAO" ref="IfoCompanyIndustryViewDAO"></property>
+        <property name="ifoCompanyOfficersViewDAO" ref="IfoCompanyOfficersViewDAO"></property>
+        <property name="ifoSecIndexViewDAO" ref="IfoSecIndexViewDAO"></property>
+        <property name="ifoCompanyProfileViewDAO" ref="IfoCompanyProfileViewDAO"></property>
+        <property name="ifoValuationMeasuresViewDAO" ref="IfoValuationMeasuresViewDAO"></property>
+        <property name="ifoKeyRatioViewDAO" ref="IfoKeyRatioViewDAO"></property>
+        <property name="ifoFinancialHighlightViewDAO" ref="IfoFinancialHighlightViewDAO"></property>
+        <property name="ifoInvestorRightsViewDAO" ref="IfoInvestorRightsViewDAO"></property>
+        <property name="ifoBreakdownViewDAO" ref="IfoBreakdownViewDAO"></property>
+        <property name="ifoMaijorHolderViewDAO" ref="IfoMaijorHolderViewDAO"></property>
+        <property name="ifoInsiderTransactionViewDAO" ref="IfoInsiderTransactionViewDAO"></property>
+        <property name="ifoExchangeCodeDAO" ref="IfoExchangeCodeDAO"></property>
+        <property name="ifoSectorCodeDAO" ref="IfoSectorCodeDAO"></property>
+        <property name="ifoSecPriceViewDAO" ref="IfoSecPriceViewDAO"></property>
+        <property name="ifoIndexCalcDAO" ref="IfoIndexCalcDAO"/>
+    </bean>
+
+    <bean id="AuditManager" class="vn.com.vndirect.business.AuditManager" parent="BaseManager">
+    </bean>
+
+    <!-- Define VNDirect Report Manager: vn.com.vndirectreports.IReportManager  -->
+    <bean id="VNDirectReportManager" class="vn.com.vndirectreports.ReportManagerResolver" scope="singleton">
+        <property name="openAccContextFolder" value="/WEB-INF/reports/openaccount"/>
+        <property name="statisticsContextFolder" value="/WEB-INF/reports/trading"/>
+    </bean>
+    
+    <!-- Define VNDirect Report Manager: vn.com.vndirectreports.IReportManager  -->
+    <bean id="WebReportManager" class="vn.com.vndirect.business.WebReportManager" parent="VNDirectReportManager">
+    </bean>
+    <!-- HighStock -->
+    <!-- <bean id="HighStockManager" class="vn.com.vndirect.web.struts2.chart.HighStockManager">
+    </bean> -->
+    
+    <!-- Read Bank, branch from file -->
+    <!-- <bean id="BankingServiceReadingFromFile" class="vn.com.vndirect.commons.utility.BankCodeUtils" init-method="initConfigbankService">
+        <property name="urlBanklList" value="bank-list.xml"/>
+        <property name="urlBranchList" value="branch-list.xml"/>
+    </bean> -->
+</beans>

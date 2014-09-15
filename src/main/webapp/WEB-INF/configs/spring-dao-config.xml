@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+						http://www.springframework.org/schema/tx
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	xmlns:tx="http://www.springframework.org/schema/tx">
+
+	<!-- =========================== EMBED DAO DEFINITIONS ============================= -->
+	<bean id="EmbeddedDBRunDBScriptDAO" class="vn.com.vndirect.embeddb.dao.RunDBScriptDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBStockExchangeDAO" class="vn.com.vndirect.embeddb.dao.StockExchangeDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBItemCodeRefDAO" class="vn.com.vndirect.embeddb.dao.ItemCodeRefDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBCompanyItemCalcViewDAO" class="vn.com.vndirect.embeddb.dao.CompanyItemCalcViewDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBIndustryItemCalcViewDAO" class="vn.com.vndirect.embeddb.dao.IndustryItemCalcViewDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBSecLastPriceViewDAO" class="vn.com.vndirect.embeddb.dao.SecLastPriceViewDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBIndustryCalcViewDAO" class="vn.com.vndirect.embeddb.dao.IndustryCalcViewDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBSectorCalcViewDAO" class="vn.com.vndirect.embeddb.dao.SectorCalcViewDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBCompanyCalcViewDAO" class="vn.com.vndirect.embeddb.dao.CompanyCalcViewDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDBDynamicTableDAO" class="vn.com.vndirect.embeddb.dao.DynamicTableDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<bean id="EmbeddedDbEmbedConfigDAO" class="vn.com.vndirect.embeddb.dao.DbEmbedConfigDAO">
+		<property name="dataSource" ref="DBEmbeddedDataSource" />
+	</bean>
+
+	<!-- IfoDBLoaderDAO: it use for loading initial data of embedded db -->
+	<bean id="IfoDBLoaderDAO" class="vn.com.vndirect.embeddb.dao.IfoDBLoaderDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	<!-- =========================== NORMAL DAO DEFINITIONS ============================= -->
+
+	<bean id="IfoCompanyCalcViewDAO" class="vn.com.vndirect.dao.impl.IfoCompanyCalcViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoIndustryCalcViewDAO" class="vn.com.vndirect.dao.impl.IfoIndustryCalcViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoSectorCalcViewDAO" class="vn.com.vndirect.dao.impl.IfoSectorCalcViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoNewsDAO" class="vn.com.vndirect.dao.impl.IfoNewsDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	
+	<bean id="StockHighlightsDAO" class="vn.com.vndirect.dao.impl.StockHighlightsDAO">
+        <property name="dataSource" ref="DataSource" />
+    </bean>
+
+	<bean id="NewsAttachmentsDAO" class="vn.com.vndirect.dao.impl.NewsAttachmentsDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCategoryNewsDAO" class="vn.com.vndirect.dao.impl.IfoCategoryNewsDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoDataRefDAO" class="vn.com.vndirect.dao.impl.IfoDataRefDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	
+	<bean id="IfoCompanyDAO" class="vn.com.vndirect.dao.impl.IfoCompanyDAO">
+        <property name="dataSource" ref="DataSource" />
+    </bean>
+	
+	<bean id="IfoMarketCalendarViewDAO" class="vn.com.vndirect.dao.impl.IfoMarketCalendarViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCompanySnapshotViewDAO" class="vn.com.vndirect.dao.impl.IfoCompanySnapshotViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCompanyNameViewDAO" class="vn.com.vndirect.dao.impl.IfoCompanyNameViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoStockExchangeViewDAO" class="vn.com.vndirect.dao.impl.IfoStockExchangeViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCompanyIndustryViewDAO" class="vn.com.vndirect.dao.impl.IfoCompanyIndustryViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCompanyProfileViewDAO" class="vn.com.vndirect.dao.impl.IfoCompanyProfileViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCompanyOfficersViewDAO" class="vn.com.vndirect.dao.impl.IfoCompanyOfficersViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoSecIndexViewDAO" class="vn.com.vndirect.dao.impl.IfoSecIndexViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoValuationMeasuresViewDAO" class="vn.com.vndirect.dao.impl.IfoValuationMeasuresViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoKeyRatioViewDAO" class="vn.com.vndirect.dao.impl.IfoKeyRatioViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoFinancialHighlightViewDAO" class="vn.com.vndirect.dao.impl.IfoFinancialHighlightViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoInvestorRightsViewDAO" class="vn.com.vndirect.dao.impl.IfoInvestorRightsViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoDocumentDAO" class="vn.com.vndirect.dao.impl.IfoDocumentDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoBalancesheetViewDAO" class="vn.com.vndirect.dao.impl.IfoBalancesheetViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoIncomeViewDAO" class="vn.com.vndirect.dao.impl.IfoIncomeViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoCashflowViewDAO" class="vn.com.vndirect.dao.impl.IfoCashflowViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+
+	<bean id="IfoSecPriceViewDAO" class="vn.com.vndirect.dao.impl.IfoSecPriceViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoTradingStatisticsViewDAO" class="vn.com.vndirect.dao.impl.IfoTradingStatisticsViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoForeignTradingViewDAO" class="vn.com.vndirect.dao.impl.IfoForeignTradingViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoBreakdownViewDAO" class="vn.com.vndirect.dao.impl.IfoBreakdownViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoMaijorHolderViewDAO" class="vn.com.vndirect.dao.impl.IfoMaijorHolderViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoInsiderTransactionViewDAO" class="vn.com.vndirect.dao.impl.IfoInsiderTransactionViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoExchangeCodeDAO" class="vn.com.vndirect.dao.impl.IfoExchangeCodeDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoSectorCodeDAO" class="vn.com.vndirect.dao.impl.IfoSectorCodeDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="VoteDAO" class="vn.com.vndirect.dao.impl.VoteDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="WpProductDAO" class="vn.com.vndirect.dao.impl.WpProductDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="WpSubjectDAO" class="vn.com.vndirect.dao.impl.WpSubjectDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	
+	<bean id="WpDocumentDAO" class="vn.com.vndirect.dao.impl.WpDocumentDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	
+	<bean id="WpTopicDAO" class="vn.com.vndirect.dao.impl.WpTopicDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+
+	<bean id="IfoIndexCalcDAO" class="vn.com.vndirect.dao.impl.IfoIndexCalcDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	
+	<bean id="IfoPowerRatingViewDAO" class="vn.com.vndirect.dao.impl.IfoPowerRatingViewDAO">
+		<property name="dataSource" ref="DataSource" />
+	</bean>
+	
+	<bean id="stockPickDAO" class="vn.com.vndirect.dao.impl.StockPickDAO">
+        <property name="dataSource" ref="DataSource" />
+    </bean>
+	
+	<bean id="registStockPickDAO" class="vn.com.vndirect.dao.impl.RegistStockPickDAO">
+        <property name="dataSource" ref="DataSource" />
+    </bean>
+    
+</beans>

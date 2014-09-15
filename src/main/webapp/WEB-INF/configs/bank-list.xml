@@ -1,0 +1,112 @@
+<bank-list>
+	<bankitem bankcode="101" shortname="NHNN" bankname="NGAN HANG NHA NUOC VIET NAM"></bankitem>
+	<bankitem bankcode="201" shortname="VIETINBANK" bankname="NH TMCP CONG THUONG VIET NAM (VIETINBANK)"></bankitem>
+	<bankitem bankcode="202" shortname="BIDV " bankname="NH DAU TU VA PHAT TRIEN VIET NAM (BIDV)"></bankitem>
+	<bankitem bankcode="203" shortname="VCB" bankname="NH TMCP NGOAI THUONG VIET NAM (VCB)"></bankitem>
+	<bankitem bankcode="204" shortname="AGRIBANK" bankname="NH NONG NGHIEP VA PHAT TRIEN NONG THON VIET NAM (AGRIBANK)"></bankitem>
+	<bankitem bankcode="205" shortname="MHB" bankname="NH PHAT TRIEN NHA DONG BANG SONG CUU LONG (MHB)"></bankitem>
+	<bankitem bankcode="207" shortname="VBSP " bankname="NH CHINH SACH XA HOI VIET NAM (VBSP)"></bankitem>
+	<bankitem bankcode="208" shortname="VDB" bankname="NH PHAT TRIEN VIET NAM (VDB)"></bankitem>
+	<bankitem bankcode="301" shortname="HABUBANK" bankname="NH TMCP NHA HA NOI (HBB)"></bankitem>
+	<bankitem bankcode="302" shortname="MSB" bankname="NH TMCP HANG HAI VIET NAM (MSB)"></bankitem>
+	<bankitem bankcode="303" shortname="SACOMBANK" bankname="NH TMCP SAI GON THUONG TIN (SACOMBANK)"></bankitem>
+	<bankitem bankcode="304" shortname="DAB" bankname="NH TMCP DONG A (DAB)"></bankitem>
+	<bankitem bankcode="305" shortname="EIB" bankname="NH TMCP XUAT NHAP KHAU VIET NAM (EIB)"></bankitem>
+	<bankitem bankcode="306" shortname="NAB" bankname="NH TMCP NAM A (NAB)"></bankitem>
+	<bankitem bankcode="307" shortname="ACB" bankname="NH TMCP A CHAU (ACB)"></bankitem>
+	<bankitem bankcode="308" shortname="SAIGONBANK" bankname="NH TMCP SAI GON CONG THUONG (SAIGONBANK)"></bankitem>
+	<bankitem bankcode="309" shortname="VPBANK " bankname="NH TMCP VIET NAM THINH VUONG (VPBANK)"></bankitem>
+	<bankitem bankcode="310" shortname="TCB" bankname="NH TMCP KY THUONG VIET NAM (TCB)"></bankitem>
+	<bankitem bankcode="311" shortname="MB " bankname="NH TMCP QUAN DOI (MB)"></bankitem>
+	<bankitem bankcode="313" shortname="NASB" bankname="NH TMCP BAC A (NASB)"></bankitem>
+	<bankitem bankcode="314" shortname="VIB" bankname="NH TMCP QUOC TE VIET NAM"></bankitem>
+	<bankitem bankcode="315" shortname="VCSB" bankname="NH TMCP VUNG TAU"></bankitem>
+	<bankitem bankcode="317" shortname="SEABANK " bankname="NH TMCP DONG NAM A"></bankitem>
+	<bankitem bankcode="319" shortname="OCEANBANK" bankname="NH TMCP DAI DUONG (OCEANBANK)"></bankitem>
+	<bankitem bankcode="320" shortname="GPBANK " bankname="NH TMCP DAU KHI TOAN CAU (GPB)"></bankitem>
+	<bankitem bankcode="321" shortname="HDBANK " bankname="NH TMCP PHAT TRIEN NHA TP HCM (HDB)"></bankitem>
+	<bankitem bankcode="323" shortname="ABBANK" bankname="NH TMCP AN BINH"></bankitem>
+	<bankitem bankcode="324" shortname="VIETHOABANK" bankname="NH TMCP VIET HOA"></bankitem>
+	<bankitem bankcode="326" shortname="VNTINNGHIA" bankname="NH TMCP VIET NAM TIN NGHIA"></bankitem>
+	<bankitem bankcode="327" shortname="BANVIETBANK" bankname="NH TMCP BAN VIET (VCCB)"></bankitem>
+	<bankitem bankcode="328" shortname="PNB" bankname="NH TMCP PHUONG NAM (PNB)"></bankitem>
+	<bankitem bankcode="329" shortname="DENHATBANK" bankname="NH TMCP DE NHAT (DENHATBANK)"></bankitem>
+	<bankitem bankcode="333" shortname="OCB" bankname="NH TMCP PHUONG DONG (OCB)"></bankitem>
+	<bankitem bankcode="334" shortname="SCB" bankname="NH TMCP SAI GON (SCB)"></bankitem>
+	<bankitem bankcode="338" shortname="DAIABANK" bankname="NH TMCP DAI A (DAIABANK)"></bankitem>
+	<bankitem bankcode="339" shortname="VNCB" bankname="NH XAY DUNG VIET NAM (VNCB)"></bankitem>
+	<bankitem bankcode="341" shortname="PGB" bankname="NH TMCP XANG DAU PETROLIMEX (PGB)"></bankitem>
+	<bankitem bankcode="343" shortname="MDB" bankname="NH PHAT TRIEN MEKONG (MDB)"></bankitem>
+	<bankitem bankcode="346" shortname="WESTERNBANK" bankname="NH TMCP PHUONGTAY (WESTERNBANK)"></bankitem>
+	<bankitem bankcode="348" shortname="SHB" bankname="NH TMCP SAI GON HA NOI (SHB)"></bankitem>
+	<bankitem bankcode="352" shortname="NAVIBANK" bankname="NH TMCP NAM VIET (NAVIBANK)"></bankitem>
+	<bankitem bankcode="353" shortname="KIENLONGBANK" bankname="NH TMCP KIEN LONG (KIENLONGBANK)"></bankitem>
+	<bankitem bankcode="355" shortname="VIETABANK" bankname="NH TMCP VIET A (VIETABANK)"></bankitem>
+	<bankitem bankcode="356" shortname="VIETBANK" bankname="NH TMCP VIET NAM THUONG TIN"></bankitem>
+	<bankitem bankcode="357" shortname="LVPB" bankname="NH TMCP BUU DIEN LIEN VIET (LVPB)"></bankitem>
+	<bankitem bankcode="358" shortname="TPB" bankname="NH TMCP TIEN PHONG (TPB)"></bankitem>
+	<bankitem bankcode="359" shortname="BVB" bankname="NH TMCP BAO VIET (BVB)"></bankitem>
+	<bankitem bankcode="360" shortname="PVCOMBANK" bankname="NH TMCP DAI CHUNG VIET NAM (PVCOMBANK)"></bankitem>
+	<bankitem bankcode="401" shortname="BANKNETVN" bankname="BANKNETVN"></bankitem>
+	<bankitem bankcode="501" shortname="VID" bankname="NH LIEN DOANH VID PUBLIC (VID)"></bankitem>
+	<bankitem bankcode="502" shortname="INDOVINA" bankname="NH TNHH INDOVINA"></bankitem>
+	<bankitem bankcode="503" shortname="SHVNB" bankname="NH TNHH MTV SHINHANVINA (SHVNB)"></bankitem>
+	<bankitem bankcode="504" shortname="VINASIAMBANK" bankname="NH LIEN DOANH VIET THAI (VINASIAMBANK)"></bankitem>
+	<bankitem bankcode="505" shortname="VRB" bankname="NH LIEN DOANH VIET NGA (VRB)"></bankitem>
+	<bankitem bankcode="601" shortname="NATIXIS" bankname="NH NATIXIS CN HCM (NATIXIS)"></bankitem>
+	<bankitem bankcode="602" shortname="ANZ" bankname="NH TNHH MTV ANZ VIET NAM (ANZ)"></bankitem>
+	<bankitem bankcode="603" shortname="HLBVN" bankname="NH TNHH MTV HONG LEONG VIET NAM (HLBVN)"></bankitem>
+	<bankitem bankcode="604" shortname="STANDARDCHARTERED" bankname="NH TNHH MTV STANDARD CHARTERED"></bankitem>
+	<bankitem bankcode="605" shortname="CITIBANK" bankname="NH CITIBANK VIET NAM (CITIBANK)"></bankitem>
+	<bankitem bankcode="606" shortname="SCSB" bankname="NH THE SHANGHAI COMMERCIAL AND SAVINGS (SCSB)"></bankitem>
+	<bankitem bankcode="607" shortname="CHIFON" bankname="NH TAIPEI FUBON (CHINFON CU) (CHINFON)"></bankitem>
+	<bankitem bankcode="608" shortname="FCB" bankname="NH FIRST COMMERCIAL BANK (FCB)"></bankitem>
+	<bankitem bankcode="609" shortname="MAYBANKHN" bankname="NH MAYBANK HANOI (MAYBANKHN)"></bankitem>
+	<bankitem bankcode="610" shortname="ABN" bankname="NH ABN AMRO N.V"></bankitem>
+	<bankitem bankcode="611" shortname="CCB " bankname="CHINA CONSTRUCTION BANK (CCB)"></bankitem>
+	<bankitem bankcode="612" shortname="BKBANK " bankname="BANGKOK BANK (BKBANK)"></bankitem>
+	<bankitem bankcode="613" shortname="MIZUHOHN" bankname="NH MIZUHO HANOI"></bankitem>
+	<bankitem bankcode="614" shortname="BNP" bankname="NH BNP - PARIBAS TP HCM (BNP)"></bankitem>
+	<bankitem bankcode="615" shortname="BOCOM" bankname="NH BANK of COMMUNICATIONS HOCHIMINH BRANCH (BOCOM)"></bankitem>
+	<bankitem bankcode="616" shortname="SHINHANBANK" bankname="NH TNHH SHINHAN VIET NAM (SHINHANBANK)"></bankitem>
+	<bankitem bankcode="617" shortname="HSBC" bankname="NH TNHH MTV HSBC VIET NAM (HSBC)"></bankitem>
+	<bankitem bankcode="618" shortname="UOB" bankname="NH UNITED OVERSEAS BANK TAI VIET NAM (UOB)"></bankitem>
+	<bankitem bankcode="619" shortname="DB " bankname="NH DEUTSCHE BANK (DB)"></bankitem>
+	<bankitem bankcode="620" shortname="BOC" bankname="NH BANK OF CHINA TP HCM (BOC)"></bankitem>
+	<bankitem bankcode="621" shortname="CIB" bankname="NH CREDIT AGRICOLE CIB VIET NAM (CIB)"></bankitem>
+	<bankitem bankcode="622" shortname="BTMHCM" bankname="NH THE BANK OF TOKYO - MITSUBISHI UFJ TP HO CHI MINH (BTMHCM)"></bankitem>
+	<bankitem bankcode="623" shortname="MEGA ICBC" bankname="NH THUONG MAI QUOC TE MEGA ICBC"></bankitem>
+	<bankitem bankcode="624" shortname="WOORIBANK" bankname="NH WOORIBANK"></bankitem>
+	<bankitem bankcode="625" shortname="OCBC" bankname="NH OVERSEA - CHINESE BANKING TP HCM (OCBC)"></bankitem>
+	<bankitem bankcode="626" shortname="KEB" bankname="NH NGOAI HOI HAN (KEB)"></bankitem>
+	<bankitem bankcode="627" shortname="JPMB" bankname="JPMORGAN CHASE N.A TP HCM (JPMB)"></bankitem>
+	<bankitem bankcode="628" shortname="LAOVIETBANK" bankname="NH LIEN DOANH LAO-VIET (LAOVIETBANK)"></bankitem>
+	<bankitem bankcode="629" shortname="CHINATRUST" bankname="NH CHINATRUST COMMERCIAL BANK TP HCM (CHINATRUST)"></bankitem>
+	<bankitem bankcode="630" shortname="FICOMBANKHCM" bankname="FICOMBANK HO CHI MINH (HCM)"></bankitem>
+	<bankitem bankcode="631" shortname="KOOKMINBANK" bankname="NH KOOKMIN (KOOKMINBANK)"></bankitem>
+	<bankitem bankcode="632" shortname="FEB" bankname="FAR EAST NATIONAL BANK (FEB)"></bankitem>
+	<bankitem bankcode="633" shortname="LAOVIETHCM" bankname="NH LIEN DOANH LAO-VIET (LAOVIETBANK)"></bankitem>
+	<bankitem bankcode="634" shortname="CUB" bankname="NH CATHAY UNITED (CUB)"></bankitem>
+	<bankitem bankcode="635" shortname="MAYBANKHCM" bankname="NH MAYBANK HO CHI MINH (MAYBANKHCM)"></bankitem>
+	<bankitem bankcode="636" shortname="SMBC " bankname="NH SUMITOMO MITSUI BANKING CORPORATION (SMBC)"></bankitem>
+	<bankitem bankcode="637" shortname="WOORIBANKHCM" bankname="NH WOORIBANK HO CHI MINH (HCM)"></bankitem>
+	<bankitem bankcode="638" shortname="BIDCHN" bankname="NH DAU TU VA PHAT TRIEN CAMPUCHIA HANOI (BIDCHN)"></bankitem>
+	<bankitem bankcode="639" shortname="MIZUHOHCM" bankname="NH MIZUHO HO CHI MINH (HCM)"></bankitem>
+	<bankitem bankcode="640" shortname="HNB" bankname="NH HUA NAN COMMERCIALBANK TP HCM (HNB)"></bankitem>
+	<bankitem bankcode="641" shortname="IBKHCM" bankname="NH CONG NGHIEP HAN QUOC TP HO CHI MINH (IBKHCM)"></bankitem>
+	<bankitem bankcode="642" shortname="TPFB" bankname="NH THUONG MAI TAIPEI FUNBON (TAIPEIFUBON)"></bankitem>
+	<bankitem bankcode="643" shortname="CMWB" bankname="NH COMMONWEALTH BANK OF AUSTRALIA TP HCM (CMWB)"></bankitem>
+	<bankitem bankcode="644" shortname="ANZHCM" bankname="NH TNHH MTV ANZ VIETNAM CN phu TPHCM (ANZHCM)"></bankitem>
+	<bankitem bankcode="645" shortname="HSBCHN" bankname="NH TNHH MTV HSBC HA NOI (HN)"></bankitem>
+	<bankitem bankcode="646" shortname="SCHN" bankname="NH STANDARD CHARTERED HA NOI (SCHN)"></bankitem>
+	<bankitem bankcode="647" shortname="SHINHANHCM" bankname="NH SHINHANBANK TP HO CHI MINH (SHINHANHCM)"></bankitem>
+	<bankitem bankcode="648" shortname="BIDCHCM" bankname="NH DAU TU VA PHAT TRIEN CAMPUCHIA TP HO CHI MINH (BIDCHCM)"></bankitem>
+	<bankitem bankcode="649" shortname="ICBC " bankname="NH INDUSTRIAL AND COMMERCIAL BANK OF CHINA (ICBC)"></bankitem>
+	<bankitem bankcode="650" shortname="DBS " bankname="NH DBS BANK LTD - CN TP HO CHI MINH"></bankitem>
+	<bankitem bankcode="651" shortname="TAIPEIFUBONHCM" bankname="NHTM TAIPEI FUNBON TP HO CHI MINH (TAIPEIFUBONHCM)"></bankitem>
+	<bankitem bankcode="652" shortname="IBKHN" bankname="NH CONG NGHIEP HAN QUOC TAI HA NOI"></bankitem>
+	<bankitem bankcode="653" shortname="BTMHN" bankname="NH THE BANK OF TOKYO - MITSUBISHI UFJ HA NOI (BTMHN)"></bankitem>
+	<bankitem bankcode="701" shortname="KBNN " bankname="KHO BAC NHA NUOC (KBNN)"></bankitem>
+	<bankitem bankcode="901" shortname="CO-OPBANK" bankname="NH HOP TAC XA VIET NAM"></bankitem>
+	<bankitem bankcode="902" shortname="QTDCS" bankname="QUY TIN DUNG CO SO"></bankitem>
+</bank-list>

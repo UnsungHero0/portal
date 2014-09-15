@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Thong tin co phieu -->
+	<package name="SI-Search-Symbol" namespace="/thong-tin-co-phieu"
+		extends="default-web">
+		<action name="nhap-ma-chung-khoan*" class="springCommonSymbolProcessingAJAXAction"
+			method="executeInitSearchSymbol">
+			<result>Common.SearchSymbol</result>
+		</action>
+	</package>
+	<!-- Doanh nghiep -->
+	<package name="SI-Snapshot" namespace="/" extends="default-web">
+		<action name="/tong-quan/*" class="springSnapshotAction"
+			method="getStockInformation">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>si.company.snapshot</result>
+		</action>
+	</package>
+	<package name="SI-Profile" namespace="/" extends="default-web">
+		<action name="/ho-so-doanh-nghiep/*" class="springProfileAction"
+			method="viewCompanyProfile">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>si.company.companyProfile</result>
+		</action>
+	</package>
+	<package name="SI-Key-Statistic" namespace="/" extends="default-web">
+		<action name="/thong-ke-co-ban/*" class="springKeyStatisticAction"
+			method="viewSIKeyStatic">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.KeyStatistic</result>
+		</action>
+	</package>
+	<package name="SI-Finance-Report" namespace="/" extends="default-web">
+		<action name="/bao-cao-tai-chinh/*" class="springSSCFillingAction"
+			method="viewSSCFilling">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.SSCFilling</result>
+		</action>
+	</package>
+	<package name="SI-Forecast" namespace="/" extends="default-web">
+		<action name="/chi-tieu-ke-hoach/*" class="springIncomeStatementForecastAction"
+			method="viewIncomeStatementForecast">
+			<param name="symbol">{1}</param>
+			<param name="searchDate">${searchDate}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.Company.IncomeStatementForecast</result>
+		</action>
+	</package>
+	<!-- Quyen so huu -->
+	<package name="SI-Major-Holders" namespace="/" extends="default-web">
+		<action name="/co-dong-chinh/*" class="springMaijorHoldersAction"
+			method="viewMaijorHolders">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>si.ownerShip.majorHolders</result>
+		</action>
+	</package>
+	<package name="SI-Insider-Transactions" namespace="/" extends="default-web">
+		<action name="/giao-dich-noi-bo/*" class="springInsiderTransactionsAction"
+			method="viewInsiderTransAction">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.Company.InsiderTransactions</result>
+		</action>
+	</package>
+	<!-- Bieu do ky thuat -->
+	<package name="SI-Chart" namespace="/" extends="default-web">
+		<action name="/bieu-do-ky-thuat/*" class="springHighStockAction"
+			method="getHistoricalPrice">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>si.chart</result>
+		</action>
+	</package>
+	<!-- Old flash chart for VietKabu -->
+	<package name="External-SI-Chart" namespace="/" extends="default-web">
+		<action name="/external-chart*" class="springFlashChartAction"
+			method="showInitExternalPage">
+			<result>
+				Analysis.ExternalFlashChart
+			</result>
+		</action>
+	</package>
+
+	<!-- Tin doanh nghiep -->
+	<package name="SI-News" namespace="/" extends="default-web">
+		<action name="/tin-doanh-nghiep/*" class="springNewsAction"
+			method="viewSIDisclosure">
+			<param name="currentSymbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>stockInformation.newsForSymbol</result>
+		</action>
+	</package>
+	<package name="SI-Events" namespace="/" extends="default-web">
+		<action name="/tin-lien-quan/*" class="springNewsAction"
+			method="viewSICompanyEvents">
+			<param name="newsType">Event</param>
+			<param name="currentSymbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>stockInformation.CompanyEvents</result>
+		</action>
+	</package>
+	<!-- Bao cao tai chinh -->
+	<package name="SI-Balance-Sheet" namespace="/" extends="default-web">
+		<action name="/bang-can-doi-ke-toan/*" class="springBalanceSheetAction"
+			method="viewBalanceSheet">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.Financial.BalanceSheet</result>
+		</action>
+	</package>
+	<package name="SI-Income-Statement" namespace="/" extends="default-web">
+		<action name="/bao-cao-ket-qua-kinh-doanh/*" class="springIncomeStatementAction"
+			method="viewIncomeStatement">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.Financial.IncomeStatement</result>
+		</action>
+	</package>
+	<package name="SI-Cash-Flow" namespace="/" extends="default-web">
+		<action name="/bao-cao-luu-chuyen-tien-te/*" class="springCashFlowAction"
+			method="viewCashFlow">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.Financial.CashFlow</result>
+		</action>
+	</package>
+	<!-- Thong ke thi truong -->
+	<package name="SI-Historical-Price" namespace="/" extends="default-web">
+		<action name="/lich-su-gia/*" class="springMarketStatisticsAction"
+			method="viewHistoricalPriceForSymbol">
+			<param name="symbol">{1}</param>
+			<param name="from">5</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>Analysis.HistoricalPriceForSymbol</result>
+		</action>
+	</package>
+	<package name="SI-Foreign-Trading" namespace="/" extends="default-web">
+		<action name="/giao-dich-nha-dau-tu-nuoc-ngoai/*" class="springMarketStatisticsAction"
+			method="viewForeignTradingForSymbol">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>
+				ListedMarket.MarketStatistics.ForeignTradingForSymbol
+			</result>
+		</action>
+	</package>
+	<package name="SI-Trading-Statistics" namespace="/" extends="default-web">
+		<action name="/ket-qua-giao-dich/*" class="springMarketStatisticsAction"
+			method="viewTradingStatisticsForSymbol">
+			<param name="symbol">{1}</param>
+			<result type="redirectAction" name="error">
+				<param name="actionName">nhap-ma-chung-khoan</param>
+				<param name="namespace">/thong-tin-co-phieu</param>
+			</result>
+			<result>ListedMarket.MarketStatistics.TradingStatisticsForSymbol
+			</result>
+		</action>
+	</package>
+
+	<!-- Thong tin VnDirect old -->
+	<package name="Stock-Information-VnDirect1" namespace="/analysis/stock-information"
+		extends="default-web">
+		<!-- Bieu do ky thuat -->
+		<action name="flash-chart*" class="springFlashChartAction"
+			method="showInitPageForSymbol">
+			<result>ListedMarket.Company.FlashChart</result>
+		</action>
+	</package>
+
+	<!-- Analysis News -->
+	<package name="AnalysisNews" namespace="/" extends="default-web">
+		<action name="tin-trong-nuoc*" class="springMacroNewsAction"
+			method="getLatestNews">
+			<param name="newsType">MacVN</param>
+			<result>Analysis.MacroNews2</result>
+		</action>
+		<action name="tin-quoc-te*" class="springMacroNewsAction"
+			method="getLatestNews">
+			<param name="newsType">MacWorld</param>
+			<result>Analysis.MacroNews2</result>
+		</action>
+		<action name="nhan-dinh-thi-truong*" class="springReportAction"
+			method="getMarketInsights">
+			<result>analysis.marketInsight</result>
+		</action>
+		<action name="cong-bo-thong-tin*" class="springMacroNewsAction"
+			method="getLatestDisclosureNews">
+			<param name="newsType">Disclousure</param>
+			<result>Analysis.MacroNews2</result>
+		</action>
+		<action name="y-kien-chuyen-gia*" class="springMacroNewsAction"
+			method="getLatestNews">
+			<param name="newsType">Experts</param>
+			<result>Analysis.MacroNews2</result>
+		</action>
+
+		<action name="lich-su-kien*" class="springMarketCalendarAction"
+			method="viewMarketCalendar">
+			<result>Analysis.MarketCalendar</result>
+		</action>
+		<action name="lich-su-kien/*" class="springMarketCalendarAction"
+			method="viewMarketCalendar">
+			<param name="symbol">{1}</param>
+			<result>Analysis.MarketCalendar</result>
+		</action>
+	</package>
+	
+	<!-- Investment Idea -->
+	<package name="InvestmentIdea" namespace="/y-tuong-dau-tu"
+        extends="default-web">
+        <action name="co-phieu-khuyen-nghi*" class="springStockPickAction" method="initializePage">
+            <result name="success">InvestmentIdea.StockPick</result>
+            <result name="intro">InvestmentIdea.StockPickIntro</result>
+        </action>
+        <action name="co-phieu-khuyen-nghi/*" class="springStockPickAction" method="initializePage">
+            <param name="date">{1}</param>
+            <result name="success">InvestmentIdea.StockPick</result>
+            <result name="intro">InvestmentIdea.StockPickIntro</result>
+        </action>
+        <action name="cpkn-demo/*" class="springStockPickAction" method="getReportBodyOnly">
+            <result>stockpick.report.onlybody</result>
+        </action>
+        <action name="effect-cpkn-demo/*">
+            <result>stockpick.effect.onlybody</result>
+        </action>
+        <action name="power-ratings*" class="springPowerRatingAction">
+            <result>Analysis.PowerRating</result>
+        </action>
+    </package>
+    <package name="InvestmentIdeaAjax" namespace="/y-tuong-dau-tu/ajax"
+        extends="default-web">
+        <action name="getRelatedReportDates*" class="springStockPickAction" method="getRelatedReportDates">
+            <result>InvestmentIdea.StockPick.Related</result>
+        </action>
+        <action name="getNewerReportDates*" class="springStockPickAction" method="getNewerReportDates">
+            <result>InvestmentIdea.StockPick.Newer</result>
+        </action>
+        <action name="getNewsestMarketNews*" class="springStockPickAction" method="getNewsestMarketNews">
+            <result>InvestmentIdea.StockPick.marketNews</result>
+        </action>
+        <action name="register-customer*" class="springStockPickAction" method="registerCustomer">
+            <result type="json"></result>
+        </action>
+    </package>
+    
+	<!-- Analysis Research Tool -->
+	<package name="AnalysisResearchTool" namespace="/cong-cu-phan-tich-chung-khoan"
+		extends="default-web">
+		<action name="sang-loc-co-phieu*" class="springStockScreenerAction"
+			method="viewStockScreener">
+			<result>Analysis.StockScreener</result>
+		</action>
+		<action name="stock-screener-history*" class="springStockScreenerAction"
+			method="viewSavedData">
+			<result name="success">Analysis.StockScreener</result>
+		</action>
+		<action name="ket-qua-sang-loc-co-phieu*" class="springStockScreenerAction"
+			method="viewSummaryData">
+			<result name="input" type="redirectAction">
+				<param name="actionName">StockScreener</param>
+			</result>
+			<result name="success">Analysis.StockScreener.Summary</result>
+		</action>
+		<action name="luu-tieu-chi-sang-loc*" class="springStockScreenerAction"
+			method="viewInputData">
+			<result>Analysis.StockScreener.Saving</result>
+		</action>
+		<action name="stock-screener-saving*" class="springStockScreenerAction"
+			method="saveStockScreener">
+			<param name="stockScreenerListUrl">danh-sach-cac-tieu-chi-da-luu.shtml</param>
+			<result name="input">Analysis.StockScreener.Saving</result>
+			<result name="success" type="redirectAction">
+				<param name="actionName">%{stockScreenerListEncodedUrl}</param>
+			</result>
+		</action>
+		<action name="stock-screener-saving*" class="springStockScreenerAction"
+			method="saveStockScreener">
+			<param name="stockScreenerListUrl">danh-sach-cac-tieu-chi-da-luu.shtml</param>
+			<result name="input">Analysis.StockScreener.Saving</result>
+			<result name="success" type="redirectAction">
+				<param name="actionName">%{stockScreenerListEncodedUrl}</param>
+			</result>
+		</action>
+		<action name="danh-sach-cac-tieu-chi-da-luu*" class="springStockScreenerAction"
+			method="listOfStockScreener">
+			<result>Analysis.StockScreener.List</result>
+		</action>
+		<action name="stock-screener-delete*" class="springStockScreenerAction"
+			method="delete">
+			<param name="stockScreenerListUrl">danh-sach-cac-tieu-chi-da-luu.shtml</param>
+			<result name="success" type="redirectAction">
+				<param name="actionName">%{stockScreenerListEncodedUrl}</param>
+			</result>
+		</action>
+		<action name="stock-wizard-company-detail*" class="springStockWizardAction"
+			method="getCompanyDetail">
+			<result name="input">Analysis.StockWizard</result>
+			<result>Analysis.StockWizard.CompanyDetail</result>
+		</action>
+		<action name="stock-wizard-difference*" class="springStockWizardAction"
+			method="compare">
+			<result name="input">Analysis.StockWizard</result>
+			<result>Analysis.StockWizard.Difference</result>
+		</action>
+		<action name="stock-wizard*" class="springStockWizardAction">
+			<result>Analysis.StockWizard</result>
+		</action>
+		<action name="power-rating-detail*" class="springPowerRatingDetailAction">
+			<result>Analysis.PowerRatingDetail</result>
+		</action>
+		<action name="power-rating-breakdown*" class="springPowerRatingAction"
+			method="viewPowerRatingBreakdown">
+			<result type="dispatcher">/WEB-INF/jsps/analysistools/PowerRatingBreakdownChartJsonData.jsp
+			</result>
+		</action>
+		<action name="bieu-do-ky-thuat*" class="springHighStockAction"
+			method="initRTChart">
+			<result>researchTools.chart</result>
+		</action>
+		<action name="tieu-chi-sang-loc-co-phieu-da-luu*" class="springStockScreenerAction"
+			method="viewSavedSummaryData">
+			<result name="success">Analysis.StockScreener.Summary</result>
+		</action>
+	</package>
+
+	<!-- Analysis NewsMarket Statistics -->
+	<package name="AnalysisNewsMarketStatistics" namespace="/thong-ke-thi-truong-chung-khoan"
+		extends="default-web">
+		<!-- tab market-statistics -->
+		<action name="tong-quan*" class="springListedMarket" method="viewListedMarketPage">
+            <result>Analysis.MarketOverView</result>
+        </action>
+		<action name="ket-qua-giao-dich*" class="springMarketStatisticsAction"
+			method="viewTradingStatistics">
+			<result>Analysis.MarketStatistics.TradingStatistics</result>
+		</action>
+		<action name="lich-su-gia*" class="springMarketStatisticsAction"
+			method="viewHistoricalPrice">
+			<result>Analysis.MarketStatistics.HistoricalPrice</result>
+		</action>
+		<action name="giao-dich-nha-dau-tu-nuoc-ngoai*" class="springMarketStatisticsAction"
+			method="viewForeignTrading">
+			<result>Analysis.MarketStatistics.ForeignTrading</result>
+		</action>
+	</package>
+
+	<package name="AnalysisIndustry" namespace="/phan-tich-nganh"
+		extends="default-web">
+		<action name="tong-quan-nganh*" class="springSectorOverviewAction">
+			<result>Analysis.SectorOverview</result>
+		</action>
+		<action name="chi-so-nganh*" class="springListSectorAction" method="executeListSectorActionEmpty">
+			<result>Analysis.ListSector</result>
+		</action>
+		<action name="phan-loai-nganh*" class="springListSectorAction"
+			method="executeSearchSectorIndustries">
+			<result>Analysis.ListSectorIndex</result>
+		</action>
+		<action name="chi-tiet-linh-vuc*" class="springSectorOverviewAction"
+			method="showSectorDetails">
+			<result type="redirectAction" name="input">
+				<param name="actionName">SectorOverview</param>
+			</result>
+			<result>Analysis.SectorDetails</result>
+		</action>
+		<action name="chi-tiet-nganh*" class="springSectorOverviewAction"
+			method="showIndustryDetails">
+			<param name="sectorUrl">/phan-tich-nganh/tong-quan-nganh.shtml</param>
+			<param name="sectorDetailsUrl">/phan-tich-nganh/chi-tiet-linh-vuc.shtml</param>
+
+			<result type="redirect" name="input">
+				<param name="location">%{companyNotFoundUrl}</param>
+				<param name="error">1</param>
+			</result>
+
+			<result name="industry">Analysis.IndustryDetails</result>
+
+			<result name="sector" type="redirect">
+				<param name="location">%{sectorDetailsEncodedUrl}</param>
+				<param name="sectorCode">%{sectorCode}</param>
+			</result>
+		</action>
+	</package>
+
+	<!-- HighStock AJAX -->
+	<package name="HighStockAJAX" namespace="/ajax/analysis"
+		extends="default-web">
+		<action name="getHistoricalPriceAjax*" class="springHighStockAction"
+			method="getHistoricalPriceAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getLimitHistoricalPriceAjax*" class="springHighStockAction"
+            method="getLimitHistoricalPriceAjax">
+            <result name="input" type="json">
+                <param name="excludeProperties">
+                    model.*
+                </param>
+            </result>
+            <result type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+        </action>
+		<action name="getSMAAjax*" class="springHighStockAction"
+			method="getSMAAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getEMAAjax*" class="springHighStockAction"
+			method="getEMAAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getBBandsAjax*" class="springHighStockAction"
+			method="getBBandsAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getMFIAjax*" class="springHighStockAction"
+			method="getMFIAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getMACDAjax*" class="springHighStockAction"
+			method="getMACDAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getPSARAjax*" class="springHighStockAction"
+			method="getPSARAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getROCAjax*" class="springHighStockAction"
+			method="getROCAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getRSIAjax*" class="springHighStockAction"
+			method="getRSIAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getSSAjax*" class="springHighStockAction" method="getSSAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getFSAjax*" class="springHighStockAction" method="getFSAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getVolumeMAAjax*" class="springHighStockAction"
+			method="getVolumeMAAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getWRAjax*" class="springHighStockAction" method="getWRAjax">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getRTMarketViewAjax*" class="springHighStockAction"
+			method="getRTMarketViewAjax">
+			<result>researchTools.marketView</result>
+		</action>
+		<action name="getSMAInputParams*">
+			<result>highStock.smaInputParams</result>
+		</action>
+		<action name="getEMAInputParams*">
+			<result>highStock.emaInputParams</result>
+		</action>
+		<action name="getBBandsInputParams*">
+			<result>highStock.bBandsInputParams</result>
+		</action>
+		<action name="getMFIInputParams*">
+			<result>highStock.mfiInputParams</result>
+		</action>
+		<action name="getMACDInputParams*">
+			<result>highStock.macdInputParams</result>
+		</action>
+		<action name="getPSARInputParams*">
+			<result>highStock.psarInputParams</result>
+		</action>
+		<action name="getROCInputParams*">
+			<result>highStock.rocInputParams</result>
+		</action>
+		<action name="getRSIInputParams*">
+			<result>highStock.rsiInputParams</result>
+		</action>
+		<action name="getSSInputParams*">
+			<result>highStock.ssInputParams</result>
+		</action>
+		<action name="getFSInputParams*">
+			<result>highStock.fsInputParams</result>
+		</action>
+		<action name="getVMAInputParams*">
+			<result>highStock.vmaInputParams</result>
+		</action>
+		<action name="getWRInputParams*">
+			<result>highStock.wrInputParams</result>
+		</action>
+	</package>
+
+	<!-- Analysis Thong tin co phieu -->
+	<package name="AnalysisAjax" namespace="/ajax/analysis"
+		extends="default-web">
+		<action name="checkWhereToGetPriceData*" class="springIRSnapshotAjaxAction"
+			method="executeCheckWhereToGetPriceData">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getIntradayPrice*" class="springIRSnapshotAjaxAction"
+			method="executeGetIntradayPrice">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="ViewExpertContent*" class="springNewsAction"
+			method="executeGetExpertsNews">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="ListSectorView*" class="springListSectorAction"
+			method="executeSearchSector">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoSectorCalcView,
+					model.ifoIndustryCalcView,
+					model.ifoCompanyCalcView,
+					model.industries1,
+					model.industries2
+				</param>
+			</result>
+		</action>
+
+		<action name="ListIndustryView*" class="springListSectorAction"
+			method="executeSearchIndustry">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoIndustryCalcView,
+					model.industries1,
+					model.industries2
+				</param>
+			</result>
+		</action>
+
+		<action name="ListCompanyView*" class="springListSectorAction"
+			method="executeSearchCompany">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoCompanyCalcView,
+					model.industries1,
+					model.industries2
+				</param>
+			</result>
+		</action>
+
+		<action name="ListCompanyBySymbol*" class="springListSectorAction"
+			method="executeSearchBySymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoCompanyCalcView,
+					model.industries1,
+					model.industries2
+				</param>
+			</result>
+		</action>
+
+		<action name="ListSectorIndex*" class="springListSectorAction"
+			method="executeSearchSectorIndustries">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoSectorCalcView,
+					model.ifoCompanyCalcView,
+					model.searchResult
+				</param>
+			</result>
+		</action>
+
+		<action name="StockScreenerAJAXAction_Calculate*" class="springStockScreenerAJAXAction">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.ifoIndustryCalcView,
+					model.ifoIndustryCalcViews,
+					model.listSectorsName,
+					model.saveSearchId,
+					model.alert
+				</param>
+			</result>
+		</action>
+
+		<action name="StockScreenerAJAXAction_GetListOfIndustries*"
+			class="springStockScreenerAJAXAction" method="getListOfIndustries">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.searchStockScreenerBean,
+					model.ifoIndustryCalcView,
+					model.listSectorsName,
+					model.status,
+					model.saveSearchId,
+					model.alert
+				</param>
+			</result>
+		</action>
+
+		<action name="StockScreenerAJAXAction_ViewSortedData*" class="springStockScreenerAction"
+			method="viewSortedData">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.searchStockScreenerBean,
+					model.ifoIndustryCalcView,
+					model.listSectorsName,
+					model.status,
+					model.saveSearchId,
+					model.alert
+				</param>
+			</result>
+		</action>
+
+		<action name="StockScreenerAJAXAction_ViewSummaryData*" class="springStockScreenerAction"
+			method="viewSummaryData">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.searchStockScreenerBean,
+					model.ifoIndustryCalcView,
+					model.listSectorsName,
+					model.status,
+					model.saveSearchId,
+					model.alert
+				</param>
+			</result>
+		</action>
+
+		<action name="StockScreenerAJAXAction_ViewListOfStockScreener*"
+			class="springStockScreenerAction" method="viewListOfStockScreener">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.searchStockScreenerBean,
+					model.ifoIndustryCalcView,
+					model.ifoIndustryCalcViews,
+					model.name,
+					model.listStockScreener,
+					model.sortField,
+					model.sortOrder,
+					model.listSectorsName,
+					model.status,
+					model.saveSearchId,
+					model.alert
+				</param>
+			</result>
+		</action>
+
+		<action name="MacroNews*" class="springMacroNewsAction" method="getNewsInfo">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.news
+				</param>
+			</result>
+		</action>
+
+		<action name="MarketDailyNews*" class="springReportAction"
+			method="getMarketNews">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="LatestReport*" class="springReportAction" method="getLatestReport">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="MostViewedReports*" class="springReportAction"
+			method="getMostViewedReports">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="RelatedVideos*" class="springReportAction"
+			method="getRelatedVideos">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="MacroReportNews*" class="springMacroReportNewsAction"
+			method="displayMacroReportNews">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json" />
+		</action>
+
+		<action name="SectorOverview*" class="springSectorOverviewAction"
+			method="showCompanies">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="includeProperties">
+					model.companies
+				</param>
+			</result>
+		</action>
+
+		<action name="IndustryDetails*" class="springSectorOverviewAction"
+			method="showCompaniesByIndustryCode">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.sectorCode,
+					model.hotSectors,
+					model.thrMonHighPerfSectors,
+					model.sector,
+					model.sectors,
+					model.industryCode,
+					model.industry,
+					model.subIndustries,
+					model.topIndustries,
+					model.hotIndustries,
+					model.thrMonHighPerfIndustries,
+					model.industriesHighlight
+				</param>
+			</result>
+		</action>
+
+		<action name="SectorDetails*" class="springSectorOverviewAction"
+			method="showCompaniesBySectorCode">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.sectorCode,
+					model.hotSectors,
+					model.thrMonHighPerfSectors,
+					model.sector,
+					model.sectors,
+					model.industryCode,
+					model.industry,
+					model.subIndustries,
+					model.topIndustries,
+					model.hotIndustries,
+					model.thrMonHighPerfIndustries,
+					model.industriesHighlight
+				</param>
+			</result>
+		</action>
+
+		<action name="TopCompany*" class="springSectorOverviewAction"
+			method="showTopCompany">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.sectorCode,
+					model.hotSectors,
+					model.thrMonHighPerfSectors,
+					model.sector,
+					model.sectors,
+					model.industryCode,
+					model.industry,
+					model.subIndustries,
+					model.topIndustries,
+					model.hotIndustries,
+					model.thrMonHighPerfIndustries,
+					model.industriesHighlight,
+					model.companiesCombo
+				</param>
+			</result>
+		</action>
+
+		<action name="TopIndustry*" class="springSectorOverviewAction"
+			method="showTopIndustry">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.sectorCode,
+					model.hotSectors,
+					model.thrMonHighPerfSectors,
+					model.sector,
+					model.sectors,
+					model.industryCode,
+					model.industry,
+					model.subIndustries,
+					model.topIndustries,
+					model.hotIndustries,
+					model.thrMonHighPerfIndustries,
+					model.industriesHighlight,
+					model.companiesCombo
+				</param>
+			</result>
+		</action>
+
+		<action name="Hit*" class="springReportAction" method="hit">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+		</action>
+		<action name="GetClassicChart*" class="springTechnicalChartAction"
+			method="getChart">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.taChart.bytes
+				</param>
+			</result>
+		</action>
+
+		<action name="ViewClassicChart*" class="springTechnicalChartAction"
+			method="getChartStream">
+			<result name="success" type="stream">
+				<param name="contentType">image/png</param>
+				<param name="contentLength">${length}</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">Cache-Control=no-store;Pragma=;no-cache;Expires=-1;filename="${fileName}"</param>
+				<param name="bufferSize">512</param>
+				<param name="allowCaching">false</param>
+			</result>
+		</action>
+
+		<action name="ViewPowerRatingLevel*" class="springPowerRatingAction"
+			method="viewPowerRatingLevel">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="SearchSymbolPowerRating*" class="springPowerRatingAction"
+			method="searchPrSymbol">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+		<action name="ViewPowerRatingWatchList*" class="springPowerRatingAction"
+			method="viewPowerRatingWatchList">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+
+
+		<action name="ViewCompanyPowerRating*" class="springPowerRatingAction"
+			method="viewCompanyPowerRating">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData,
+					model.activeAccordIndex,
+					model.avgGeneralMarketPr,
+					model.bottomTenPrs,
+					model.currentComp,
+					model.downgradedBottomTenPrs,
+					model.existSymbol,
+					model.fifthLevel,
+					model.firstLevel,
+					model.fourthLevel,
+					model.generalMarketPrs,
+					model.level,
+					model.levelPrs,
+					model.listOfPrs,
+					model.secondLevel,
+					model.sixthLevel,
+					model.strAvgGeneralMarketPr,
+					model.symbol,
+					model.thirdLevel,
+					model.todayRatedCodeNumber,
+					model.topTenPrs,
+					model.upgradedTopTenPrs,
+					model.watchListPrs,
+					model.watchSecCodeList
+				</param>
+			</result>
+		</action>
+		<action name="power-rating-breakdown*" class="springPowerRatingAction"
+			method="viewPowerRatingBreakdown">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="SectorIndustryIndexChart*" class="springChartDataAJAXAction"
+			method="executeSearchIndexComp">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+	</package>
+
+
+	<!-- Load more news AJAX -->
+	<package name="LoadMoreAjax" namespace="/ajax/LoadMore"
+		extends="default-web">
+		<!-- load more news -->
+		<action name="News*" class="springMacroNewsAction" method="ajaxLoadMoreNews">
+			<result type="json">
+				<param name="excludeProperties">
+					model.searchReasult
+				</param>
+			</result>
+		</action>
+
+		<!-- load more videos -->
+		<action name="Videos*" class="springReportAction" method="ajaxLoadMoreVideos">
+			<result type="json">
+				<param name="excludeProperties">
+					model.searchReasult
+				</param>
+			</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="Analysis.StockInformation.RelatedComapany"
+		template="/WEB-INF/jsps/snippets/analysis/stockInformation/relatedCompany.jsp">
+	</definition>
+	
+	<definition name="ListedMarket.OverviewWeb" extends="Base.Web">
+        <put-attribute name="left-menu"
+            value="/WEB-INF/jsps/layouts/LeftMenu-ListedMarketOverview.jsp" />
+        <!-- Define menu Javascript files -->
+        <put-list-attribute name="menu-js">
+        </put-list-attribute>
+
+        <!-- Addition Stylesheet files -->
+        <put-list-attribute name="module-css">
+        </put-list-attribute>
+
+        <!-- Addition Javascript files -->
+        <put-list-attribute name="module-js">
+            <!--
+                <add-attribute value="/js/web/common/classes/common.clazz.Vote.js"/>
+                <add-attribute value="/js/web/common/common.Vote.js"/>
+            -->
+        </put-list-attribute>
+
+        <!-- Addition Stylesheet files -->
+        <put-list-attribute name="css">
+        </put-list-attribute>
+
+        <!-- Addition Javascript files -->
+        <put-list-attribute name="js">
+        </put-list-attribute>
+    </definition>
+
+	<definition name="ListedMarket" extends="ListedMarket.OverviewWeb">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/ListedMarket.jsp" />
+		<put-list-attribute name="css">
+			<add-attribute value="/css/ui-mostActive.css"></add-attribute>
+		</put-list-attribute>
+
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/newsinfo/classes/newsinfo.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.MacroNews.js" />
+			<add-attribute
+				value="/js/web/newsinfo/classes/newsinfo.clazz.LatestMarketNewsListedMarket.js" />
+			<add-attribute
+				value="/js/web/newsinfo/newsinfo.LatestMarketNewsListedMarket.js" />
+			<add-attribute
+				value="/js/web/newsinfo/classes/newsinfo.clazz.NewsOnlineListedMarket.js" />
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsOnlineListedMarket.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.MostActive.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.MostActive.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.MarketCalendarOverview.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.MarketCalendarOverview.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.MostPopularSymbol.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.MostPopularSymbol.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.ListedMarket.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="NewsViewDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/NewsViewDetail.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.IPOCenter" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/IPOCenter.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.News" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/News.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.PublicInfo" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/PublicInfo.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.InformationCategory" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/InformationCategory.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.MarketCalendar" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/MarketCalendar.jsp" />
+		<put-list-attribute name="css">
+			<add-attribute value="/calendar/calendar-blue.css" />
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/calendar/calendar.js" />
+			<add-attribute value="/calendar/calendar-setup.js" />
+			<add-attribute value="/calendar/lang/calendar-en.js" />
+		</put-list-attribute>
+	</definition>
+
+
+
+	<definition name="si.company.companyProfile" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/company/si-companyProfile.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/listedmarket/companyProfile.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.Company.IncomeStatementForecast"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/IncomeStatementForecast.jsp" />
+	</definition>
+
+	<definition name="ListedMarket.Company.FlashChart" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/FlashChartForSymbol.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/swfobject.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.FlashChart.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.FlashChart.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.Company.InsiderTransactions"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/InsiderTransactions.jsp"></put-attribute>
+	</definition>
+
+	<definition name="ListedMarket.Company.NewsForSymbol"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/NewsForSymbol.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsForSymbol.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.NewsForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="stockInformation.newsForSymbol" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/stockInformationNewsForSymbol.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsForSymbol.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.NewsForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="stockInformation.CompanyEvents" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/stockInformationCompanyEvents.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.CompanyEvents.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.CompanyEvents.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.Company.CompanyEvents"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/CompanyEvents.jsp"></put-attribute>
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.CompanyEvents.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.CompanyEvents.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.Financial.BalanceSheet"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/BalanceSheet.jsp" />
+		<put-attribute name="notice"
+			value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+	</definition>
+
+	<definition name="ListedMarket.Financial.IncomeStatement"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/IncomeStatement.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.IncomeStatement.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.IncomeStatement.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.Financial.CashFlow" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/CashFlow.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.CashFlow.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.CashFlow.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.MarketStatistics.HistoricalPriceForSymbol"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/HistoricalPriceForSymbol.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.HistoricalPrice.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.HistoricalPriceForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.MarketStatistics.TradingStatisticsForSymbol"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/TradingStatisticsForSymbol.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.TradingStatistics.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.TradingStatisticsForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.MarketStatistics.ForeignTradingForSymbol"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/ForeignTradingForSymbol.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.ForeignTrading.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.ForeignTradingForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Common.NewsDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/newsinfo/NewsDetail.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="ListedMarket.MacroNews" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/MacroNews.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<!--
+				<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.MacroNews.js"/>
+			-->
+			<!--
+				<add-attribute
+				value="/js/web/analysistools/analysistools.MacroNews.js"/>
+			-->
+		</put-list-attribute>
+	</definition>
+
+</tiles-definitions>

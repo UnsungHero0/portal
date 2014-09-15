@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<http>
+	<!-- For check Selected Symbol in view a company information -->
+	<http-group id="checkSelectdSymbol">
+		<intercept-url pattern="/tong-quan.shtml" />
+		<intercept-url pattern="/ho-so-doanh-nghiep.shtml" />
+		<intercept-url pattern="/thong-ke-co-ban.shtml" />
+		<intercept-url pattern="/bao-cao-tai-chinh.shtml" />
+		<intercept-url pattern="/chi-tieu-ke-hoach.shtml" />
+
+		<intercept-url pattern="/co-dong-chinh.shtml" />
+		<intercept-url pattern="/giao-dich-noi-bo.shtml" />
+
+		<intercept-url pattern="/bieu-do-ky-thuat.shtml" />
+
+		<intercept-url pattern="/tin-doanh-nghiep.shtml" />
+		<intercept-url pattern="/tin-lien-quan.shtml" />
+
+		<intercept-url pattern="/bang-can-doi-ke-toan.shtml" />
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh.shtml" />
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te.shtml" />
+
+		<intercept-url pattern="/lich-su-gia.shtml" />
+		<intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai.shtml" />
+		<intercept-url pattern="/ket-qua-giao-dich.shtml" />
+
+		<intercept-url pattern="/thong-tin-co-phieu/cong-bo-thong-tin.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/tin-doanh-nghiep.*" />
+
+		<!-- Default url is used to forward when one of patterns matched -->
+		<default-url url="/thong-tin-co-phieu/nhap-ma-chung-khoan.shtml" />
+	</http-group>
+
+	<!-- ==================== Define For Forward =================== -->
+	<http-group id="checkRedirectUrl">
+		<intercept-url pattern="/home/RedirectUrl.*" />
+		<!-- Default url is used to forward when one of patterns matched -->
+		<default-url url="/home/PageNotFound.shtml" />
+	</http-group>
+
+	<http-group id="checkForwardUrl">
+		<intercept-url pattern="/home/ForwardUrl.*" />
+		<intercept-url pattern="/home/SecForwardUrl.*" />
+		<intercept-url pattern="/home/ForwardSecUrl.*" />
+		<!-- Default url is used to forward when one of patterns matched -->
+		<default-url url="/home.shtml" />
+	</http-group>
+
+    <!-- Free User Filter -->    
+    <http-group id="checkBlockFreeUserUrl">
+        <!--Default url is used to forward when one of patterns matched -->
+        <default-url url="/thong-tin-co-ban-tai-khoan-mien-phi.*" />
+    </http-group>
+    <http-group id="checkBlockNormalUserUrl">
+        <default-url url="/thong-tin-co-ban.*" />
+        <!--Default url is used to forward when one of patterns matched -->
+    </http-group>
+	
+	<!-- ==================== Define For Top Menu =================== -->
+	<!-- New -->
+	<http-group id="topMenuHomePage">
+		<intercept-url pattern="/vndirect/gioi-thieu-vndirect.*" />
+		<intercept-url pattern="/vndirect/lich-su-phat-trien.*" />
+		<intercept-url pattern="/vndirect/doi-ngu-lanh-dao.*" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/.*" />
+
+		<intercept-url pattern="/bieu-mau-ung-dung.shtml" />
+		<intercept-url pattern="/tro-giup/hoi-dap-huong-dan.shtml" />
+		<intercept-url pattern="/tro-giup-san-pham-dich-vu/.*" />
+		<intercept-url pattern="/tro-giup-giao-dich/.*" />
+		<intercept-url pattern="/tro-giup/.*" />
+
+		<intercept-url pattern="/vndirect/tin-vndirect.*" />
+		<intercept-url pattern="/vndirect/tin-vndirect/.*" />
+		<intercept-url pattern="/vndirect/san-pham-dich-vu.shtml" />
+	</http-group>
+	<http-group id="subMenuHome_VnDirect_news">
+		<intercept-url pattern="/vndirect/tin-vndirect.*" />
+		<intercept-url pattern="/vndirect/tin-vndirect/.*" />
+	</http-group>
+	<http-group id="topMenuHome_Service">
+		<intercept-url pattern="/vndirect/san-pham-dich-vu.shtml" />
+
+		<intercept-url pattern="/account/open/.*" />
+		<intercept-url pattern="/home/account/.*" />
+	</http-group>
+	<http-group id="topMenuAnalysisModule">
+		<intercept-url pattern="/tin-trong-nuoc.shtml" />
+		<intercept-url pattern="/tin-trong-nuoc/.*" />
+		<intercept-url pattern="/tin-trong-nuoc.*" />
+		<intercept-url pattern="/tin-quoc-te.shtml" />
+		<intercept-url pattern="/tin-quoc-te/.*" />
+		<intercept-url pattern="/tin-quoc-te.*" />
+		<!-- <intercept-url pattern="/nhan-dinh-thi-truong.shtml" />
+		<intercept-url pattern="/nhan-dinh-thi-truong/.*" />
+		<intercept-url pattern="/nhan-dinh-thi-truong.*" /> 
+		<intercept-url pattern="/y-kien-chuyen-gia.shtml" />
+		<intercept-url pattern="/y-kien-chuyen-gia/.*" />
+		<intercept-url pattern="/y-kien-chuyen-gia.*" />-->
+		<intercept-url pattern="/cong-bo-thong-tin.shtml" />
+		<intercept-url pattern="/cong-bo-thong-tin/.*" />
+		<intercept-url pattern="/cong-bo-thong-tin.*" />
+        <intercept-url pattern="/lich-su-kien.shtml" />
+        <intercept-url pattern="/lich-su-kien/.*" />
+        <intercept-url pattern="/lich-su-kien.*" />
+
+		<intercept-url pattern="/tong-quan.shtml" />
+		<intercept-url pattern="/tong-quan/.*" />
+		<intercept-url pattern="/ho-so-doanh-nghiep.shtml" />
+		<intercept-url pattern="/ho-so-doanh-nghiep/.*" />
+		<intercept-url pattern="/thong-ke-co-ban.shtml" />
+		<intercept-url pattern="/thong-ke-co-ban/.*" />
+		<intercept-url pattern="/bao-cao-tai-chinh.shtml" />
+		<intercept-url pattern="/bao-cao-tai-chinh/.*" />
+		<intercept-url pattern="/chi-tieu-ke-hoach.shtml" />
+		<intercept-url pattern="/chi-tieu-ke-hoach/.*" />
+		<intercept-url pattern="/co-dong-chinh.shtml" />
+		<intercept-url pattern="/co-dong-chinh/.*" />
+		<intercept-url pattern="/giao-dich-noi-bo.shtml" />
+		<intercept-url pattern="/giao-dich-noi-bo/.*" />
+		<intercept-url pattern="/bieu-do-ky-thuat.shtml" />
+		<intercept-url pattern="/bieu-do-ky-thuat/.*" />
+		<intercept-url pattern="/tin-doanh-nghiep.shtml" />
+		<intercept-url pattern="/tin-doanh-nghiep/.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/cong-bo-thong-tin/.*" />
+		<intercept-url pattern="/tin-lien-quan.shtml" />
+		<intercept-url pattern="/tin-lien-quan/.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/tin-doanh-nghiep/.*" />
+		<intercept-url pattern="/bang-can-doi-ke-toan.shtml" />
+		<intercept-url pattern="/bang-can-doi-ke-toan/.*" />
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh.shtml" />
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh/.*" />
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te.shtml" />
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te/.*" />
+		<intercept-url pattern="/lich-su-gia.shtml" />
+        <intercept-url pattern="/lich-su-gia/.*" />
+        <intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai.shtml" />
+        <intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai/.*" />
+        <intercept-url pattern="/ket-qua-giao-dich.shtml" />
+        <intercept-url pattern="/ket-qua-giao-dich/.*" />
+        
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/tong-quan.*" />
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/lich-su-gia.*" />
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/ket-qua-giao-dich.*" />
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/giao-dich-nha-dau-tu-nuoc-ngoai.*" />
+		 
+		<!-- <intercept-url pattern="/cong-cu-phan-tich-chung-khoan/sang-loc-co-phieu.*" />
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/stock-wizard.*" />
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/power-ratings.*" />
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/bieu-do-ky-thuat.*" />-->
+
+		<!-- <intercept-url pattern="/phan-tich-nganh/tong-quan-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-so-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/phan-loai-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-tiet-linh-vuc.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-tiet-nganh.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/nhap-ma-chung-khoan.shtml" />  -->
+	</http-group>
+	<http-group id="topMenuConsultantModule">
+		<intercept-url pattern="/nhan-dinh-thi-truong.shtml" />
+		<intercept-url pattern="/nhan-dinh-thi-truong/.*" />
+		<intercept-url pattern="/nhan-dinh-thi-truong.*" />
+		<intercept-url pattern="/y-kien-chuyen-gia.shtml" />
+		<intercept-url pattern="/y-kien-chuyen-gia/.*" />
+		<intercept-url pattern="/y-kien-chuyen-gia.*" />
+		
+		<intercept-url pattern="/y-tuong-dau-tu/co-phieu-khuyen-nghi.*" />
+		<intercept-url pattern="/y-tuong-dau-tu/power-ratings.*" />
+        
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/sang-loc-co-phieu.*" />
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/stock-wizard.*" />
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/bieu-do-ky-thuat.*" />
+
+		<intercept-url pattern="/phan-tich-nganh/tong-quan-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-so-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/phan-loai-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-tiet-linh-vuc.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-tiet-nganh.*" />
+	</http-group>
+	<http-group id="topMenuInstitutionsModule">
+		<intercept-url pattern="/institutions/.*" />
+	</http-group>
+	<http-group id="topMenuMyPageModule">
+		<intercept-url pattern="/thong-tin-co-ban.*" />
+		<intercept-url pattern="/thong-tin-giao-dich.*" />
+		<intercept-url pattern="/thay-doi-mat-khau.*" />
+	</http-group>
+
+	<!-- Submenus for Thong tin VnDirect -->
+	<!-- Gioi thieu VnDirect -->
+	<http-group id="subMenuHome_Info">
+		<intercept-url pattern="/home/info.shtml" />
+		<intercept-url pattern="/vndirect/gioi-thieu-vndirect.*" />
+		<intercept-url pattern="/vndirect/lich-su-phat-trien.*" />
+		<intercept-url pattern="/vndirect/doi-ngu-lanh-dao.*" />
+	</http-group>
+	<http-group id="subMenuHome_Info_Vision">
+		<intercept-url pattern="/home/info.shtml" />
+		<intercept-url pattern="/vndirect/gioi-thieu-vndirect.*" />
+	</http-group>
+	<http-group id="subMenuHome_Info_History">
+		<intercept-url pattern="/vndirect/lich-su-phat-trien.*" />
+	</http-group>
+	<http-group id="subMenuHome_Info_Board">
+		<intercept-url pattern="/vndirect/doi-ngu-lanh-dao.*" />
+	</http-group>
+	<!-- San pham & Dich vu -->
+	<http-group id="subMenuHome_Service">
+		<intercept-url pattern="/vndirect/san-pham-dich-vu.shtml" />
+	</http-group>
+	<!-- Mo tai khoan -->
+	<http-group id="subMenuHome_OpenAccount">
+		<intercept-url pattern="/mo-tai-khoan.*" />
+	</http-group>
+	<http-group id="subMenuHome_OpenAccount_DirectAccount">
+		<intercept-url pattern="/mo-tai-khoan.shtml" />
+		<intercept-url pattern="/mo-tai-khoan-nha-dau-tu.*" />
+	</http-group>
+	<http-group id="subMenuHome_OpenAccount_FreeUser">
+		<intercept-url pattern="/mo-tai-khoan-mien-phi.*" />
+	</http-group>
+	<http-group id="subMenuHome_OpenAccount_RealEstateTrading">
+		<intercept-url pattern="/mo-tai-khoan-moi-gioi-bat-dong-san.*" />
+	</http-group>
+	<http-group id="subMenuHome_OpenAccount_RealEstateBroker">
+		<intercept-url pattern="/mo-tai-khoan-giao-dich-bat-dong-san.*" />
+	</http-group>
+	<!-- Quan he co dong -->
+	<http-group id="subMenuHome_InvestorRelationship">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/.*" />
+	</http-group>
+	<!-- Quan he co dong > Tin tuc su kien -->
+	<http-group id="home_ir_snapshot">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/tong-quan.shtml" />
+	</http-group>
+	<http-group id="home_ir_news">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/cong-bo-thong-tin.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/cong-bo-thong-tin/.*" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/tin-doanh-nghiep.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/tin-doanh-nghiep/.*" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/lich-su-kien.shtml" />
+	</http-group>
+	<http-group id="home_ir_news_disclosure">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/cong-bo-thong-tin.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/cong-bo-thong-tin/.*" />
+	</http-group>
+	<http-group id="home_ir_news_companyEvent">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/tin-doanh-nghiep.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/tin-doanh-nghiep/.*" />
+	</http-group>
+	<http-group id="home_ir_news_MarketCalendar">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/lich-su-kien.shtml" />
+	</http-group>
+	<!-- Quan he co dong > Thong tin tai chinh -->
+	<http-group id="home_ir_financial">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/thong-ke-co-ban.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/bao-cao-tai-chinh.shtml" />
+		<intercept-url
+			pattern="/quan-he-co-dong-vndirect/bao-cao-thuong-nien-cao-bach.shtml" />
+	</http-group>
+	<http-group id="home_ir_financial_keyStatistic">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/thong-ke-co-ban.shtml" />
+	</http-group>
+	<http-group id="home_ir_financial_financeReport">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/bao-cao-tai-chinh.shtml" />
+	</http-group>
+	<http-group id="home_ir_financial_annualReport">
+		<intercept-url
+			pattern="/quan-he-co-dong-vndirect/bao-cao-thuong-nien-cao-bach.shtml" />
+	</http-group>
+	<!-- Quan he co dong > Thong tin quan tri -->
+	<http-group id="home_ir_management">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/dieu-le-cong-ty.shtml" />
+		<!-- <intercept-url pattern="/quan-he-co-dong-vndirect/ban-dieu-hanh.shtml" /> -->
+		<intercept-url pattern="/quan-he-co-dong-vndirect/ban-kiem-soat.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/hoi-dong-quan-tri.shtml" />
+	</http-group>
+	<http-group id="home_ir_management_regulations">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/dieu-le-cong-ty.shtml" />
+	</http-group>
+	<!-- <http-group id="home_ir_management_governanceCommittee">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/ban-dieu-hanh.shtml" />
+	</http-group> -->
+	<http-group id="home_ir_management_inspectionCommittee">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/ban-kiem-soat.shtml" />
+	</http-group>
+	<http-group id="home_ir_management_directorsBoard">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/hoi-dong-quan-tri.shtml" />
+	</http-group>
+	<!-- Quan he co dong > Hoi dap -->
+	<http-group id="home_ir_qa">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/hoi-dap.shtml" />
+	</http-group>
+	<!-- Thong tin co phieu -->
+	<http-group id="home_ir_si">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/thong-tin-co-ban.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/bieu-do-ky-thuat.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/lich-su-gia.shtml" />
+		<intercept-url
+			pattern="/quan-he-co-dong-vndirect/giao-dich-nha-dau-tu-nuoc-ngoai.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/ket-qua-giao-dich.shtml" />
+		<intercept-url pattern="/quan-he-co-dong-vndirect/quyen-so-huu.shtml" />
+	</http-group>
+	<http-group id="ir_si_basicInfo">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/thong-tin-co-ban.shtml" />
+	</http-group>
+	<http-group id="ir_si_chart">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/bieu-do-ky-thuat.shtml" />
+	</http-group>
+	<http-group id="ir_si_historicalPrice">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/lich-su-gia.shtml" />
+	</http-group>
+	<http-group id="ir_si_foreignTrading">
+		<intercept-url
+			pattern="/quan-he-co-dong-vndirect/giao-dich-nha-dau-tu-nuoc-ngoai.shtml" />
+	</http-group>
+	<http-group id="ir_si_tradingStatistic">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/ket-qua-giao-dich.shtml" />
+	</http-group>
+	<http-group id="ir_si_ownership">
+		<intercept-url pattern="/quan-he-co-dong-vndirect/quyen-so-huu.shtml" />
+	</http-group>
+	<!-- Diem tin VnDirect -->
+	<http-group id="subMenuHome_VnDirectNews">
+		<intercept-url pattern="/home/news/vndirect.*" />
+		<intercept-url pattern="/news/vndirect.*" />
+	</http-group>
+	<!-- Tro giup -->
+	<http-group id="home_help_downloadForm">
+		<intercept-url pattern="/bieu-mau-ung-dung.shtml" />
+	</http-group>
+	<!-- Release Note -->
+	<http-group id="home_help_releaseNote">
+        <intercept-url pattern="/release-note.shtml" />
+        <intercept-url pattern="/release-note/.*" />
+    </http-group>
+	<http-group id="home_help_qa">
+		<intercept-url pattern="/tro-giup/hoi-dap-huong-dan.shtml" />
+		<intercept-url pattern="/tro-giup-san-pham-dich-vu/.*" />
+		<intercept-url pattern="/tro-giup-giao-dich/.*" />
+		<intercept-url pattern="/tro-giup/.*" />
+	</http-group>
+	<!-- Tuyen dung -->
+	<http-group id="subMenuHome_Career">
+		<intercept-url pattern="/home/info/career.*" />
+	</http-group>
+
+	<!-- sub menu analysis-->
+	<http-group id="subMenuAnalysis_MarketStatistics">
+		<intercept-url pattern="/analysis/market-statistics/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_ResearchTool">
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_MarketOverview">
+		<intercept-url pattern="/analysis/market-overview.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_IndustryAnalysis">
+		<intercept-url pattern="/analysis/industry-analysis.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_ResearchTool">
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/.*" />
+	</http-group>
+	<!-- sub menu analysis/news -->
+	<http-group id="subMenuAnalysis_News_MacVN">
+		<intercept-url pattern="/tin-trong-nuoc.*" />
+		<intercept-url pattern="/tin-trong-nuoc/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_News_MacWorld">
+		<intercept-url pattern="/tin-quoc-te.*" />
+		<intercept-url pattern="/tin-quoc-te/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_News_MarketCommentary">
+		<intercept-url pattern="/nhan-dinh-thi-truong.*" />
+		<intercept-url pattern="/nhan-dinh-thi-truong/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_News_Experts">
+		<intercept-url pattern="/y-kien-chuyen-gia.*" />
+		<intercept-url pattern="/y-kien-chuyen-gia/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_StockHighLights">
+        <intercept-url pattern="/co-phieu-tam-diem.*" />
+    </http-group>
+	<http-group id="subMenuAnalysis_News_Disclosure">
+		<intercept-url pattern="/cong-bo-thong-tin.*" />
+		<intercept-url pattern="/cong-bo-thong-tin/.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_News_Marketcalendar">
+		<intercept-url pattern="/lich-su-kien.shtml" />
+		<intercept-url pattern="/lich-su-kien/.*" />
+	</http-group>
+
+	<!-- Thong tin co phieu -->
+	<!-- Doanh nghiep -->
+	<http-group id="si_company">
+		<intercept-url pattern="/tong-quan.shtml" />
+		<intercept-url pattern="/tong-quan/.*" />
+		<intercept-url pattern="/ho-so-doanh-nghiep.shtml" />
+		<intercept-url pattern="/ho-so-doanh-nghiep/.*" />
+		<intercept-url pattern="/thong-ke-co-ban.shtml" />
+		<intercept-url pattern="/thong-ke-co-ban/.*" />
+		<intercept-url pattern="/bao-cao-tai-chinh.shtml" />
+		<intercept-url pattern="/bao-cao-tai-chinh/.*" />
+		<intercept-url pattern="/chi-tieu-ke-hoach.shtml" />
+		<intercept-url pattern="/chi-tieu-ke-hoach/.*" />
+	</http-group>
+	<http-group id="si_company_snapshot">
+		<intercept-url pattern="/tong-quan.shtml" />
+		<intercept-url pattern="/tong-quan/.*" />
+	</http-group>
+	<http-group id="si_company_profile">
+		<intercept-url pattern="/ho-so-doanh-nghiep.shtml" />
+		<intercept-url pattern="/ho-so-doanh-nghiep/.*" />
+	</http-group>
+	<http-group id="si_company_key">
+		<intercept-url pattern="/thong-ke-co-ban.shtml" />
+		<intercept-url pattern="/thong-ke-co-ban/.*" />
+	</http-group>
+	<http-group id="si_company_report">
+		<intercept-url pattern="/bao-cao-tai-chinh.shtml" />
+		<intercept-url pattern="/bao-cao-tai-chinh/.*" />
+	</http-group>
+	<http-group id="si_company_forecast">
+		<intercept-url pattern="/chi-tieu-ke-hoach.shtml" />
+		<intercept-url pattern="/chi-tieu-ke-hoach/.*" />
+	</http-group>
+	<http-group id="si_ownership">
+		<intercept-url pattern="/co-dong-chinh.shtml" />
+		<intercept-url pattern="/co-dong-chinh/.*" />
+		<intercept-url pattern="/giao-dich-noi-bo.shtml" />
+		<intercept-url pattern="/giao-dich-noi-bo/.*" />
+	</http-group>
+	<http-group id="si_ownership_major">
+		<intercept-url pattern="/co-dong-chinh.shtml" />
+		<intercept-url pattern="/co-dong-chinh/.*" />
+	</http-group>
+	<http-group id="si_ownership_insider">
+		<intercept-url pattern="/giao-dich-noi-bo.shtml" />
+		<intercept-url pattern="/giao-dich-noi-bo/.*" />
+	</http-group>
+	<http-group id="si_chart">
+		<intercept-url pattern="/bieu-do-ky-thuat.shtml" />
+		<intercept-url pattern="/bieu-do-ky-thuat/.*" />
+	</http-group>
+	<http-group id="si_news">
+		<intercept-url pattern="/tin-doanh-nghiep.shtml" />
+		<intercept-url pattern="/tin-doanh-nghiep.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/cong-bo-thong-tin/.*" />
+		<intercept-url pattern="/tin-lien-quan.shtml" />
+		<intercept-url pattern="/tin-lien-quan/.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/tin-doanh-nghiep/.*" />
+	</http-group>
+	<http-group id="si_news_news">
+		<intercept-url pattern="/tin-doanh-nghiep.shtml" />
+		<intercept-url pattern="/tin-doanh-nghiep/.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/cong-bo-thong-tin/.*" />
+	</http-group>
+	<http-group id="si_news_events">
+		<intercept-url pattern="/tin-lien-quan.shtml" />
+		<intercept-url pattern="/tin-lien-quan/.*" />
+		<intercept-url pattern="/thong-tin-co-phieu/tin-doanh-nghiep/.*" />
+	</http-group>
+	<http-group id="si_report">
+		<intercept-url pattern="/bang-can-doi-ke-toan.shtml" />
+		<intercept-url pattern="/bang-can-doi-ke-toan/.*" />
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh.shtml" />
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh/.*" />
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te.shtml" />
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te/.*" />
+	</http-group>
+	<http-group id="si_report_balance">
+		<intercept-url pattern="/bang-can-doi-ke-toan.shtml" />
+		<intercept-url pattern="/bang-can-doi-ke-toan/.*" />
+	</http-group>
+	<http-group id="si_report_income">
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh.shtml" />
+		<intercept-url pattern="/bao-cao-ket-qua-kinh-doanh/.*" />
+	</http-group>
+	<http-group id="si_report_cashflow">
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te.shtml" />
+		<intercept-url pattern="/bao-cao-luu-chuyen-tien-te/.*" />
+	</http-group>
+	<http-group id="si_statistic">
+		<intercept-url pattern="/lich-su-gia.shtml" />
+		<intercept-url pattern="/lich-su-gia/.*" />
+		<intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai.shtml" />
+		<intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai/.*" />
+		<intercept-url pattern="/ket-qua-giao-dich.shtml" />
+		<intercept-url pattern="/ket-qua-giao-dich/.*" />
+	</http-group>
+	<http-group id="si_statistic_historical">
+		<intercept-url pattern="/lich-su-gia.shtml" />
+		<intercept-url pattern="/lich-su-gia/.*" />
+	</http-group>
+	<http-group id="si_statistic_foreign">
+		<intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai.shtml" />
+		<intercept-url pattern="/giao-dich-nha-dau-tu-nuoc-ngoai/.*" />
+	</http-group>
+	<http-group id="si_statistic_trading">
+		<intercept-url pattern="/ket-qua-giao-dich.shtml" />
+		<intercept-url pattern="/ket-qua-giao-dich/.*" />
+	</http-group>
+	<!-- sub menu analysis/market-statics -->
+	<http-group id="subMenuAnalysis_MarketStatistics_Overview">
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/tong-quan.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_MarketStatistics_HistoricalPrice">
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/lich-su-gia.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_MarketStatistics_ForeignTrading">
+		<intercept-url
+			pattern="/thong-ke-thi-truong-chung-khoan/giao-dich-nha-dau-tu-nuoc-ngoai.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_MarketStatistics_TradingStatistics">
+		<intercept-url pattern="/thong-ke-thi-truong-chung-khoan/ket-qua-giao-dich.*" />
+	</http-group>
+	
+	<!-- sub menu Y Tuong Dau Tu -->
+	<http-group id="subMenuAnalysis_ResearchTool_StockPick">
+        <intercept-url pattern="/y-tuong-dau-tu/co-phieu-khuyen-nghi.*" />
+    </http-group>
+    <http-group id="subMenuAnalysis_ResearchTool_PowerRatingView">
+        <intercept-url pattern="/y-tuong-dau-tu/power-ratings.*" />
+    </http-group>
+
+	<!-- sub menu cong-cu-phan-tich-chung-khoan -->
+	<http-group id="subMenuAnalysis_ResearchTool_StockScreenerView">
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/sang-loc-co-phieu.*" />
+		<intercept-url
+			pattern="/cong-cu-phan-tich-chung-khoan/ket-qua-sang-loc-co-phieu.*" />
+		<intercept-url
+			pattern="/cong-cu-phan-tich-chung-khoan/luu-tieu-chi-sang-loc.*" />
+		<intercept-url
+			pattern="/cong-cu-phan-tich-chung-khoan/danh-sach-cac-tieu-chi-da-luu.*" />
+		<intercept-url
+			pattern="/cong-cu-phan-tich-chung-khoan/tieu-chi-sang-loc-co-phieu-da-luu.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_ResearchTool_StockWizardView">
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/stock-wizard.*" />
+		<intercept-url
+			pattern="/cong-cu-phan-tich-chung-khoan/stock-wizard-company-detail.*" />
+		<intercept-url
+			pattern="/cong-cu-phan-tich-chung-khoan/stock-wizard-difference.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_ResearchTool_FlashChart">
+		<intercept-url pattern="/cong-cu-phan-tich-chung-khoan/bieu-do-ky-thuat.*" />
+	</http-group>
+
+	<!-- sub menu analysis/industry-analysis -->
+	<http-group id="subMenuAnalysis_IndustryAnalysis_SectorOverview">
+		<intercept-url pattern="/phan-tich-nganh/tong-quan-nganh.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-tiet-linh-vuc.*" />
+		<intercept-url pattern="/phan-tich-nganh/chi-tiet-nganh.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_IndustryAnalysis_ListSectorView">
+		<intercept-url pattern="/phan-tich-nganh/chi-so-nganh.*" />
+	</http-group>
+	<http-group id="subMenuAnalysis_IndustryAnalysis_ListSectorIndex">
+		<intercept-url pattern="/phan-tich-nganh/phan-loai-nganh.*" />
+	</http-group>
+
+	<!-- sub menu /institutions/issuers -->
+	<http-group id="subMenuIsntitutions_Issuers">
+		<intercept-url pattern="/to-chuc-phat-hanh/tong-quan.*" />
+		<intercept-url pattern="/to-chuc-phat-hanh/san-pham-dich-vu.*" />
+		<intercept-url pattern="/to-chuc-phat-hanh/doi-ngu-chuyen-gia.*" />
+	</http-group>
+	<http-group id="subMenuIsntitutions_Issuers_Overview">
+		<intercept-url pattern="/to-chuc-phat-hanh/tong-quan.*" />
+	</http-group>
+	<http-group id="subMenuIsntitutions_Issuers_PS">
+		<intercept-url pattern="/to-chuc-phat-hanh/san-pham-dich-vu.*" />
+	</http-group>
+	<http-group id="subMenuIsntitutions_Issuers_Consultants">
+		<intercept-url pattern="/to-chuc-phat-hanh/doi-ngu-chuyen-gia.*" />
+	</http-group>
+
+	<!-- sub menu /institutions/invest -->
+	<http-group id="subMenuIsntitutions_Invest">
+		<intercept-url pattern="/to-chuc-dau-tu/tong-quan.*" />
+		<intercept-url pattern="/to-chuc-dau-tu/san-pham-dich-vu.*" />
+		<intercept-url pattern="/to-chuc-dau-tu/doi-ngu-chuyen-gia.*" />
+	</http-group>
+	<http-group id="subMenuIsntitutions_Invest_Overview">
+		<intercept-url pattern="/to-chuc-dau-tu/tong-quan.*" />
+	</http-group>
+	<http-group id="subMenuIsntitutions_Invest_PS">
+		<intercept-url pattern="/to-chuc-dau-tu/san-pham-dich-vu.*" />
+	</http-group>
+	<http-group id="subMenuIsntitutions_Invest_Consultants">
+		<intercept-url pattern="/to-chuc-dau-tu/doi-ngu-chuyen-gia.*" />
+	</http-group>
+
+	<http-group id="subMenuMarket_MacroNews_MacVN">
+		<intercept-url pattern="/listed/MacroNews_MacVN.*" />
+		<intercept-url pattern="/listed/NewsDetail_MacVN.*" />
+	</http-group>
+	<http-group id="subMenuMarket_MacroNews_MacWorld">
+		<intercept-url pattern="/listed/MacroNews_MacWorld.*" />
+		<intercept-url pattern="/listed/NewsDetail_MacWorld.*" />
+	</http-group>
+	<http-group id="subMenuMarket_MacroNews_Disclosure">
+		<intercept-url pattern="/listed/MacroNews_Disclosure.*" />
+		<intercept-url pattern="/listed/NewsDetail_Disclosure.*" />
+	</http-group>
+	<http-group id="subMenuMarket_MacroNews_IPO">
+		<intercept-url pattern="/listed/MacroNews_IPO.*" />
+		<intercept-url pattern="/listed/NewsDetail_IPO.*" />
+	</http-group>
+</http>

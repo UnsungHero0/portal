@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server-config>
+    <!-- Forum URL -->
+    <forum>
+        <view-thread-url><![CDATA[http://www.vndirect.com.vn/forum/showthread.php?t=]]></view-thread-url>
+    </forum>
+    <paging-info>
+        <category-number>15</category-number>
+    </paging-info>
+    <files-server>
+        <thumbnail>
+            <types><![CDATA[jpg;bmp;pgn;gif;]]></types>
+            <folder><![CDATA[c:/files/documents]]></folder>
+        </thumbnail>
+        <!-- document file path: {folder}/{category/[uri]} -->
+        <documents>
+            <types><![CDATA[jpg;bmp;pgn;gif;pdf;doc;docx;xls;xlsx;zip;rar]]></types>
+            <folder><![CDATA[c:/files/documents]]></folder>
+        </documents>
+        <!-- document file path: {folder}/{category/[uri]} -->
+        <templates>
+            <types><![CDATA[vm;htm;html;txt]]></types>
+            <folder><![CDATA[c:/files/templates]]></folder>
+        </templates>
+        <!-- reports file path: {folder}/{category/[uri]} -->
+        <reports>
+            <types><![CDATA[pdf;cvs;html]]></types>
+            <folder><![CDATA[c:/files/reports]]></folder>
+        </reports>
+    </files-server>
+
+    <!-- OSCache configuration -->
+    <oscache>
+        <cache-static-page><![CDATA[true]]></cache-static-page>
+        <!-- Static page refresh period: 1h = 1*60*60 seconds -->
+        <static-page-refresh-period><![CDATA[1*60*60]]></static-page-refresh-period>
+        <!-- Charts refresh period: 1h = 1*60*60 seconds -->
+        <chart-refresh-period><![CDATA[3*60*60]]></chart-refresh-period>
+        <!-- Charts refresh period: 30m = 30*60 seconds -->
+        <tachart-refresh-period><![CDATA[30*60]]></tachart-refresh-period>
+        <!-- Latest News refresh period: 15m = 15*60 seconds -->
+        <latest-news-refresh-period><![CDATA[15*60]]></latest-news-refresh-period>
+        <!-- IndustryCenter refresh period: 30m=30*60 -->
+        <industry-center-refresh-period><![CDATA[30*60]]></industry-center-refresh-period>
+        <!-- Flash Chart API refresh period: 30m=30*60 -->
+        <flash-tachart-refresh-period><![CDATA[30*60]]></flash-tachart-refresh-period>
+        <!-- Flash Chart API - Events refresh period: 15m=15*60 -->
+        <flash-events-refresh-period><![CDATA[15*60]]></flash-events-refresh-period>
+        <!-- Static page refresh period: 2h = 2*60*60 seconds -->
+        <data-ref-refresh-period><![CDATA[2*60*60]]></data-ref-refresh-period>
+        <!-- Porfolio refresh period: 60m = 60*60 seconds -->
+        <porfolio-refresh-period><![CDATA[60*60]]></porfolio-refresh-period>
+    </oscache>
+
+    <!-- Setting Chart -->
+    <ChartSetting>
+        <Color>
+            <!--
+            backgroup color: #EFEFEF:239,239,239
+            White: 255,255,255
+            -->
+            <bgchart><![CDATA[239,239,239]]></bgchart>
+            <!-- Border Chart color: #CCCCCC:204,204,204  -->
+            <border><![CDATA[204,204,204]]></border>
+            <!-- Grid line color: #B9B9B9:185,185,185 -->
+            <gridline><![CDATA[185,185,185]]></gridline>
+        </Color>
+        <TAChartHeight>
+            <MainChart><![CDATA[300]]></MainChart>
+            <SubChart><![CDATA[100]]></SubChart>
+        </TAChartHeight>
+    </ChartSetting>
+
+    <!-- Email Notification Configuration -->
+    <email>
+        <sender><![CDATA[vision.ulsan@gmail.com]]></sender>
+        <create-account>
+            <subject><![CDATA[Your Vision Lab's Account has been created!]]></subject>
+            <template><![CDATA[/WEB-INF/templates/create-account-email.html]]></template>
+        </create-account>
+    </email>
+    <!-- Define active acount status -->
+    <open-account>
+       <active-status>
+           <denied>DENIED</denied>
+           <pending>PENDING</pending>
+           <finish>FINISH</finish>
+           <error>ERROR</error>
+           <processing>PROCESSING</processing>
+           <default>FINISH</default>
+       </active-status>
+    </open-account>
+    <!-- Define GROUP_CODE & ITEM_CODE of CMS_DATA_REF table -->
+    <data-ref>
+        <group-codes>
+            <news-type>NEWS_TYPE</news-type>
+            <search-date-type>MATKET_CAL_DATE_TYPE</search-date-type>
+            <search-event-type>MARK_CAL_EVENT_TYPE</search-event-type>
+            <quarter-type>QUARTER</quarter-type>
+            <identification_type>IDENTIFICATION_TYPE</identification_type>
+            <sex>SEX</sex>
+            <country>COUNTRY</country>
+        </group-codes>
+        <item-codes>
+            <news-type>
+                <event>Event</event>
+                <news>MacVN</news>
+                <ipo-news>Disclousure</ipo-news>
+                <market-news>DailyReport</market-news>
+                <public-info>IPO</public-info>
+                <vnds-news>VNDIRECT</vnds-news>
+                <not-vnds-news>NOT-VNDS-NEWS</not-vnds-news>
+                <otc-news>OTC</otc-news>
+                <market-calendar>MARKET-CALENDAR</market-calendar>
+                <vnds-research-news>Research</vnds-research-news>
+                <vnds-research-news_market>DailyReport</vnds-research-news_market>
+                <market-review>PM</market-review> 
+                
+                <shareholder-news>IR</shareholder-news>
+                <world-news>MacWorld</world-news>
+                <expert-news>Expert</expert-news>
+                <vnds-daily-news>DailyReport</vnds-daily-news>  
+                <vnds-weekly-news>WeeklyReport</vnds-weekly-news>
+                <vnds-monthly-news>MonthlyReport</vnds-monthly-news>    
+                <is-hot-news>Y</is-hot-news>
+
+                <vnds-strategic>Strategy</vnds-strategic>
+                <vnds-company>Company</vnds-company>
+                <vnds-quarter>Quarter</vnds-quarter>
+                <vnds-riskalert>RiskAlert</vnds-riskalert>
+                <vnds-quickreport>Break</vnds-quickreport>
+                <vnds-stastic>Statistic</vnds-stastic>
+                <vnds-research-other>Research_Other</vnds-research-other>
+                <vnds-announcement>Announcement</vnds-announcement>
+                <vnds-financial-statement>FinancialStatement</vnds-financial-statement>
+                <vnds-stock-highlights>StockHighlights</vnds-stock-highlights>
+                <vnds-stock-pick>StockPick</vnds-stock-pick>
+            </news-type>
+
+            <news-status>
+                <rejected>REJ</rejected>
+                <approved>APP</approved>
+                <pending-for-approval>P4A</pending-for-approval>
+                <work-in-progress>WIP</work-in-progress>
+            </news-status>
+
+            <document-status>
+                <unpublished>UNPUB</unpublished>
+                <published>PUB</published>
+            </document-status>
+
+            <doc-type>
+                <research>RESEARCH</research>
+                <ssc-filling>SSC_FILLING</ssc-filling>
+            </doc-type>
+        </item-codes>
+    </data-ref>
+
+    <!-- Define Report Type -->
+    <ReportType>
+        <Annual>ANNUAL</Annual>
+        <Quarter>QUARTER</Quarter>
+    </ReportType>
+
+    <!-- Define Money Rate -->
+    <MoneyRate>1,000;1,000,000</MoneyRate>
+
+    <!-- Define paging information -->
+    <paging>
+        <num-per-page>9</num-per-page>
+        <items-per-page>10</items-per-page>
+        <items-per-list>20</items-per-list>
+        <items-of-vnds>10</items-of-vnds>
+        <items-of-research>30</items-of-research>
+        <items-of-agent-report>10</items-of-agent-report>
+    </paging>
+
+    <!-- Define VNIndex code -->
+    <VNMarket>
+        <MarketUnitPrice><![CDATA[1000]]></MarketUnitPrice>
+        <ExchangeCode>
+            <HanoiSTC><![CDATA[HNX]]></HanoiSTC>
+            <HCMSTC><![CDATA[HOSTC]]></HCMSTC>
+            <VN30><![CDATA[VN30]]></VN30>
+            <HNX30><![CDATA[HNX30]]></HNX30>
+            <OTC><![CDATA[OTC]]></OTC>
+            <UPCOM><![CDATA[UPCOM]]></UPCOM>
+        </ExchangeCode>
+        <IndexCode>
+            <HanoiSTC><![CDATA[HNX]]></HanoiSTC>
+            <HCMSTC><![CDATA[VNIndex]]></HCMSTC>
+            <VN30><![CDATA[VN30]]></VN30>
+            <HNX30><![CDATA[HNX30]]></HNX30>
+            <OTC><![CDATA[OTC]]></OTC>
+            <UPCOM><![CDATA[UPCOM]]></UPCOM>
+            <IndexList><![CDATA[HNX,VNIndex,OTC,UPCOM,VN30,HNX30]]></IndexList>
+            <DOWJONE><![CDATA[%5EDJI]]></DOWJONE>
+            <NASDAQ><![CDATA[%5EIXIC]]></NASDAQ>
+            <SP500><![CDATA[%5EGSPC]]></SP500>
+            <WorldIndexList><![CDATA[%5EDJI,Dow Jones;%5EIXIC,Nasdaq;%5EGSPC,S&P 500]]></WorldIndexList>
+        </IndexCode>
+        <FloorCode>
+            <HanoiSTC>01,02</HanoiSTC>
+            <HCMSTC>10</HCMSTC>
+            <VN30><![CDATA[11]]></VN30>
+            <HNX30><![CDATA[12]]></HNX30>
+            <OTC>20</OTC>
+            <UPCOM>03</UPCOM>
+        </FloorCode>
+        <TradingTime>
+            <HanoiSTC>
+                <OpenTime>08:00:00</OpenTime>
+                <CloseTime>11:00:00</CloseTime>
+                <PlaceOrderOpenTime>07:45:00</PlaceOrderOpenTime>
+                <PlaceOrderCloseTime>11:00:00</PlaceOrderCloseTime>
+                <Sessions>
+                    <P>
+                        <OpenTime>07:45:00</OpenTime>
+                        <CloseTime>11:00:00</CloseTime>
+                        <OrderTypes>LO</OrderTypes>
+                    </P>
+                </Sessions>
+            </HanoiSTC>
+            <HCMSTC>
+                <OpenTime>08:00:00</OpenTime>
+                <CloseTime>10:30:00</CloseTime>
+                <PlaceOrderOpenTime>07:45:00</PlaceOrderOpenTime>
+                <PlaceOrderCloseTime>10:30:00</PlaceOrderCloseTime>
+                <Sessions>
+                    <P1>
+                        <OpenTime>07:45:00</OpenTime>
+                        <CloseTime>09:00:00</CloseTime>
+                        <OrderTypes>ATO, LO</OrderTypes>
+                    </P1>
+                    <P2>
+                        <OpenTime>09:00:00</OpenTime>
+                        <CloseTime>10:14:00</CloseTime>
+                        <!-- <OrderTypes>LO, MP</OrderTypes> -->
+                        <OrderTypes>LO, ATC</OrderTypes>
+                    </P2>
+                    <P3>
+                        <OpenTime>10:14:00</OpenTime>
+                        <CloseTime>10:30:00</CloseTime>
+                        <OrderTypes>LO, ATC</OrderTypes>
+                    </P3>
+                </Sessions>
+            </HCMSTC>
+            <Holiday>SATURDAY=7;SUNDAY=1</Holiday>
+            <!-- Place order time -->
+            <AdvancePlaceOrderTime>22:00:00-23:59:59;00:00:00-08:00:00</AdvancePlaceOrderTime>
+        </TradingTime>
+        <!-- Define Update/Cancel time for each status of orders -->
+        <UpdateCancelTime>
+            <!-- Sending order can update/cancel from 8h to 8h30 for HA&HO symbols -->
+            <SendingOrder>
+                <OpenTime>08:00:00</OpenTime>
+                <CloseTime>08:28:00</CloseTime>
+            </SendingOrder>
+            <ForbiddenCancelATO >
+                <OpenTime>08:30:00</OpenTime>
+                <CloseTime>09:05:00</CloseTime>
+            </ForbiddenCancelATO>
+        </UpdateCancelTime>
+        <!-- UTTB && PaymenetAdvanceTime -->
+        <TransferTime>
+            <OpenTime>08:00:00</OpenTime>
+            <CloseTime>15:15:00</CloseTime>
+        </TransferTime>
+        <PaymentAdvanceTime>22:00:00-23:59:59;00:00:00-15:30:00</PaymentAdvanceTime>
+        <ChartDynamicPriceTime>09:00:00-14:15:00</ChartDynamicPriceTime>
+    </VNMarket>
+    <PriceInfo>
+        <FromDatabase>false</FromDatabase>
+        <RunningBoardTime>22:00:00-23:59:59;00:00:00-09:00:00</RunningBoardTime>
+    </PriceInfo>
+    <number-of-related-companies>10</number-of-related-companies>
+    <stockHighlightsSysdateFrom>180</stockHighlightsSysdateFrom>
+    <stockHighlightsFreeReports>CSM,VNM</stockHighlightsFreeReports>
+    
+    <audit>
+        <number-of-quotes>10</number-of-quotes>
+        <search-in-day>0</search-in-day>
+        <search-in-week>1</search-in-week>
+        <search-in-month>2</search-in-month>
+        <search-in-year>-1</search-in-year>
+        <search-symbol-type>1</search-symbol-type>
+    </audit>
+
+    <!-- For LIVE Version -->
+    <!-- 
+    <VNDSResourceDownloader><![CDATA[http://prod03.vndirect.com.vn/vndsresource/downloader/files.down]]></VNDSResourceDownloader>
+    <CustomerResourceDownloader><![CDATA[http://prod03.vndirect.com.vn/vndsresource/downloader/report.vip]]></CustomerResourceDownloader>
+        
+    <WebResourceDownload><![CDATA[http://uat.vndirect.com.vn:8080/vndirect-resource/online/download/resource/Download.shtml?uri=]]></WebResourceDownload>
+    <WebResourceDownloadThumbnail><![CDATA[http://uat.vndirect.com.vn:8080/vndirect-resource/online/download/resource/ViewThumbnail.shtml?thumbnail=true&uri=]]></WebResourceDownloadThumbnail>
+    -->
+    <VNDSResourceDownloader><![CDATA[http://prod03.vndirect.com.vn/vndsresource/downloader/files.down]]></VNDSResourceDownloader>
+    <CustomerResourceDownloader><![CDATA[http://prod03.vndirect.com.vn/vndsresource/downloader/report.vip]]></CustomerResourceDownloader>
+    <WebResourceDownload><![CDATA[https://www.vndirect.com.vn/vndirect-resource/online/download/resource/Download.shtml?uri=]]></WebResourceDownload>
+    <WebResourceDownload><![CDATA[https://www.vndirect.com.vn/vndirect-resource/online/download/resource/Download.shtml?uri=]]></WebResourceDownload>
+    <!-- <sso-url><![CDATA[https://www.vndirect.com.vn/login/login?locale=vn&service=https://suat.vndirect.com.vn/portal/webonline/j_spring_cas_security_check]]></sso-url> -->
+    <!-- <sso-url><![CDATA[https://suat.vndirect.com.vn/login/login?locale=vn&service=https://dev.ipa.com.vn:8443/portal/webonline/j_spring_cas_security_check]]></sso-url> -->
+    <sso-url><![CDATA[http://dev.ipa.com.vn:8081/login/login?locale=vn&service=https://dev.ipa.com.vn:8443/portal/webonline/j_spring_cas_security_check]]></sso-url>
+    
+    <VnDirectResourceRoot><![CDATA[https://www.vndirect.com.vn/vndirect-resource/]]></VnDirectResourceRoot>
+</server-config>

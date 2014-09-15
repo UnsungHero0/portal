@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="InvestorRelations.Snapshot" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-snapshot.jsp"></put-attribute>
+		<put-list-attribute name="css">
+			<add-attribute value="/calendar/calendar-blue.css" />
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/web/home/irSnapshot.js" />
+			<add-attribute value="/calendar/calendar.js" />
+			<add-attribute value="/calendar/calendar-setup.js" />
+			<add-attribute value="/calendar/lang/calendar-en.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="InvestorRelations.NewsForSymbol" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/NewsForSymbol.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsForSymbol.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.NewsForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="InvestorRelations.CompanyEvents" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/CompanyEvents.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.CompanyEvents.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.CompanyEvents.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="InvestorRelations.MarketCalendar" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/investorrelations/MarketCalendar.jsp" />
+		<put-list-attribute name="css">
+			<add-attribute value="/calendar/calendar-blue.css" />
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/calendar/calendar.js" />
+			<add-attribute value="/calendar/calendar-setup.js" />
+			<add-attribute value="/calendar/lang/calendar-en.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="InvestorRelations.SSCFilling" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/irSSCFilling.jsp" />
+	</definition>
+	<definition name="ir.si.thongtincoban" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-si-keyStatistic.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/web/home/irSIBasicInformation.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.CompanyPowerRating.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="InvestorRelations.KeyStatistic" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/irKeyStatistic.jsp" />
+	</definition>
+	<definition name="InvestorRelations.AnnualReport" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/AnnualReport.jsp" />
+	</definition>
+	<definition name="InvestorRelations.Regulations" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/Regulations.jsp" />
+	</definition>
+	<definition name="InvestorRelations.GovernanceCommittee"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/GovernanceCommittee.jsp" />
+	</definition>
+	<definition name="InvestorRelations.InspectionCommittee"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/InspectionCommittee.jsp" />
+	</definition>
+	<definition name="InvestorRelations.BoardOfDirectors"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/BoardOfDirectors.jsp" />
+	</definition>
+	<definition name="InvestorRelations.AskAndAnswer" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/AskAndAnswer.jsp" />
+	</definition>
+	<definition name="ir.newsDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/irNewsDetail.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="ir.newsDetail.event" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/investorrelations/irNewsDetailCompanyEvent.jsp" />
+        <put-list-attribute name="js">
+            <add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+        </put-list-attribute>
+    </definition>
+
+	<definition name="ir.si.chart" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-si-Chart.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/highstock/exporting.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.support.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.ui.support.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="ir.si.historicalPrice" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-si-HistoricalPrice.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.HistoricalPrice.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.HistoricalPriceForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="ir.si.foreignTrading" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-si-ForeignTrading.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.ForeignTrading.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.ForeignTradingForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="ir.si.tradingStatistics" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-si-TradingStatistic.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.TradingStatistics.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.TradingStatisticsForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="ir.si.ownerShip" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/investorrelations/ir-si-OwnerShip.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highcharts.js" />
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>
+

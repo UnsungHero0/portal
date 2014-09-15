@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vndirect>
+	<ignore-message code="[-100010],[-100011],[-4],[OK]"/>
+	
+	<message-key code="UNKNOW_STATUS" message="ERR_OD_ODTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/UNKNOW_STATUS" />
+	<message-key code="0" message="ERR_SYSTEM_OK" i18nKey="/ErrorMessage/BOService/ERR_SYSTEM_OK" />
+	<message-key code="OK" message="ERR_SYSTEM_OK" i18nKey="/ErrorMessage/BOService/ERR_SYSTEM_OK" />
+	<message-key code="-1" message="SYSTEM_UNKNOW_ERR" i18nKey="/ErrorMessage/BOService/SYSTEM_UNKNOW_ERR" />	
+	<message-key code="-2" message="ERR_SA_LOGIN_NOT_SUCCESSFUL" i18nKey="/ErrorMessage/BOService/ERR_SA_LOGIN_NOT_SUCCESSFUL" />
+	<message-key code="-3" message="ERR_SESSION_TIME_OUT" i18nKey="/ErrorMessage/BOService/ERR_SESSION_TIME_OUT" />
+	<message-key code="-4" message="ERR_DUPLICATE_ORDER" i18nKey="/ErrorMessage/BOService/ERR_DUPLICATE_ORDER" />
+	<message-key code="-5" message="ERR_INVALID_SEARCH_FILTER" i18nKey="/ErrorMessage/BOService/ERR_INVALID_SEARCH_FILTER" />			
+	<message-key code="-6" message="ERR_CUST_ID_ALREADY_HAVE_CONTRACT" i18nKey="/ErrorMessage/BOService/ERR_CUST_ID_ALREADY_HAVE_CONTRACT" />			
+	<message-key code="-7" message="ERR_OD_ORDER_OVER_QUANTITY" i18nKey="/ErrorMessage/BOService/ERR_OD_ORDER_OVER_QUANTITY" />
+	
+	<!-- MS Order over quantity -->
+	<message-key code="-47" message="ERR_OD_MSORDER_OVER_QUANTITY" i18nKey="/ErrorMessage/BOService/ERR_OD_MSORDER_OVER_QUANTITY" />
+	
+	
+	<message-key code="-700035" message="ERR_OD_ODTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_OD_ATO_ORDER_IN_LISTTING_DATE" />	
+	<message-key code="-700003" message="ERR_OD_ODTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_OD_ODTYPE_NOTFOUND" />
+	<message-key code="-200012" message="ERR_CF_AFMAST_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_NOTFOUND" />
+	<message-key code="-400003" message="ERR_CI_CIMAST_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_NOTFOUND" />
+	<message-key code="-700011" message="ERR_OD_QTTY_TRADELOT_INCORRECT" i18nKey="/ErrorMessage/BOService/ERR_OD_QTTY_TRADELOT_INCORRECT" />
+	<message-key code="-700012" message="ERR_OD_LO_PRICE_ISNOT_FLOOR_CEILLING" i18nKey="/ErrorMessage/BOService/ERR_OD_LO_PRICE_ISNOT_FLOOR_CEILLING" />
+	<message-key code="-700014" message="ERR_OD_TICKSIZE_INCOMPLIANT" i18nKey="/ErrorMessage/BOService/ERR_OD_TICKSIZE_INCOMPLIANT" />
+	<message-key code="-700013" message="ERR_OD_TICKSIZE_UNDEFINED" i18nKey="/ErrorMessage/BOService/ERR_OD_TICKSIZE_UNDEFINED" />
+	<message-key code="-700015" message="ERR_OD_BUYSELL_SAME_SECURITIES" i18nKey="/ErrorMessage/BOService/ERR_OD_BUYSELL_SAME_SECURITIES" />
+	<message-key code="-700010" message="ERR_OD_SECURITIES_INFO_UNDEFINED" i18nKey="/ErrorMessage/BOService/ERR_OD_SECURITIES_INFO_UNDEFINED" />
+	
+	<message-key code="-200013" message="ERR_CF_AFMAST_STATUS_INVALIDE" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_STATUS_INVALIDE" />
+	<message-key code="-700023" message="ERR_OD_LISTED_NEEDCUSTODYCD" i18nKey="/ErrorMessage/BOService/ERR_OD_LISTED_NEEDCUSTODYCD" />
+	<message-key code="-900012" message="ERR_SE_ACTYPE_TRADE_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_SE_ACTYPE_TRADE_NOTENOUGHT" />		
+	
+	<message-key code="-100010" message="ERR_SA_CHECKER1_OVR" i18nKey="/ErrorMessage/BOService/ERR_SA_CHECKER1_OVR" />
+	<message-key code="-100011" message="ERR_SA_CHECKER2_OVR" i18nKey="/ErrorMessage/BOService/ERR_SA_CHECKER2_OVR" />
+
+	<message-key code="-400005" message="ERR_CI_CIMAST_BALANCE_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_BALANCE_NOTENOUGHT" />
+	
+	<message-key code="-700046" message="ERR_OD_ADVANCELINE_OVER_LIMIT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_BALANCE_NOTENOUGHT" />
+	
+	<message-key code="-700031" message="ERR_OD_ODMAST_TRADE_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_OD_ODMAST_TRADE_NOTENOUGHT" />
+	
+	<message-key code="-700030" message="ERR_SPECIAL_ORDER" i18nKey="/ErrorMessage/BOService/ERR_SPECIAL_ORDER" />
+	
+	<message-key code="-100010" message="ERR_OVER_BALANCE" i18nKey="/ErrorMessage/BOService/ERR_OVER_BALANCE" />
+	<message-key code="-100011" message="ERR_OVER_BALANCE" i18nKey="/ErrorMessage/BOService/ERR_OVER_BALANCE" />
+	<!-- Create customer -->
+	
+	<message-key code="-200020" message="ERR_CF_IDTYPE_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_CF_IDTYPE_DUPLICATED" />
+	<message-key code="-200040" message="ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE" i18nKey="/ErrorMessage/BOService/ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE" />
+	
+	<!-- 30/01/2008 -->
+	<message-key code="-100025" message="Internal Code is duplicated" i18nKey="/ErrorMessage/BOService/C100025"  />
+	<message-key code="-100026" message="Currency is not exist" i18nKey="/ErrorMessage/BOService/C100026"  />
+	<message-key code="-100027" message="Cannot delete the Securities which contains related data" i18nKey="/ErrorMessage/BOService/C100027"  />
+	<message-key code="-100028" message="Issuer id is not exists" i18nKey="/ErrorMessage/BOService/C100028"  />
+	<message-key code="-100031" message="Secticksize is duplicated" i18nKey="/ErrorMessage/BOService/C100031"  />
+	<message-key code="-100032" message="Currency id is duplicated" i18nKey="/ErrorMessage/BOService/C100032"  />
+	<message-key code="-100033" message="Issuer id is duplicated" i18nKey="/ErrorMessage/BOService/C100033"  />
+	<message-key code="-100034" message="Customer id is not exists" i18nKey="/ErrorMessage/BOService/C100034"  />
+	<message-key code="-100035" message="Cannot delete the issuer which contains related data" i18nKey="/ErrorMessage/BOService/C100035"  />
+	<message-key code="-100037" message="Report code is duplicated" i18nKey="/ErrorMessage/BOService/C100037"  />
+	<message-key code="-100038" message="Module code is not exist" i18nKey="/ErrorMessage/BOService/C100038"  />
+	<message-key code="-100040" message="Branch code is not exist" i18nKey="/ErrorMessage/BOService/C100040"  />
+	<message-key code="-100041" message="Ratenum is not exist" i18nKey="/ErrorMessage/BOService/C100041"  />
+	<message-key code="-100042" message="Cannot delete the Currency which contains related data" i18nKey="/ErrorMessage/BOService/C100042"  />
+	<message-key code="-100043" message="This user is existed in assignment list" i18nKey="/ErrorMessage/BOService/C100043"  />
+	<message-key code="-100044" message="This user is existed in transaction execute list" i18nKey="/ErrorMessage/BOService/C100044"  />
+	<message-key code="-100045" message="This group is existed in assignment list" i18nKey="/ErrorMessage/BOService/C100045"  />
+	<message-key code="-100046" message="This group is existed in transaction execute list" i18nKey="/ErrorMessage/BOService/C100046"  />
+	<message-key code="-100047" message="You do not have permission to execute this transaction" i18nKey="/ErrorMessage/BOService/C100047"  />
+	<message-key code="-100048" message="Can not delete current user" i18nKey="/ErrorMessage/BOService/C100048"  />
+	<message-key code="-100049" message="User name is duplicated" i18nKey="/ErrorMessage/BOService/C100049"  />
+	<message-key code="-100050" message="Group name is duplicated" i18nKey="/ErrorMessage/BOService/C100050"  />
+	<message-key code="-100051" message="Transaction limit is over" i18nKey="/ErrorMessage/BOService/C100051"  />
+	<message-key code="-100052" message="Approve limit is over" i18nKey="/ErrorMessage/BOService/C100052"  />
+	<message-key code="-100053" message="Cash limit is over" i18nKey="/ErrorMessage/BOService/C100053"  />
+	<message-key code="-100055" message="You do not have permission to approve this transaction" i18nKey="/ErrorMessage/BOService/C100055"  />
+	<message-key code="-100056" message="You do not have permission to cash this transaction" i18nKey="/ErrorMessage/BOService/C100056"  />
+	<message-key code="-100066" message="You are not a teller" i18nKey="/ErrorMessage/BOService/C100066"  />
+	<message-key code="-100067" message="You are not a cashier" i18nKey="/ErrorMessage/BOService/C100067"  />
+	<message-key code="-100068" message="You are not a officer" i18nKey="/ErrorMessage/BOService/C100068"  />
+	<message-key code="-100069" message="You are not a checker" i18nKey="/ErrorMessage/BOService/C100069"  />
+	<message-key code="-100070" message="Transaction limit is not defined" i18nKey="/ErrorMessage/BOService/C100070"  />
+	<message-key code="-100071" message="Cash limit is not defined" i18nKey="/ErrorMessage/BOService/C100071"  />
+	<message-key code="-100072" message="Approve limit is not defined" i18nKey="/ErrorMessage/BOService/C100072"  />
+	<message-key code="-100073" message="Risk approve limit is not defined" i18nKey="/ErrorMessage/BOService/C100073"  />
+	<message-key code="-100078" message="No data found" i18nKey="/ErrorMessage/BOService/C100078"  />
+	<message-key code="-100081" message="GLBANK is not exists. Cannot add new or edit GL account" i18nKey="/ErrorMessage/BOService/C100081"  />
+	<message-key code="-100085" message="Error on create transaction" i18nKey="/ErrorMessage/BOService/C100085"  />
+	<message-key code="-100093" message="Deposit id has been duplicate" i18nKey="/ErrorMessage/BOService/C100093"  />
+	<message-key code="-100094" message="This group is caring customers" i18nKey="/ErrorMessage/BOService/C100094"  />
+	<message-key code="-200001" message="Mã lo¿i hình h¿p d¿ng b¿ trùng" i18nKey="/ErrorMessage/BOService/C200001"  />
+	<message-key code="-200002" message="Thông tin khách hàng không t¿n t¿i" i18nKey="/ErrorMessage/BOService/C200002"  />
+	<message-key code="-200023" message="Customer ID is not exists" i18nKey="/ErrorMessage/BOService/C200023"  />
+	<message-key code="-200047" message="INVALID OTC STAUS" i18nKey="/ErrorMessage/BOService/C200047"  />
+	<message-key code="-200050" message="You do not care this customer" i18nKey="/ErrorMessage/BOService/C200050"  />
+	<message-key code="-400009" message="Product type id is duplicated" i18nKey="/ErrorMessage/BOService/C400009"  />
+	<message-key code="-400010" message="Currency id is not exists" i18nKey="/ErrorMessage/BOService/C400010"  />
+	<message-key code="-400011" message="GL group code is not exists" i18nKey="/ErrorMessage/BOService/C400011"  />
+	<message-key code="-400012" message="Cannot delete the Product type which contains related data" i18nKey="/ErrorMessage/BOService/C400012"  />
+	<message-key code="-400016" message="Cannot delete the CI account number  which contains related data" i18nKey="/ErrorMessage/BOService/C400016"  />
+	<message-key code="-400017" message="GL master id is not exists" i18nKey="/ErrorMessage/BOService/C400017"  />
+	<message-key code="-400018" message="CI account number is duplicated" i18nKey="/ErrorMessage/BOService/C400018"  />
+	<message-key code="-400019" message="Product type is not exists" i18nKey="/ErrorMessage/BOService/C400019"  />
+	<message-key code="-400020" message="Currency id is not exists" i18nKey="/ErrorMessage/BOService/C400020"  />
+	<message-key code="-400021" message="Contract number is not exists" i18nKey="/ErrorMessage/BOService/C400021"  />
+	<message-key code="-500001" message="Fixed asset code is duplicated" i18nKey="/ErrorMessage/BOService/C500001"  />
+	<message-key code="-500002" message="Cannot delete the Account number which contains related data" i18nKey="/ErrorMessage/BOService/C500002"  />
+	<message-key code="-500003" message="GL account is duplicated" i18nKey="/ErrorMessage/BOService/C500003"  />
+	<message-key code="-500004" message="GL code is not exists" i18nKey="/ErrorMessage/BOService/C500004"  />
+	<message-key code="-500005" message="gc_ERRCODE_GL_ACCTENTRY_DOESNOTBALANCE" i18nKey="/ErrorMessage/BOService/C500005"  />
+	<message-key code="-500006" message="gc_ERRCODE_GL_ACCTENTRY_OFFBALANCESHEET" i18nKey="/ErrorMessage/BOService/C500006"  />
+	<message-key code="-500007" message="gc_ERRCODE_GL_ACCTENTRY_NOTSAMECCYCD" i18nKey="/ErrorMessage/BOService/C500007"  />
+	<message-key code="-500008" message="Cannot delete the GL account which contains related data" i18nKey="/ErrorMessage/BOService/C500008"  />
+	<message-key code="-500009" message="Invalid balance type" i18nKey="/ErrorMessage/BOService/C500009"  />
+	<!--  -->
+	<message-key code="-500012" message="ERR_GL_BKDATE_IN_HOLIDAY" i18nKey="/ErrorMessage/BOService/C500012"  />
+	
+	<message-key code="-600001" message="Rate id is duplicated" i18nKey="/ErrorMessage/BOService/C600001"  />
+	<message-key code="-600003" message="Currency id is not exists" i18nKey="/ErrorMessage/BOService/C600003"  />
+	<message-key code="-600004" message="Cannot delete the Floating interest which contains related data" i18nKey="/ErrorMessage/BOService/C600004"  />
+	<message-key code="-700001" message="gc_ERRCODE_OD_ACTYPE_DUPLICATED" i18nKey="/ErrorMessage/BOService/C700001"  />
+	<message-key code="-700002" message="gc_ERRCODE_OD_GLGRP_NOTFOUND" i18nKey="/ErrorMessage/BOService/C700002"  />
+	<message-key code="-700015" message="BUYSELL SAME SECURITIES" i18nKey="/ErrorMessage/BOService/C700015"  />
+	<message-key code="-900012" message="TRADE NOT ENOUGHT" i18nKey="/ErrorMessage/BOService/C900012"  />
+	<message-key code="-900018" message="AMOUNT OVER DEPOSIT" i18nKey="/ErrorMessage/BOService/C900018"  />
+	<message-key code="-300016" message="ERR_ACTIONDATE_INVALID" i18nKey="/ErrorMessage/BOService/ERR_ACTIONDATE_INVALID"  />
+	<message-key code="-300017" message="ERR_ACTIONDATE_IS_BUSDATE" i18nKey="/ErrorMessage/BOService/ERR_ACTIONDATE_IS_BUSDATE"  />
+	<message-key code="-200048" message="ERR_CF_ACCTNO_DUPLICATE" i18nKey="/ErrorMessage/BOService/ERR_CF_ACCTNO_DUPLICATE"  />
+	<message-key code="-200015" message="ERR_CF_ACTYPE_HAS_CONSTRAINTS" i18nKey="/ErrorMessage/BOService/ERR_CF_ACTYPE_HAS_CONSTRAINTS"  />
+	<message-key code="-200011" message="ERR_CF_ACTYPE_HAS_CONTRACT" i18nKey="/ErrorMessage/BOService/ERR_CF_ACTYPE_HAS_CONTRACT"  />
+	<message-key code="-200004" message="ERR_CF_AFMAST_ALREADY_EXIST" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_ALREADY_EXIST"  />
+	<message-key code="-200026" message="ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_DEPORATE_OVER_AFTYPE"  />
+	<message-key code="-200027" message="ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_MISCRATE_OVER_AFTYPE"  />
+	<message-key code="-200012" message="ERR_CF_AFMAST_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_NOTFOUND"  />
+	<message-key code="-200007" message="ERR_CF_AFMAST_OVER_ADVANCELIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_OVER_ADVANCELIMIT"  />
+	<message-key code="-200009" message="ERR_CF_AFMAST_OVER_DEPOSITLIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_OVER_DEPOSITLIMIT"  />
+	<message-key code="-200006" message="ERR_CF_AFMAST_OVER_MARGINLIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_OVER_MARGINLIMIT"  />
+	<message-key code="-200008" message="ERR_CF_AFMAST_OVER_REPOLIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_OVER_REPOLIMIT"  />
+	<message-key code="-200005" message="ERR_CF_AFMAST_OVER_TRADELIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_OVER_TRADELIMIT"  />
+	<message-key code="-200016" message="ERR_CF_AFMAST_RISKOVER_AFTYPE" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_RISKOVER_AFTYPE"  />
+	<message-key code="-200010" message="ERR_CF_AFMAST_STATUS_INVALID" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_STATUS_INVALID"  />
+	<message-key code="-200013" message="ERR_CF_AFMAST_STATUS_INVALIDE" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_STATUS_INVALIDE"  />
+	<message-key code="-200025" message="ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE" i18nKey="/ErrorMessage/BOService/ERR_CF_AFMAST_TRADERATE_OVER_AFTYPE"  />
+	<message-key code="-200003" message="ERR_CF_AFTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CF_AFTYPE_NOTFOUND"  />
+	<message-key code="-200033" message="ERR_CF_CANNOT_CLOSE" i18nKey="/ErrorMessage/BOService/ERR_CF_CANNOT_CLOSE"  />
+	<message-key code="-200017" message="ERR_CF_CAREBY_NOT_EXIT" i18nKey="/ErrorMessage/BOService/ERR_CF_CAREBY_NOT_EXIT"  />
+	<message-key code="-200022" message="ERR_CF_CI_NOT_EXIT" i18nKey="/ErrorMessage/BOService/ERR_CF_CI_NOT_EXIT"  />
+	<message-key code="-200014" message="ERR_CF_CONTRACT_HAS_TRANSACTION" i18nKey="/ErrorMessage/BOService/ERR_CF_CONTRACT_HAS_TRANSACTION"  />
+	<message-key code="-200039" message="ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE" i18nKey="/ErrorMessage/BOService/ERR_CF_CURRDATE_SMALLER_THAN_BIRTHDATE"  />
+	<message-key code="-200043" message="ERR_CF_CURRDATE_SMALLER_THAN_VALDATE" i18nKey="/ErrorMessage/BOService/ERR_CF_CURRDATE_SMALLER_THAN_VALDATE"  />
+	<message-key code="-200018" message="ERR_CF_CUSTID_CONSTRAINTS" i18nKey="/ErrorMessage/BOService/ERR_CF_CUSTID_CONSTRAINTS"  />
+	<message-key code="-200035" message="ERR_CF_CUSTID_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_CF_CUSTID_DUPLICATED"  />
+	<message-key code="-200036" message="ERR_CF_CUSTID_INVALID" i18nKey="/ErrorMessage/BOService/ERR_CF_CUSTID_INVALID"  />
+	<message-key code="-200019" message="ERR_CF_CUSTODYCD_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_CF_CUSTODYCD_DUPLICATED"  />
+	<message-key code="-200040" message="ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE" i18nKey="/ErrorMessage/BOService/ERR_CF_IDEXPIRED_SMALLER_THAN_CURRDATE"  />
+	<message-key code="-200020" message="ERR_CF_IDTYPE_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_CF_IDTYPE_DUPLICATED"  />
+	<message-key code="-200037" message="ERR_CF_INTERNATION_NOTEMPTY" i18nKey="/ErrorMessage/BOService/ERR_CF_INTERNATION_NOTEMPTY"  />
+	<message-key code="-200030" message="ERR_CF_OVER_ADVANCELINE" i18nKey="/ErrorMessage/BOService/ERR_CF_OVER_ADVANCELINE"  />
+	<message-key code="-200032" message="ERR_CF_OVER_DEPOSITLINE" i18nKey="/ErrorMessage/BOService/ERR_CF_OVER_DEPOSITLINE"  />
+	<message-key code="-200028" message="ERR_CF_OVER_MARGINLIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_OVER_MARGINLIMIT"  />
+	<message-key code="-200031" message="ERR_CF_OVER_REPOLINE" i18nKey="/ErrorMessage/BOService/ERR_CF_OVER_REPOLINE"  />
+	<message-key code="-200029" message="ERR_CF_OVER_TRADELIMIT" i18nKey="/ErrorMessage/BOService/ERR_CF_OVER_TRADELIMIT"  />
+	<message-key code="-200041" message="ERR_CF_OVER_TRADELINE" i18nKey="/ErrorMessage/BOService/ERR_CF_OVER_TRADELINE"  />
+	<message-key code="-200053" message="ERR_CF_PIN_DIFFRENCE" i18nKey="/ErrorMessage/BOService/ERR_CF_PIN_DIFFRENCE"  />
+	<message-key code="-200046" message="ERR_CF_PIN_ISNOT_NULL" i18nKey="/ErrorMessage/BOService/ERR_CF_PIN_ISNOT_NULL"  />
+	<message-key code="-200034" message="ERR_CF_RECUSTID_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CF_RECUSTID_NOTFOUND"  />
+	<message-key code="-200021" message="ERR_CF_SE_NOT_EXIT" i18nKey="/ErrorMessage/BOService/ERR_CF_SE_NOT_EXIT"  />
+	<message-key code="-200042" message="ERR_CF_TAXCODE_ISNOT_NULL" i18nKey="/ErrorMessage/BOService/ERR_CF_TAXCODE_ISNOT_NULL"  />
+	<message-key code="-200038" message="ERR_CF_TRADEPHONE_ISNOTEMPTY" i18nKey="/ErrorMessage/BOService/ERR_CF_TRADEPHONE_ISNOTEMPTY"  />
+	<message-key code="-400027" message="ERR_CI_AAMT" i18nKey="/ErrorMessage/BOService/ERR_CI_AAMT"  />
+	<message-key code="-400013" message="ERR_CI_ACCTNO_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_CI_ACCTNO_DUPLICATED"  />
+	<message-key code="-400015" message="ERR_CI_ACTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CI_ACTYPE_NOTFOUND"  />
+	<message-key code="-400014" message="ERR_CI_AFACCTNO_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CI_AFACCTNO_NOTFOUND"  />
+	<message-key code="-400001" message="ERR_CI_AFTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CI_AFTYPE_NOTFOUND"  />
+	<message-key code="-400023" message="ERR_CI_BAMT" i18nKey="/ErrorMessage/BOService/ERR_CI_BAMT"  />
+	<message-key code="-400002" message="ERR_CI_CIMAST_ALREADY_EXIST" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_ALREADY_EXIST"  />
+	<message-key code="-400005" message="ERR_CI_CIMAST_BALANCE_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_BALANCE_NOTENOUGHT"  />
+	<message-key code="-400006" message="ERR_CI_CIMAST_CRINTACR_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_CRINTACR_NOTENOUGHT"  />
+	<message-key code="-600009" message="ERR_CI_CIMAST_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_NOTFOUND"  />
+	<message-key code="-400007" message="ERR_CI_CIMAST_ODINTACR_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_ODINTACR_NOTENOUGHT"  />
+	<message-key code="-400008" message="ERR_CI_CIMAST_RAMT_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_RAMT_NOTENOUGHT"  />
+	<message-key code="-400004" message="ERR_CI_CIMAST_STATUS_INVALID" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_STATUS_INVALID"  />
+	<message-key code="-400031" message="ERR_CI_EMKAMT" i18nKey="/ErrorMessage/BOService/ERR_CI_EMKAMT"  />
+	<message-key code="-400033" message="ERR_CI_MARGINBAL" i18nKey="/ErrorMessage/BOService/ERR_CI_MARGINBAL"  />
+	<message-key code="-400032" message="ERR_CI_MMARGINBAL" i18nKey="/ErrorMessage/BOService/ERR_CI_MMARGINBAL"  />
+	<message-key code="-400030" message="ERR_CI_NAMT" i18nKey="/ErrorMessage/BOService/ERR_CI_NAMT"  />
+	<message-key code="-400028" message="ERR_CI_RAMT" i18nKey="/ErrorMessage/BOService/ERR_CI_RAMT"  />
+	<message-key code="-200045" message="ERR_INVALIF_CFMAST_STATUS" i18nKey="/ErrorMessage/BOService/ERR_INVALIF_CFMAST_STATUS"  />
+	<message-key code="-700035" message="ERR_OD_ATO_ORDER_IN_LISTTING_DATE" i18nKey="/ErrorMessage/BOService/ERR_OD_ATO_ORDER_IN_LISTTING_DATE"  />
+	<message-key code="-700003" message="ERR_OD_ODTYPE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_OD_ODTYPE_NOTFOUND"  />
+	<message-key code="-700026" message="ERR_OOD_STATUS_BLOCKED" i18nKey="/ErrorMessage/BOService/ERR_OOD_STATUS_BLOCKED"  />
+	<message-key code="-700027" message="ERR_OOD_STATUS_SENT" i18nKey="/ErrorMessage/BOService/ERR_OOD_STATUS_SENT"  />
+	<message-key code="-300015" message="ERR_REPORTDATE_INVALID" i18nKey="/ErrorMessage/BOService/ERR_REPORTDATE_INVALID"  />
+	<message-key code="-100063" message="ERR_SA_ACCTNO_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_ACCTNO_NOTFOUND"  />
+	<message-key code="-100013" message="ERR_SA_APPCHK_ACCTNO_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_APPCHK_ACCTNO_NOTFOUND"  />
+	<message-key code="-100012" message="ERR_SA_APPCHK_MISSING" i18nKey="/ErrorMessage/BOService/ERR_SA_APPCHK_MISSING"  />
+	<message-key code="-100021" message="ERR_SA_BDS_OPERATION_ISINACTIVE" i18nKey="/ErrorMessage/BOService/ERR_SA_BDS_OPERATION_ISINACTIVE"  />
+	<message-key code="-100020" message="ERR_SA_BDS_OPERATION_STILLACTIVE" i18nKey="/ErrorMessage/BOService/ERR_SA_BDS_OPERATION_STILLACTIVE"  />
+	<message-key code="-100083" message="ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT" i18nKey="/ErrorMessage/BOService/ERR_SA_BUSDATE_BRANCHDATE_PLZLOGIN_OUT"  />
+	<message-key code="-100030" message="ERR_SA_CALENDAR_MISSING" i18nKey="/ErrorMessage/BOService/ERR_SA_CALENDAR_MISSING"  />
+	<message-key code="-100017" message="ERR_SA_CANNOT_DELETETRANSACTION" i18nKey="/ErrorMessage/BOService/ERR_SA_CANNOT_DELETETRANSACTION"  />
+	<message-key code="-100061" message="ERR_SA_CCYCD_NOTACTIVE" i18nKey="/ErrorMessage/BOService/ERR_SA_CCYCD_NOTACTIVE"  />
+	<message-key code="-100065" message="ERR_SA_CDVAL_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_SA_CDVAL_DUPLICATED"  />
+	<message-key code="-100010" message="ERR_SA_CHECKER1_OVR" i18nKey="/ErrorMessage/BOService/ERR_SA_CHECKER1_OVR"  />
+	<message-key code="-100011" message="ERR_SA_CHECKER2_OVR" i18nKey="/ErrorMessage/BOService/ERR_SA_CHECKER2_OVR"  />
+	<message-key code="-100082" message="ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT" i18nKey="/ErrorMessage/BOService/ERR_SA_CURRDATE_SMALLER_THAN_EFFECTIVEDT"  />
+	<message-key code="-100023" message="ERR_SA_HOST_OPERATION_ISINACTIVE" i18nKey="/ErrorMessage/BOService/ERR_SA_HOST_OPERATION_ISINACTIVE"  />
+	<message-key code="-100022" message="ERR_SA_HOST_OPERATION_STILLACTIVE" i18nKey="/ErrorMessage/BOService/ERR_SA_HOST_OPERATION_STILLACTIVE"  />
+	<message-key code="-100089" message="ERR_SA_IBT_DOESNOTALLOW" i18nKey="/ErrorMessage/BOService/ERR_SA_IBT_DOESNOTALLOW"  />
+	<message-key code="-100060" message="ERR_SA_ICCFTIER_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_SA_ICCFTIER_DUPLICATED"  />
+	<message-key code="-100059" message="ERR_SA_ICCFTYPEDEF_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_SA_ICCFTYPEDEF_DUPLICATED"  />
+	<message-key code="-100077" message="ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10" i18nKey="/ErrorMessage/BOService/ERR_SA_ISSUERS_LEN_ISSUERID_EQUAL_10"  />
+	<message-key code="-100080" message="ERR_SA_ISSUER_HAS_ONE_NORMALSHARE" i18nKey="/ErrorMessage/BOService/ERR_SA_ISSUER_HAS_ONE_NORMALSHARE"  />
+	<message-key code="-100064" message="ERR_SA_LICENSENO_ISNOT_EMPTY" i18nKey="/ErrorMessage/BOService/ERR_SA_LICENSENO_ISNOT_EMPTY"  />
+	<message-key code="-100024" message="ERR_SA_ONLY_HEADOFFICE_RUNBATCH" i18nKey="/ErrorMessage/BOService/ERR_SA_ONLY_HEADOFFICE_RUNBATCH"  />
+	<message-key code="-100015" message="ERR_SA_PRINTINFO_ACCTNOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_PRINTINFO_ACCTNOTFOUND"  />
+	<message-key code="-100076" message="ERR_SA_READ_TRADING_RESULT_TWICE" i18nKey="/ErrorMessage/BOService/ERR_SA_READ_TRADING_RESULT_TWICE"  />
+	<message-key code="-100062" message="ERR_SA_SECTICKSIZE_CONSTRAINTS" i18nKey="/ErrorMessage/BOService/ERR_SA_SECTICKSIZE_CONSTRAINTS"  />
+	<message-key code="-100075" message="ERR_SA_SECTICKSIZE_INVALID" i18nKey="/ErrorMessage/BOService/ERR_SA_SECTICKSIZE_INVALID"  />
+	<message-key code="-100016" message="ERR_SA_SHOULDAPPROVE_BEFORECASHIER" i18nKey="/ErrorMessage/BOService/ERR_SA_SHOULDAPPROVE_BEFORECASHIER"  />
+	<message-key code="-100086" message="ERR_SA_STCSE_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_SA_STCSE_DUPLICATED"  />
+	<message-key code="-100029" message="ERR_SA_STILLHAS_BRGRP_ACTIVE" i18nKey="/ErrorMessage/BOService/ERR_SA_STILLHAS_BRGRP_ACTIVE"  />
+	<message-key code="-100057" message="ERR_SA_SYMBOL_DUPLICATED" i18nKey="/ErrorMessage/BOService/ERR_SA_SYMBOL_DUPLICATED"  />
+	<message-key code="-100058" message="ERR_SA_SYMBOL_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_SYMBOL_NOTFOUND"  />
+	<message-key code="-100079" message="ERR_SA_TLLOG_INVALID_STATUS" i18nKey="/ErrorMessage/BOService/ERR_SA_TLLOG_INVALID_STATUS"  />
+	<message-key code="-100018" message="ERR_SA_TLTXCD_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_TLTXCD_NOTFOUND"  />
+	<message-key code="-100074" message="ERR_SA_TL_CURRENT_USR" i18nKey="/ErrorMessage/BOService/ERR_SA_TL_CURRENT_USR"  />
+	<message-key code="-100084" message="ERR_SA_TRADING_RESULT_INVALID_DATE" i18nKey="/ErrorMessage/BOService/ERR_SA_TRADING_RESULT_INVALID_DATE"  />
+	<message-key code="-100014" message="ERR_SA_TRANSACTION_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_TRANSACTION_NOTFOUND"  />
+	<message-key code="-100019" message="ERR_SA_VARIABLE_NOTFOUND" i18nKey="/ErrorMessage/BOService/ERR_SA_VARIABLE_NOTFOUND"  />
+	<message-key code="-900029" message="ERR_SE_BLOCKED" i18nKey="/ErrorMessage/BOService/ERR_SE_BLOCKED"  />
+	<message-key code="-900027" message="ERR_SE_DEPOSIT" i18nKey="/ErrorMessage/BOService/ERR_SE_DEPOSIT"  />
+	<message-key code="-900028" message="ERR_SE_LOAN" i18nKey="/ErrorMessage/BOService/ERR_SE_LOAN"  />
+	<message-key code="-900021" message="ERR_SE_MARGIN" i18nKey="/ErrorMessage/BOService/ERR_SE_MARGIN"  />
+	<!--  
+	<message-key code="-900020" message="ERR_SE_MORTAGE" i18nKey="/ErrorMessage/BOService/ERR_SE_MORTAGE"  />
+	-->
+	<message-key code="-900022" message="ERR_SE_NETTING" i18nKey="/ErrorMessage/BOService/ERR_SE_NETTING"  />
+	<message-key code="-900031" message="ERR_SE_PENDING" i18nKey="/ErrorMessage/BOService/ERR_SE_PENDING"  />
+	<message-key code="-900025" message="ERR_SE_RECEIVING" i18nKey="/ErrorMessage/BOService/ERR_SE_RECEIVING"  />
+	<message-key code="-900030" message="ERR_SE_REPO" i18nKey="/ErrorMessage/BOService/ERR_SE_REPO"  />
+	<message-key code="-900024" message="ERR_SE_SECURED" i18nKey="/ErrorMessage/BOService/ERR_SE_SECURED"  />
+	<message-key code="-900023" message="ERR_SE_STANDING" i18nKey="/ErrorMessage/BOService/ERR_SE_STANDING"  />
+	<message-key code="-900033" message="ERR_SE_TRANSFER" i18nKey="/ErrorMessage/BOService/ERR_SE_TRANSFER"  />
+	<message-key code="-900032" message="ERR_SE_TRANSFER" i18nKey="/ErrorMessage/BOService/ERR_SE_TRANSFER"  />
+	<message-key code="-900026" message="ERR_SE_WITHDRAW" i18nKey="/ErrorMessage/BOService/ERR_SE_WITHDRAW"  />
+	
+	<message-key code="-700036" message="ERR_OD_ORDER_OVER_NUMBER_CORRECTION" i18nKey="/ErrorMessage/BOService/ERR_OD_ORDER_OVER_NUMBER_CORRECTION"  />
+	
+	<message-key code="-700052" message="ERR_OD_TRADEPLACE_HOSE_NOT_AMEND" i18nKey="/ErrorMessage/BOService/ERR_OD_TRADEPLACE_HOSE_NOT_AMEND"  />
+	<message-key code="-700048" message="ERR_OD_TRADERID_NOT_INVALID" i18nKey="/ErrorMessage/BOService/ERR_OD_TRADERID_NOT_INVALID"  />
+	<message-key code="-700051" message="ERR_OD_ROOM_NOT_ENOUGH" i18nKey="/ErrorMessage/BOService/ERR_OD_ROOM_NOT_ENOUGH"  />
+	
+	<!-- Error code of BO@ -->	 
+	<message-key code="-900017" message="ERR_OD_ODMAST_TRADE_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_OD_ODMAST_TRADE_NOTENOUGHT" />
+	<message-key code="-9000020" message="ERR_OD_MSORDER_OVER_QUANTITY" i18nKey="/ErrorMessage/BOService/ERR_OD_MSORDER_OVER_QUANTITY" />
+	<message-key code="-700046" message="ERR_CI_CIMAST_BALANCE_NOTENOUGHT" i18nKey="/ErrorMessage/BOService/ERR_CI_CIMAST_BALANCE_NOTENOUGHT" />
+	<message-key code="-900020" message="ERR_OD_MSORDER_OVER_QUANTITY" i18nKey="/ErrorMessage/BOService/ERR_OD_MSORDER_OVER_QUANTITY" />	
+</vndirect>
+

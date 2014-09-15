@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- Define Struts Tile for Front End module -->
+	<definition name="Analysis.MarketOverView" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/ListedMarket.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/highstock/vndirect.market-overview.highstock.js" />
+			<add-attribute value="/js/web/newsinfo/classes/newsinfo.clazz.NewsHelper.js" />
+			<add-attribute value="/js/web/analysistools/classes/analysistools.clazz.MacroNews.js" />
+			
+			<add-attribute value="/js/web/listedmarket/indexMarketFromDirectBoard.js" />
+			
+			<!-- getNewsDetailUrl -->
+			<add-attribute value="/js/web/newsinfo/classes/newsinfo.clazz.LatestMarketNewsListedMarket.js" />
+			<add-attribute value="/js/web/newsinfo/newsinfo.LatestMarketNewsListedMarket.js" />
+			<!-- js hot news -->
+			<add-attribute value="/js/web/newsinfo/classes/newsinfo.clazz.NewsOnlineListedMarket.js" />
+			<!-- <add-attribute value="/js/web/newsinfo/newsinfo.NewsOnlineListedMarket.js" /> -->
+			<!-- js most popular symbol -->
+			<add-attribute value="/js/web/listedmarket/classes/listedmarket.clazz.MostPopularSymbol.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.MostPopularSymbol.js" />
+			<!-- js most active -->
+			<add-attribute value="/js/web/listedmarket/classes/listedmarket.clazz.MostActive.js" />
+			<add-attribute value="/js/web/listedmarket/listedmarket.MostActive.js" />
+            <add-attribute value="/js/web/listedmarket/listedMarket.market-insight.functions.js" />
+            <add-attribute value="/js/web/listedmarket/vndirect.listedMarket.snapshot.js" />
+		</put-list-attribute>
+	</definition>
+
+
+	<definition name="Analysis.News" extends="Base.Web">
+		<!-- Define menu Javascript files -->
+		<put-list-attribute name="menu-js">
+		</put-list-attribute>
+
+		<!-- Addition Stylesheet files -->
+		<put-list-attribute name="module-css">
+			<add-attribute value="/css/web/stockscreener.css"></add-attribute>
+		</put-list-attribute>
+
+		<!-- Addition Javascript files -->
+		<put-list-attribute name="module-js">
+		</put-list-attribute>
+
+		<!-- Addition Stylesheet files -->
+		<put-list-attribute name="css">
+		</put-list-attribute>
+
+		<!-- Addition Javascript files -->
+		<put-list-attribute name="js">
+		</put-list-attribute>
+	</definition>
+
+
+	<definition name="Analysis.MacroNews2" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/MacroNews2.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/analysistools/analysistools.MacroNews2.js" />
+		</put-list-attribute>
+	</definition>
+
+
+	<definition name="Analysis.MarketCalendar" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/MarketCalendar.jsp" />
+		<put-list-attribute name="css">
+			<add-attribute value="/calendar/calendar-blue.css" />
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/calendar/calendar.js" />
+			<add-attribute value="/calendar/calendar-setup.js" />
+			<add-attribute value="/calendar/lang/calendar-en.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.NewsDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/newsinfo/NewsDetail.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+		</put-list-attribute>
+	</definition>
+
+
+	<definition name="Analysis.AddSymbol"
+		template="/WEB-INF/jsps/analysistools/ChartAddRemoveSymbol.jsp">
+	</definition>
+
+	<definition name="Analysis.ListSector" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/ListSector.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.ListSector.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.ListSector.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.ListSectorIndex" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/ListSectorIndex.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.ListSectorIndex.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.ListSectorIndex.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockScreener" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockScreener.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.StockScreener.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.StockScreener.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockScreener.Summary" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockScreenerSummary.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.StockScreenerSummary.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.StockScreenerSummary.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockScreener.Saving" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockScreenerSaving.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockScreener.List" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockScreenerList.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.StockScreenerList.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.StockScreenerList.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockWizard" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockWizard.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockWizard.CompanyDetail"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockWizardCompanyDetail.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.StockWizard.Difference" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/StockWizardDifference.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/analysistools.StockWizardDifference.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.PowerRating" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/PowerRating.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highcharts.js" />
+			<add-attribute value="/js/jquery.cookies.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.PowerRatingDetail.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.PowerRatingTmpl.js" />
+			<add-attribute value="/js/web/analysistools/vndirect.powerRating.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="InvestmentIdea.StockPick" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/consultingcenter/investment-idea/StockPick.jsp" />
+        <put-list-attribute name="js">
+            <add-attribute value="/js/web/consultingcenter/stockrealtime/StockModel.js" />
+            <add-attribute value="/js/web/snapshots/MarketModel.js" />
+            <add-attribute value="/js/web/consultingcenter/stockrealtime/StockView.js" />
+            <add-attribute value="/js/web/consultingcenter/stockrealtime/StockController.js" />
+            <add-attribute value="/js/web/consultingcenter/StockPick.js" />
+        </put-list-attribute>
+    </definition>
+    <definition name="InvestmentIdea.StockPickIntro" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/consultingcenter/investment-idea/StockPickIntro.jsp" />
+        <put-list-attribute name="js">
+            <add-attribute value="/js/web/consultingcenter/stockrealtime/StockModel.js" />
+            <add-attribute value="/js/web/snapshots/MarketModel.js" />
+            <add-attribute value="/js/web/consultingcenter/stockrealtime/StockView.js" />
+            <add-attribute value="/js/web/consultingcenter/stockrealtime/StockController.js" />
+            <add-attribute value="/js/web/consultingcenter/StockPick.js" />
+        </put-list-attribute>
+    </definition>
+    <definition name="InvestmentIdea.StockPick.Related"
+        template="/WEB-INF/jsps/consultingcenter/investment-idea/related-stock-pick-snippet.jsp">
+    </definition>
+    <definition name="InvestmentIdea.StockPick.Newer"
+        template="/WEB-INF/jsps/consultingcenter/investment-idea/newer-stock-pick-snippet.jsp">
+    </definition>
+    <definition name="InvestmentIdea.StockPick.marketNews"
+        template="/WEB-INF/jsps/consultingcenter/investment-idea/market-news-snippet.jsp">
+    </definition>
+
+	<!-- <definition name="Analysis.PowerRatingDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/PowerRatingDetail.jsp" />
+		<put-list-attribute name="css">
+			<add-attribute value="/css/ui-mostActive.css"></add-attribute>
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/swfobject.js" />
+			<add-attribute value="/js/jquery.cookies.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.PowerRatingDetail.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.PowerRatingTmpl.js" />
+		</put-list-attribute>
+
+	</definition> -->
+
+	<definition name="Analysis.Report" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/AnalysisReport.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.Report.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.Report.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- <definition name="Analysis.VideoReport" extends="Base.Web"> <put-attribute 
+		name="body" value="/WEB-INF/jsps/analysistools/VideosReport.jsp" /> <put-list-attribute 
+		name="css"> </put-list-attribute> <put-list-attribute name="js"> <add-attribute 
+		value="/js/web/analysistools/classes/analysistools.clazz.Report.js"/> <add-attribute 
+		value="/js/web/analysistools/analysistools.VideoReport.js" /> </put-list-attribute> 
+		</definition> -->
+
+	<definition name="Analysis.MacroReportNews" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/MacroReportNews.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.MacroReportNews.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.MacroReportNews.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.SectorOverview" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/SectorOverview.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.SectorOverview.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.SectorOverview.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.SectorDetails" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/SectorDetails.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highcharts.js" />
+			<add-attribute value="/js/web/analysistools/vndirect.sectorDetail.js" />
+			<add-attribute
+				value="/js/web/newsinfo/classes/newsinfo.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.MacroNews.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.IndustryDetails.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.SectorDetails.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.SectorDetails.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.IndustryDetails" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/IndustryDetails.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highcharts.js" />
+			<add-attribute value="/js/web/analysistools/vndirect.industryDetail.js" />
+			<add-attribute
+				value="/js/web/newsinfo/classes/newsinfo.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.MacroNews.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.IndustryDetails.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.IndustryDetails.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.FlashChart" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/FlashChart.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/swfobject.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.FlashChart.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.FlashChart.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="researchTools.chart" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/rtChart.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/highstock/exporting.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.support.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.ui.support.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="researchTools.marketView"
+		template="/WEB-INF/jsps/analysistools/snippet/rtMarketView.jsp">
+	</definition>
+
+	<definition name="Analysis.BasicChart" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/BasicChart.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/menus/doiMenuDOM.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.ClassicChart.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.Commentaries" extends="Analysis.News">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/Commentaries.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/analysistools/analysistools.Commentary.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.Brokers" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/Brokers.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/analysistools/analysistools.Broker.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.Experts" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/Experts.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.Experts.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.Experts.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!-- <definition name="Analysis.VideoDetail" extends="Base.Web"> <put-attribute 
+		name="body" value="/WEB-INF/jsps/analysistools/VideoDetail.jsp" /> <put-list-attribute 
+		name="css"> </put-list-attribute> <put-list-attribute name="js"> <add-attribute 
+		value="/js/web/analysistools/analysistools.VideoDetail.js" /> </put-list-attribute> 
+		</definition> -->
+
+	<definition name="analysis.marketInsight" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/marketInsight.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/analysistools/vndirect.marketInsight.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.HistoricalPriceForSymbol"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/HistoricalPriceForIndex.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.HistoricalPrice.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.HistoricalPriceForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.TradingStatisticsForSymbol"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/TradingStatisticsForIndex.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.TradingStatistics.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.TradingStatisticsForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.ForeignTradingForSymbol" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/ForeignTradingForIndex.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.ForeignTrading.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.ForeignTradingForSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.VndCorner" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/VndCorner.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/analysistools/analysistools.VndCorner.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="Analysis.MarketStatistics.HistoricalPrice"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/HistoricalPrice.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<!-- <add-attribute value="/js/web/listedmarket/classes/listedmarket.clazz.HistoricalPrice.js"/> -->
+			<add-attribute value="/js/web/listedmarket/listedmarket.HistoricalPrice.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="Analysis.MarketStatistics.ForeignTrading"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/ForeignTrading.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<!-- <add-attribute value="/js/web/listedmarket/classes/listedmarket.clazz.ForeignTrading.js"/> -->
+			<add-attribute value="/js/web/listedmarket/listedmarket.ForeignTrading.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="Analysis.MarketStatistics.TradingStatistics"
+		extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/TradingStatistics.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<!-- <add-attribute value="/js/web/listedmarket/classes/listedmarket.clazz.TradingStatistics.js"/> -->
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.TradingStatistics.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- ####################################TEMPLATE DEFINITION#################################################################### -->
+	<definition name="Analysis.FundamentalityTmpl"
+		template="/WEB-INF/jsps/analysistools/AnalysisFundamentalityTmpl.jsp">
+	</definition>
+
+	<definition name="Analysis.ExpertIdeaTmpl"
+		template="/WEB-INF/jsps/analysistools/ExpertIdeaTmpl.jsp">
+	</definition>
+
+	<definition name="Analysis.InvestmentIdeasTmpl"
+		template="/WEB-INF/jsps/analysistools/InvestmentIdeasTmpl.jsp">
+		<put-attribute name="ButtonNavigator"
+			value="/WEB-INF/jsps/analysistools/InvestmentIdeasNav.jsp"></put-attribute>
+	</definition>
+
+	<definition name="Analysis.InvestmentIdeasNavTmpl" extends="Analysis.InvestmentIdeasTmpl">
+		<put-attribute name="ButtonNavigator"
+			value="/WEB-INF/jsps/analysistools/InvestmentIdeasNav.jsp"></put-attribute>
+	</definition>
+
+
+	<definition name="Analysis.PowerRatingTmpl"
+		template="/WEB-INF/jsps/analysistools/PowerRatingTmpl.jsp">
+		<!-- <put-attribute name="ButtonNavigator" value="/WEB-INF/jsps/analysistools/InvestmentIdeasNav.jsp"></put-attribute> -->
+	</definition>
+
+
+	<definition name="Analysis.PowerRatingFigureTmpl"
+		template="/WEB-INF/jsps/analysistools/PowerRatingFigureTmpl.jsp">
+	</definition>
+
+
+	<definition name="Analysis.PowerRatingDetailTmpl"
+		template="/WEB-INF/jsps/analysistools/PowerRatingDetailTmpl.jsp">
+	</definition>
+
+	<definition name="ListedMarket.KeyStatistic" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/KeyStatistic.jsp" />
+	</definition>
+	<definition name="ListedMarket.SSCFilling" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/listedmarket/SSCFilling.jsp" />
+	</definition>
+
+	<definition name="si.news.newsDetail" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/news/siNewsDetail.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+			<add-attribute value="/js/web/newsinfo/vndirect.news.si.newsDetail.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="si.news.newsDetail.event" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/news/siNewsDetailCompanyEvent.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/newsinfo/newsinfo.NewsDetail.js" />
+			<add-attribute value="/js/web/newsinfo/vndirect.news.si.newsDetail.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Analysis.ExternalFlashChart" extends="OnlyBody.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysistools/ExternalFlashChart.jsp" />
+		<put-list-attribute name="css">
+		</put-list-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/swfobject.js" />
+			<add-attribute
+				value="/js/web/analysistools/classes/analysistools.clazz.FlashChart.js" />
+			<add-attribute value="/js/web/analysistools/analysistools.FlashChart.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="si.ownerShip.majorHolders" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/ownerShip/MajorHolders.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highcharts.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="si.company.snapshot" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/company/si-snapshot.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/quote/vnd.price.js" />
+			<add-attribute value="/js/web/quote/vndirect.portal.quotes.js" />
+			<add-attribute value="/js/web/quote/vndirect.portal.quotes.support.js" />
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/web/snapshots/MarketModel.js" />
+			<add-attribute value="/js/web/snapshots/StockModel.js" />
+			<add-attribute value="/js/web/snapshots/StockView.js" />
+			<add-attribute value="/js/web/snapshots/StockComponent.js" />
+			<add-attribute value="/js/web/snapshots/SnapshotMain.js" />
+			<add-attribute value="/js/web/analysistools/vndirect.siSnapshot.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.NewsHelper.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.LatesHeadlinesForSnapshot.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.LatesHeadlinesForSnapshot.js" />
+			<add-attribute
+				value="/js/web/listedmarket/classes/listedmarket.clazz.RelatedCompanyForSnapshot.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.RelatedCompanyForSnapshot.js" />
+			<add-attribute
+				value="/js/web/listedmarket/listedmarket.CompanyPowerRating.js" />
+			<add-attribute value="/js/jquery.cookies.js" />
+			<add-attribute
+				value="/js/web/analysistools/analysistools.PowerRatingDetail.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="basicAnalysis.snapshot" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/analysis/basicAnalysis/basic-analysis-snapshot.jsp" />
+        <put-list-attribute name="js">
+        <add-attribute
+                value="/js/web/basicanalysis/basic-analysis.js" />
+        </put-list-attribute>
+    </definition>
+    
+    <definition name="basicAnalysis.loceps" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/analysis/basicAnalysis/basic-analysis-loceps.jsp" />
+        <put-list-attribute name="js">
+        <add-attribute
+                value="/js/web/basicanalysis/basic-analysis.js" />
+        </put-list-attribute>
+    </definition>
+	
+	
+
+	<definition name="si.chart" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/chart/siHighStockChart.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/highstock/exporting.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.support.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.ui.support.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- <definition name="si.external.chart" extends="OnlyBody.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/externalHighStockChart.jsp"></put-attribute>
+		<put-list-attribute name="js">
+			<add-attribute value="/js/highstock/highstock.js" />
+			<add-attribute value="/js/highstock/exporting.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.support.js" />
+			<add-attribute value="/js/highstock/vndirect.highstock.ui.support.js" />
+		</put-list-attribute>
+	</definition> -->
+	<definition name="highStock.smaInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/smaInputParams.jsp">
+	</definition>
+	<definition name="highStock.emaInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/emaInputParams.jsp">
+	</definition>
+	<definition name="highStock.bBandsInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/bBandsInputParams.jsp">
+	</definition>
+	<definition name="highStock.mfiInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/mfiInputParams.jsp">
+	</definition>
+	<definition name="highStock.macdInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/macdInputParams.jsp">
+	</definition>
+	<definition name="highStock.psarInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/psarInputParams.jsp">
+	</definition>
+	<definition name="highStock.rocInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/rocInputParams.jsp">
+	</definition>
+	<definition name="highStock.rsiInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/rsiInputParams.jsp">
+	</definition>
+	<definition name="highStock.ssInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/ssInputParams.jsp">
+	</definition>
+	<definition name="highStock.fsInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/fsInputParams.jsp">
+	</definition>
+	<definition name="highStock.vmaInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/vmaInputParams.jsp">
+	</definition>
+	<definition name="highStock.wrInputParams"
+		template="/WEB-INF/jsps/analysis/stockInformation/snippet/highstock/wrInputParams.jsp">
+	</definition>
+
+	<definition name="analysisTools.news.mostViewed"
+		template="/WEB-INF/jsps/analysistools/snippet/mostViewedNews-ttpt.jsp">
+	</definition>
+	<definition name="analysisTools.news.marketInsightNews"
+		template="/WEB-INF/jsps/analysistools/snippet/marketInsight-mostView-news.jsp">
+	</definition>
+
+    <!-- Co phieu tam diem - Stock highlights -->
+    <definition name="stockHighlights.page" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/stockHighlights/stockHighlights.jsp"></put-attribute>
+    </definition>
+    <definition name="stockHighlights.report" extends="Base.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/stockHighlights/stockHighlights-viewReport.jsp"></put-attribute>
+    </definition>
+    <definition name="stockHighlights.report.onlybody" extends="OnlyBody.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/stockHighlights/stockHighlights-viewReport-onlyBody.jsp"></put-attribute>
+        <put-list-attribute name="css">
+            <add-attribute value="/css/flexpaper/flexpaper.css"/>
+        </put-list-attribute>
+        <put-list-attribute name="js">
+	        <add-attribute value="/js/flexpaper/jquery.extensions.min.js" />
+            <add-attribute value="/js/flexpaper/flexpaper.js" />
+            <add-attribute value="/js/flexpaper/flexpaper_handlers.js" />
+	    </put-list-attribute>
+    </definition>
+    
+    <definition name="stockpick.report.onlybody" extends="OnlyBody.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/consultingcenter/investment-idea/StockPickForFrame.jsp"></put-attribute>
+        <put-list-attribute name="js">
+            <add-attribute value="/js/web/consultingcenter/StockPick.js" />
+        </put-list-attribute>
+    </definition>
+    
+    <definition name="stockpick.effect.onlybody" extends="OnlyBody.Web">
+        <put-attribute name="body"
+            value="/WEB-INF/jsps/consultingcenter/investment-idea/EffectStockPickFrame.jsp"></put-attribute>
+        <put-list-attribute name="js">
+            <add-attribute value="/js/web/consultingcenter/StockPick.js" />
+        </put-list-attribute>
+    </definition>
+
+</tiles-definitions>

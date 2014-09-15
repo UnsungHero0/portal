@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+ <description>VNDirectOnline formatting library</description>
+ <display-name>VNDirect fmt</display-name>
+ <tlib-version>1.1</tlib-version>
+ <short-name>fmt</short-name>
+ <uri>http://www.webapp.com.vn/tags-fmt</uri>
+ <function>
+  <name>toDate</name>
+  <function-class>vn.com.vndirect.web.tag.FormatDate</function-class>
+  <function-signature>java.lang.String toDate(java.util.Date, javax.servlet.jsp.PageContext)</function-signature>
+ </function>
+ <function>
+  <name>calToDate</name>
+  <function-class>vn.com.vndirect.web.tag.FormatDate</function-class>
+  <function-signature>java.lang.String toDate(java.util.Calendar, javax.servlet.jsp.PageContext)</function-signature>
+ </function>
+ <function>
+  <name>calToDateWithoutLocale</name>
+  <function-class>vn.com.vndirect.web.tag.FormatDate</function-class>
+  <function-signature>java.lang.String toDateWithoutLocale(java.util.Calendar, javax.servlet.jsp.PageContext)</function-signature>
+ </function>
+ <function>
+  <name>calToDateTime</name>
+  <function-class>vn.com.vndirect.web.tag.FormatDate</function-class>
+  <function-signature>java.lang.String toDateTime(java.util.Calendar, javax.servlet.jsp.PageContext)</function-signature>
+ </function>
+ <function>
+  <name>currentDate</name>
+  <function-class>vn.com.vndirect.web.tag.FormatDate</function-class>
+  <function-signature>java.lang.String currentDate(javax.servlet.jsp.PageContext)</function-signature>
+ </function>
+</taglib>

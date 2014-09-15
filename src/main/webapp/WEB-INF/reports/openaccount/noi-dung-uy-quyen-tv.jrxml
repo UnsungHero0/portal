@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="noi-dung-uy-quyen-ca-nhan-tv" pageWidth="595" pageHeight="842" columnWidth="505" leftMargin="50" rightMargin="40" topMargin="20" bottomMargin="20">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.4641000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="10"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<field name="married" class="java.lang.String"/>
+	<field name="notMarried" class="java.lang.String"/>
+	<field name="highSchoolLevel" class="java.lang.String"/>
+	<field name="graduateLevel" class="java.lang.String"/>
+	<field name="postGraduateLevel" class="java.lang.String"/>
+	<field name="othersLevel" class="java.lang.String"/>
+	<field name="male" class="java.lang.String"/>
+	<field name="female" class="java.lang.String"/>
+	<field name="fullname" class="java.lang.String"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="birthDate" class="java.lang.String"/>
+	<field name="idNumber" class="java.lang.String"/>
+	<field name="receiveDate" class="java.lang.String"/>
+	<field name="receivedAddress" class="java.lang.String"/>
+	<field name="expiredDate" class="java.lang.String"/>
+	<field name="persistenceAddress" class="java.lang.String"/>
+	<field name="contactAddress" class="java.lang.String"/>
+	<field name="fixPhone" class="java.lang.String"/>
+	<field name="mobilePhone" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="workPosition" class="java.lang.String"/>
+	<field name="companyPhone" class="java.lang.String"/>
+	<field name="companyFax" class="java.lang.String"/>
+	<field name="fullnameSecond" class="java.lang.String"/>
+	<field name="investmentLevel_1" class="java.lang.String"/>
+	<field name="investmentLevel_2" class="java.lang.String"/>
+	<field name="investmentLevel_3" class="java.lang.String"/>
+	<field name="investmentLevel_4" class="java.lang.String"/>
+	<field name="investExpLevel_1" class="java.lang.String"/>
+	<field name="investExpLevel_2" class="java.lang.String"/>
+	<field name="investExpLevel_3" class="java.lang.String"/>
+	<field name="investExpLevel_4" class="java.lang.String"/>
+	<field name="investExpLevel_5" class="java.lang.String"/>
+	<field name="investExpLevel_6" class="java.lang.String"/>
+	<field name="accOTC" class="java.lang.String"/>
+	<field name="accListedStock" class="java.lang.String"/>
+	<field name="authorizedAcct" class="java.lang.String"/>
+	<field name="nonAuthorizedAcct" class="java.lang.String"/>
+	<field name="statementMonthly" class="java.lang.String"/>
+	<field name="statementQuarterly" class="java.lang.String"/>
+	<field name="statementDirectly" class="java.lang.String"/>
+	<field name="statementByEmail" class="java.lang.String"/>
+	<field name="onlineTrading_YES" class="java.lang.String"/>
+	<field name="onlineTrading_NO" class="java.lang.String"/>
+	<field name="ownerTrading" class="java.lang.String"/>
+	<field name="authorizedTrading" class="java.lang.String"/>
+	<field name="teleTrading_YES" class="java.lang.String"/>
+	<field name="teleTrading_NO" class="java.lang.String"/>
+	<field name="authorizedTrading2" class="java.lang.String"/>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="ownerTrading2" class="java.lang.String"/>
+	<field name="companyNameSecond" class="java.lang.String"/>
+	<field name="workPositionSecond" class="java.lang.String"/>
+	<field name="authorizedName" class="java.lang.String"/>
+	<field name="authorizedPhone" class="java.lang.String"/>
+	<field name="organization1" class="java.lang.String"/>
+	<field name="organization2" class="java.lang.String"/>
+	<field name="incomePurposeInvest" class="java.lang.String"/>
+	<field name="longTermPurposeInvest" class="java.lang.String"/>
+	<field name="midTermPurposeInvest" class="java.lang.String"/>
+	<field name="shortTermPurposeInvest" class="java.lang.String"/>
+	<field name="highAcceptedLevel" class="java.lang.String"/>
+	<field name="belowAcceptedLevel" class="java.lang.String"/>
+	<field name="middleAcceptedLevel" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="atBank" class="java.lang.String"/>
+	<field name="accountOwner" class="java.lang.String"/>
+	<field name="assetShortTerm" class="java.lang.String"/>
+	<field name="assetNetIncome" class="java.lang.String"/>
+	<field name="assetFix" class="java.lang.String"/>
+	<field name="assetTotalIncome" class="java.lang.String"/>
+	<field name="notificationEmail" class="java.lang.String"/>
+	<field name="notificationMobilePhone" class="java.lang.String"/>
+	<field name="orderResultMobilePhone" class="java.lang.String"/>
+	<field name="orderResultMethodByPhone" class="java.lang.String"/>
+	<field name="orderResultMethodByCallToAgent" class="java.lang.String"/>
+	<field name="notificationMethodByPhone" class="java.lang.String"/>
+	<field name="notificationMethodByEmail" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<elementGroup/>
+			<line>
+				<reportElement key="line-6" x="0" y="11" width="1" height="32"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="505" y="10" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement key="line-3" x="0" y="88" width="506" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-3" x="0" y="10" width="506" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-3" x="0" y="128" width="505" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-3" x="0" y="223" width="506" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="303" y="10" width="1" height="33"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-101" x="1" y="567" width="186" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 4. Quy định khác]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-3" x="0" y="176" width="506" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="45" y="10" width="1" height="33"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-27" x="19" y="133" width="25" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="19" y="179" width="25" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="51" y="16" width="254" height="22"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giao dịch ký quỹ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="1" y="265" width="293" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 3. Quyền và nghĩa vụ của các Bên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="285" width="475" height="34"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Bên nhận ủy quyền có trách nhiệm thực hiện công việc theo đúng phạm vi và thời hạn được uỷ quyền.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="51" y="89" width="243" height="40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Thời hạn ủy quyền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="50" y="136" width="196" height="41"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Kể từ ngày…./…../..…..đến hết ngày…./….. /..…..]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="50" y="179" width="244" height="44"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Thời hạn ủy quyền là 20 (hai mươi) năm kể từ ngày ký và công chứng hợp đồng này]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-6" x="404" y="10" width="1" height="33"/>
+			</line>
+			<line>
+				<reportElement key="line-3" x="0" y="42" width="506" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="-1" y="88" width="1" height="136"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="505" y="88" width="1" height="136"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="405" y="89" width="1" height="135"/>
+			</line>
+			<line>
+				<reportElement key="line-6" x="302" y="88" width="1" height="136"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-27" x="306" y="92" width="95" height="37"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Chữ ký của Bên ủy quyền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="408" y="92" width="95" height="37"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Chữ ký của Bên nhận ủy quyền]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-6" x="46" y="88" width="1" height="136"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-27" x="15" y="93" width="55" height="18"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[STT   .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="19" y="15" width="25" height="23"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[d.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="-1" y="66" width="160" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 2. Thời hạn ủy quyền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-22" x="1" y="230" width="500" height="18"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isItalic="true" pdfFontName="ARIALI.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ghi chú: Nếu ủy quyền cho phạm vi và thời hạn nào thì cả hai bên phải ký xác nhận vào ô đó)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="285" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[a.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="319" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[b.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="319" width="475" height="34"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Bên ủy quyền chịu mọi trách nhiệm đối với các cam kết, rủi ro, kết quả công việc do Bên nhận ủy quyền thực hiện.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="353" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[c.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="353" width="475" height="47"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Bên nhận ủy quyền cam kết liên đới cùng Chủ tài khoản chịu trách nhiệm về các nghĩa vụ đối với VNDIRECT phát sinh từ các công việc do Bên nhận ủy quyền thực hiện.                                                .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="401" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[d.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="401" width="475" height="63"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi thực hiện các công việc được uỷ quyền, Bên nhận ủy quyền được đại diện và nhân danh Bên ủy quyền quyết định mọi vấn đề có liên quan; lập và ký các giấy tờ cần thiết, nộp các khoản thuế, phí, lệ phí phát sinh (nếu có) từ thực hiện việc uỷ quyền nói trên.                                                                     .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="464" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[e.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="464" width="475" height="48"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Bên ủy quyền cam kết tự chịu mọi trách nhiệm và không thực hiện bất cứ khiếu nại nào đối với VNDIRECT về những thiệt hại hoặc lợi ích liên quan tới Tài khoản của Bên ủy quyền mà Bên nhận ủy quyền đã thực hiện trong phạm vi ủy quyền ở trên.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="512" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[f.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="512" width="475" height="34"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Bên ủy quyền và Bên nhận ủy quyền cam kết thực hiện đúng và đầy đủ những quy định của VNDIRECT liên quan đến giao dịch chứng khoán.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="585" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[a.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="585" width="475" height="50"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Hai bên cam kết thực hiện đúng quy định tại Hợp đồng ủy quyền này, quy định của Bộ luật dân sự về hợp đồng ủy quyền và quy định của Thông tư số 74/2011/TT-BTC về ủy quyền giao dịch chứng khoán. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="635" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[b.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="635" width="475" height="34"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trường hợp Bên ủy quyền muốn chấm dứt ủy quyền trước thời hạn, cần có sự đồng ý của Bên nhận ủy quyền và xác nhận của Văn phòng công chứng ………..]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="669" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[c.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="670" width="475" height="48"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trường hợp Bên ủy quyền muốn chuyển ủy quyền cho Bên thứ ba thì cần chấm dứt ủy quyền với Bên nhận ủy quyền đồng thời ký Hợp đồng ủy quyền mới và được xác nhận của Văn phòng công chứng ………….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="1" y="718" width="25" height="20"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[d.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-9" x="26" y="718" width="475" height="60"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="11" isBold="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Bên ủy quyền phải thông báo bằng văn bản cho VNDIRECT biết về việc chấm dứt thực hiện Hợp đồng ủy quyền này trước thời hạn. Nếu Bên ủy quyền không thông báo cho VNDIRECT thì các công việc do Bên nhận ủy quyền thực hiện với VNDIRECT và/hoặc các bên thứ ba vẫn có hiệu lực ràng buộc trách nhiệm của Bên ủy quyền.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

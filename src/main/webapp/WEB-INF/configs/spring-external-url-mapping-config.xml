@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+		<!-- =================== DEFINE URL-MAPPING ============================ -->
+	<bean id="ExternalUrlMapping" class="vn.com.web.commons.urlmapping.ExternalUrlMapping">
+		<property name="prefix" value="url.mapping."/>
+		<property name="mappingUriCfg" value="/WEB-INF/configs/spring-server-config.properties"/>
+	</bean>
+
+	<bean id="TicketProxyUrlMapping" class="vn.com.web.commons.urlmapping.ExternalUrlMapping">
+		<property name="prefix" value="ticket.proxy."/>
+		<property name="mappingUriCfg" value="/WEB-INF/configs/spring-server-config.properties"/>
+	</bean>
+
+	<bean id="CheckRedirectUrlFilterEntryPoint" class="vn.com.vndirect.web.filter.CheckRedirectUrlFilterEntryPoint">
+		<property name="applyForCheckFwd" value="true"/>
+		<property name="applyForCheckRedirect" value="true"/>
+
+		<!-- For Mobile -->
+		<property name="applyDetectMobile" value="true"/>
+		<property name="mobileUrl" value="${mobile.site.url}"/>
+		<!--
+		<property name="fwdSecUrl" value="/${sso.online.sec_check.uri}"/>
+		-->
+		<property name="fwdSecUrl" value="/home/ForwardSecUrl.shtml"/>
+
+	</bean>
+</beans>

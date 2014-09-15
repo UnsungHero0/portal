@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Define Common Module -->
+	<package name="Common" namespace="/common" extends="default-web">
+		<action name="NewsDetail*" class="springNewsAction" method="executeViewNewsDetail">
+			<result>Common.NewsDetail</result>
+		</action>
+		<action name="AttachmentsDetail*" class="springNewsAction"
+			method="executeViewAttDetail">
+			<result>Common.NewsDetail</result>
+		</action>
+		<action name="viewContentDetail*">
+			<result>Product.ViewContent</result>
+		</action>
+		<action name="ClearSession*" class="springHomeInvalidateSessionAJAXAction"
+			method="execute">
+			<result>IndexPage</result>
+		</action>
+	</package>
+	<package name="authz" namespace="/" extends="default-web">
+		<action name="xac-thuc">
+			<result type="dispatcher">/WEB-INF/jsps/common/check-reload-after-login.jsp
+			</result>
+		</action>
+		<action name="check-reload">
+			<result type="dispatcher">/WEB-INF/jsps/common/check-reload-after-login.jsp
+			</result>
+		</action>
+		<action name="getlt">
+			<result type="dispatcher">/WEB-INF/jsps/common/GetLt.jsp</result>
+		</action>
+	</package>
+	<package name="Sitemap" namespace="/" extends="default-web">
+		<action name="/sitemap*" class="springSitemapAction" method="executeSitemap">
+			<result type="dispatcher">/WEB-INF/jsps/common/sitemap.jsp</result>
+		</action>
+	</package>
+
+	<!-- Define Common Chart -->
+	<package name="CommonChart" namespace="/chart" extends="default-web">
+		<action name="HistoricalSecChart*" class="springChartDataAJAXAction"
+			method="executeSearchSymbol">
+			<result type="dispatcher">/WEB-INF/jsps/chart/SnapshortChartJsonData.jsp
+			</result>
+		</action>
+		<action name="FlashChartAPI*" class="springFlashChartAPIAction"
+			method="executeXMLAPI">
+			<result name="input" type="dispatcher">/WEB-INF/jsps/chart/FlashChartAPI.jsp
+			</result>
+			<result name="success" type="dispatcher">/WEB-INF/jsps/chart/FlashChartAPI.jsp
+			</result>
+		</action>
+		<action name="TABasicChart*" class="springTechnicalChartAction"
+			method="execute">
+			<result name="success" type="stream">
+				<param name="contentType">image/png</param>
+				<param name="contentLength">${length}</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">Cache-Control=no-store;Pragma=;no-cache;Expires=0;filename="${fileName}"</param>
+				<param name="bufferSize">512</param>
+				<param name="allowCaching">false</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="CommonAjax" namespace="/ajax/common" extends="default-web">
+		<action name="SymbolAutoSuggestionForSearch*" class="springCommonSymbolAutoSuggestAJAXAction"
+			method="execute">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="SymbolProcessing_QuickSearch*" class="springCommonSymbolProcessingAJAXAction"
+			method="executeQuickSearch">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="SymbolProcessing_SearchSymbol*" class="springCommonSymbolProcessingAJAXAction"
+			method="executeSearchSymbol">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="SymbolProcessing_CheckExistedSymbol*" class="springCommonSymbolProcessingAJAXAction"
+			method="executeCheckExistedSymbol">
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<!-- <action name="CaptchaImage*" class="springCaptchaImageAction">
+			<result name="success" type="stream">
+				<param name="contentType">image/png</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">Cache-Control=no-store;Pragma=;no-cache;Expires=0;filename="${fileName}"</param>
+				<param name="bufferSize">512</param>
+			</result>
+		</action> -->
+		<action name="pingPortalAjax*" class="springEmptyAction" method="pingPortalAjax">
+            <result type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+            <result name="input" type="json">
+                <param name="excludeProperties">
+                    model.cacheData
+                </param>
+            </result>
+        </action>
+	</package>
+</struts>
+
+

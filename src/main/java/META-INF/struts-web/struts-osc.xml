@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Define OSC Module -->
+	<package name="OSC" namespace="/osc" extends="default-web">
+		<action name="OSCAfterLogin*" class="springOSCAction" method="viewOSCAfterLogin">
+			<result>OSCAfterLogin</result>
+		</action>
+		<action name="OSCBeforeLogin*" class="springOSCAction">
+			<result>OSCAfterLogin</result>
+		</action>
+		<action name="viewContentDetail*" class="springOSCAction"
+			method="viewContentDetail">
+			<result>OSCContentDetail</result>
+		</action>
+		<action name="AskExpert*" class="springOSCAction" method="displayAskExpert">
+			<result>AskExpert</result>
+		</action>
+	</package>
+
+
+    <package name="UserProfile" namespace="/" extends="default-web">
+        <action name="thong-tin-co-ban-tai-khoan-mien-phi*" class="springOSCAction" method="viewFreeAfterLogin">
+            <result>FreeAfterLogin</result>
+        </action>
+        <action name="thong-tin-co-ban*" class="springUserProfileAction"
+            method="changeUserProfile">
+            <param name="navigation">profile</param>
+            <result name="ViewUserProfile">UserProfile</result>
+            <result name="ChangeTeleTradeFones">MiChangeTeleTradeFones</result>
+            <result name="ChangeTeleTradePassword">MiChangeTeleTradePassword</result>
+            <result name="ChangeUserProfile">MiChangeUserProfile</result>
+            <result name="ChangeInternetEmail">MiChangeInternetEmail</result>
+            <result name="ChangeSuccess">MiChangeSuccess</result>
+        </action>
+        <action name="thong-tin-giao-dich*" class="springUserProfileAction"
+            method="changeUserProfile">
+            <param name="navigation">tradding</param>
+            <result name="ViewUserProfile">UserTrading</result>
+            <result name="ChangeTeleTradeFones">MiChangeTeleTradeFones</result>
+            <result name="ChangeTeleTradePassword">MiChangeTeleTradePassword</result>
+            <result name="ChangeUserProfile">MiChangeUserProfile</result>
+            <result name="ChangeInternetEmail">MiChangeInternetEmail</result>
+            <result name="ChangeSuccess">MiChangeSuccess</result>
+        </action>
+                        
+        <action name="thay-doi-mat-khau*" class="springUserProfileAction"
+            method="viewChangePassword">
+            <result>MiChangePassword</result>
+        </action>
+        <action name="thay-doi-thanh-cong*" class="springUserProfileAction"
+            method="changePassword">
+            <result>MiChangeSuccess</result>
+        </action>
+        <action name="quen-mat-khau*" class="springUserProfileAction"
+            method="viewRecoverUserInfo">
+            <result>RecoverUserInfo.Input</result>
+        </action>
+        <action name="lay-lai-mat-khau*" class="springUserProfileAction"
+            method="executeRecoverUserInfo">
+            <result name="input">RecoverUserInfo.Input</result>
+            <result name="success">RecoverUserInfo.Finish</result>
+        </action>
+    </package>
+
+	<package name="UserProfileAJAX" namespace="/ajax/user" extends="default-web">
+		<action name="UserProfileAJAX_*" class="springUserProfileAJAXAction"
+			method="execute{1}">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+				</param>
+			</result>
+		</action>
+		<action name="ShowQuestion*" class="springOSCAction" method="showQuestion">
+			<result type="json">
+			</result>
+		</action>
+		<action name="SaveQuestion*" class="springOSCAction" method="saveQuestion">
+			<result type="json">
+			</result>
+		</action>
+	</package>
+</struts>

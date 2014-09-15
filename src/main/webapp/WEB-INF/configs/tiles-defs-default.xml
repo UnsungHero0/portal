@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<!-- Define Struts Tile for Front-End module -->
+	<definition name="Base.Web" template="/WEB-INF/jsps/layouts/Base-Layout.jsp">
+		<put-attribute name="global-script"
+			value="/WEB-INF/jsps/layouts/Global-Script.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsps/layouts/Banner.jsp" />
+		<put-attribute name="top-menu" value="/WEB-INF/jsps/layouts/TopMenu.jsp" />
+		<put-attribute name="news"
+			value="/WEB-INF/jsps/layouts/DisplayNews.jsp" /> 
+		<put-attribute name="nhapmaCK"
+            value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsps/layouts/Footer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+		
+		<put-attribute name="notice"
+			value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+
+		<put-list-attribute name="default-css">
+			<add-attribute value="/css/stylesheet.css" />
+			<add-attribute value="/css/style.css" />
+			<add-attribute value="/css/style_newGUI.css" />
+			<add-attribute value="/css/style_.css" />
+			<add-attribute value="/css/jquery.validation/default.css" />
+			<add-attribute value="/css/jquery.autocomplete/default.css" />
+			<add-attribute value="/css/ui-dialog.css"/>
+			<add-attribute value="/css/ui-datepicker.css"/>
+			<add-attribute value="/css/ui-mostActive.css"/>
+			<add-attribute value="/css/jquery.tooltip.css"/>
+			<add-attribute value="/css/flexpaper/flexpaper.css"/>
+		</put-list-attribute>
+
+		<put-list-attribute name="default-js">
+			<add-attribute value="/js/NumberFormat154.js" />
+			<add-attribute value="/js/equalcolumns.js" />
+			<add-attribute value="/js/jquery-1.9.1.min.js" />
+			<add-attribute value="/js/jquery-migrate-1.2.1.js" />
+			<add-attribute value="/js/jquery-ui.js" />
+			<add-attribute value="/js/jquery.debug.js" />
+			<add-attribute value="/js/jquery.ajaxQueue.js" />
+			<add-attribute value="/js/jquery.autocomplete.js" />
+			<add-attribute value="/js/jquery.bgiframe.js" />
+			<add-attribute value="/js/jquery.form.js" />
+			<add-attribute value="/js/jquery.validate.js" />
+			<add-attribute value="/js/jquery.validate.additional.methods.js" />
+			<add-attribute value="/js/UnsupportLibOnSomeBrowser.js" />
+			<add-attribute value="/js/web.jquery.tables.js" />
+			<add-attribute value="/js/web.jquery.pagingnav.js" />
+			<add-attribute value="/js/web.jquery.errors.js" />
+			<add-attribute value="/js/web.jquery.utils.js" />
+			<add-attribute value="/js/web.jquery.combobox.js" />
+			<add-attribute value="/js/web.jquery.autocomplete.js" />
+			<add-attribute value="/js/date.format.js" />
+			<add-attribute value="/js/i18n.jquery/messages_vn.js" />
+			<add-attribute value="/js/i18n.jquery.ui/ui.datepicker-en.js" />
+			<add-attribute value="/js/i18n.jquery.ui/ui.datepicker-ja.js" />
+			<add-attribute value="/js/i18n.jquery.ui/ui.datepicker-vn.js" />
+			<add-attribute value="/js/jquery.metadata.js" />
+			<add-attribute value="/js/vndirect.js" />
+			<add-attribute value="/js/sockjs-0.3.min.js" />
+			<add-attribute value="/js/DirectBoardAPI.js" />
+			<add-attribute value="/js/AjaxHelper.js" />
+			<add-attribute value="/js/web/home/topMenuAnimate.js" />
+			<add-attribute value="/js/vndirect.quickLinks.js" />
+			<add-attribute value="/js/web/home/classes/home.clazz.HomePage.js" />
+			<add-attribute value="/js/web/home/home.HomePage.js" />
+			<add-attribute value="/js/web/listedmarket/indexMarketFromDirectBoard.js" />
+			
+			<!-- add for flexpaper -->
+			<add-attribute value="/js/flexpaper/jquery.extensions.min.js" />
+            <add-attribute value="/js/flexpaper/flexpaper.js" />
+            <add-attribute value="/js/flexpaper/flexpaper_handlers.js" />
+            <add-attribute value="/js/stockHighlightsFunction.js" />
+		</put-list-attribute>
+
+		<put-list-attribute name="menu-js"></put-list-attribute>
+		<put-list-attribute name="module-css"></put-list-attribute>
+		<put-list-attribute name="module-js"></put-list-attribute>
+		<put-list-attribute name="css"></put-list-attribute>
+		<put-list-attribute name="js"></put-list-attribute>
+	</definition>
+
+    <!-- Use for old flash external chart ONLY -->
+	<definition name="OnlyBody.Web"
+		template="/WEB-INF/jsps/layouts/OnlyBodyLayout-Default.jsp">
+		<put-attribute name="global-script"
+			value="/WEB-INF/jsps/layouts/Global-Script.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/layouts/Body-Empty.jsp" />
+		<put-list-attribute name="default-css">
+            <add-attribute value="/css/stylesheet.css" />
+            <add-attribute value="/css/style.css" />
+            <add-attribute value="/css/style_newGUI.css" />
+            <add-attribute value="/css/style_.css" />
+            <add-attribute value="/css/jquery.validation/default.css" />
+            <add-attribute value="/css/jquery.autocomplete/default.css" />
+            <add-attribute value="/css/ui-dialog.css"/>
+            <add-attribute value="/css/ui-datepicker.css"/>
+            <add-attribute value="/css/ui-mostActive.css"/>
+            <add-attribute value="/css/jquery.tooltip.css"/>
+        </put-list-attribute>
+
+        <put-list-attribute name="default-js">
+            <add-attribute value="/js/NumberFormat154.js" />
+            <add-attribute value="/js/equalcolumns.js" />
+            <add-attribute value="/js/jquery-1.9.1.min.js" />
+            <add-attribute value="/js/jquery-migrate-1.2.1.js" />
+            <add-attribute value="/js/jquery-ui.js" />
+            <add-attribute value="/js/jquery.debug.js" />
+            <add-attribute value="/js/jquery.ajaxQueue.js" />
+            <add-attribute value="/js/jquery.autocomplete.js" />
+            <add-attribute value="/js/jquery.bgiframe.js" />
+            <add-attribute value="/js/jquery.form.js" />
+            <add-attribute value="/js/jquery.validate.js" />
+            <add-attribute value="/js/jquery.validate.additional.methods.js" />
+            <add-attribute value="/js/web.jquery.tables.js" />
+            <add-attribute value="/js/web.jquery.pagingnav.js" />
+            <add-attribute value="/js/web.jquery.errors.js" />
+            <add-attribute value="/js/web.jquery.utils.js" />
+            <add-attribute value="/js/web.jquery.combobox.js" />
+            <add-attribute value="/js/web.jquery.autocomplete.js" />
+            <add-attribute value="/js/date.format.js" />
+            <add-attribute value="/js/i18n.jquery/messages_vn.js" />
+            <add-attribute value="/js/i18n.jquery.ui/ui.datepicker-en.js" />
+            <add-attribute value="/js/i18n.jquery.ui/ui.datepicker-ja.js" />
+            <add-attribute value="/js/i18n.jquery.ui/ui.datepicker-vn.js" />
+            <add-attribute value="/js/jquery.metadata.js" />
+            <add-attribute value="/js/vndirect.js" />
+            <add-attribute value="/js/web/home/topMenuAnimate.js" />
+            <add-attribute value="/js/vndirect.quickLinks.js" />
+            <add-attribute value="/js/web/home/classes/home.clazz.HomePage.js" />
+            <add-attribute value="/js/web/home/home.HomePage.js" />
+        </put-list-attribute>
+
+        <put-list-attribute name="menu-js"></put-list-attribute>
+        <put-list-attribute name="module-css"></put-list-attribute>
+        <put-list-attribute name="module-js"></put-list-attribute>
+        <put-list-attribute name="css"></put-list-attribute>
+        <put-list-attribute name="js"></put-list-attribute>
+	</definition>
+
+	<definition name="Default.ExecuteError" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/common/ExecuteError.jsp" />
+	</definition>
+
+	<definition name="Default.UnderContruction" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/exceptions/UnderContruction.jsp" />
+	</definition>
+
+	<definition name="Common.SearchSymbol" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/common/SearchSymbol.jsp" />
+		<put-attribute name="notice" value="/WEB-INF/jsps/common/Notice.jsp" />
+		<put-list-attribute name="js">
+			<add-attribute value="/js/web/common/classes/common.clazz.SearchSymbol.js" />
+			<add-attribute value="/js/web/common/common.SearchSymbol.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="Common.SearchNews" extends="Base.Web">
+		<put-attribute name="body"
+			value="/WEB-INF/jsps/newsinfo/SearchNews.jsp" />
+	</definition>
+	
+	<definition name="News.VndsNews" template="/WEB-INF/jsps/VndsNews.jsp">
+	</definition>
+	
+    <definition name="stockHighlights.dialog.tabledata" template="/WEB-INF/jsps/stockHighlights/stockHighlightsTableData.jsp">
+    </definition>
+    <definition name="stockHighlights.listSymbol" template="/WEB-INF/jsps/stockHighlights/stockHighlights-listSymbols.jsp">
+    </definition>
+    
+    <!-- <definition name="stockHighlights.dialog.outstandingdata" template="/WEB-INF/jsps/stockHighlights/stockHighlightsOutstandingData.jsp">
+    </definition> -->
+    <definition name="stockHighlights.dialog.relatedReportsData" template="/WEB-INF/jsps/stockHighlights/stockHighlightsRelatedReportsData.jsp">
+    </definition>
+	
+    <definition name="stockHighlights.flexPaper" template="/WEB-INF/jsps/common/flexpaper-viewer.jsp">
+    </definition>
+</tiles-definitions>

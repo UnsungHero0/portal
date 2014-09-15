@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quy-dinh" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="78"/>
+	<property name="ireport.y" value="396"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-2" x="33" y="67" width="500" height="12"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Công ty” hoặc “VNDIRECT” là Công ty Cổ phần Chứng khoán VNDIRECT như nêu tại Phần đầu Hợp đồng này.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-4" x="33" y="230" width="500" height="28"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA["Mã số PIN" là bất kỳ thông tin nào được sử dụng để nhận dạng Khách hàng khi thực hiện Giao dịch, bao gồm nhưng không giới hạn ở tên truy cập, mật khẩu truy cập vào hệ thống giao dịch trực tuyến, hệ thống mã số trên thẻ VTOS do Công ty cấp cho Khách hàng, số điện thoại đăng ký giao dịch, mật khẩu giao dịch trên điện thoại và các thông tin nhận dạng khác theo quy định đối với từng phương thức Giao dịch.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" x="34" y="459" width="499" height="31"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có nghĩa vụ thanh toán các khoản phí dịch vụ theo biểu phí của Công ty. Công ty có toàn quyền quyết định thay đổi biểu phí dịch vụ và Khách hàng mặc nhiên chấp thuận sự thay đổi đó, miễn rằng việc thay đổi này được thông báo công khai trên website www.vndirect.com.vn và/hoặc tại Điểm giao dịch của Công ty ít nhất là ba (03) ngày trước thời điểm áp dụng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-10" x="33" y="80" width="500" height="12"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Khách hàng” hoặc “Chủ tài khoản” là Chủ tài khoản giao dịch chứng khoán có thông tin nhân thân như nêu tại Phần đầu Hợp đồng này.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-11" x="33" y="260" width="500" height="11"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Lệnh giao dịch” là Lệnh giao dịch chứng khoán và/hoặc Lệnh giao dịch khác giữa Khách hàng với Công ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="33" y="342" width="500" height="24"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng yêu cầu và Công ty đồng ý mở Tài khoản giao dịch chứng khoán đứng tên Khách hàng là Chủ tài khoản để thực hiện việc quản lý tiền, chứng khoán, các tài sản liên quan khác và thực hiện các giao dịch chứng khoán và giao dịch tiền cho Khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="34" y="366" width="499" height="24"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi đặt lệnh giao dịch mua bán chứng khoán, Khách hàng phải đảm bảo số dư tiền và/hoặc chứng khoán trên Tài khoản đáp ứng tỷ lệ quy định của Công ty và của Pháp luật.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="34" y="388" width="499" height="25"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng mặc nhiên chấp thuận kết quả giao dịch do Công ty thực hiện trên cơ sở Lệnh giao dịch của Khách hàng hoặc người được Khách hàng ủy quyền.                                  .        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-21" x="33" y="488" width="499" height="26"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Thời gian và phương thức thanh toán phí dịch vụ được Khách hàng thực hiện theo quy định của Công ty. Chi tiết về phí dịch vụ được Công ty thông báo cho Khách hàng theo định kỳ hàng tháng (dưới hình thức Sao kê tài khoản) sau khi Khách hàng đã thanh toán đầy đủ phí dịch vụ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-22" x="34" y="560" width="499" height="33"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có thể thực hiện giao dịch theo các phương thức sau đây trên cơ sở đăng ký với Công ty: (i) giao dịch trực tiếp tại Điểm giao dịch, (ii) giao dịch qua điện thoại, (iii) giao dịch trực tuyến qua internet, hoặc (iv) bằng phương thức giao dịch khác được Công ty chấp thuận.                                                                                                  .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-23" x="33" y="593" width="499" height="25"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Các Giao dịch, tùy từng phương thức thực hiện, sẽ được coi là Giao dịch của Khách hàng và có hiệu lực ràng buộc giữa Công ty và Khách hàng trên cơ sở đáp ứng được yêu cầu sau:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="12" y="41" width="511" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" isItalic="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 1: Giải thích thuật ngữ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-29" x="11" y="444" width="509" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" isItalic="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 3: Phí dịch vụ, thuế]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-30" x="12" y="546" width="508" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" isItalic="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 4: Thực hiện Giao dịch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-33" x="11" y="66" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-34" x="11" y="80" width="41" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-35" x="11" y="231" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.9.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-36" x="11" y="303" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.13.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="11" y="342" width="33" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[2.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="12" y="368" width="31" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[2.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="12" y="388" width="31" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[2.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-45" x="12" y="459" width="41" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[3.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-46" x="12" y="489" width="41" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[3.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-47" x="12" y="559" width="41" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="11" y="594" width="41" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-54" x="1" y="6" width="533" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10" isBold="true" pdfFontName="timesbd.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[HỢP ĐỒNG MỞ TÀI KHOẢN GIAO DỊCH CHỨNG KHOÁN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-55" x="11" y="90" width="41" height="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-56" x="33" y="94" width="500" height="32"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Tài khoản” hoặc “Tài khoản giao dịch chứng khoán” là tài khoản giao dịch chứng khoán của Khách hàng mở tại Công ty Cổ phần chứng khoán VNDIRECT.  Tài khoản được hiểu bao gồm tài khoản lưu ký chứng khoán, tài khoản giao dịch chứng khoán và tài khoản giao dịch ký quỹ (nếu có).                                                                                              .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-57" x="11" y="127" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-58" x="33" y="126" width="500" height="30"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA["Giao dịch" là hợp đồng/thỏa thuận hoặc hành vi đơn phương được ký kết, thực hiện bởi Khách hàng làm phát sinh, thay đổi hoặc chấm dứt quyền, nghĩa vụ của Khách hàng; Giao dịch bao gồm nhưng không giới hạn ở việc mở tài khoản, nộp tiền, rút tiền, chuyển khoản, đặt Lệnh giao dịch, ký các văn bản/hợp đồng/thỏa thuận của Khách hàng với Công ty và các hành vi khác của Khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-59" x="11" y="156" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-60" x="33" y="157" width="500" height="22"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Giao dịch điện tử” là giao dịch được thực hiện bằng phương tiện điện tử, bao gồm giao dịch qua điện thoại, giao dịch trực tuyến, hoặc giao dịch bằng các phương tiện điện tử khác.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-61" x="11" y="191" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-62" x="33" y="193" width="500" height="11"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Sao kê tài khoản” là bản kê phản ánh số dư tiền, số dư chứng khoán và diễn biến các giao dịch trên tài khoản của Khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-63" x="11" y="206" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.8.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-64" x="33" y="206" width="500" height="24"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Điểm giao dịch” là địa điểm mà Công ty đặt trụ sở chính, chi nhánh, phòng giao dịch hoặc địa điểm hoạt động hợp pháp khác của Công ty.                                                      .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-66" x="33" y="302" width="500" height="25"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Điều khoản riêng biệt” là các điều khoản của Hợp đồng quy định đối với từng loại dịch vụ nhất định và chỉ áp dung đối với Khách hàng có đăng ký sử dụng dịch vụ đó.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-67" x="11" y="331" width="509" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="8" isBold="true" isItalic="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 2: Đối tượng của Hợp đồng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-70" x="12" y="516" width="41" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[3.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-71" x="34" y="514" width="499" height="25"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có trách nhiệm thanh toán thuế thu nhập và các loại thuế khác (nếu có). Công ty có quyền khấu trừ thuế thu nhập của Khách hàng theo quy định của Pháp luật.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-59" x="11" y="178" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-60" x="33" y="179" width="500" height="16"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Sở Giao dịch Chứng khoán” là các Sở giao dịch chứng khoán Hà Nội và/hoặc Sở giao dịch chứng khoán thành phố Hồ Chí Minh.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-35" x="11" y="259" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.10.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-11" x="33" y="274" width="500" height="11"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Lệnh giao dịch chứng khoán” là lệnh mua hoặc bán chứng khoán hoặc lệnh hủy, sửa lệnh mua hoặc bán chứng khoán.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-35" x="11" y="273" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.11.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-11" x="33" y="288" width="500" height="17"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[“Điều khoản chính” là các điều khoản của Hợp đồng được áp dụng đối với tất cả các Khách hàng mở Tài khoản.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-35" x="11" y="288" width="41" height="14"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.12.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="12" y="54" width="508" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isBold="false" isItalic="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trong Hợp đồng này, các thuật ngữ dưới đây được hiểu như sau:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="34" y="413" width="499" height="27"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Công ty cung cấp cho Khách hàng các dịch vụ: (i) môi giới chứng khoán; (ii) đăng ký, lưu ký, thanh toán bù trừ chứng khoán; và (iii) các dịch vụ khác (tư vấn về đầu tư chứng khoán, nhận ủy thác quản lý Tài khoản, và các dịch vụ khác) theo thoả thuận giữa Khách hàng và Công ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="12" y="414" width="33" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[2.4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-54" x="1" y="21" width="533" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10" isBold="true" pdfFontName="timesbd.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[PHẦN ĐIỀU KHOẢN CHUNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-23" x="34" y="718" width="499" height="15"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi thực hiện các phương thức Giao dịch điện tử, Khách  hàng đồng ý rằng:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="12" y="718" width="41" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="62" y="613" width="470" height="25"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Đối với Giao dịch trực tiếp tại Điểm giao dịch: chữ ký trên văn bản Giao dịch và số chứng minh thư của người thực hiện Giao dịch giống/trùng với chữ ký và số chứng minh thư đã đăng ký của Khách hàng hoặc người được Khách hàng ủy quyền.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="33" y="614" width="67" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.2.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="63" y="635" width="470" height="23"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Đối với Giao dịch qua điện thoại: số điện thoại gọi đến, số Hợp đồng và mật khẩu giao dịch do người gọi điện khai báo trên điện thoại trùng khớp với số điện thoại, số Hợp đồng và mật khẩu giao dịch mà Khách hàng đã đăng ký với Công ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="34" y="634" width="67" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.2.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="63" y="657" width="470" height="31"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Đối với Giao dịch trực tuyến: người thực hiện Giao dịch đã truy cập thành công vào hệ thống giao dịch trực tuyến của Công ty sau khi khai báo chính xác địa chỉ email, mật khẩu truy cập đã đăng ký với Công ty và mã số trên thẻ VTOS được Công ty cấp cho Khách hàng.                                                                                                       .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="34" y="688" width="67" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.2.4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="34" y="658" width="67" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.2.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="63" y="688" width="470" height="13"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Đối với phương thức Giao dịch khác: theo quy định của Công ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="34" y="731" width="67" height="11"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.3.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="63" y="731" width="470" height="38"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giao dịch điện tử luôn tiềm ẩn các rủi ro, bao gồm nhưng không giới hạn ở các rủi ro do lộ mật khẩu, lộ mã số giao dịch, bị người thứ ba truy cập một cách bất hợp pháp, bị gián đoạn, ngừng trệ giao dịch do lỗi thiết bị, lỗi đường truyền, bị virus, trộm cắp hoặc phá hoại và những rủi ro khách quan khác. Khách hàng đồng ý miễn trừ cho Công ty (bao gồm cả Giám đốc và nhân viên của Công ty) mọi trách nhiệm pháp lý và trách nhiệm bồi thường các thiệt hại (nếu có) phát sinh từ những rủi ro nêu trên.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="34" y="768" width="60" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.3.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="63" y="769" width="470" height="23"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Đối với một số loại Giao dịch đặc biệt, căn cứ theo nhận định của Công ty và để đảm bảo an toàn cho Khách hàng, Công ty có thể yêu cầu Khách hàng đăng ký bổ sung trước khi thực hiện Giao dịch.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="34" y="701" width="67" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[4.2.5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="63" y="701" width="470" height="13"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" isItalic="false" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giao dịch được thực hiện bởi người được Khách hàng ủy quyền được coi là Giao dịch của Khách hàng. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-34" x="11" y="94" width="41" height="12"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="7" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[1.3.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

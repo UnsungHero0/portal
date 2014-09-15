@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quy-dinh" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.1000000000000005"/>
+	<property name="ireport.x" value="10"/>
+	<property name="ireport.y" value="301"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-6" x="38" y="421" width="495" height="28"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có quyền yêu cầu Công ty chuyển một phần hoặc toàn bộ số dư tiền trên Tài khoản vào một tài khoản khác phù hợp với quy định của Pháp luật, Công ty chỉ thực hiện việc chuyển khoản khi số dư tiền gửi trong Tài khoản trong phạm vi số tiền được phép giao dịch và không bị ràng buộc bởi bất kỳ nghĩa vụ nào.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-7" x="38" y="645" width="495" height="28"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có trách nhiệm thông báo cho Công ty bất kỳ sai lệch hoặc thắc mắc gì liên quan đến các thông tin thể hiện trong Thông báo của Công ty trong vòng năm (05) ngày làm việc kể từ khi nhận được Thông báo. Việc Công ty không nhận được thông tin gì từ Khách hàng trong thời hạn nêu trên này coi như Khách hàng đã chấp nhận một cách không huỷ ngang Thông báo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="66" width="496" height="17"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có quyền sở hữu toàn bộ số dư tiền gửi và chứng khoán lưu ký trong Tài khoản, trừ trường hợp có chứng cứ ngược lại.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="38" y="109" width="495" height="33"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có trách nhiệm tuân thủ các quy trình Giao dịch và quy định của Công ty về giao dịch chứng khoán. Khi Lệnh giao dịch chứng khoán của Khách hàng được khớp, số chứng khoán mua được và/hoặc số tiền nhận được sẽ được chuyển vào Tài khoản theo quy định của Công ty phù hợp với quy định hiện hành của Sở Giao dịch Chứng khoán và Pháp luật, trừ khi gặp sự kiện bất khả kháng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="38" y="142" width="495" height="33"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trừ khi Công ty hoặc Pháp luật có quy định khác, khi Khách hàng thực hiện giao dịch mua chứng khoán, số dư tiền trên Tài khoản phải bằng hoặc lớn hơn tổng giá trị chứng khoán được đặt lệnh cộng phí dịch vụ ước tính; khi Khách hàng đặt lệnh bán chứng khoán, số dư chứng khoán trong Tài khoản phải đủ về số lượng và trong tình trạng có thể giao dịch được.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-21" x="38" y="455" width="495" height="32"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng là người có đủ năng lực hành vi dân sự và thẩm quyền để ký kết Hợp đồng này, các thông tin ghi trên Giấy đề nghị mở tài khoản và các tài liệu khác do Khách hàng cung cấp là đầy đủ, trung thực. Khách hàng cam kết thông báo ngay cho Công ty về những thay đổi có liên quan.                                                     .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-22" x="38" y="571" width="495" height="37"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Sau khi lệnh bán chứng khoán của Khách hàng đã được khớp và tiền bán chứng khoán chưa về Tài khoản, trong trường hợp Khách hàng có đề nghị, Công ty có thể vay ứng trước tiền bán theo thỏa thuận giữa Khách hàng và Công ty. Khách hàng đồng ý rằng Công ty có toàn quyền trích tiền từ Tài khoản để thanh toán số tiền Khách hàng đã được vay ứng trước và phí dịch vụ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-23" x="38" y="604" width="495" height="38"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ngoài các quyền được pháp luật Việt Nam cho phép, để thanh toán các nghĩa vụ đến hạn và phải thanh toán của Khách hàng cho Công ty (kể cả các phí dịch vụ phát sinh), Khách hàng đồng ý rằng Công ty được quyền khấu trừ, mà không cần gửi bất kỳ thông báo nào cho Khách hàng (hoặc bất kỳ tổ chức/cá nhân nào khác) (i) số dư tiền gửi/chứng khoán trên bất kỳ và tất cả các tài khoản của Khách hàng tại Công ty và (ii) bất kỳ khoản nợ nào khác của Khách hàng đối với Công ty, để bù trừ các nghĩa vụ của Khách hàng đối với Công ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="65" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="14" y="109" width="58" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="14" y="142" width="58" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-45" x="14" y="422" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.11]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-46" x="14" y="456" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-47" x="14" y="570" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="14" y="605" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.16]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-49" x="14" y="645" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.17]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-67" x="14" y="48" width="519" height="15"/>
+				<textElement>
+					<font fontName="SansSerif" size="7" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều 5: Quyền, nghĩa vụ và cam kết của Khách hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-70" x="14" y="489" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.13]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-71" x="38" y="489" width="495" height="29"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng đã tìm hiểu và được hướng dẫn đầy đủ về các quy định khi giao dịch với Công ty và cam kết tuân thủ các quy định của Công ty. Khách hàng đồng ý rằng khi Khách hàng đặt lệnh mua hoặc bán chứng khoán sẽ không vi phạm hoặc dẫn đến vi phạm bất kỳ quy định nào của Công ty và Pháp luật về giao dịch chứng khoán.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="234" width="495" height="30"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi Lệnh giao dịch chứng khoán đã được đặt, Khách hàng chỉ được phép sửa, huỷ một phần hoặc toàn bộ Lệnh giao dịch chứng khoán đã đặt trong trường hợp Lệnh giao dịch chứng khoán chưa được khớp lệnh, và việc sửa đổi, huỷ bỏ này được gửi trong thời gian và theo hình thức mà Công ty quy định, phù hợp với quy định của Pháp luật và của Sở Giao dịch chứng khoán.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="235" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="15" y="678" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.18]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-23" x="38" y="677" width="495" height="53"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có trách nhiệm duy trì khả năng tiếp nhận thông báo của số điện thoại, số fax, địa chỉ email, địa chỉ liên lạc đã đăng ký với Công ty và có trách nhiệm cập nhật cho Công ty bất kỳ thay đổi gì liên quan đến số điện thoại, số fax, địa chỉ email hoặc địa chỉ liên lạc đã được đăng ký để nhận Thông báo từ Công ty. Trong trường hợp Khách hàng vi phạm nghĩa vụ này, Công ty không chịu bất kỳ trách nhiệm gì đối với những hậu quả phát sinh từ việc Khách hàng không nhận được Thông báo. Khách hàng đồng ý bồi thường cho Công ty mọi thiệt hại phát sinh từ việc Khách hàng vi phạm nghĩa vụ quy định tại Điều này.                                    .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="83" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="83" width="496" height="23"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trừ trường hợp Khách hàng và Công ty có thỏa thuận khác, Số dư tiền gửi trong Tài khoản của Khách hàng được hưởng lãi suất theo mức lãi suất tiền gửi không kỳ hạn theo công bố của Ngân hàng nơi Công ty lưu giữ tiền gửi của Khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="14" y="176" width="58" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="38" y="176" width="496" height="60"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trong trường hợp lệnh mua hoặc lệnh bán của Khách hàng đã được thực hiện khi không đáp ứng được yêu cầu nêu tại Khoản 5.4 Điều này, Khách hàng có trách nhiệm thanh toán số tiền chênh lệch còn thiếu giữa số dư Tài khoản và giá trị giao dịch (trong trường hợp đặt lệnh mua) hoặc chuyển đủ số chứng khoán đã bán vào tài khoản mở tại Công ty trước ngày thanh toán (trong trường hợp đặt lệnh bán). Nếu Khách hàng không thực hiện đầy đủ nghĩa vụ trên đây Công ty được quyền trích tiền hoặc bán một phần hoặc toàn bộ Chứng khoán có trong tài khoản của Khách hàng để thu hồi nợ. Trong trường hợp này, Công ty được quyền đóng Tài khoản và có quyền yêu cầu Khách hàng bồi thường mọi tổn thất và chi phí phát sinh cho Công ty.                                                                                                .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="267" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="268" width="495" height="53"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng đồng ý rằng luôn có những rủi ro tiềm ẩn đối với việc truyền lệnh từ Công ty đến Sở Giao dịch Chứng khoán, bao gồm, nhưng không giới hạn bởi các rủi ro nêu tại Khoản 4.3.1 Điều 4 trên đây, làm ảnh hưởng đến việc thực hiện một cách kịp thời và chính xác Lệnh giao dịch chứng khoán của Khách hàng. Khách hàng đồng ý rằng Công ty cũng như Sở Giao dịch Chứng khoán không phải chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh trong trường hợp các rủi ro đã nêu ảnh hưởng đến việc thực hiện Lệnh giao dịch chứng khoán của Khách hàng.                                                                                                                                 .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="319" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.8]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="318" width="495" height="39"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có trách nhiệm tự kiểm tra kết quả giao dịch bằng các phương thức được Công ty hỗ trợ. Công ty có thể, nhưng không có nghĩa vụ, gửi thông báo kết quả khớp lệnh cho Khách hàng bằng phương thức Khách hàng đã đăng ký. Bất kỳ thắc mắc, khiếu nại nào đối với kết quả khớp lệnh cần được gửi đến Công ty chậm nhất là vào ngày giao dịch tiếp theo. Sau thời gian trên, Khách hàng không có phản hồi được coi là đã chấp nhận một cách không huỷ ngang kết quả khớp lệnh.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="359" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="360" width="495" height="31"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi đặt lệnh mua hoặc bán chứng khoán, Khách hàng mặc nhiên thừa nhận những rủi ro trong giao dịch chứng khoán và thừa nhận rằng Công ty không chịu bất kỳ trách nhiệm nào với Khách hàng hay với bất kỳ bên thứ ba nào đối với các thiệt hại, tổn thất, chi phí hoặc nghĩa vụ tài chính phát sinh cho Khách hàng hoặc bên thứ ba đó trong các trường hợp rủi ro đó.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="38" y="395" width="495" height="24"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có quyền rút một phần hoặc toàn bộ tiền và chứng khoán khỏi Tài khoản khi có nhu cầu hoặc khi chấm dứt Hợp đồng với điều kiện tiền và chứng khoán này không bị ràng buộc, dùng làm tài sản đảm bảo hoặc hạn chế bởi bất  kỳ nghĩa vụ nào khác.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="14" y="395" width="44" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" x="38" y="522" width="495" height="50"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trường hợp Khách hàng uỷ quyền cho người khác giao dịch, Khách hàng phải tuân thủ các quy định của Công ty và Pháp luật về uỷ quyền giao dịch. Khách hàng chịu trách nhiệm cuối cùng về các nghĩa vụ phát sinh do người được uỷ quyền thực hiện trong phạm vi uỷ quyền. Khách hàng đồng ý và cam kết rằng văn bản ủy quyền có đầy đủ chữ ký (hoặc điểm chỉ) của Khách hàng sẽ có hiệu lực ràng buộc mọi trách nhiệm của Khách hàng đối với các giao dịch do người được ủy quyền thực hiện, kể cả khi ủy quyền đó chưa được công chứng/chứng thực.                                                                                                                                 .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="14" y="729" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.19]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-23" x="37" y="728" width="495" height="44"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng cam kết rằng, Công ty không phải chịu trách nhiệm đối với: (i) bất kỳ thiệt hại, chi phí, tổn thất và nghĩa vụ tài chính hoặc việc suy giảm giá trị nào liên quan đến Tài khoản, trừ khi thiệt hại phát sinh do lỗi cố ý trực tiếp của Công ty, và/hoặc (ii) bất kỳ khoản thiệt hại gián tiếp, thiệt hại mang tính hệ quả hoặc tiền phạt nào mà Khách hàng phải chịu. Khách hàng từ bỏ không hủy ngang và vô điều kiện bất kỳ quyền nào cho phép Khách hàng khởi kiện Công ty, trái với các thỏa thuận mà Khách hàng đã cam kết tại Hợp đồng này.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-48" x="15" y="771" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.20]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-23" x="38" y="770" width="495" height="30"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng có trách nhiệm bảo mật các thông tin liên quan đến Tài khoản, mật khẩu và Mã số PIN và phải thông báo ngay cho Công ty khi các thông tin này bị mất hoặc bị tiết lộ. Đối với Khách hàng là tổ chức, người đăng ký Giao dịch trực tuyến và qua điện thoại được mặc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="38" y="2" width="58" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[4.3.3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="69" y="2" width="461" height="46"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="7" pdfFontName="ARIAL.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi Công ty chấp thuận Giao dịch của Khách hàng qua điện thoại và/hoặc qua giao dịch trực tuyến và/hoặc bằng phương thức điện tử khác, bản ghi âm cuộc gọi (đối với Giao dịch qua điện thoại) và bản ghi trên hệ thống (đối với Giao dịch trực tuyến, hoặc phương tiện điện tử khác) được lưu tại Công ty là chứng từ gốc phản ánh nội dung Giao dịch và có hiệu lực pháp lý ràng buộc đối với Khách hàng.                                                                            .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-70" x="14" y="521" width="52" height="14"/>
+				<textElement>
+					<font fontName="SansSerif" size="7"/>
+				</textElement>
+				<text><![CDATA[5.14]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

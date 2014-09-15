@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="Product.TradingService" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/products.jsp" />
+		<put-list-attribute name="js">
+		  <add-attribute value="/js/slideProductContent.js" />
+        </put-list-attribute>
+	</definition>
+	
+	<definition name="Service.Product.DirectAccount" template="/WEB-INF/jsps/productservice/product/DirectAccount.jsp">
+    </definition>
+    <definition name="Service.Product.PrimeAccount" template="/WEB-INF/jsps/productservice/product/PrimeAccount.jsp">
+    </definition>
+    <definition name="Service.Product.SpecialAccount" template="/WEB-INF/jsps/productservice/product/SpecialAccount.jsp">
+    </definition>
+    <definition name="Service.Product.PMDirect" template="/WEB-INF/jsps/productservice/product/PMDirect.jsp">
+    </definition>
+    <definition name="Service.Product.phigiaodich" template="/WEB-INF/jsps/productservice/product/phiGiaoDich.jsp">
+    </definition>
+    <definition name="Service.Product.sanphamgiaodich" template="/WEB-INF/jsps/productservice/product/sanPhamGiaoDich.jsp">
+    </definition>
+    <definition name="Service.Product.sanphamhotrotaichinh" template="/WEB-INF/jsps/productservice/product/sanPhamHoTroTaiChinh.jsp">
+    </definition>
+    <definition name="Service.Product.sanphamthongtincoban" template="/WEB-INF/jsps/productservice/product/sanPhamThongTinCoBan.jsp">
+    </definition>
+    <definition name="Service.Product.bantinchienluocdautu" template="/WEB-INF/jsps/productservice/product/banTinChienLuocDauTu.jsp">
+    </definition>
+    <definition name="Service.Product.chuyenvientuvan" template="/WEB-INF/jsps/productservice/product/chuyenVienTuVan.jsp">
+    </definition>
+    <definition name="Service.Product.phanmemhotro" template="/WEB-INF/jsps/productservice/product/phanMemHoTro.jsp">
+    </definition>
+    <definition name="Service.Product.mobiDirect" template="/WEB-INF/jsps/productservice/product/mobiDirect.jsp">
+    </definition>
+    <definition name="Service.Product.smsDirect" template="/WEB-INF/jsps/productservice/product/smsDirect.jsp">
+    </definition>
+    <definition name="Service.Product.directBoard" template="/WEB-INF/jsps/productservice/product/directBoard.jsp">
+    </definition>
+    <definition name="Service.Product.activeDirect" template="/WEB-INF/jsps/productservice/product/activeDirect.jsp">
+    </definition>
+    <definition name="Service.Product.brokerDesk" template="/WEB-INF/jsps/productservice/product/brokerDesk.jsp">
+    </definition>
+	
+	<definition name="Product.InfoService" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/InfoService.jsp" />
+		
+	</definition>
+	
+	<definition name="Product.AdviceFinance" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/AdviceFinance.jsp" />
+	</definition>
+	
+	<definition name="Product.SpecialProduct" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/SpecialProduct.jsp" />
+	</definition>
+	
+	<definition name="Product.TradingGuide" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/TradingGuide.jsp" />
+	</definition>
+	
+	<definition name="Product.ViewContent" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/ContentDetail.jsp" />
+	</definition>	
+	
+	<definition name="Product.ProductServiceDetail" extends="Base.Web">
+		<put-attribute name="body" value="/WEB-INF/jsps/productservice/ServiceContentContainer.jsp" />
+	</definition>	
+
+</tiles-definitions>

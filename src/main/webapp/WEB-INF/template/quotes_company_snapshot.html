@@ -1,0 +1,246 @@
+#if ($securitiesInfo.getExchangeCode() == $HOSTC) 
+	#if ($securitiesInfo.getTimeType() == 1) 
+	  <div class="tablePrice">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tbl_snapshort1">
+				<tr class="row1">
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.ReferencePrice')
+					</td>
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.CeilingPrice')
+					</td>
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.FloorPrice')
+					</td>
+					<td colspan="6" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.Bid')
+					</td>
+					<td colspan="6" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.Ask')
+					</td>
+					<td colspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.ClosestMatch')
+					</td>
+					<td colspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.Session1')
+					</td>
+					<td colspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.Session2')
+					</td>
+				</tr>
+				<tr class="row1">
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P1</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q1</span></td>
+					<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P2</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q2</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P3</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q3</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P1</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q1</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P2</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q2</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P3</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q3</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P</span></td>
+				  	<td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q</span></td>
+			    </tr>
+				<tr class="row1 no_border_bt">
+				  	<td>$securitiesInfo.getStrReferencePrice()</td>
+				  	<td>$securitiesInfo.getStrCeilingPrice()</td>
+				  	<td>$securitiesInfo.getStrFloorPrice()</td>
+				  	<td>$securitiesInfo.getStrBidP1()</td>
+				  	<td>$securitiesInfo.getStrBidQ1()</td>
+				  	<td>$securitiesInfo.getStrBidP2()</td>
+				  	<td>$securitiesInfo.getStrBidQ2()</td>
+				  	<td>$securitiesInfo.getStrBidP3()</td>
+				  	<td>$securitiesInfo.getStrBidQ3()</td>
+				  	<td>$securitiesInfo.getStrAskP1()</td>
+				  	<td>$securitiesInfo.getStrAskQ1()</td>
+				  	<td>$securitiesInfo.getStrAskP2()</td>
+				  	<td>$securitiesInfo.getStrAskQ2()</td>
+				  	<td>$securitiesInfo.getStrAskP3()</td>
+				  	<td>$securitiesInfo.getStrAskQ3()</td>
+				  	<td>$securitiesInfo.getStrClosedP()</td>
+				  	<td>$securitiesInfo.getStrClosedQ()</td>
+				  	<td>$securitiesInfo.getStrSeesion1P()</td>
+				  	<td>$securitiesInfo.getStrSeesion1Q()</td>
+				  	<td>$securitiesInfo.getStrSeesion2P()</td>
+				  	<td>$securitiesInfo.getStrSeesion2Q()</td>
+			    </tr>
+	  		</table>
+		</div>
+	#elseif ($securitiesInfo.getTimeType() == 2)
+		<div class="tablePrice">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tbl_snapshort1">
+				<tr class="row1">
+	            	<td class="col_1" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.OpenPrice')</td>
+	                <td class="col_2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.ClosedPrice')</td>
+	                <td class="col_3" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.TodayChange')</td>
+	                <td class="col_4" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.BidVolume')</td>
+	                <td class="col_5" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.AskVolume')</td>
+	                <td class="col_6" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.TransactedVolume')</td>
+	                <td class="col_7" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">$i18n.getText('Snapshot.CompanyInfo.CellName.HighestPrice')</td>
+	                <td class="col_8"  style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom; border-right:none">$i18n.getText('Snapshot.CompanyInfo.CellName.LowestPrice')</td>
+	            </tr>		
+	            <tr class="row1 no_border_bt">
+	                <td class="col_1">$securitiesInfo.getStrOpenPrice()</td>
+	                <td class="col_2">$securitiesInfo.getStrClosePrice()</td>
+	                #if ($utils.lessThanZezo($securitiesInfo.getTodayChangePrice()))
+	                	<td class="col_3 red"><img src="<web:url value='/images/front/down.gif'/>"  style="margin-right:10px;"/>$securitiesInfo.getStrTodayChange() ($securitiesInfo.getStrTodayChangePercent()%)</td>
+	                #elseif ($utils.greaterThanZezo($securitiesInfo.getTodayChangePrice()))
+	                	<td class="col_3 green"><img src="<web:url value='/images/front/up_2.gif'/>"  style="margin-right:10px;"/>+$securitiesInfo.getStrTodayChange() (+$securitiesInfo.getStrTodayChangePercent()%)</td>
+	                #else
+	                	<td class="col_3 red"><img src="<web:url value='/images/front/down.gif'/>"  style="margin-right:10px;"/>$securitiesInfo.getStrTodayChange() ($securitiesInfo.getStrTodayChangePercent()%)</td>
+	                #end
+	                <td class="col_4">$securitiesInfo.getStrBidVolume()</td>
+	                <td class="col_5">$securitiesInfo.getStrAskVolume()</td>
+	                <td class="col_6">$securitiesInfo.getStrTransactedVolume()</td>
+	                <td class="col_7">$securitiesInfo.getStrHighestPrice()</td>
+	                <td class="col_8" style="border-right:none;">$securitiesInfo.getStrLowestPrice()</td>
+	            </tr>
+			</table>
+		</div>
+	#end
+#elseif ($securitiesInfo.getExchangeCode() == $HASTC) 
+	#if ($securitiesInfo.getTimeType() == 1) 
+	  	<div class="tablePrice">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tbl_snapshort1">
+				<tr class="row1">	
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.ReferencePrice')
+					</td>
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.CeilingPrice')
+					</td>
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.FloorPrice')
+					</td>
+					<td rowspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.TotalVolume')
+					</td>
+					<td colspan="6" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.Bid')
+					</td>
+					<td colspan="6" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.Ask')
+					</td>
+					<td colspan="2" style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">
+						$i18n.getText('Snapshot.CompanyInfo.CellName.RecentTransaction')
+					</td>
+				</tr>				
+				<tr class="row1">
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P1</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q1</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P2</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q2</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P3</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q3</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P1</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q1</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P2</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q2</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P3</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q3</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">P</span></td>
+				  <td><span style="background:url(../images/img/imgbgr_firstline.gif) repeat-x left bottom">Q</span></td>
+			    </tr>
+				<tr class="row1 no_border_bt">
+				  <td>$securitiesInfo.getStrReferencePrice()</td>
+				  <td>$securitiesInfo.getStrCeilingPrice()</td>
+				  <td>$securitiesInfo.getStrFloorPrice()</td>
+				  <td>$securitiesInfo.getStrNetVolumn()</td>
+				  <td>$securitiesInfo.getStrBidP1()</td>
+				  <td>$securitiesInfo.getStrBidQ1()</td>
+				  <td>$securitiesInfo.getStrBidP2()</td>
+				  <td>$securitiesInfo.getStrBidQ2()</td>
+				  <td>$securitiesInfo.getStrBidP3()</td>
+				  <td>$securitiesInfo.getStrBidQ3()</td>
+				  <td>$securitiesInfo.getStrAskP1()</td>
+				  <td>$securitiesInfo.getStrAskQ1()</td>
+				  <td>$securitiesInfo.getStrAskP2()</td>
+				  <td>$securitiesInfo.getStrAskQ2()</td>
+				  <td>$securitiesInfo.getStrAskP3()</td>
+				  <td>$securitiesInfo.getStrAskQ3()</td>
+				  <td>$securitiesInfo.getStrRecentTransactionP()</td>
+				  <td>$securitiesInfo.getStrRecentTransactionQ()</td>
+			    </tr>
+	  		</table>
+		</div>
+	#elseif ($securitiesInfo.getTimeType() == 2)
+		<div class="tablePrice">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tbl_snapshort1">
+				<tr class="row1">
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.OpenPrice')
+					</td>
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.ClosedPrice')
+					</td>
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.TodayChange')
+					</td>
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.NetVolume')
+					</td>
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.HighestPrice')
+					</td>
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.LowestPrice')
+					</td>
+					<td>
+						$i18n.getText('Snapshot.CompanyInfo.CellName.AveragePrice')
+					</td>					
+				</tr>
+				<tr class="row1 no_border_bt">
+				  <td>$securitiesInfo.getStrOpenPrice()</td>
+				  <td>
+				  	$securitiesInfo.getStrClosePrice()
+				  </td>
+				  #if ($utils.lessThanZezo($securitiesInfo.getTodayChangePrice()))
+				  	<td class="col_3 red">
+						<img src="<web:url value='/images/front/down.gif'/>" border="0px"/>&nbsp;
+					$securitiesInfo.getStrTodayChange() ($securitiesInfo.getStrTodayChangePercent()%)
+					</td>
+				  #elseif ($utils.greaterThanZezo($securitiesInfo.getTodayChangePrice()))
+				  	<td class="col_3 green">
+						<img src="<web:url value='/images/front/up_2.gif'/>" border="0px"/>&nbsp;
+						+$securitiesInfo.getStrTodayChange() (+$securitiesInfo.getStrTodayChangePercent()%)
+					</td>
+				  #else
+				  	<td>
+						$securitiesInfo.getStrTodayChange() ($securitiesInfo.getStrTodayChangePercent()%)
+					</td>
+				  #end		  
+				  <td>$securitiesInfo.getStrNetVolumn()</td>
+				  <td>$securitiesInfo.getStrHighestPrice()</td>
+				  <td>$securitiesInfo.getStrLowestPrice()</td>
+				  <td>$securitiesInfo.getStrAveragePrice()</td>
+			    </tr>
+	  		</table>
+		</div>		
+	#end
+#elseif ($securitiesInfo.getExchangeCode() == $OTC) 
+	<div class="tablePrice">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" class="tbl_snapshort1">
+			<tr class="row1">
+				#foreach( $otcInfo in $securitiesInfo.getOtcInfoList() )
+					<td>$i18n.getText('Snapshot.CompanyInfo.CellName.Date')
+						$securitiesInfo.getStrDate($otcInfo)
+					</td>
+				#end
+			</tr>
+			<tr class="row1 no_border_bt">
+				#foreach( $otcInfo in $securitiesInfo.getOtcInfoList() )
+					<td>
+						$otcInfo.getClosePrice()
+					</td>
+				#end
+		    </tr>
+	  	</table>
+	</div>
+#end

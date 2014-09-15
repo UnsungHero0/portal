@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Define Invest Tools Module -->
+	<package name="Invest" namespace="/invest" extends="default-web">
+	</package>
+	<package name="InvestAjax" namespace="/ajax/invest" extends="default-web">
+	</package>
+</struts>

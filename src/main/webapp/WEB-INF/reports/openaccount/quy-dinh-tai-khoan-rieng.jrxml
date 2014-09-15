@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quy-dinh" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement key="rectangle-1" x="1" y="27" width="535" height="775"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="staticText-4" x="34" y="47" width="495" height="54"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Dịch vụ quản lý tài khoản (Prime Account) là dịch vụ của VNDIRECT trong đó Khách hàng được lựa chọn và chỉ định một Chuyên viên của VNDIRECT quản lý tài khoản, hỗ trợ cung cấp cập nhật thông tin thị trường và thông tin về cơ hội đầu tư, có thể thay mặt nhà đầu tư thực hiện đặt lệnh mua/bán chứng khoán và hỗ  trợ sử dụng các sản phẩm và dịch vụ  tài chính của công  ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="62" y="124" width="469" height="41"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng đã được giải  thích về nội dung của dịch vụ quản  lý tài khoản, các quy định và hướng dẫn sử dụng dịch vụ. Khách hàng đồng ý lựa chọn và cam kết tuân thủ các quy định và hướng dẫn sử dụng đối với dịch vụ này. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-13" x="62" y="168" width="468" height="86"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi lựa chọn Chuyên viên quản lý tài khoản, Khách hàng xác nhận đã được VNDIRECT cung cấp thông tin về học vấn và kinh nghiệm của Chuyên viên quản lý tài khoản. Khách hàng đã tìm hiểu về Chuyên viên quản  lý tài khoản và tự chịu trách nhiệm về sự phù hợp trong việc  lựa chọn Chuyên viên quản lý tài khoản, và uỷ quyền cho Chuyên viên quản lý tài khoản hỗ trợ khách hàng thực hiện các giao dịch đặt  lệnh mua/bán chứng khoán và các sản phẩm dịch vụ tài chính của VNDIRECT . Khách hàng xác nhận rằng Chuyên viên quản lý tài khoản có thể nhận biết Khách hàng qua điện thoại và đồng ý với các lệnh giao dịch chứng khoán mà Chuyên viên quản  lý  tài khoản  thực hiện  thay mặt Khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="62" y="258" width="469" height="99"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng đã được giải thích và hiểu rằng Chuyên viên quản  lý tài khoản không có chức năng nhận uỷ thác đưa ra các quyết định đầu tư thay cho khách hàng. Không một thông tin hay khuyến cáo mua/bán nào từ Chuyên viên quản lý tài khoản có thể được giải thích hay ngầm định đảm bảo rằng Khách hàng không bị thua lỗ hoặc đảm bảo cam kết về mức thu nhập hay lợi nhuận đạt được. Chuyên viên chăm sóc tài khoản có trách nhiệm cung cấp trung thực các thông tin về thị trường, thông tin về cơ hội đầu tư, các báo cáo phân tích của công ty và có thể cung cấp các nhận định mang tính cá nhân, nhưng trong mọi trường hợp không được phép tự chịu trách nhiệm quyết định mua/bán chứng khoán khi không có  lệnh của khách hàng trên cơ sở các quyết định đầu  tư do khách hàng đưa ra.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="34" y="29" width="65" height="16"/>
+				<textElement>
+					<font fontName="Arial" isBold="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Định nghĩa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="43" y="124" width="19" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[2.1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="43" y="167" width="19" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[2.2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="43" y="258" width="19" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[2.3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-54" x="1" y="9" width="533" height="15"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU KHOẢN VỀ SỬ DỤNG DỊCH VỤ QUẢN LÝ TÀI KHOẢN (PRIME ACCOUNT)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="19" y="29" width="15" height="16"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="34" y="103" width="458" height="16"/>
+				<textElement>
+					<font fontName="Arial" isBold="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi đăng ký Dịch vụ quản  lý  tài khoản  (Prime Account), Khách hàng xác nhận và đồng ý  rằng:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="18" y="103" width="15" height="16"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="43" y="361" width="19" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[2.4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="62" y="361" width="467" height="51"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng hoàn toàn ý thức được các rủi ro có thể phát sinh trong quá trình đầu tư chứng khoán và đồng ý chấp nhận các rủi ro này. Khách hàng đồng ý rằng VNDIRECT và các nhân viên của Công ty sẽ được miễn trừ đối với bất kỳ khoản thua lỗ nào phát sinh trong quá trình đầu tư chứng khoán của Khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="62" y="418" width="469" height="51"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Tất cả các cuộc gọi đặt lệnh của Khách hàng tới VNDIRECT sẽ được ghi âm để bảo vệ lợi ích của hai bên khi có tranh chấp. VNDIRECT không chấp nhận cuộc gọi đặt lệnh qua số điện thoại di động cá nhân của Chuyên viên quản lý tài khoản. Nếu có bất cứ sai sót, nhầm lẫn hay tranh chấp nào phát sinh liên quan đến các cuộc gọi qua di động, Khách hàng sẽ chịu hoàn toàn trách nhiệm.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="43" y="418" width="19" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[2.5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" x="61" y="475" width="469" height="42"/>
+				<textElement>
+					<font fontName="Arial" size="10" pdfFontName="times.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khách hàng đồng ý rằng VNDIRECT có toàn quyền thay đổi mức phí dịch vụ và có trách nhiệm thông báo cho Khách hàng trước  ít nhất 03  (ba) ngày kể từ thời điểm áp dụng. Khách hàng cam kết  thanh  toán các khoản phí dịch vụ  theo quy định của VNDIRECT.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="41" y="475" width="20" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[2.6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="33" y="522" width="496" height="41"/>
+				<textElement>
+					<font fontName="Arial" isBold="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Khi phát hiện Chuyên viên quản  lý tài khoản vi phạm đạo đức nghề nghiệp hay có bất kỳ phàn nàn nào về dịch vụ quản lý tài khoản của VNDIRECT, hay có đăng ký thay đổi, đăng ký dừng dịch vụ, Khách hàng cần  liên hệ ngay với bộ phận dịch vụ khách hàng của VNDIRECT để được giải quyết.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="19" y="522" width="15" height="16"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-37" x="19" y="565" width="15" height="16"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-27" x="34" y="565" width="497" height="30"/>
+				<textElement>
+					<font fontName="Arial" isBold="false" pdfFontName="ARIALBD.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Điều khoản về sử dụng Gói Dịch quản lý tài khoản này là phần không tách rời của Hợp đồng mở tài khoản giao dịch chứng khoán ký giữa Khách hàng và VNDIRECT.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

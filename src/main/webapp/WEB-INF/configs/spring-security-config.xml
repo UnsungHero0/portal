@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+	<http pattern="/css/*" security="none" />
+	<http pattern="/htmleditor/*" security="none" />
+	<http pattern="/images/*" security="none" />
+	<http pattern="/js/*" security="none" />
+
+	<http auto-config="true" entry-point-ref="casProcessingFilterEntryPoint">
+		<!-- Define for switch user functionality -->
+		<intercept-url pattern="/switchuser.jsp" access="ROLE_ADMIN" />
+		<intercept-url pattern="/j_spring_security_switch_user"
+			access="ROLE_ADMIN" />
+		<intercept-url pattern="/xac-thuc*"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+
+
+		<!-- Check Forward Security -->
+		<intercept-url pattern="/home/ForwardSecUrl*"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+
+		<!-- Business Security -->
+		<intercept-url pattern="/osc/OSCAfterLogin*"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+		<!-- <intercept-url pattern="/osc/viewContentDetail*" access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> -->
+
+		<!-- <intercept-url pattern="/analysis/StockScreenerSummary*" access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/listed/IncomeForecast*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/StockScreenerList*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> -->
+
+
+		<!-- <intercept-url pattern="/cong-cu-phan-tich-chung-khoan/ket-qua-sang-loc-co-phieu.*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/cong-cu-phan-tich-chung-khoan/luu-tieu-chi-sang-loc.*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/cong-cu-phan-tich-chung-khoan/danh-sach-cac-tieu-chi-da-luu.*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> -->
+
+
+		<intercept-url pattern="/thong-tin-co-ban*"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+		<intercept-url pattern="/thong-tin-giao-dich*"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+		<intercept-url pattern="/thay-doi-mat-khau"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+		<intercept-url pattern="/ajax/user/UserProfileAJAX_*"
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+			requires-channel="any" />
+			
+		<intercept-url pattern="/y-tuong-dau-tu/co-phieu-khuyen-nghi*"
+            access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+            requires-channel="any" />
+        <intercept-url pattern="/y-tuong-dau-tu/co-phieu-khuyen-nghi/*"
+            access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+            requires-channel="any" />
+
+        <!-- stock-highlights co-phieu-tam-diem -->
+		<!-- <intercept-url pattern="/co-phieu-tam-diem/xem-bao-cao*"
+            access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING"
+            requires-channel="any" /> -->
+
+		<!--<intercept-url pattern="/analysis/*" access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/ajax/analysis/*" access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> --><!-- <intercept-url pattern="/analysis/SectorOverview*" access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/SectorDetails*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/IndustryDetails*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> -->
+		<!-- <intercept-url pattern="/analysis/ReportStrategic*" access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/ReportCompany*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/ReportQuarter*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/ReportRiskAlert*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/ReportQuickReport*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> <intercept-url pattern="/analysis/ReportStatistic*" 
+			access="ROLE_ONLINE_FREE_REGISTER,ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" 
+			requires-channel="any"/> -->
+
+		<!-- Define for default URL security -->
+		<intercept-url pattern="/*"
+			access="IS_AUTHENTICATED_ANONYMOUSLY, ROLE_GUEST" requires-channel="any" />
+
+		<anonymous username="guest" granted-authority="ROLE_GUEST" />
+		<remember-me key="${sec.rememberme.key}" />
+
+		<logout logout-url="/${sso.online.sec_logout.uri}"
+			logout-success-url="${sso.online.logout.url}?_vnds_a=${sso.online.auth.id}url=${sso.online.home.forward}"
+			invalidate-session="false" delete-cookies="JSESSIONID" />
+
+		<session-management>
+			<concurrency-control max-sessions="20"
+				expired-url="/index.jsp?expired=true" session-registry-alias="WebSessionRegistry" />
+		</session-management>
+
+		<port-mappings>
+			<port-mapping http="${sec.http.port}" https="${sec.https.port}" />
+		</port-mappings>
+
+		<access-denied-handler error-page="/accessDenied.jsp" />
+
+		<custom-filter ref="casAuthenticationFilter" after="CAS_FILTER" />
+		<custom-filter ref="sessionManagementFilter" before="SESSION_MANAGEMENT_FILTER" />
+	</http>
+
+	<beans:bean id="serviceProperties"
+		class="org.springframework.security.cas.ServiceProperties">
+		<beans:property name="service"
+			value="${sso.online.home.url}/${sso.online.sec_check.uri}" />
+		<beans:property name="sendRenew" value="false" />
+	</beans:bean>
+
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider ref="casAuthenticationProvider" />
+	</authentication-manager>
+
+	<!-- Automatically receives AuthenticationEvent messages -->
+	<beans:bean id="loggerListener"
+		class="org.springframework.security.access.event.LoggerListener" />
+
+	<beans:bean id="casAuthenticationFilter"
+		class="vn.com.vndirect.web.filter.CasAuthenticationFilter">
+		<beans:property name="authenticationManager" ref="authenticationManager" />
+		<beans:property name="filterProcessesUrl" value="/${sso.online.sec_check.uri}" />
+		<beans:property name="authenticationFailureHandler">
+			<beans:bean
+				class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+				<beans:property name="defaultFailureUrl" value="/casfailed.jsp" />
+			</beans:bean>
+		</beans:property>
+		<beans:property name="authenticationSuccessHandler"> 
+			<beans:bean class="vn.com.vndirect.web.filter.SavedRequestAwareAuthenticationSuccessHandler"> 
+				<beans:property name="targetUrlParameter" value="${sso.online.home.proxyReceptorUrl}"/> 
+			</beans:bean>
+		</beans:property> 
+		<beans:property name="proxyGrantingTicketStorage" ref="proxyGrantingTicketStorage" />
+		<beans:property name="proxyReceptorUrl"	value="${sso.online.home.proxyReceptorUrl}" />
+	</beans:bean>
+	<!-- <bean id="casProcessingFilterEntryPoint" class="org.springframework.security.cas.web.CasAuthenticationEntryPoint"> 
+		<property name="loginUrl" value="${sso.online.login.url}"/> <property name="serviceProperties" 
+		ref="serviceProperties"/> </bean> -->
+	<beans:bean id="casProcessingFilterEntryPoint"
+		class="vn.com.vndirect.web.security.VNDSCasAuthenticationEntryPoint">
+		<beans:property name="fwAuthErrorUrlJson"
+			value="/WEB-INF/jsps/exceptions/VNDSCasAuthRequiredAJAXJson.jsp" />
+		<beans:property name="fwAuthErrorUrlHtml"
+			value="/WEB-INF/jsps/exceptions/VNDSCasAuthRequiredAJAXHtml.jsp" />
+
+		<beans:property name="loginUrl" value="${sso.online.login.url}" />
+		<beans:property name="stockPickParam" value="${sso.online.login.url.stockPickParam}" />
+		<beans:property name="serviceProperties" ref="serviceProperties" />
+	</beans:bean>
+
+
+	<beans:bean id="casAuthenticationProvider"
+		class="org.springframework.security.cas.authentication.CasAuthenticationProvider">
+		<beans:property name="userDetailsService" ref="AuthenticationService" />
+		<beans:property name="serviceProperties" ref="serviceProperties" />
+		<beans:property name="ticketValidator">
+			<beans:bean
+				class="vn.com.vndirect.web.security.VNDSCasServiceTicketValidator">
+				<beans:constructor-arg index="0"
+					value="${sso.online.ticket.validation.url}" />
+				<beans:property name="externalServices" ref="TicketProxyUrlMapping" />
+				<beans:property name="proxyGrantingTicketStorage"
+					ref="proxyGrantingTicketStorage" />
+				<beans:property name="proxyCallbackUrl"
+					value="${sso.online.home.proxyCallbackUrl}" />
+				<beans:property name="customParameters">
+					<beans:map>
+						<beans:entry key="_vnds_a" value="online" />
+					</beans:map>
+				</beans:property>
+				<beans:property name="renew" value="false" />
+			</beans:bean>
+		</beans:property>
+		<beans:property name="key"
+			value="an_id_for_this_auth_provider_only" />
+	</beans:bean>
+
+	<!-- Using org.springframework.context.i18n.LocaleContextHolder with spring-security 
+		multi-language -->
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<beans:property name="basename" value="META-INF/security-i18n/messages" />
+	</beans:bean>
+
+	<beans:bean id="proxyGrantingTicketStorage"
+		class="org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl" />
+
+
+	<!-- Roles: ROLE_ADMIN, ROLE_PROFESSOR, ROLE_LABMEMBER -->
+	<beans:bean id="AuthenticationService"
+		class="vn.com.vndirect.web.security.WebUserDetailsService">
+		<beans:property name="userManager" ref="UserManager" />
+		<beans:property name="ignoreUsers">
+			<beans:list>
+				<beans:value>_cas_stateful_</beans:value>
+				<beans:value>_cas_stateless_</beans:value>
+			</beans:list>
+		</beans:property>
+		<!-- <beans:property name="userManager" ref="UserManager"/> -->
+	</beans:bean>
+
+
+	<!-- -->
+	<beans:bean id="CheckAfterLoginFilterEntryPoint"
+		class="vn.com.vndirect.web.filter.CheckAfterLoginFilterEntryPoint">
+		<beans:property name="freeUserRoles" value="ROLE_ONLINE_FREE_REGISTER" />
+		<beans:property name="normalUserRoles"
+			value="ROLE_ONLINE_UPDATE_ACCOUNT_INFO,ROLE_OPEN_AN_ACCOUNT,ROLE_ONLINE_VIEW_ACCOUNT_INFO,ROLE_ONLINE_TRADING" />
+	</beans:bean>
+	
+	
+	<beans:bean id="sessionManagementFilter" class="org.springframework.security.web.session.SessionManagementFilter" >
+		<beans:constructor-arg ref="securityContextRepository" />
+		<beans:property name="invalidSessionStrategy">
+	        <beans:bean class="org.springframework.security.web.session.SimpleRedirectInvalidSessionStrategy">
+	            <beans:constructor-arg name="invalidSessionUrl" value="/timeout.shtml" />
+	        </beans:bean>
+        </beans:property>
+	</beans:bean>
+	
+    <beans:bean id="securityContextRepository" class="org.springframework.security.web.context.HttpSessionSecurityContextRepository" />
+</beans:beans>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vndirect>
+	<ignore-message code="[000000000],[],[0],[000000000]"/>	
+	<okie-message code="[],[0],[000000000]"/>
+	<unknown-message code="UNKNOW_STATUS"/>
+	
+	<message-key code="UNKNOW_STATUS" message="UNKNOW_STATUS" i18nKey="ErrorMessage.VNDSService.Systems.UNKNOW_STATUS" />
+	<message-key code="000000000" message="OK" i18nKey="ErrorMessage.VNDSService.Systems.OK" />
+	<message-key code="0" message="OK" i18nKey="ErrorMessage.VNDSService.Systems.OK" />
+	<message-key code="" message="OK" i18nKey="ErrorMessage.VNDSService.Systems.OK" />
+			
+	<!-- Message for System code: 1000xxxxx -->	
+	<message-key code="100000000" message="ERR_100000000_AUTH" i18nKey="ErrorMessage.VNDSService.Systems.ERR_AUTH" />
+	<message-key code="100000001" message="ERR_100000001_SYSTEM_EXCEPTION" i18nKey="ErrorMessage.VNDSService.Systems.ERR_SYSTEM_EXCEPTION" />
+	<message-key code="100000002" message="ERR_100000002_FUNCTIONAL_EXCEPTION" i18nKey="ErrorMessage.VNDSService.Systems.ERR_FUNCTIONAL_EXCEPTION" />
+	<message-key code="100000003" message="ERR_100000003_UNKNOW_EXCEPTION" i18nKey="ErrorMessage.VNDSService.Systems.ERR_UNKNOW_EXCEPTION" />
+	<message-key code="100000004" message="ERR_100000004_INPUT_NULL" i18nKey="ErrorMessage.VNDSService.Systems.ERR_INPUT_NULL" />
+	
+	<!-- Message for OnlineUser code: 1001xxxxx -->	
+	<message-key code="100100001" message="ERR_100100001_ONLINE_USER_EXISTED" i18nKey="ErrorMessage.VNDSService.OnlineUser.ERR_ONLINE_USER_EXISTED" />
+	<message-key code="100100002" message="ERR_100100002_EMAIL_USED" i18nKey="ErrorMessage.VNDSService.OnlineUser.ERR_EMAIL_USED" />
+	<message-key code="100100010" message="ERR_100100010_CUSTODY_CODE_IS_NULL" i18nKey="ErrorMessage.VNDSService.Systems.CUSTODY_CODE_NULL" />
+	
+	<message-key code="100100003" message="ERR_100100003_USER_NAME_TOO_LONG" i18nKey="ErrorMessage.VNDSService.OnlineUser.USER_NAME_TOO_LONG" />
+	<message-key code="100100004" message="ERR_100100004_FULL_NAME_TOO_LONG" i18nKey="ErrorMessage.VNDSService.OnlineUser.FULL_NAME_TOO_LONG" />
+	<message-key code="100100005" message="ERR_100100005_PASSWORD_TOO_LONG" i18nKey="ErrorMessage.VNDSService.OnlineUser.PASSWORD_TOO_LONG" />
+	<message-key code="100100006" message="ERR_100100006_EMAIL_TOO_LONG" i18nKey="ErrorMessage.VNDSService.OnlineUser.ERR_EMAIL_USED" />
+
+	<message-key code="100100007" message="ERR_100100007_USER_DISABLED" i18nKey="ErrorMessage.VNDSService.OnlineUser.ERR_USER_DISABLED" />
+	<message-key code="100100008" message="ERR_100100008_USER_UNACTIVE" i18nKey="ErrorMessage.VNDSService.OnlineUser.ERR_USER_UNACTIVE" />	
+	<message-key code="100100009" message="ERR_100100009_USER_UNEXIST" i18nKey="ErrorMessage.VNDSService.OnlineUser.ERR_USER_UNEXIST" />
+	
+	<!-- Message for StreamQuotes service code: 1002xxxxx -->
+	
+	<!-- Message for PendingAccount service code: 1003xxxxx -->						
+	
+	<!-- Message for IdentityGuard code: 1004xxxxx -->		
+	<message-key code="100400000" message="ERR_100400000_REMOTE_ERROR" i18nKey="ErrorMessage.VNDSService.IdentityGuard.REMOTE_ERROR" />
+	<message-key code="100400001" message="ERR_100400001_ANON_AUTH_DISABLED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.ANON_AUTH_DISABLED" />
+	<message-key code="100400002" message="ERR_100400002_AUTH_FAILED_USER_LOCKED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.AUTH_FAILED_USER_LOCKED" />
+	<message-key code="100400003" message="ERR_100400003_AUTH_TYPE_NOT_ALLOWED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.AUTH_TYPE_NOT_ALLOWED" />
+	<message-key code="100400004" message="ERR_100400004_CARD_SUPERSEDED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.CARD_SUPERSEDED" />
+	<message-key code="100400005" message="ERR_100400005_INVALID_PARAMETER" i18nKey="ErrorMessage.VNDSService.IdentityGuard.INVALID_PARAMETER" />
+	<message-key code="100400006" message="ERR_100400006_INVALID_RESPONSE" i18nKey="ErrorMessage.VNDSService.IdentityGuard.INVALID_RESPONSE" />
+	<message-key code="100400007" message="ERR_100400007_INVALID_TOKEN_PIN_CHANGE" i18nKey="ErrorMessage.VNDSService.IdentityGuard.INVALID_TOKEN_PIN_CHANGE" />
+	<message-key code="100400008" message="ERR_100400008_NO_ACTIVE_CARDS" i18nKey="ErrorMessage.VNDSService.IdentityGuard.NO_ACTIVE_CARDS" />
+	<message-key code="100400009" message="ERR_100400009_NO_ACTIVE_TOKENS" i18nKey="ErrorMessage.VNDSService.IdentityGuard.NO_ACTIVE_TOKENS" />
+	<message-key code="100400010" message="ERR_100400010_NO_EXTERNAL_AUTH_CONFIGURED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.NO_EXTERNAL_AUTH_CONFIGURED" />
+	<message-key code="100400011" message="ERR_100400011_NO_OTP" i18nKey="ErrorMessage.VNDSService.IdentityGuard.NO_OTP" />
+	<message-key code="100400012" message="ERR_100400012_NO_VALID_CARDS" i18nKey="ErrorMessage.VNDSService.IdentityGuard.NO_VALID_CARDS" />
+	<message-key code="100400013" message="ERR_100400013_NO_VALID_TOKENS" i18nKey="ErrorMessage.VNDSService.IdentityGuard.NO_VALID_TOKENS" />
+	<message-key code="100400014" message="ERR_100400014_OTP_EXPIRED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.OTP_EXPIRED" />
+	<message-key code="100400015" message="ERR_100400015_PIN_EXPIRED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.PIN_EXPIRED" />
+	<message-key code="100400016" message="ERR_100400016_PIN_MAX_USES" i18nKey="ErrorMessage.VNDSService.IdentityGuard.PIN_MAX_USES" />
+	<message-key code="100400017" message="ERR_100400017_QA_NOT_ENOUGH_QUESTIONS" i18nKey="ErrorMessage.VNDSService.IdentityGuard.QA_NOT_ENOUGH_QUESTIONS" />
+	<message-key code="100400018" message="ERR_100400018_SHARED_SECRET_GET_ERROR" i18nKey="ErrorMessage.VNDSService.IdentityGuard.SHARED_SECRET_GET_ERROR" />
+	<message-key code="100400019" message="ERR_100400019_SHARED_SECRET_MAX_NUM" i18nKey="ErrorMessage.VNDSService.IdentityGuard.SHARED_SECRET_MAX_NUM" />
+	<message-key code="100400020" message="ERR_100400020_SHARED_SECRET_MAX_VALUE_SIZE" i18nKey="ErrorMessage.VNDSService.IdentityGuard.SHARED_SECRET_MAX_VALUE_SIZE" />
+	<message-key code="100400021" message="ERR_100400021_SHARED_SECRET_REMOVE_ERROR" i18nKey="ErrorMessage.VNDSService.IdentityGuard.SHARED_SECRET_REMOVE_ERROR" />
+	<message-key code="100400022" message="ERR_100400022_SHARED_SECRET_SET_ERROR" i18nKey="ErrorMessage.VNDSService.IdentityGuard.SHARED_SECRET_SET_ERROR" />
+	<message-key code="100400023" message="ERR_100400023_SYSTEM_ERROR" i18nKey="ErrorMessage.VNDSService.IdentityGuard.SYSTEM_ERROR" />
+	<message-key code="100400024" message="ERR_100400024_USER_DOES_NOT_EXIST" i18nKey="ErrorMessage.VNDSService.IdentityGuard.USER_DOES_NOT_EXIST" />
+	<message-key code="100400025" message="ERR_100400025_USER_LOCKED" i18nKey="ErrorMessage.VNDSService.IdentityGuard.USER_LOCKED" />
+	<message-key code="100400026" message="ERR_100400026_USER_NO_CHALLENGE" i18nKey="ErrorMessage.VNDSService.IdentityGuard.USER_NO_CHALLENGE" />
+	<message-key code="100400027" message="ERR_100400027_USER_UPDATE_ERROR" i18nKey="ErrorMessage.VNDSService.IdentityGuard.USER_UPDATE_ERROR" />
+	<message-key code="100400028" message="ERR_100400028_USERNAME_NOT_UNIQUE" i18nKey="ErrorMessage.VNDSService.IdentityGuard.USERNAME_NOT_UNIQUE" />
+	<message-key code="100400055" message="ERR_100400055_INVALID_SERIAL_NUMBER" i18nKey="ErrorMessage.VNDSService.IdentityGuard.INVALID_SERIAL_NUMBER" />
+					
+	<!-- Message for Portfolios service code: 1005xxxxx -->	
+	<message-key code="100500001" message="ERR_100500001_ONLINE_USER_NOT_EXISTED" i18nKey="ErrorMessage.VNDSService.Portfolios.ERR_ONLINE_USER_NOT_EXISTED" />
+	
+	<message-key code="100500002" message="ERR_100500002_PORTFOLIO_NAME_TOO_LONG" i18nKey="ErrorMessage.VNDSService.Portfolios.PORTFOLIO_NAME_TOO_LONG" />
+	<message-key code="100500003" message="ERR_100500003_PORTFOLIO_SYMBOL_TOO_LONG" i18nKey="ErrorMessage.VNDSService.Portfolios.PORTFOLIO_SYMBOL_TOO_LONG" />
+	
+	<message-key code="100500004" message="ERR_100500004_NOT_ENOUGH_MONE_TO_WITHDRAW" i18nKey="ErrorMessage.VNDSService.Portfolios.NOT_ENOUGH_MONE_TO_WITHDRAW" />
+										
+</vndirect>

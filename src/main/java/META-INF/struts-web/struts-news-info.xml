@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Chi tiet tin trong phan Quan he co dong -->
+	<package name="IR-NewsDetail" namespace="/quan-he-co-dong-vndirect"
+		extends="default-web">
+		<action name="/cong-bo-thong-tin/*" class="springNewsAction"
+			method="executeViewNewsDetail_IR">
+			<param name="newsType">Disclousure</param>
+			<param name="newsURL">{1}</param>
+			<result>ir.newsDetail</result>
+		</action>
+		<action name="/tin-doanh-nghiep/*" class="springNewsAction"
+			method="executeViewNewsDetail_IR">
+			<param name="newsType">MacVN</param>
+			<param name="newsURL">{1}</param>
+			<result>ir.newsDetail.event</result>
+		</action>
+	</package>
+
+	<!-- Chi tiet tin trong phan Thong tin co phieu -->
+	<package name="SI-NewsDetail" namespace="/thong-tin-co-phieu"
+		extends="default-web">
+		<action name="cong-bo-thong-tin/*" class="springNewsAction"
+			method="viewNewsDetail_si">
+			<param name="newsType">Disclousure</param>
+			<param name="newsURL">{1}</param>
+			<result>si.news.newsDetail</result>
+		</action>
+		<action name="/tin-doanh-nghiep/*" class="springNewsAction"
+			method="viewNewsDetail_si">
+			<param name="newsType">MacVN</param>
+			<param name="newsURL">{1}</param>
+			<result>si.news.newsDetail.event</result>
+		</action>
+	</package>
+
+	<package name="News" namespace="/vndirect" extends="default-web">
+        <action name="tin-vndirect/*" class="springNewsAction" method="executeViewNewsDetail_vndirectNews">
+            <param name="newsType">VNDIRECT</param>
+            <param name="newsURL">{1}</param>
+            <result>Info.NewsDetail</result>
+        </action>
+    </package>
+	<package name="Search-News" namespace="/" extends="default-web">
+        <action name="tim-kiem-tin-tuc-*" class="springSearchNewsAction" method="viewSearchNews">
+            <param name="currentIndex">{1}</param>
+            <result>Common.SearchNews</result>
+        </action>
+        <action name="tim-kiem-tin-tuc*" class="springSearchNewsAction" method="viewSearchNews">
+            <result>Common.SearchNews</result>
+        </action>
+    </package>
+
+	<!-- News Detail -->
+	<package name="NewsDetail" namespace="/" extends="default-web">
+		<action name="tin-trong-nuoc/*" class="springNewsAction"
+			method="viewNewsDetail_analysis">
+			<param name="newsType">MacVN</param>
+			<param name="newsURL">{1}</param>
+			<result>Analysis.NewsDetail</result>
+		</action>
+		<action name="tin-quoc-te/*" class="springNewsAction" method="viewNewsDetail_analysis">
+			<param name="newsType">MacWorld</param>
+			<param name="newsURL">{1}</param>
+			<result>Analysis.NewsDetail</result>
+		</action>
+		<action name="y-kien-chuyen-gia/*" class="springNewsAction"
+			method="viewNewsDetail_analysis">
+			<param name="newsType">Expert</param>
+			<param name="newsURL">{1}</param>
+			<result>Analysis.NewsDetail</result>
+		</action>
+		<action name="cong-bo-thong-tin/*" class="springNewsAction"
+            method="viewNewsDetail_analysis">
+            <param name="newsType">Disclousure</param>
+            <param name="newsURL">{1}</param>
+            <result>Analysis.NewsDetail</result>
+        </action>
+        <action name="nhan-dinh-thi-truong/*" class="springReportAction"
+            method="getMarketInsights">
+            <param name="newsUrl">{1}</param>
+            <result>analysis.marketInsight</result>
+        </action>
+	</package>
+
+	<package name="NewsAJAX" namespace="/ajax/news" extends="default-web">
+		<action name="NewsGetVNDSNews*" class="springNewsAction" method="executeGetVNDSNews">
+			<result>News.VndsNews</result>
+		</action>
+		<action name="NewsGetVNDSHomepage*" class="springNewsAction" method="executeGetVNDSNews">
+			<result type="dispatcher">/WEB-INF/jsps/HomePageVNDSNews.jsp</result>
+		</action>
+		<action name="NewsGetNewsHomePage*" class="springNewsAction" method="executeGetNewsHomePage">
+			<result type="dispatcher">/WEB-INF/jsps/HomePageNews.jsp</result>
+		</action>
+		<action name="News_*-*" class="springNewsAction" method="execute{1}">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>			
+		<action name="SearchNews_FindingInformation*" class="springSearchNewsAction"
+			method="executeFindingInformation">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+		<action name="getMostViewedNewsAjax*" class="springMacroNewsAction" method="getMostViewedNewsAjax">
+            <result>analysisTools.news.mostViewed</result>
+        </action>
+        <action name="getMostViewMarketInsightNewsAjax*" class="springReportAction" method="getMostViewMarketInsightNewsAjax">
+            <result>analysisTools.news.marketInsightNews</result>
+        </action>
+	</package>
+
+	<package name="LastestMarketNewsAJAX" namespace="/ajax/news"
+		extends="default-web">
+		<action name="LastestMarketNewsAJAX_*" class="springLastestMarketNewsAJAXAction"
+			method="execute{1}">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="MarketOverviewAjax" namespace="/ajax/news"
+		extends="default-web">
+		<action name="MarketOverviewAJAX_*" class="springMarketOverviewAJAXAction"
+			method="execute{1}">
+			<result name="input" type="json">
+				<param name="excludeProperties">
+					model.*
+				</param>
+			</result>
+			<result type="json">
+				<param name="excludeProperties">
+					model.cacheData
+				</param>
+			</result>
+		</action>
+	</package>
+</struts>

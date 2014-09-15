@@ -1,0 +1,381 @@
+.openaccInfo-wp{
+	border:1px solid #d4d4d4;
+	float:left;
+	width:100%;
+	padding-bottom:35px;
+	margin:15px 0px 45px 0px;
+}
+
+.boxInfo{
+	padding:5px 0px 0px 10px;
+	width:615px;
+	float:left;
+	margin-bottom:15px;
+}
+.boxInfo ul{
+	margin-left:35px;
+	font-weight:bold;
+}
+.boxInfo h1{
+	font-size:15px;
+	color:#fff;
+	background:#f8941d;
+	height:20px;
+	font-weight:bold;
+	padding:5px 0px 0px 37px;
+}
+.boxInfo h2{
+	color:#f39200;
+	font-size:14px;
+	font-weight:bold;
+	background:url(../images/motk/item-bg.png) left top #f0f0f0 no-repeat;
+	padding:3px 0px 0px 37px;
+	height:19px;
+	margin:25px 0px 15px 0px;
+	width:578px;
+	float:left;
+}
+.txt-Red{
+	color:#ff0000;
+}
+.boxInfo ul li p{
+	padding-bottom:5px;
+}
+.boxInfo ul li{
+	float:left;
+	margin:0px 5px 0px 0px;
+	width:145px;
+	padding-bottom:15px;
+}
+.boxInfo ul li.w305{
+	width:305px;
+}
+.boxInfo ul li.w295{
+	width:295px;
+}
+
+.boxInfo ul.boxInfo03 li{
+	width:218px;
+}
+
+.boxInfo ul li input[type='radio']{
+	margin-right:4px;
+}
+.openAcc-textboxM{
+	width:115px;
+	height:25px;
+}
+.openAcc-textboxM2{
+	width:190px;
+	height:25px;
+}
+.openAcc-textboxL{
+	width:285px;
+	height:25px;
+}
+.openAcc-selectboxL{
+	width:290px;
+	height:25px;
+	color:#676767;
+}
+.marginRadio{
+	margin-right:15px;
+}
+.marginRadiowp{
+	margin-top:3px;
+}
+.boxInfo .noteCustomer{
+	font-style:italic;
+	color:#f39200;
+	font-size:13px;
+	padding-bottom:15px;
+	margin-left:37px;
+	font-weight:bold;
+	clear:both;
+}
+.boxInfo input[type='button']{
+	padding:5px 15px 6px 15px;
+}
+.boxInfo ul.boxInfo02 li{
+	width:305px;
+}
+.openAcc-agree{
+	margin:0px 0px 60px 37px;
+	padding-top:15px;
+}
+.openAcc-agree input[type='checkbox']{
+	float:left;
+	margin-right:8px;
+}
+.txt-Green, .txt-Green a{
+	color:#72b300;
+	font-style:italic;
+}
+
+.openAccR{
+	width:290px;
+	float:right;
+	margin:15px 15px 0px 0px;
+}
+.opentAccNote{
+	border:1px solid #d9d4d0;
+	background:#fef8be;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:10px 20px 20px 10px;
+	text-align:justify;
+	margin-bottom:30px;
+}
+.opentAccNote h2{
+	background:url(../images/trading/warming.png) no-repeat;
+	font-weight:bold;
+	font-size:14px;
+	padding:7px 0px 0px 37px;
+	height:28px;
+}
+.opentAccNote ul li{
+	background:url(../images/trading/list03.png) no-repeat 0px 7px;
+	font-size:14px;
+	color:#3e3e3e;
+	line-height:23px;
+	padding-left:15px;
+	margin:3px 0px 10px 10px;
+}
+.boxRight{
+	border:1px solid #d3d3d3;
+	padding:10px 10px 15px 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom:30px;
+}
+.boxRight h2{
+	background:url(../images/motk/item-bg02.png) no-repeat left top;
+	padding:3px 0px 0px 25px;
+	height:28px;
+	font-size:14px;
+	font-weight:bold;
+	color:#f39200;
+	border-bottom:1px solid #dcdcdc;
+	margin-bottom:15px;
+}
+.boxRight .text-number{
+	font-size:24px;
+	color:#f39200;
+	font-weight:bold;
+	line-height:44px;
+	padding-bottom:18px;
+}
+.boxRight .text-number img{
+	float:left;
+	margin-right:17px;
+}
+.boxRight .text-date{
+	font-weight:bold;
+	border-bottom:1px dotted #000;
+	padding-bottom:10px;
+	margin-bottom:15px;
+}
+.boxRight .text-mail{
+	line-height:23px;
+	color:#ec9e1e;
+	margin-left:9px;
+	padding-bottom:15px;
+}
+.boxRight .text-mail img{
+	float:left;
+	margin-right:11px;
+}
+.boxRight .reason li{
+	width:99.5%;
+	display:inline-block;
+	margin:5px 0px 15px 0px;
+}
+.boxRight .reason li img{
+	float:left;
+	padding-right:12px;
+	width:65px;
+}
+.boxRight .reason li h3{
+	font-size:13px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+.btnOrder, .btnCancel{
+    padding:3px 15px 4px 15px;
+    background:#f7941d;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:none;
+}
+.btnCancel{
+    background:#949494;
+    border:none;
+}
+.btnOrder:hover{
+    background:#da7903;
+}
+.btnCancel:hover{
+    background:#414141;
+}
+
+.openaccInfo-wp h1.title{
+    font-size:15px;
+    color:#fff;
+    background:#f8941d;
+    height:20px;
+    font-weight:bold;
+    padding:5px 0px 0px 25px;
+    line-height: 18px !important;
+    margin: 12px 12px 0;
+}
+
+.finished_openaccount_box{
+    padding:5px 0px 0px 10px;
+    width:615px;
+    float:left;
+    margin-bottom:15px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.finished_openaccount_box ul li {
+	margin-left: 10px;
+}
+.finished_openaccount_box ul li p{
+	list-style: outside;
+	color: #333333;
+}
+
+.finished_openaccount_box .items li{
+	margin-left: 25px;
+	color: #333333;
+	list-style: outside;
+}
+
+.finished_openaccount_box .title {
+	color: #f8941d;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.errorMessage span {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.orange {
+	color: #f8941d;
+}
+
+.italic-font{
+	font-style: italic;
+}
+
+.green {
+	color: #00AA00 !important;
+}
+
+.finished_openaccount_box .errorMessage > li {
+    list-style: none !important;
+}
+
+.action_message_box li {
+	color: red;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.mobilePassBox {
+	margin-right: 3px; 
+	width: 18px;
+	float: left;
+}
+
+#identifyNumberId label.error {
+	 width: 240px; 
+	 float: left;
+}
+
+.margin-left10{
+	margin-left: 10px;
+}
+
+.w265{
+	width: 265px;
+}
+
+.step_info{
+	padding: 10px 0px;
+}
+
+.accept_button{
+	background: url("../images/icons/accept_btn.png") no-repeat;
+	height: 60px;
+	width: 185px;
+    margin-left: 425px;
+}
+.accept_button:HOVER{
+	background: url("../images/icons/accept_hover.png") no-repeat;
+	cursor: pointer;
+}
+
+.white_coior{
+	color: #FFFFFF !important;
+}
+
+.mtk_btn_link{
+    font-weight: bold;
+    padding: 53px;
+    position: relative;
+    top: 12px;
+}
+.mtk_guide_btn_link{
+    font-weight: bold;
+    padding: 17px;
+    position: relative;
+    top: 12px;
+}
+
+.mtk_btn{
+	background: url("../images/icons/btn_orange.png") no-repeat;
+    height: 50px;
+    width: 182px;
+    float: left;
+    margin-left: 72px;
+}
+.mtk_btn:HOVER{
+	background: url("../images/icons/btn_green.png") no-repeat;
+}
+
+.arrow_icons_up{
+    background: url("../images/icons/Muiten1.png") no-repeat;
+    height: 68px;
+    margin-left: 160px;
+    position: relative;
+    top: 10px;
+}
+
+.arrow_icons_down{
+	 background: url("../images/icons/Muiten2.png") no-repeat;
+    height: 68px;
+    margin-left: 165px;
+    position: relative;
+    top: 35px;
+}
+
+.notice_mtk li{
+	list-style: url("../images/icons/icon-list.png");
+}
+
+.notice_mtk {
+	line-height: 25px;
+    padding-left: 15px;
+    padding-top: 10px;
+}

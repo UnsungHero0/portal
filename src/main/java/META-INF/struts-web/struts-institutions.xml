@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="Overview-Publish" namespace="/to-chuc-phat-hanh" extends="default-web">
+		<action name="tong-quan*" class="springEmptyAction" method="viewIssuersOverview">
+		    <param name="pageTitle">institutions.issuers.overview.title</param>
+            <param name="pageDescription">institutions.issuers.overview.desc</param>
+            <param name="pageKeywords">institutions.issuers.overview.keywords</param>
+			<result>institutions.publish.introduction</result>
+		</action>
+		<action name="san-pham-dich-vu*" class="springEmptyAction" method="viewIssuersProductsServices">
+            <param name="pageTitle">institutions.issuers.productsServices.title</param>
+            <param name="pageDescription">institutions.issuers.productsServices.desc</param>
+            <param name="pageKeywords">institutions.issuers.productsServices.keywords</param>		
+            <result>institutions.publish.productsservices</result>
+        </action>
+        <action name="doi-ngu-chuyen-gia*" class="springEmptyAction" method="viewIssuersConsultants">
+            <param name="pageTitle">institutions.issuers.consultants.title</param>
+            <param name="pageDescription">institutions.issuers.consultants.desc</param>
+            <param name="pageKeywords">institutions.issuers.consultants.keywords</param>        
+            <result>institutions.publish.consultants</result>
+        </action>
+	</package>
+		
+	<package name="Overview-Invest" namespace="/to-chuc-dau-tu" extends="default-web">
+        <action name="tong-quan*" class="springEmptyAction" method="viewInvestOverview">
+            <param name="pageTitle">institutions.investor.overview.title</param>
+            <param name="pageDescription">institutions.investor.overview.desc</param>
+            <param name="pageKeywords">institutions.investor.overview.keywords</param>             
+            <result>institutions.invest.introduction</result>
+        </action>       
+        <action name="san-pham-dich-vu*" class="springEmptyAction" method="viewInvestProductsServices">
+            <param name="pageTitle">institutions.investor.productsServices.title</param>
+            <param name="pageDescription">institutions.investor.productsServices.desc</param>
+            <param name="pageKeywords">institutions.investor.productsServices.keywords</param>     
+            <result>institutions.invest.productsservices</result>
+        </action>
+        <action name="doi-ngu-chuyen-gia*" class="springEmptyAction" method="viewInvestConsultants">
+            <param name="pageTitle">institutions.investor.consultants.title</param>
+            <param name="pageDescription">institutions.investor.consultants.desc</param>
+            <param name="pageKeywords">institutions.investor.consultants.keywords</param>     
+            <result>institutions.invest.consultants</result>
+        </action>
+    </package>  	
+    
+</struts>

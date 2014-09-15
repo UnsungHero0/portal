@@ -1,0 +1,22 @@
+<h2 class="title_ttcp">
+<span class=" orange"><strong>
+    #if($locale == "vn")
+	$company.getCompanyName()
+	#else
+	$company.getCompanyFullName()
+	#end
+    ($company.getSymbol(): $company.getCurrentExchangeCode())
+</strong></span>
+#if($industry)
+<span class="text" >
+    $i18n.getText('Snapshot.CompanyInfo.Label.Sector'):<a style="font-weight: bold;" href="$contextPath/phan-tich-nganh/chi-tiet-linh-vuc.shtml?sectorCode=$industry.getSectorGroupCode()" >
+        $industry.getSectorGroupName()
+    </a>
+    &nbsp;&gt;&nbsp;$i18n.getText('Snapshot.CompanyInfo.Label.Industry')
+    <a style="font-weight: bold;" href="$contextPath/phan-tich-nganh/chi-tiet-linh-vuc.shtml?sectorCode=$industry.getSectorGroupCode()&industryCode=$industry.getIndustryGroupCode()" >
+        $industry.getIndustryGroupName()
+    </a>
+</span>
+</div>
+#end
+</h2>

@@ -1,0 +1,72 @@
+<vndirect>
+	<group-code name="ORDER-STATUS">
+		<item bocode="1" webcode="Open"/>
+		<item bocode="2" webcode="Sent"/>
+		<item bocode="3" webcode="Cancelled"/>
+		<item bocode="4" webcode="Executed"/>
+		<item bocode="5" webcode="Expired"/>
+		<item bocode="6" webcode="Rejected"/>
+		<item bocode="7" webcode="Completed"/>
+		<item bocode="8" webcode="Sending"/>
+		<item bocode="9" webcode="Pending"/>
+		<item bocode="10" webcode="Cancel"/>  
+		<item bocode="11" webcode="Refused"/>
+		<item bocode="12" webcode="Modify"/>
+		<item bocode="13" webcode="Modified"/>
+		<item bocode="14" webcode="Active"/>
+	</group-code>
+	
+	<group-code name="ORDER-TERM">
+		<item bocode="T" webcode="Today"/>
+	</group-code>
+	
+	<group-code name="ORDER-TYPE">
+		<item bocode="NB" webcode="Buy"/>
+		<item bocode="NS" webcode="Sell"/>
+		<item bocode="CB" webcode="Cancel Buy"/>
+		<item bocode="CS" webcode="Cancel Sell"/>
+		<item bocode="AB" webcode="Amend Buy"/>
+		<item bocode="AS" webcode="Amend Sell"/>
+		<item bocode="MS" webcode="MS"/>
+	</group-code>
+	
+	<group-code name="ORDER-PRICE-TYPE">
+		<item bocode="LO" webcode="Limit"/>
+		<item bocode="MP" webcode="MP"/>
+		<item bocode="ATO" webcode="ATO"/>
+		<item bocode="ATC" webcode="ATC"/>
+	</group-code>
+			
+	<group-code name="ORDER-MEANS">
+		<item bocode="F" webcode="Floor"/>
+		<item bocode="A" webcode="Agent"/>
+		<item bocode="O" webcode="Online"/>
+		<item bocode="T" webcode="Phone"/>
+		<item bocode="W" webcode="WebAgent"/>
+	</group-code>	
+	
+	<group-code name="TRANSFER-STATUS">
+		<item bocode="0" webcode="Logged"/>
+		<item bocode="1" webcode="Completed"/>
+		<item bocode="2" webcode="Error"/>
+		<item bocode="3" webcode="Unsetted"/>
+		<item bocode="4" webcode="Pending to approve"/>
+		<item bocode="5" webcode="Rejected"/>
+		<item bocode="6" webcode="SWIFT missing"/>
+		<item bocode="7" webcode="Pending to delete"/>
+		<item bocode="8" webcode="Refuse"/>
+		<item bocode="9" webcode="Deleted"/>
+		<!-- 
+			0  Logged
+			1  Completed
+			2  Error
+			3  Unsetted
+			4  Pending to approve
+			5  Rejected
+			6  SWIFT missing
+			7  Pending to delete
+			8  Refuse
+			9  Deleted
+		 -->
+	</group-code>	
+</vndirect>
